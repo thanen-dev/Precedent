@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sovereign Intelligence Engine — Project Brief</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@300;400;500&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --black: #0a0a08;
+  --white: #f2f0eb;
+  --dim: #b8b5ac;
+  --dimmer: #6b6860;
+  --red: #c0392b;
+  --amber: #d4930a;
+  --green: #1e6b3c;
+  --blue: #1a3a5c;
+  --border: rgba(242,240,235,0.12);
+  --border-strong: rgba(242,240,235,0.28);
+}
+
+body {
+  background: var(--black);
+  color: var(--white);
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 1.7;
+  padding: 0;
+  margin: 0;
+}
+
+/* ─── MASTHEAD ─── */
+.masthead {
+  border-bottom: 1px solid var(--border-strong);
+  padding: 32px 48px 28px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: start;
+  gap: 24px;
+}
+
+.project-eyebrow {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9px;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--dimmer);
+  margin-bottom: 10px;
+}
+
+.project-name {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 64px;
+  line-height: 0.9;
+  letter-spacing: .02em;
+  color: var(--white);
+}
+
+.project-name span { color: var(--amber); }
+
+.masthead-meta {
+  text-align: right;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9px;
+  color: var(--dimmer);
+  line-height: 2;
+  margin-top: 6px;
+}
+
+.masthead-meta strong {
+  color: var(--dim);
+  font-weight: 500;
+}
+
+/* ─── MISSION STRIP ─── */
+.mission-strip {
+  background: var(--amber);
+  color: var(--black);
+  padding: 14px 48px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: .04em;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.mission-strip::before {
+  content: '◈ MISSION';
+  font-size: 8px;
+  letter-spacing: .18em;
+  opacity: .6;
+  flex-shrink: 0;
+}
+
+/* ─── LAYOUT ─── */
+.body-wrap {
+  padding: 40px 48px;
+  max-width: 1100px;
+}
+
+.section-header {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 8px;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: var(--amber);
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.section-header::before { content: '—'; color: var(--dimmer); }
+
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 32px; }
+.three-col { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; margin-bottom: 32px; }
+.full { margin-bottom: 32px; }
+
+/* ─── CARDS ─── */
+.card {
+  border: 1px solid var(--border-strong);
+  padding: 20px;
+  background: rgba(242,240,235,0.03);
+}
+
+.card-title {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--white);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.card-title .num {
+  font-size: 9px;
+  color: var(--amber);
+  border: 1px solid var(--amber);
+  padding: 1px 5px;
+  letter-spacing: .08em;
+}
+
+.card p {
+  font-size: 12px;
+  color: var(--dim);
+  line-height: 1.65;
+  margin-bottom: 8px;
+}
+
+.card p:last-child { margin-bottom: 0; }
+
+.card p strong {
+  color: var(--white);
+  font-weight: 500;
+}
+
+/* ─── CRITIQUE BLOCK ─── */
+.critique {
+  border-left: 3px solid var(--red);
+  padding: 16px 20px;
+  background: rgba(192,57,43,0.08);
+  margin-bottom: 10px;
+}
+
+.critique-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 8px;
+  letter-spacing: .16em;
+  color: var(--red);
+  margin-bottom: 6px;
+}
+
+.critique p {
+  font-size: 12px;
+  color: var(--dim);
+  line-height: 1.6;
+}
+
+.critique p strong { color: var(--white); font-weight: 500; }
+
+/* ─── WHAT IS BLOCK ─── */
+.what-is {
+  border-left: 3px solid var(--amber);
+  padding: 16px 20px;
+  background: rgba(212,147,10,0.07);
+  margin-bottom: 10px;
+}
+
+.what-is-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 8px;
+  letter-spacing: .16em;
+  color: var(--amber);
+  margin-bottom: 6px;
+}
+
+.what-is p {
+  font-size: 13px;
+  color: var(--white);
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+.what-is p strong { font-weight: 500; }
+
+/* ─── DIMENSION ROWS ─── */
+.dim-row {
+  display: grid;
+  grid-template-columns: 28px 160px 1fr 100px;
+  gap: 16px;
+  align-items: start;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.dim-row:last-child { border-bottom: none; }
+
+.dim-n {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  color: var(--dimmer);
+  padding-top: 1px;
+}
+
+.dim-name {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--white);
+  padding-top: 1px;
+}
+
+.dim-desc {
+  font-size: 12px;
+  color: var(--dim);
+  line-height: 1.55;
+}
+
+.dim-extract {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9px;
+  color: var(--amber);
+  line-height: 1.5;
+}
+
+/* ─── LEADER TABLE ─── */
+.leader-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.leader-table th {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 8px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--dimmer);
+  text-align: left;
+  padding: 0 12px 8px 0;
+  border-bottom: 1px solid var(--border-strong);
+  font-weight: 400;
+}
+
+.leader-table td {
+  padding: 9px 12px 9px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 11px;
+  color: var(--dim);
+  vertical-align: top;
+  line-height: 1.5;
+}
+
+.leader-table td:first-child { color: var(--white); font-weight: 500; }
+.leader-table td.role { color: var(--dimmer); font-family: 'IBM Plex Mono', monospace; font-size: 10px; }
+
+.tier {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 8px;
+  padding: 2px 6px;
+  letter-spacing: .06em;
+}
+.tier-1 { color: var(--amber); border: 1px solid rgba(212,147,10,0.4); }
+.tier-2 { color: var(--dim); border: 1px solid var(--border-strong); }
+
+/* ─── PIPELINE ─── */
+.pipeline {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0;
+  border: 1px solid var(--border-strong);
+}
+
+.pipe-step {
+  padding: 18px 16px;
+  border-right: 1px solid var(--border-strong);
+  position: relative;
+}
+
+.pipe-step:last-child { border-right: none; }
+
+.pipe-n {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 22px;
+  font-weight: 300;
+  color: var(--border-strong);
+  margin-bottom: 8px;
+  line-height: 1;
+}
+
+.pipe-name {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--amber);
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+}
+
+.pipe-what {
+  font-size: 11px;
+  color: var(--white);
+  font-weight: 500;
+  margin-bottom: 4px;
+  line-height: 1.4;
+}
+
+.pipe-how {
+  font-size: 10px;
+  color: var(--dimmer);
+  line-height: 1.5;
+}
+
+.pipe-input {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 8px;
+  color: var(--green);
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+/* ─── OUTPUT ANATOMY ─── */
+.output-block {
+  border: 1px solid var(--border-strong);
+  margin-bottom: 12px;
+}
+
+.output-header {
+  background: rgba(242,240,235,0.05);
+  padding: 8px 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border);
+}
+
+.output-type {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--dimmer);
+}
+
+.status-badge {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 8px;
+  padding: 2px 8px;
+  letter-spacing: .08em;
+}
+
+.badge-amber { color: var(--amber); border: 1px solid rgba(212,147,10,.4); }
+.badge-green { color: #4caf6e; border: 1px solid rgba(78,175,110,.4); }
+.badge-red { color: #e07070; border: 1px solid rgba(224,112,112,.4); }
+
+.output-body { padding: 12px 14px; }
+.output-body p { font-size: 12px; color: var(--dim); line-height: 1.6; }
+.output-body p strong { color: var(--white); font-weight: 500; }
+.output-body .mono { font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: var(--amber); margin-top: 6px; }
+
+/* ─── STACK TABLE ─── */
+.stack-row {
+  display: grid;
+  grid-template-columns: 140px 1fr 140px;
+  gap: 16px;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 11px;
+  align-items: start;
+}
+
+.stack-row:last-child { border-bottom: none; }
+.stack-label { font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: var(--dimmer); }
+.stack-val { color: var(--white); font-weight: 500; }
+.stack-note { font-size: 10px; color: var(--dimmer); font-style: italic; }
+
+/* ─── PHASE TIMELINE ─── */
+.phase-item {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 0;
+  margin-bottom: 0;
+}
+
+.phase-tag {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9px;
+  color: var(--amber);
+  padding: 12px 16px 12px 0;
+  border-right: 2px solid rgba(212,147,10,.3);
+  text-align: right;
+  line-height: 1.4;
+}
+
+.phase-body {
+  padding: 10px 0 10px 18px;
+  border-bottom: 1px solid var(--border);
+}
+
+.phase-body strong {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--white);
+  display: block;
+  margin-bottom: 2px;
+}
+
+.phase-body span {
+  font-size: 11px;
+  color: var(--dimmer);
+  line-height: 1.5;
+}
+
+/* ─── WHAT MAKES IT DEFENSIBLE ─── */
+.moat-item {
+  display: flex;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+  align-items: flex-start;
+}
+
+.moat-item:last-child { border-bottom: none; }
+
+.moat-mark {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9px;
+  color: var(--green);
+  flex-shrink: 0;
+  margin-top: 3px;
+  letter-spacing: .05em;
+}
+
+.moat-text { font-size: 12px; color: var(--dim); line-height: 1.6; }
+.moat-text strong { color: var(--white); font-weight: 500; }
+
+/* ─── FOOTER ─── */
+.footer {
+  border-top: 1px solid var(--border-strong);
+  margin: 0 48px;
+  padding: 18px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9px;
+  color: var(--dimmer);
+  line-height: 1.8;
+}
+
+.footer-right {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 18px;
+  color: var(--border-strong);
+  letter-spacing: .06em;
+}
+
+/* ─── DIVIDER ─── */
+.divider { border: none; border-top: 1px solid var(--border); margin: 0 0 32px; }
+
+hr.thick { border-top: 1px solid var(--border-strong); margin: 32px 0; }
+
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<div class="masthead">
+  <div>
+    <div class="project-eyebrow">Project Brief · v0.2 · Sharpened April 2026</div>
+    <div class="project-name">Sovereign<br><span>Intelligence</span><br>Engine</div>
+  </div>
+  <div class="masthead-meta">
+    BUILDER <strong>Thanen · 19 · Melbourne AU</strong><br>
+    SCOPE <strong>Cambodia · 10 Leaders · 2026–2029</strong><br>
+    STACK <strong>Python · Claude API · GitHub Pages</strong><br>
+    COST <strong>~$20/mo at scale</strong><br>
+    STATUS <strong>Pre-build · Schema design phase</strong>
+  </div>
+</div>
+
+<!-- MISSION -->
+<div class="mission-strip">
+  Map how Cambodia's 10 key decision-makers actually think — then use that map to predict which of their policies will survive contact with 2029.
+</div>
+
+<div class="body-wrap">
+
+  <!-- CRITIQUE SECTION -->
+  <div class="section-header">What was wrong with v0.1</div>
+
+  <div class="critique">
+    <div class="critique-label">PROBLEM 1 — TWO PROJECTS IN ONE BODY</div>
+    <p>The draft tried to be both a <strong>leader psychology archive</strong> (slow, deep, research-intensive) and a <strong>real-time policy alert system</strong> (fast, agentic, news-driven). These are different tempo systems. Building them simultaneously at v0.1 means building neither well. They need to be sequenced, not merged.</p>
+  </div>
+
+  <div class="critique">
+    <div class="critique-label">PROBLEM 2 — THE 5 DIMENSIONS AREN'T EXTRACTABLE</div>
+    <p>"Digital Maturity" and "Global Alignment" are editorial judgments disguised as data fields. You cannot reliably prompt an AI to score these from a speech — the variance will be too high and the outputs won't be comparable across leaders or time. <strong>A field is only valid if two independent analysts reading the same source would score it the same way.</strong> The dimensions need to be rebuilt from that principle.</p>
+  </div>
+
+  <div class="critique">
+    <div class="critique-label">PROBLEM 3 — THE "2-HOUR UPDATE" IS OPERATIONAL FANTASY AT V0.1</div>
+    <p>A solo builder cannot maintain a real-time ingestion pipeline, validate AI extractions, curate historical twin matches, and produce a public interface simultaneously. <strong>Speed at the cost of accuracy destroys credibility.</strong> At v0.1: weekly cadence, manual validation on every AI output, quality over freshness.</p>
+  </div>
+
+  <div class="critique">
+    <div class="critique-label">PROBLEM 4 — "MENTAL MODEL" WAS UNDEFINED</div>
+    <p>The draft used the phrase but never defined what it means operationally. What fields does a mental model contain? How do you extract it from a speech? How do you update it when a leader contradicts themselves? Without a schema, the concept stays abstract forever.</p>
+  </div>
+
+  <hr class="thick">
+
+  <!-- WHAT IT ACTUALLY IS -->
+  <div class="section-header">What this project actually is — sharpened</div>
+
+  <div class="what-is">
+    <div class="what-is-label">THE CORE IDEA</div>
+    <p>A structured, evidence-based database of <strong>how specific leaders reason about specific problems</strong> — built by systematically analyzing their speeches, decrees, and decisions over time — then used to predict what their next policy decisions will look like and <strong>match those predictions against historical cases where similar logic was tried and either worked or failed.</strong></p>
+  </div>
+
+  <div class="two-col" style="margin-top: 20px;">
+    <div class="card">
+      <div class="card-title"><span class="num">A</span> What it is NOT</div>
+      <p>It is not a promise tracker. Leaders lie, hedge, and change positions — tracking promises creates false precision over inherently vague language. <strong>A leader who keeps every promise can still destroy an economy.</strong></p>
+      <p>It is not a real-time news aggregator. Speed without depth is noise.</p>
+      <p>It is not a scoring system. "Leader X gets 72/100" is meaningless and gameable.</p>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="num">B</span> What it IS</div>
+      <p>A <strong>reasoning map</strong>. For each leader: what they believe, why they believe it, how those beliefs generate specific decisions, and what history says happens when those decisions are made.</p>
+      <p>A <strong>historical twin engine</strong>. When Cambodia makes a move, the system finds the closest structural match in global history and surfaces the outcome.</p>
+      <p>A <strong>conflict detector</strong>. When two leaders' logic contradicts — it flags it.</p>
+    </div>
+  </div>
+
+  <hr class="thick">
+
+  <!-- THE REAL PROBLEM IT SOLVES -->
+  <div class="section-header">The problem it solves — at first principles</div>
+
+  <div class="card full">
+    <p>The deepest problem in governance is the <strong>gap between when decisions are made and when consequences arrive.</strong></p>
+    <p style="margin-top:10px;">A minister announces an SEZ policy today. The consequences appear in 2031. By then: the minister may be gone, the original reasoning is forgotten, the causal chain is disputed, and the political incentive is to deny the connection. <strong>This gap is how bad decisions hide.</strong></p>
+    <p style="margin-top:10px;">Cambodia has a specific version of this problem that makes it uniquely urgent: <strong>the 2029 LDC graduation is a hard deadline with no extension.</strong> EBA trade preferences end. EU market access reprices. The entire export-led growth model built since 1993 faces its first structural stress test. If the assumptions embedded in current leadership thinking are wrong — Cambodia will not know until it's too late to adapt.</p>
+    <p style="margin-top:10px;">This system makes those assumptions <strong>visible, comparable, and testable against history</strong> — before 2029, not after.</p>
+  </div>
+
+  <hr class="thick">
+
+  <!-- THE MENTAL MODEL SCHEMA -->
+  <div class="section-header">The mental model schema — what you actually extract</div>
+
+  <div class="card full" style="margin-bottom:16px;">
+    <p style="margin-bottom:12px;">A "mental model" sounds abstract. Here it is made concrete. For each leader you extract and maintain <strong>7 structured fields</strong>. Each field must be directly quotable from a source — no inference without evidence.</p>
+  </div>
+
+  <div class="card full">
+    <div class="dim-row" style="border-bottom:1px solid var(--border-strong); padding-bottom:8px; margin-bottom:4px;">
+      <div class="dim-n" style="color:var(--dimmer); font-size:8px;">NO.</div>
+      <div class="dim-name" style="color:var(--dimmer); font-size:8px;">FIELD</div>
+      <div class="dim-desc" style="color:var(--dimmer); font-size:8px; font-family:'IBM Plex Mono',monospace; letter-spacing:.1em;">WHAT IT CAPTURES</div>
+      <div class="dim-extract" style="color:var(--dimmer); font-size:8px;">HOW EXTRACTED</div>
+    </div>
+
+    <div class="dim-row">
+      <div class="dim-n">01</div>
+      <div class="dim-name">Growth Theory</div>
+      <div class="dim-desc">What does this leader believe drives economic growth? State-led investment? FDI attraction? SME development? Export manufacturing? Their answer determines every budget priority they ever make.</div>
+      <div class="dim-extract">Direct quotes from speeches. Budget justifications. What they fund vs defund.</div>
+    </div>
+
+    <div class="dim-row">
+      <div class="dim-n">02</div>
+      <div class="dim-name">Risk Tolerance</div>
+      <div class="dim-desc">When facing uncertainty, does this leader move fast and correct later, or wait for consensus? High or low tolerance for debt, for experiment, for short-term pain? This predicts crisis response behavior.</div>
+      <div class="dim-extract">Decisions made under pressure. Speed of response to shocks. Debt levels approved.</div>
+    </div>
+
+    <div class="dim-row">
+      <div class="dim-n">03</div>
+      <div class="dim-name">Time Horizon</div>
+      <div class="dim-desc">Is this leader optimizing for the next 12 months, the next political cycle, or the next 20 years? Short-horizon leaders sacrifice infrastructure for consumption. Long-horizon leaders do the reverse. Cambodia's 2029 problem requires long-horizon thinking from everyone in the room.</div>
+      <div class="dim-extract">Infrastructure spend vs current expenditure. Stated planning windows. Project timelines approved.</div>
+    </div>
+
+    <div class="dim-row">
+      <div class="dim-n">04</div>
+      <div class="dim-name">Dependency Assumptions</div>
+      <div class="dim-desc">What external conditions does this leader assume will hold? EBA preferences continuing? China investment sustaining? US tariffs staying low? These are the hidden load-bearing assumptions that, if wrong, collapse the entire policy architecture.</div>
+      <div class="dim-extract">Explicit forecast statements. Budget assumptions. What they don't hedge against.</div>
+    </div>
+
+    <div class="dim-row">
+      <div class="dim-n">05</div>
+      <div class="dim-name">Institution vs Relationship</div>
+      <div class="dim-desc">Does this leader work through formal institutions (laws, independent bodies, transparent processes) or through personal relationships and informal networks? This determines whether their decisions are reproducible or person-dependent — critical for long-term stability.</div>
+      <div class="dim-extract">Who they meet with. How decisions are announced. Whether they build or bypass institutions.</div>
+    </div>
+
+    <div class="dim-row">
+      <div class="dim-n">06</div>
+      <div class="dim-name">Global Positioning Logic</div>
+      <div class="dim-desc">Not "are they pro-China or pro-West" — that's too simple. Instead: what is their actual theory of how Cambodia extracts value from great power competition? Hedge and extract from both? Align with one for scale? Stay neutral and sell to everyone? The logic, not the label.</div>
+      <div class="dim-extract">Trade agreement priorities. Which summits they attend. Investment source diversification ratios.</div>
+    </div>
+
+    <div class="dim-row">
+      <div class="dim-n">07</div>
+      <div class="dim-name">Consistency Score</div>
+      <div class="dim-desc">Over time: how often does this leader's behavior match their stated reasoning? High consistency means the mental model is reliable for prediction. Low consistency means either the reasoning is performative or the situation is changing faster than the model. Both are important signals.</div>
+      <div class="dim-extract">Systematic: compare stated reasoning in speeches vs actual budget/decree outcomes. Updated quarterly.</div>
+    </div>
+  </div>
+
+  <hr class="thick">
+
+  <!-- THE 10 LEADERS -->
+  <div class="section-header">The 10 architects — prioritized by build sequence</div>
+
+  <div class="card full">
+    <table class="leader-table">
+      <thead>
+        <tr>
+          <th>Leader</th>
+          <th>Role</th>
+          <th>Why They Matter for 2029</th>
+          <th>Primary Source</th>
+          <th>Build Priority</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Hun Manet</td>
+          <td class="role">Prime Minister</td>
+          <td>Sets the strategic frame everything else operates within. Pentagonal Strategy is the master document. His growth theory and time horizon determine whether the other 9 are pulling in the same direction.</td>
+          <td>PMO speeches, Pentagonal Strategy docs</td>
+          <td><span class="tier tier-1">TIER 1 · START HERE</span></td>
+        </tr>
+        <tr>
+          <td>Aun Pornmoniroth</td>
+          <td class="role">DPM / Economy</td>
+          <td>Translates strategy into fiscal reality. His dependency assumptions (what he assumes will hold in the 2026–2029 budget) are the single most important data point for predicting whether Cambodia lands the graduation safely.</td>
+          <td>Budget speeches, MEF reports</td>
+          <td><span class="tier tier-1">TIER 1</span></td>
+        </tr>
+        <tr>
+          <td>Cham Nimul</td>
+          <td class="role">Commerce Minister</td>
+          <td>Directly owns the LDC graduation problem. Her CPTPP accession strategy and EBA replacement logic is either Cambodia's bridge to 2030 or the biggest gap in the plan.</td>
+          <td>MoC trade reports, WTO filings</td>
+          <td><span class="tier tier-1">TIER 1</span></td>
+        </tr>
+        <tr>
+          <td>Sun Chanthol</td>
+          <td class="role">1st VP, CDC</td>
+          <td>Controls the FDI pipeline. His theory of what attracts investment — and whether that theory accounts for post-EBA due diligence requirements — determines whether the SEZ bet pays off.</td>
+          <td>CDC investment reports, press conferences</td>
+          <td><span class="tier tier-1">TIER 1</span></td>
+        </tr>
+        <tr>
+          <td>Chea Serey</td>
+          <td class="role">NBC Governor</td>
+          <td>Bakong CBDC and de-dollarization strategy. Highest technical complexity of any of the 10. If the monetary transition is mistimed relative to the trade disruption, compounding vulnerability.</td>
+          <td>NBC reports, Bakong publications</td>
+          <td><span class="tier tier-2">TIER 2</span></td>
+        </tr>
+        <tr>
+          <td>Hem Vanndy</td>
+          <td class="role">Industry / MISTI</td>
+          <td>SME digitalization and manufacturing pivot. The 2029 bet is that Cambodia moves up the value chain fast enough. His timeline and investment assumptions determine if that's realistic.</td>
+          <td>MISTI policy papers</td>
+          <td><span class="tier tier-2">TIER 2</span></td>
+        </tr>
+        <tr>
+          <td>Sok Siphana</td>
+          <td class="role">Senior Minister</td>
+          <td>WTO frameworks and legal reform. Graduation requires regulatory alignment. His institution vs relationship score matters most here — legal reform done through personal relationships doesn't survive leadership change.</td>
+          <td>WTO filings, legal reform publications</td>
+          <td><span class="tier tier-2">TIER 2</span></td>
+        </tr>
+        <tr>
+          <td>Chea Vandeth</td>
+          <td class="role">Telecoms / MPTC</td>
+          <td>5G and digital infrastructure. Enabler for everything else but not a 2029 critical path item on its own. Important for Bakong infrastructure and e-government readiness.</td>
+          <td>MPTC announcements</td>
+          <td><span class="tier tier-2">TIER 2</span></td>
+        </tr>
+        <tr>
+          <td>Say Samal</td>
+          <td class="role">DPM / Land</td>
+          <td>SEZ land and infrastructure. Directly affects FDI quality. Land dispute resolution speed is a proxy for institution vs relationship score system-wide.</td>
+          <td>Land ministry reports, SEZ maps</td>
+          <td><span class="tier tier-2">TIER 2</span></td>
+        </tr>
+        <tr>
+          <td>Hang Chuon Naron</td>
+          <td class="role">Education</td>
+          <td>Human capital is the longest-lead-time input. 2029 graduation requires a workforce that can operate in higher-value manufacturing. Whether current education investment matches that timeline is the most underdiscussed risk in the Pentagonal Strategy.</td>
+          <td>MoEYS curriculum data, TVET reports</td>
+          <td><span class="tier tier-2">TIER 2</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <hr class="thick">
+
+  <!-- THE HISTORICAL TWIN ENGINE -->
+  <div class="section-header">The historical twin engine — how it actually works</div>
+
+  <div class="two-col">
+    <div class="card">
+      <div class="card-title">What a "twin" is</div>
+      <p>A historical twin is a country that faced a <strong>structurally similar situation</strong> to Cambodia's current position — same combination of: export structure, external market dependency, development stage, and leadership logic — and made a comparable policy move.</p>
+      <p style="margin-top:8px;">The twin isn't found by surface similarity ("both are Southeast Asian"). It's found by <strong>matching the underlying mechanism</strong> — the economic logic — not the geography or culture.</p>
+    </div>
+    <div class="card">
+      <div class="card-title">Why twins matter more than forecasts</div>
+      <p>Forecasts require perfect models of complex systems. <strong>Historical twins require only the assumption that similar mechanisms produce similar outcomes</strong> — which is far more defensible.</p>
+      <p style="margin-top:8px;">When you show that Cambodia's current EBA strategy matches Vietnam 2010 in 6 of 7 structural dimensions — and Vietnam's outcome at year 5 was X — that is far more credible than any econometric projection.</p>
+    </div>
+  </div>
+
+  <div class="card full" style="margin-top:0;">
+    <div class="card-title">Example twins already identified</div>
+    <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:16px; margin-top:8px;">
+      <div>
+        <div style="font-family:'IBM Plex Mono',monospace; font-size:9px; color:var(--amber); margin-bottom:6px; letter-spacing:.08em;">TRADE GRADUATION</div>
+        <div style="font-size:11px; color:var(--dim); line-height:1.5;"><strong style="color:var(--white);">Vietnam 2007–2015</strong> — WTO accession + EBA usage + FDI pivot. Cambodia 2024 is structurally 60–70% similar. Vietnam outcome: successful but required 8 years of real institutional reform, not just legal reform.</div>
+      </div>
+      <div>
+        <div style="font-family:'IBM Plex Mono',monospace; font-size:9px; color:var(--amber); margin-bottom:6px; letter-spacing:.08em;">SEZ STRATEGY</div>
+        <div style="font-size:11px; color:var(--dim); line-height:1.5;"><strong style="color:var(--white);">Bangladesh 2010–2020</strong> — Export-led growth via garment SEZs, single-market dependency (EU), graduation pressure. Outcome: partial — retained market access but failed to diversify, now facing same pressure again.</div>
+      </div>
+      <div>
+        <div style="font-family:'IBM Plex Mono',monospace; font-size:9px; color:var(--amber); margin-bottom:6px; letter-spacing:.08em;">CBDC + DOLLARIZATION</div>
+        <div style="font-size:11px; color:var(--dim); line-height:1.5;"><strong style="color:var(--white);">Ecuador 2014–2017</strong> — Attempted parallel digital currency alongside USD dollarization. Outcome: failed — adoption never reached critical mass, abandoned after 3 years. Structurally similar dependency dynamic to Bakong/Riel.</div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="thick">
+
+  <!-- THE PIPELINE -->
+  <div class="section-header">How it works — the full processing pipeline</div>
+
+  <div class="pipeline full">
+    <div class="pipe-step">
+      <div class="pipe-n">01</div>
+      <div class="pipe-name">Ingest</div>
+      <div class="pipe-what">Pull source documents weekly</div>
+      <div class="pipe-how">Python scraper pulls from: PMO website, NBC publications, MEF budget docs, MoC trade reports, CDC investment data, Khmer Times English edition. Saves raw text + metadata (date, author, source URL, document type).</div>
+      <div class="pipe-input">OUTPUT: raw_docs/{date}/{source}.txt</div>
+    </div>
+
+    <div class="pipe-step">
+      <div class="pipe-n">02</div>
+      <div class="pipe-name">Extract</div>
+      <div class="pipe-what">Claude reads and extracts structured fields</div>
+      <div class="pipe-how">For each document: Claude is prompted with the 7-field mental model schema. Returns structured JSON: which leader, which fields are evidenced, exact quote supporting each, confidence level (High/Medium/Low), and what field it updates.</div>
+      <div class="pipe-input">OUTPUT: extracted/{leader_id}/{date}.json</div>
+    </div>
+
+    <div class="pipe-step">
+      <div class="pipe-n">03</div>
+      <div class="pipe-name">Update</div>
+      <div class="pipe-what">Merge into leader profiles, flag changes</div>
+      <div class="pipe-how">New extraction is compared to existing profile. <strong>Consistency score updates automatically.</strong> If a field contradicts a previous position — flagged as "Position Shift" with both data points preserved. Nothing is overwritten, everything is versioned.</div>
+      <div class="pipe-input">OUTPUT: profiles/{leader_id}/profile_v{n}.json</div>
+    </div>
+
+    <div class="pipe-step">
+      <div class="pipe-n">04</div>
+      <div class="pipe-name">Match</div>
+      <div class="pipe-what">Find historical twins for new policy signals</div>
+      <div class="pipe-how">When a significant new policy signal is detected, the Twin Engine queries the historical case library (50+ structured cases). Claude scores structural similarity across 6 dimensions. Top 3 twins returned with outcome summary and confidence rating.</div>
+      <div class="pipe-input">OUTPUT: twins/{signal_id}/matches.json</div>
+    </div>
+
+    <div class="pipe-step">
+      <div class="pipe-n">05</div>
+      <div class="pipe-name">Publish</div>
+      <div class="pipe-what">Generate static site, deploy weekly</div>
+      <div class="pipe-how">Python generates HTML from all profiles + twin matches. GitHub Actions deploys to GitHub Pages every Sunday. No server. No database in production. Total hosting cost: $0. Interface: leader profiles, conflict map, twin alerts, consistency scores.</div>
+      <div class="pipe-input">OUTPUT: docs/ → github pages</div>
+    </div>
+  </div>
+
+  <hr class="thick">
+
+  <!-- WHAT THE OUTPUT LOOKS LIKE -->
+  <div class="section-header">What the output actually looks like — three artifact types</div>
+
+  <div class="output-block">
+    <div class="output-header">
+      <div class="output-type">Artifact Type 01 — Leader Mental Model Profile</div>
+      <div class="status-badge badge-green">CORE OUTPUT</div>
+    </div>
+    <div class="output-body">
+      <p><strong>What it is:</strong> A structured one-page profile per leader. 7 fields. Each field shows: current assessed position, evidence source with date, confidence level, and change history. Not a biography — a decision-making map.</p>
+      <p style="margin-top:8px;"><strong>Example entry:</strong> Aun Pornmoniroth / Field 04 — Dependency Assumptions / "Budget 2026 prepared on assumption of 10% US tariff rate remaining stable through 2027" / Source: MEF Budget Circular Nov 2025 / Confidence: High / Risk Flag: Historical base rate of US tariff stability in election-adjacent years is 42%.</p>
+      <div class="mono">Who uses it: Journalists covering policy · Researchers · Investors doing country risk</div>
+    </div>
+  </div>
+
+  <div class="output-block">
+    <div class="output-header">
+      <div class="output-type">Artifact Type 02 — Historical Twin Signal</div>
+      <div class="status-badge badge-amber">HIGH VALUE</div>
+    </div>
+    <div class="output-body">
+      <p><strong>What it is:</strong> When a significant policy decision is announced, a Twin Signal is published. Shows: the Cambodia decision, the 3 closest historical matches, structural similarity score per dimension, and what the outcome was at 1/3/5 year marks in the historical case.</p>
+      <p style="margin-top:8px;"><strong>Example:</strong> "Cambodia's SEZ expansion logic (2026) matches Shenzhen Phase 2 (1992) at 71% structural similarity and Bangladesh EPZ expansion (2012) at 64%. Shenzhen outcome at 5 years: transformative. Bangladesh outcome at 5 years: stagnant. Key differentiating factor: institutional quality of land dispute resolution."</p>
+      <div class="mono">Who uses it: Policy researchers · Economic journalists · Development banks · Think tanks</div>
+    </div>
+  </div>
+
+  <div class="output-block">
+    <div class="output-header">
+      <div class="output-type">Artifact Type 03 — Leadership Conflict Map</div>
+      <div class="status-badge badge-amber">UNIQUE FEATURE</div>
+    </div>
+    <div class="output-body">
+      <p><strong>What it is:</strong> A visual map showing where the 10 leaders' mental models <strong>agree and where they conflict.</strong> When Cham Nimul's trade diversification logic contradicts Aun Pornmoniroth's budget assumptions — that conflict is made visible. Conflicts are often where policy breaks down in implementation.</p>
+      <p style="margin-top:8px;"><strong>Example conflict detected:</strong> "NBC Governor Chea Serey's de-dollarization timeline (Riel reaching 30% of transactions by 2028) is structurally incompatible with MEF's 2027 budget which assumes USD-denominated FDI inflows at current levels through 2029. These assumptions cannot both be true simultaneously."</p>
+      <div class="mono">Who uses it: Anyone trying to understand why Cambodian policy implementation repeatedly underperforms stated strategy</div>
+    </div>
+  </div>
+
+  <hr class="thick">
+
+  <!-- TECH STACK -->
+  <div class="section-header">Full tech stack — every component</div>
+
+  <div class="card full">
+    <div class="stack-row">
+      <div class="stack-label">Language</div>
+      <div class="stack-val">Python 3.13</div>
+      <div class="stack-note">You already have this. Entire system in one language.</div>
+    </div>
+    <div class="stack-row">
+      <div class="stack-label">AI Reasoning</div>
+      <div class="stack-val">Claude API (Sonnet)</div>
+      <div class="stack-note">Extraction, twin matching, conflict detection. ~$15–25/mo at v1 volume.</div>
+    </div>
+    <div class="stack-row">
+      <div class="stack-label">Scraping</div>
+      <div class="stack-val">requests + BeautifulSoup</div>
+      <div class="stack-note">Already installed. Handles HTML pages and RSS feeds.</div>
+    </div>
+    <div class="stack-row">
+      <div class="stack-label">PDF Parsing</div>
+      <div class="stack-val">pdfplumber or Unstructured.io</div>
+      <div class="stack-note">Government documents are almost always PDF. Essential.</div>
+    </div>
+    <div class="stack-row">
+      <div class="stack-label">Data Storage (v1)</div>
+      <div class="stack-val">JSON files in Git</div>
+      <div class="stack-note">No database needed at v1. Git provides version history for free.</div>
+    </div>
+    <div class="stack-row">
+      <div class="stack-label">Data Storage (v2)</div>
+      <div class="stack-val">SQLite → PostgreSQL</div>
+      <div class="stack-note">Migrate when JSON files become unwieldy (probably after 6 months).</div>
+    </div>
+    <div class="stack-row">
+      <div class="stack-label">Automation</div>
+      <div class="stack-val">GitHub Actions</div>
+      <div class="stack-note">Weekly cron job. Runs scraper → extractor → publisher. Free.</div>
+    </div>
+    <div class="stack-row">
+      <div class="stack-label">Hosting</div>
+      <div class="stack-val">GitHub Pages</div>
+      <div class="stack-note">Static site only. Free. Real public URL. Zero server maintenance.</div>
+    </div>
+    <div class="stack-row">
+      <div class="stack-label">News Source</div>
+      <div class="stack-val">GDELT + Khmer Times RSS</div>
+      <div class="stack-note">GDELT is free, global, real-time. Khmer Times for local English signal.</div>
+    </div>
+    <div class="stack-row">
+      <div class="stack-label">Economic Data</div>
+      <div class="stack-val">World Bank API + ADB Open Data</div>
+      <div class="stack-note">Free APIs. Essential for historical twin matching and outcome verification.</div>
+    </div>
+    <div class="stack-row">
+      <div class="stack-label">Historical Case Library</div>
+      <div class="stack-val">Manually built JSON + academic sources</div>
+      <div class="stack-note">50 cases at v1. Built slowly and carefully. This is the irreplaceable moat.</div>
+    </div>
+    <div class="stack-row">
+      <div class="stack-label">Interface (v1)</div>
+      <div class="stack-val">Static HTML/CSS — no framework</div>
+      <div class="stack-note">Fastest to build and maintain. No React, no build step, no dependencies.</div>
+    </div>
+    <div class="stack-row">
+      <div class="stack-label">Interface (v2)</div>
+      <div class="stack-val">Streamlit or Next.js</div>
+      <div class="stack-note">Add interactivity (search, filter, compare) once content justifies it.</div>
+    </div>
+  </div>
+
+  <hr class="thick">
+
+  <!-- BUILD SEQUENCE -->
+  <div class="section-header">Build sequence — what you do in what order</div>
+
+  <div class="card full">
+    <div class="phase-item">
+      <div class="phase-tag">PHASE 1<br>Weeks 1–3</div>
+      <div class="phase-body">
+        <strong>Schema + 1 leader done manually</strong>
+        <span>Design the 7-field mental model schema. Research Hun Manet manually — read the Pentagonal Strategy, 6 months of PMO speeches, key interviews. Fill in the schema by hand. This is not wasted time — this is how you learn what the AI needs to extract. You cannot skip manual depth.</span>
+      </div>
+    </div>
+    <div class="phase-item">
+      <div class="phase-tag">PHASE 2<br>Weeks 4–5</div>
+      <div class="phase-body">
+        <strong>Build the scraper + AI extractor</strong>
+        <span>Python scraper targeting PMO, MEF, MoC websites. Claude API extraction prompt built against your manual schema. Validate every extraction against your hand-built profile — this is your quality benchmark. Fix the prompt until outputs match your manual work at 80%+ fidelity.</span>
+      </div>
+    </div>
+    <div class="phase-item">
+      <div class="phase-tag">PHASE 3<br>Weeks 6–7</div>
+      <div class="phase-body">
+        <strong>Extend to Tier 1 leaders + first 10 historical cases</strong>
+        <span>Run the extractor on Aun Pornmoniroth, Cham Nimul, Sun Chanthol. Build your first 10 historical twin cases manually (Vietnam 2007, Bangladesh 2010, Shenzhen phases, etc.). Structured JSON format. Each case: context, policy logic, 5 measured outcomes, source citations.</span>
+      </div>
+    </div>
+    <div class="phase-item">
+      <div class="phase-tag">PHASE 4<br>Week 8</div>
+      <div class="phase-body">
+        <strong>First public version live</strong>
+        <span>Static site on GitHub Pages. 4 leader profiles. 10 historical cases. 1 conflict detected and written up. 1 twin signal published. No bells, no dashboard. Just evidence-backed analysis that nobody else has. Email it to 3 journalists covering Cambodia economics. One reply changes everything.</span>
+      </div>
+    </div>
+    <div class="phase-item">
+      <div class="phase-tag">PHASE 5<br>Month 3–6</div>
+      <div class="phase-body">
+        <strong>Automate + expand</strong>
+        <span>GitHub Actions runs the scraper weekly. Remaining 6 leaders added. Historical case library grows to 30+. Twin matching becomes semi-automated. Conflict detection algorithm tightened. Begin outreach to ADB, Asia Foundation, international policy journalists.</span>
+      </div>
+    </div>
+    <div class="phase-item">
+      <div class="phase-tag">PHASE 6<br>Year 2</div>
+      <div class="phase-body">
+        <strong>Second country + institutional credibility</strong>
+        <span>Add Vietnam or Myanmar — deliberately chosen for contrast with Cambodia. Begin building the comparative dimension that makes this globally valuable. Pursue a research partnership with an ASEAN-focused university. The goal: be cited in one serious policy document by end of year 2.</span>
+      </div>
+    </div>
+  </div>
+
+  <hr class="thick">
+
+  <!-- WHAT MAKES IT DEFENSIBLE -->
+  <div class="section-header">Why nothing existing competes with this — specifically</div>
+
+  <div class="card full">
+    <div class="moat-item">
+      <div class="moat-mark">MOAT 1</div>
+      <div class="moat-text"><strong>The historical twin library is hand-built and irreplaceable.</strong> Wikipedia doesn't have 50 structured SEZ case studies with 7-dimension scoring. Academic databases do — but they're paywalled, unsearchable in real time, and not formatted for AI reasoning. Building this library slowly and correctly is the project's core asset. It compounds.</div>
+    </div>
+    <div class="moat-item">
+      <div class="moat-mark">MOAT 2</div>
+      <div class="moat-text"><strong>The mental model schema is explicit where others are implicit.</strong> Every political commentator has a model of how leaders think. None of them have made it structured, versioned, and falsifiable. That's the difference between opinion and instrument.</div>
+    </div>
+    <div class="moat-item">
+      <div class="moat-mark">MOAT 3</div>
+      <div class="moat-text"><strong>The conflict detection is genuinely novel.</strong> No existing tool maps internal contradictions between a government's own senior officials. This is where most policy failure actually originates — not corruption, not bad intentions, but incompatible assumptions held simultaneously by people who never directly compare notes.</div>
+    </div>
+    <div class="moat-item">
+      <div class="moat-mark">MOAT 4</div>
+      <div class="moat-text"><strong>Cambodia's 2029 deadline creates urgency that makes the work immediately useful.</strong> This isn't a project you build and wait for relevance. Every month that passes without this instrument, decisions are being made on assumptions nobody has stress-tested. The deadline makes this actionable now.</div>
+    </div>
+    <div class="moat-item">
+      <div class="moat-mark">MOAT 5</div>
+      <div class="moat-text"><strong>It is open, public, and free.</strong> Every think tank and consultancy doing this work sells access. This publishes everything. That makes it citable, shareable, and trusted in a way that paywalled analysis never can be.</div>
+    </div>
+  </div>
+
+  <hr class="thick">
+
+  <!-- FIRST ACTION -->
+  <div class="section-header">The first thing you actually do</div>
+
+  <div class="what-is">
+    <div class="what-is-label">FIRST ACTION — THIS WEEK</div>
+    <p>Open a blank JSON file. Call it <strong>hun_manet_profile.json</strong>. Create 7 empty fields matching the schema above. Then read the <strong>Pentagonal Strategy document</strong> — the full text, available on the PMO website — and fill in what you can from that single source alone. Write the exact quote, the date, and the source URL next to every field you fill. Leave everything you can't source yet empty.</p>
+    <p style="margin-top:10px;">That file is the seed. Everything else — the scraper, the AI extraction, the twin engine, the public site — is built to populate and maintain that file at scale. <strong>Start with the data, not the code.</strong></p>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="footer-left">
+    Sovereign Intelligence Engine · Cambodia v0.2<br>
+    Built by Thanen · Melbourne AU · April 2026<br>
+    First action: hun_manet_profile.json → Pentagonal Strategy
+  </div>
+  <div class="footer-right">SIE · 2026</div>
+</div>
+
+</body>
+</html>

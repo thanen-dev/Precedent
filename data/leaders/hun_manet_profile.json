@@ -1,0 +1,326 @@
+{
+    "id": "hun_manet",
+    "full_name": "Hun Manet",
+    "title": "Prime Minister of Cambodia",
+    "updated": "2026-04-10",
+    "leader": {
+        "name": "Hun Manet",
+        "position": "Prime Minister of Cambodia",
+        "in_office_since": "August 2023",
+        "compiled": "April 2026",
+        "based_on": [
+            "Pentagonal Strategy Phase I",
+            "PMO speeches",
+            "key interviews",
+            "multilateral research"
+        ],
+        "purpose": "Predictive schema of Hun Manet's decision-making architecture across seven dimensions."
+    },
+    "dimensions": {
+        "growth_theory": {
+            "core_thesis": "Hybrid model: export manufacturing (garments) as near-term revenue base, FDI attraction as diversification engine, human capital and digital transformation as long-horizon bet. When resources are constrained, FDI and infrastructure win budget priority over SME and institution-building.",
+            "stated_theory": {
+                "summary": "Infrastructuralist framing: people, roads, water, electricity, and digital technology as five key priorities; growth follows investable infrastructure. MSME transformation via government-brokered loan schemes (e.g., Wing Bank) rather than an independent SME ecosystem.",
+                "quote": "My government is committed to taking transformative actions… The five key priorities are people, roads, water, electricity and technology — especially digital technology to address the fourth industrial revolution.",
+                "quote_source": "Hun Manet, UNGA, September 2023"
+            },
+            "funding_pattern": {
+                "funded_2023_2025": [
+                    "Siem Reap-Angkor International Airport (opened 2023)",
+                    "Techo International Airport, Phnom Penh (opened 2025)",
+                    "Funan Techo Canal groundbreaking (August 2024)",
+                    "Sihanoukville port expansion",
+                    "Kampot Multipurpose Port (June 2024)",
+                    "Garment sector tax break extended through end of 2025",
+                    "USD 2.5B fixed-asset investment authorised in first 4 months of 2024"
+                ],
+                "underfunded": [
+                    "Independent judicial institutions (judicial independence score: 0/4, Freedom House 2025)",
+                    "Civil society infrastructure",
+                    "Environmental review processes",
+                    "Press freedom",
+                    "Structural reform relative to current consumption spending"
+                ]
+            },
+            "structural_vulnerability": "Cambodia remains primarily a cut-make-trim economy with 70% of households depending on agriculture. Garment sector relies on imported Chinese raw materials, limiting value capture. Tourism revenue lags visitor numbers, with most arrivals being low-spending regional tourists. The largest stress point is the gap between diversification rhetoric and structural dependence on garment exports and Chinese FDI."
+        },
+        "risk_tolerance": {
+            "overall_assessment": "MODERATE-LOW",
+            "summary": "Consensus-seeking with controlled bursts of speed. Cautious institutional navigation constrained by fragile loyalty networks and a strong parental shadow. Moves quickly on diplomatic optics under economic shocks but is slow on structural reform.",
+            "debt_tolerance": {
+                "china_debt_2023": {
+                    "china_debt_usd_billion": 3.96,
+                    "total_foreign_debt_usd_billion": 10.23,
+                    "china_share_percent": 39
+                },
+                "funan_techo_canal": "Financing details undisclosed publicly, adds unknown liability.",
+                "growth_projection_2024": {
+                    "government_target_gdp_growth_percent": 6.6,
+                    "imf_adb_projection_percent_range": [
+                        5.3,
+                        5.4
+                    ],
+                    "interpretation": "Willingness to project confidence publicly while accepting structural underperformance quietly; not reckless but not conservative."
+                }
+            },
+            "speed_under_pressure": {
+                "us_tariff_shock_2025": {
+                    "event": "Trump's 49% tariff on Cambodian goods.",
+                    "response": "Cambodia offered to slash tariffs on 19 American imports to 5% as a goodwill gesture.",
+                    "assessment": "Speed fast, depth shallow (gesture-level, not restructural)."
+                },
+                "thai_cambodia_border_conflict_2025": {
+                    "event": "Border conflict with Thailand.",
+                    "domestic_politics": "Leveraged nationalist sentiment domestically for popularity.",
+                    "economic_cost": {
+                        "international_tourist_arrivals_drop_percent_range": [
+                            20,
+                            40
+                        ],
+                        "thai_visitors_drop_percent": 28.2
+                    },
+                    "assessment": "Escalated rhetorically faster than economic damage warranted; risk misjudgment under political pressure."
+                },
+                "covid_era_garment_sector": {
+                    "policy": "Extended tax breaks rather than restructuring.",
+                    "assessment": "Risk-avoidant; preserves short-term stability at cost of long-term diversification."
+                }
+            },
+            "institutional_risk": {
+                "civil_service_expansion": {
+                    "increase_percent": 122,
+                    "senior_posts_2024_plus": 1400,
+                    "interpretation": "Patronage stabilisation strategy to reduce elite defection risk by spreading spoils; increases fiscal drag. Low-risk politically with high long-term institutional cost; typical of an heir profile."
+                }
+            }
+        },
+        "time_horizon": {
+            "stated_horizon": {
+                "vision": "25 years (Vision 2050)",
+                "targets": [
+                    "Upper-middle-income by 2030",
+                    "High-income by 2050"
+                ],
+                "strategy_phase": "Pentagonal Strategy Phase I (2023–2028)",
+                "quote": "The next 25 years would be a new cycle to build a strong nation — a cycle of resources and work efficiency, enhancement of regional and global integration, and economic diversification and competitiveness.",
+                "quote_source": "Hun Manet, Pentagonal Strategy launch, August 2023",
+                "ldc_graduation_window": 2029
+            },
+            "revealed_horizon": {
+                "approx_years": 5,
+                "summary": "Budget priorities indicate a shorter effective horizon. Infrastructure spend rising, but garment tax breaks through 2025 preserve consumption. Funan Techo Canal groundbreaking timing tied to Hun Sen’s birthday shows political-calendar forcing function. Actual decision cycle appears to be 1–2 political terms, framed in 25-year language."
+            },
+            "cambodia_2029_problem": {
+                "description": "LDC graduation in 2029 will eliminate EBA trade preferences with the EU.",
+                "potential_job_loss": 700000,
+                "sectors_affected": [
+                    "garments"
+                ],
+                "policy_gap": "Recognised in Pentagonal Strategy but not matched by budget reallocation toward industrial upgrading or export diversification. Indicates shorter revealed time horizon than stated."
+            }
+        },
+        "dependency_assumptions": {
+            "explicit_assumptions": [
+                {
+                    "id": 1,
+                    "assumption": "Chinese FDI sustains or grows.",
+                    "details": "China holds 40%+ of FDI inflows and provides infrastructure financing with limited political conditionality. Model assumes continued Chinese engagement despite China's own slowdown; slowdown already seen in Cambodian tourism and construction by 2024."
+                },
+                {
+                    "id": 2,
+                    "assumption": "EBA preferences hold until a managed transition.",
+                    "details": "EU partially suspended EBA in 2020 but has not fully terminated. Strategy assumes time to diversify before full loss, tested against the 2029 graduation deadline."
+                },
+                {
+                    "id": 3,
+                    "assumption": "US export market remains accessible.",
+                    "details": "US absorbs ~38% of Cambodia's exports (mostly garments). Trump’s 49% tariff in 2025 directly hit this assumption; rapid Cambodian tariff-cut offer shows dependence was not well-hedged."
+                },
+                {
+                    "id": 4,
+                    "assumption": "ASEAN integration buffers external shocks.",
+                    "details": "Participation in RCEP and ASEAN FTAs framed as diversification hedge. Assumes regional trade architecture stability and continued preferential access, a load-bearing but underexamined assumption."
+                }
+            ],
+            "missing_hedges": [
+                "Simultaneous US tariff shock + Chinese FDI slowdown + EBA loss (triple squeeze).",
+                "Thai-Cambodia conflict escalation into sustained tourism damage.",
+                "Domestic household debt crisis (flagged by analysts in late 2024).",
+                "Operational de-escalation playbook for border conflicts (exposed by 2025 Thai border conflict)."
+            ]
+        },
+        "institution_vs_relationship": {
+            "verdict": "Relationship-dominant, with institutional window-dressing",
+            "summary": "Governance is structurally relationship-based. Mass-patronage system from Hun Sen has been preserved and expanded. Formal institutions are often used as vehicles for personal and factional loyalty rather than autonomous actors.",
+            "evidence": {
+                "patronage_expansion": {
+                    "senior_posts_increase_percent": 122,
+                    "posts_2024_plus": 1400,
+                    "interpretation": "Expansion aimed at absorbing Hun Sen-era loyalists and a rising generation simultaneously; institutional form deployed to deliver relational outcomes."
+                },
+                "family_control": [
+                    "Ministry of Civil Service (Hun Many)",
+                    "Military intelligence and deputy army chief role (Hun Manith)",
+                    "Senate presidency (Hun Sen)",
+                    "CPP party apparatus"
+                ],
+                "institutional_assessment_external": {
+                    "source": "Bertelsmann Transformation Index 2024",
+                    "summary": "Cambodian state institutions rated as almost completely undermined by patronage and informal networks."
+                }
+            },
+            "judiciary_role": {
+                "description": "Used as a relational and coercive instrument against opponents rather than an independent check.",
+                "indicators": [
+                    "Judicial independence score 0/4 (Freedom House 2025).",
+                    "Ten Mother Nature activists sentenced in July 2024.",
+                    "Journalists Mech Dara and Hem Vanna arrested.",
+                    "Constitutional Council chaired by CPP loyalist Hy Sophea (2025), functioning as legitimation rather than constraint."
+                ]
+            },
+            "reproducibility_implication": "Policy decisions are heavily person- and network-dependent. Without Hun Sen’s approval architecture, many outcomes would differ. System is non-reproducible and exposed to succession risk; no clear evidence that Hun Manet is building an independent governance logic."
+        },
+        "global_positioning_logic": {
+            "theory": "Hedge-and-extract from multiple power centres.",
+            "summary": "Not simple China alignment. Strategy is to preserve China’s structural economic role while expanding Western and regional engagement to attract investment, reduce vulnerability, and secure diplomatic legitimacy. Aim is to avoid overdependence on any single power.",
+            "key_quote": {
+                "quote": "Cambodia's relationships with China and the U.S. are not mutually exclusive.",
+                "source": "Hun Manet, Reuters interview, Washington, 2025"
+            },
+            "china_dimension": {
+                "benefits": [
+                    "40%+ of FDI inflows.",
+                    "Financing for Funan Techo Canal.",
+                    "Ream Naval Base development (Chinese ships stationed Dec 2023–May 2024).",
+                    "USD 17.7B total aid by 2024.",
+                    "Diplomatic insulation from Western pressure."
+                ],
+                "costs": [
+                    "Reputational risk on naval base sovereignty.",
+                    "Growing Chinese debt exposure (USD 3.96B of USD 10.23B foreign debt).",
+                    "Vulnerability to China’s economic slowdown.",
+                    "Regional tension with neighbours (Vietnam, Thailand) over canal and security issues."
+                ],
+                "china_cambodia_fta_trade_2025_usd_billion": 19,
+                "agreements_and_initiatives": [
+                    "Xi's 2024 state visit produced 37 new agreements and 'all-weather shared future' pledge.",
+                    "Signed second action plan for China's Global Civilization Initiative under Hun Manet's government."
+                ]
+            },
+            "western_and_regional_pivot": {
+                "state_visits_first_18_months": 18,
+                "destinations": [
+                    "Indonesia",
+                    "China",
+                    "UNGA (United States)",
+                    "France",
+                    "Saudi Arabia",
+                    "Vietnam",
+                    "Japan",
+                    "Switzerland",
+                    "Malaysia",
+                    "Thailand",
+                    "Australia",
+                    "Laos"
+                ],
+                "key_moves": [
+                    "Upgraded Cambodia-Japan relations to Comprehensive Strategic Partnership (2023).",
+                    "Granted Japan unprecedented access to Ream Naval Base (December 2024).",
+                    "Established South Korea-exclusive Special Economic Zone.",
+                    "Joined Trump’s Board of Peace as a founding member (February 2026)."
+                ],
+                "assessment": "Substantive engagements that broaden partnerships, but do not amount to de-alignment from China."
+            },
+            "asean_role": {
+                "description": "ASEAN and RCEP participation framed as core to foreign policy and as a structural hedge.",
+                "function": "Provides legitimising framework for hedging strategy, enabling Cambodia to extract value from China and the West while attributing positioning to regional alignment rather than opportunism."
+            }
+        },
+        "consistency_score": {
+            "method": "Compare stated reasoning with actual budget and decree outcomes.",
+            "scale_definition": {
+                "HIGH": "Behavior reliably predicted by stated reasoning.",
+                "MEDIUM": "Partial alignment with notable gaps.",
+                "LOW": "Stated reasoning largely performative."
+            },
+            "domains": {
+                "economic_diversification": {
+                    "score": "MEDIUM",
+                    "assessment": "Rhetoric strong and diagnosis accurate; meaningful infrastructure and FDI-attracting investment, but core garment dependence remains largely unchanged."
+                },
+                "governance_institutional_reform": {
+                    "score": "LOW",
+                    "assessment": "High reform rhetoric; patronage system preserved and expanded. Institutions widely seen as captured."
+                },
+                "foreign_policy_hedging": {
+                    "score": "HIGH",
+                    "assessment": "Actions closely match multi-vector, hedge-with-all doctrine. Most reliable domain for predictive use of stated reasoning."
+                },
+                "human_capital_priority": {
+                    "score": "MEDIUM",
+                    "assessment": "Real school and infrastructure upgrades, but civil society and independent knowledge ecosystems are repressed."
+                },
+                "anti_corruption": {
+                    "score": "LOW",
+                    "assessment": "Anti-corruption is a stated priority; in practice the judiciary is weaponised against critics and political opponents."
+                },
+                "vision_2050_planning": {
+                    "score": "LOW-MEDIUM",
+                    "assessment": "Long-horizon rhetoric strong, but the 2029 LDC graduation challenge is under-addressed in budget allocation and structural reform."
+                }
+            },
+            "overall_consistency": {
+                "score": "MEDIUM-LOW",
+                "summary": "Stated reasoning is most predictive in foreign policy; least predictive in governance reform and anti-corruption. Economic diversification and human capital sit in the middle: problems are correctly diagnosed and partially funded, but effort is insufficient relative to risk."
+            }
+        }
+    },
+    "synthesis": {
+        "guiding_principles": [
+            {
+                "dimension": "growth_theory",
+                "insight": "Budget priorities will continue to favour FDI-attracting infrastructure (airports, ports, SEZs) over institutional SME development. Garment sector support likely to continue until a credible alternative revenue base exists."
+            },
+            {
+                "dimension": "risk_tolerance",
+                "insight": "Hun Manet is unlikely to accept short-term pain for long-term structural gain voluntarily. Policy experimentation will be gradual, consensus-based, and reversible if politically costly. Crisis responses will be fast on optics, slower on underlying structure."
+            },
+            {
+                "dimension": "time_horizon",
+                "insight": "The 2029 LDC graduation problem is likely to be underplayed until late. External partners should not assume the government has an internal solution to preference loss; evidence suggests it does not."
+            },
+            {
+                "dimension": "dependency_assumptions",
+                "insight": "The live stress scenario is a 'triple squeeze': US tariffs + Chinese slowdown + EBA loss. Cambodia’s BATNA is structurally weaker than its diplomatic posture suggests in any negotiation under this scenario."
+            },
+            {
+                "dimension": "institution_vs_relationship",
+                "insight": "Formal institutions and agreements matter less than who is present in the decision room. The Hun family and CPP inner circle are the true decision nodes. Institutional channels are primarily for legitimation, not actual decision-making."
+            },
+            {
+                "dimension": "global_positioning_logic",
+                "insight": "Cambodia will avoid choosing sides and will keep extracting value from both China and the West. The core question is not alignment but what Cambodia seeks from each engagement: usually investment, trade access, and diplomatic legitimacy."
+            },
+            {
+                "dimension": "consistency_score",
+                "insight": "Foreign policy behaviour is the most reliable predictor of future actions. Domestic governance and reform commitments should be discounted until anchored by concrete budget lines or structural judicial changes."
+            }
+        ],
+        "key_external_analysis_quote": {
+            "quote": "The transition from Hun Sen to Hun Manet was not a break from the past, but rather a strategic generational reset secured through a systematic expansion of state bureaucracy.",
+            "source": "9Dashline analysis, March 2026"
+        },
+        "sources": [
+            "Pentagonal Strategy Phase I",
+            "Prime Minister’s Office speeches, 2023–2026",
+            "East Asia Forum",
+            "Lowy Institute",
+            "The Diplomat",
+            "9Dashline",
+            "Foreign Policy",
+            "Khmer Times",
+            "Freedom House",
+            "Bertelsmann Transformation Index 2024"
+        ]
+    }
+}

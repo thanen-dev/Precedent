@@ -1,0 +1,11 @@
+# Core
+anthropic>=0.49.0
+pydantic>=2.7.0
+
+# Scraping
+requests>=2.32.0
+beautifulsoup4>=4.12.0
+pdfplumber>=0.11.0
+
+# Dev convenience
+python-dotenv>=1.0.0
