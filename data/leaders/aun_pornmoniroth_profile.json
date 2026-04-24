@@ -1,0 +1,70 @@
+{
+    "id": "aun_pornmoniroth",
+    "full_name": "Aun Pornmoniroth",
+    "title": "Deputy Prime Minister; Minister of Economy and Finance",
+    "updated": "2026-04-19",
+    "leader": {
+        "name": "Aun Pornmoniroth",
+        "position": "Deputy Prime Minister; Minister of Economy and Finance",
+        "in_office_since": "2013-09-01",
+        "compiled": "2026-04-19",
+        "based_on": [],
+        "purpose": "Stub profile — to be populated by extractor pipeline"
+    },
+    "dimensions": {
+        "growth_theory": {
+            "core_thesis": null,
+            "stated_theory": null,
+            "revealed_preference": null,
+            "tension": null,
+            "_evidence": []
+        },
+        "risk_tolerance": {
+            "core_thesis": null,
+            "stated_theory": null,
+            "revealed_preference": null,
+            "tension": null,
+            "_evidence": []
+        },
+        "time_horizon": {
+            "core_thesis": null,
+            "stated_theory": null,
+            "revealed_preference": null,
+            "tension": null,
+            "_evidence": []
+        },
+        "dependency_assumptions": {
+            "core_thesis": null,
+            "stated_theory": null,
+            "revealed_preference": null,
+            "tension": null,
+            "_evidence": []
+        },
+        "institution_vs_relationship": {
+            "core_thesis": null,
+            "stated_theory": null,
+            "revealed_preference": null,
+            "tension": null,
+            "_evidence": []
+        },
+        "global_positioning_logic": {
+            "core_thesis": null,
+            "stated_theory": null,
+            "revealed_preference": null,
+            "tension": null,
+            "_evidence": []
+        },
+        "consistency_score": {
+            "core_thesis": null,
+            "stated_theory": null,
+            "revealed_preference": null,
+            "tension": null,
+            "_evidence": []
+        }
+    },
+    "synthesis": {
+        "guiding_principles": [],
+        "key_external_analysis_quote": {"quote": "", "source": ""},
+        "sources": []
+    }
+}

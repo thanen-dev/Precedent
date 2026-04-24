@@ -1,0 +1,183 @@
+[
+  {
+    "case_id": "VNM_WTO_2007",
+    "country": "Vietnam",
+    "period": "2007-2012",
+    "label": "Vietnam WTO accession shock — export surge then structural trap",
+    "category": "trade_liberalisation",
+    "sources": [
+      "World Bank Vietnam Development Report 2008",
+      "IMF Article IV Vietnam 2012",
+      "OECD Vietnam Economic Survey 2009"
+    ],
+    "context": "Vietnam joined the WTO in January 2007 after 11 years of negotiations. The country was a lower-middle-income export economy heavily dependent on garments, footwear, and raw commodities. FDI surged post-accession but concentrated in assembly industries with thin domestic value chains.",
+    "shock_or_trigger": "WTO accession triggered a 40% FDI surge in year 1, but also immediate import competition in agriculture and light manufacturing. Trade deficit widened sharply as imports rose faster than export capability. Inflation hit 23% by 2008, driven partly by commodity imports and credit expansion.",
+    "policy_response": "Government doubled down on FDI attraction via industrial zones rather than SME development. State-owned enterprises (SOEs) were protected and expanded into real estate and finance. Infrastructure investment accelerated. Monetary policy was loose, enabling credit boom.",
+    "outcomes": {
+      "gdp_growth": "GDP growth averaged 6.5% 2007-2012 but volatile",
+      "export_diversification": "Minimal — electronics (Samsung) became dominant by 2012 replacing garments but still concentrated",
+      "fiscal_position": "Deficit widened to 5.5% GDP by 2011",
+      "institutional_development": "Weak — SOE reform stalled, corruption increased with FDI inflows",
+      "poverty_reduction": "Continued but slowed relative to pre-WTO trend"
+    },
+    "causal_mechanisms": [
+      "FDI-led growth without domestic linkages creates an enclave economy",
+      "Trade liberalisation without complementary SME support hollows out domestic manufacturing",
+      "Infrastructure prioritisation over institution-building delays second-stage development",
+      "Single large investor concentration (Samsung in Vietnam) creates fragility"
+    ],
+    "lessons": "Export surge from FDI attraction masks structural dependence. Without domestic capability building and value chain integration, the growth is borrowed — the rents flow out and the economy remains price-competitive only. The 2014-2022 electronics boom disguised that Vietnam's domestic sector never caught up.",
+    "structural_profile": {
+      "trade_preference_dependency": 0.8,
+      "export_concentration": 0.75,
+      "governance_type": "dominant_party_developmental",
+      "development_stage": "lower_middle_income_ascending",
+      "external_market_dependency": 0.85
+    }
+  },
+  {
+    "case_id": "MUS_EPZ_1970_1995",
+    "country": "Mauritius",
+    "period": "1970-1995",
+    "label": "Mauritius Export Processing Zone — managed diversification success",
+    "category": "export_zone_industrialisation",
+    "sources": [
+      "Rodrik 2001 — The Global Governance of Trade as if Development Really Mattered",
+      "IMF Mauritius Article IV 1996",
+      "World Bank Mauritius Economic Memorandum 1992"
+    ],
+    "context": "Mauritius in 1970 was a sugar monoculture island economy with high unemployment and no manufacturing base. The government created Export Processing Zones with tax holidays, cheap labour, and trade preference access to Europe under the Lomé Convention. The strategy deliberately sequenced: EPZ first, services diversification second, financial centre third.",
+    "shock_or_trigger": "Lomé Convention preferences gave Mauritius tariff-free access to the EC for garment exports. This was the initial anchor demand that made the EPZ viable. Without preference margins, the wage cost advantage alone would not have been sufficient.",
+    "policy_response": "Disciplined industrial policy: EPZ operated in parallel with protected domestic sector. Government maintained fiscal surpluses through the boom. Education investment was front-loaded. When EU preferences eroded in the 1990s, the economy pivoted to tourism and financial services — capability built during EPZ phase was redeployed.",
+    "outcomes": {
+      "gdp_growth": "GDP per capita rose from $260 in 1970 to $3,500 in 1995 — 13x in 25 years",
+      "export_diversification": "Moved from 90% sugar to garments (40%), tourism (30%), sugar (20%), services (10%) by 1995",
+      "fiscal_position": "Fiscal surplus maintained throughout most of EPZ period",
+      "institutional_development": "Strong — independent judiciary, democratic elections, rule of law maintained",
+      "poverty_reduction": "Near elimination of absolute poverty by 1990"
+    },
+    "causal_mechanisms": [
+      "Trade preferences provide a temporary comparative advantage window — must be used to build permanent capability",
+      "Sequenced diversification (goods → services → finance) worked because each phase built on prior capabilities",
+      "Fiscal discipline during boom creates buffer for structural transition",
+      "Political stability under competitive democracy enabled long-horizon planning"
+    ],
+    "lessons": "Trade preference windows are time-limited. Mauritius succeeded because it used the preference window to build education, infrastructure, and institutions simultaneously — not just to maximise short-term export revenue. The EPZ itself was a vehicle for capability accumulation, not an end state.",
+    "structural_profile": {
+      "trade_preference_dependency": 0.9,
+      "export_concentration": 0.85,
+      "governance_type": "competitive_democracy_developmental",
+      "development_stage": "low_income_ascending",
+      "external_market_dependency": 0.9
+    }
+  },
+  {
+    "case_id": "BGD_GARMENT_2012",
+    "country": "Bangladesh",
+    "period": "2005-2020",
+    "label": "Bangladesh garment export lock-in — growth without structural transformation",
+    "category": "export_concentration_trap",
+    "sources": [
+      "World Bank Bangladesh Development Update 2019",
+      "ILO Better Work Bangladesh Programme Evaluation 2015",
+      "CPD Bangladesh Economy Report 2020"
+    ],
+    "context": "Bangladesh became the world's second largest garment exporter after China by 2012. The sector employed 4 million workers (80% women) and accounted for 84% of total exports. GDP growth averaged 6-7% consistently. But the economy remained structurally dependent on one sector, one buyer network (EU/US), and one competitive advantage (cheap labour).",
+    "shock_or_trigger": "The 2013 Rana Plaza factory collapse (1,134 dead) triggered Western buyer scrutiny and compliance costs that favoured larger factories, accelerating consolidation. The deeper structural issue was already apparent: despite 20 years of garment growth, Bangladesh had not developed a second export sector at scale.",
+    "policy_response": "Government response was compliance-heavy: factory safety reforms, wage increases, Bangladesh Accord. But no equivalent effort on diversification. Pharmaceutical, leather, and IT sectors received policy attention but not the same concentration of fiscal incentives. RMG continued to absorb most export infrastructure investment.",
+    "outcomes": {
+      "gdp_growth": "Maintained 6-8% through period despite Rana Plaza",
+      "export_diversification": "RMG share of exports remained 83-85% — no meaningful diversification",
+      "fiscal_position": "Stable, remittances provided a second pillar",
+      "institutional_development": "Weak — labour rights remained restricted, political competition constrained",
+      "poverty_reduction": "Significant — poverty rate fell from 40% (2005) to 20% (2020)"
+    },
+    "causal_mechanisms": [
+      "Export concentration creates political economy lock-in — the dominant sector captures trade and labour policy",
+      "Success in one sector crowds out policy bandwidth for diversification",
+      "Low-wage competitive advantage is self-defeating at scale — it resists the wage increases that would force upgrading",
+      "External buyer concentration (EU/US) creates geopolitical vulnerability — GSP/EBA preferences can be withdrawn"
+    ],
+    "lessons": "Bangladesh demonstrates that sustained growth on a single export pillar is achievable for decades — but the longer it runs, the harder structural transformation becomes. The sector's political power grows with its economic share. For Cambodia, the RMG parallel is direct: EBA partial withdrawal in 2020 was the first stress test of a structure Bangladesh faces amplified.",
+    "structural_profile": {
+      "trade_preference_dependency": 0.85,
+      "export_concentration": 0.9,
+      "governance_type": "dominant_party_constrained",
+      "development_stage": "low_middle_income",
+      "external_market_dependency": 0.88
+    }
+  },
+  {
+    "case_id": "LKA_FISCAL_COLLAPSE_2010_2022",
+    "country": "Sri Lanka",
+    "period": "2010-2022",
+    "label": "Sri Lanka infrastructure debt trap — fiscal collapse via prestige project overextension",
+    "category": "infrastructure_debt_trap",
+    "sources": [
+      "IMF Sri Lanka 2022 Article IV and Emergency Financing",
+      "ADB Sri Lanka Country Partnership Strategy 2018",
+      "Chatham House Sri Lanka Debt Analysis 2022"
+    ],
+    "context": "Post-civil war (2009) Sri Lanka embarked on an ambitious infrastructure programme — highways, airports, ports, and power plants — funded heavily by Chinese and international commercial loans at non-concessional rates. The Hambantota Port became the emblematic case. GDP growth was strong 2010-2014 but masked a deteriorating fiscal position.",
+    "shock_or_trigger": "The 2019 Easter Sunday bombings hit tourism (25% of GDP) exactly when the fiscal position was already fragile. COVID-19 in 2020 eliminated tourism revenue entirely. The government responded with tax cuts in late 2019 that further eroded the revenue base. By 2021, foreign reserves were near zero. In 2022, Sri Lanka defaulted on its sovereign debt — the first South Asian country to do so since independence.",
+    "policy_response": "Rajapaksa government doubled down on infrastructure and import substitution (organic farming mandate) rather than IMF engagement. Debt restructuring was delayed by political resistance. When the crisis became acute, the government fell. The new government negotiated an IMF programme — but the terms required deep austerity.",
+    "outcomes": {
+      "gdp_growth": "GDP contracted 7.8% in 2022",
+      "export_diversification": "No meaningful improvement — tourism and garments remained dominant",
+      "fiscal_position": "Sovereign default April 2022 — first in post-independence history",
+      "institutional_development": "Democratic institutions held but severely stressed",
+      "poverty_reduction": "Reversed — poverty rate doubled in 2022"
+    },
+    "causal_mechanisms": [
+      "Non-concessional infrastructure debt creates rigid debt service obligations that crowd out social spending in a downturn",
+      "Prestige projects (airports, ports) that don't generate sufficient revenue exacerbate fiscal fragility",
+      "Revenue concentration in tourism creates catastrophic single-shock vulnerability",
+      "Political resistance to IMF engagement delays adjustment and deepens eventual cost",
+      "Infrastructure prioritisation over fiscal institution-building leaves no buffer"
+    ],
+    "lessons": "The Hambantota model — Chinese-financed infrastructure in exchange for political alignment — is structurally fragile when the host country has a narrow revenue base and high import dependency. The lesson for Cambodia is direct: Funan Techo Canal and similar infrastructure is funded on the assumption of continued growth. If the trade preference base (EBA/GSP) erodes while debt service rises, the fiscal arithmetic can deteriorate faster than the political system can respond.",
+    "structural_profile": {
+      "trade_preference_dependency": 0.6,
+      "export_concentration": 0.7,
+      "governance_type": "dominant_party_populist",
+      "development_stage": "lower_middle_income",
+      "external_market_dependency": 0.75
+    }
+  },
+  {
+    "case_id": "HND_CAFTA_POST_2005",
+    "country": "Honduras",
+    "period": "2005-2018",
+    "label": "Honduras CAFTA integration — preference-dependent maquila growth without upgrading",
+    "category": "trade_agreement_preference_trap",
+    "sources": [
+      "ECLAC Honduras Economic Survey 2015",
+      "World Bank Honduras Systematic Country Diagnostic 2016",
+      "IDB Honduras Trade Integration Report 2018"
+    ],
+    "context": "Honduras joined CAFTA-DR in 2005, gaining preferential access to the US market. The maquila (export processing) sector — primarily garments and textiles — expanded rapidly. Honduras positioned itself as a low-cost assembly hub near the US market. GDP growth was moderate but persistent. The maquila sector employed 170,000 workers at peak.",
+    "shock_or_trigger": "The 2008-2009 global financial crisis hit US import demand sharply. Honduras maquila exports fell 25% in 2009. Recovery was uneven — some capacity relocated to Vietnam and Bangladesh. The structural vulnerability was the lack of any manufacturing capability beyond assembly; the country had not used the preference window to upgrade.",
+    "policy_response": "Government response was to offer additional incentives to retain maquila — tax holidays, cheaper electricity, wage restraint. No parallel strategy for technology-intensive manufacturing or services. The political economy of maquila (strong employer lobby) blocked labour reforms that might have enabled upgrading.",
+    "outcomes": {
+      "gdp_growth": "GDP growth averaged 3.5% 2005-2018 — below regional peers",
+      "export_diversification": "Maquila remained 55% of total exports through 2018",
+      "fiscal_position": "Persistent deficits, high public debt by regional standards",
+      "institutional_development": "Weak — corruption, gang activity, and political instability worsened",
+      "poverty_reduction": "Poverty fell slowly from 65% to 55% — insufficient for income level"
+    },
+    "causal_mechanisms": [
+      "CAFTA preferences created growth but not upgrading — the preference margin was too easily competed away",
+      "Geographic proximity to a large market is an advantage but also a trap — it locks in assembly rather than capability",
+      "Maquila employer lobby captures trade policy, preventing diversification investments",
+      "Weak institutions mean FDI flows into enclaves rather than generating local linkages"
+    ],
+    "lessons": "Honduras demonstrates the ceiling of pure assembly-sector FDI attraction without complementary upgrading. CAFTA gave Honduras preferential market access — equivalent to Cambodia's EBA/ASEAN position — but the country used it to maximise short-term employment rather than long-term capability. The structural lesson for Cambodia: trade preference access that is not actively used to build domestic capability and institutional depth leaves the economy exposed to competitive displacement when the preference margin narrows.",
+    "structural_profile": {
+      "trade_preference_dependency": 0.8,
+      "export_concentration": 0.72,
+      "governance_type": "weak_democratic",
+      "development_stage": "lower_middle_income",
+      "external_market_dependency": 0.82
+    }
+  }
+]

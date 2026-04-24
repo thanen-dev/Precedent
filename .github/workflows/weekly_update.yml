@@ -1,0 +1,121 @@
+name: Weekly update
+
+on:
+  schedule:
+    - cron: "0 0 * * 0"   # every Sunday 00:00 UTC
+  workflow_dispatch:        # allow manual trigger from Actions tab
+
+permissions:
+  contents: write           # needed to commit and push data files
+
+env:
+  ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0    # full history so git push works cleanly
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      # ── scrape ──────────────────────────────────────────────────────────────
+
+      - name: Scrape — Hun Manet
+        run: python scraper/fetch_hun_manet.py
+        continue-on-error: true
+
+      - name: Scrape — Hun Sen
+        run: python scraper/fetch_hun_sen.py
+        continue-on-error: true
+
+      - name: Scrape — Aun Pornmoniroth
+        run: python scraper/fetch_aun_pornmoniroth.py
+        continue-on-error: true
+
+      - name: Scrape — Cham Nimul
+        run: python scraper/fetch_cham_nimul.py
+        continue-on-error: true
+
+      # ── extract new documents ────────────────────────────────────────────────
+      # --next picks the first unprocessed raw file; loop until none remain
+
+      - name: Extract — Hun Manet (all new)
+        run: |
+          while python extractor/run_single_extract.py --next hun_manet 2>/dev/null | grep -q "data/extracted"; do
+            sleep 2
+          done
+        continue-on-error: true
+
+      - name: Extract — Hun Sen (all new)
+        run: |
+          while python extractor/run_single_extract.py --next hun_sen 2>/dev/null | grep -q "data/extracted"; do
+            sleep 2
+          done
+        continue-on-error: true
+
+      - name: Extract — Aun Pornmoniroth (all new)
+        run: |
+          while python extractor/run_single_extract.py --next aun_pornmoniroth 2>/dev/null | grep -q "data/extracted"; do
+            sleep 2
+          done
+        continue-on-error: true
+
+      - name: Extract — Cham Nimul (all new)
+        run: |
+          while python extractor/run_single_extract.py --next cham_nimul 2>/dev/null | grep -q "data/extracted"; do
+            sleep 2
+          done
+        continue-on-error: true
+
+      # ── merge extracted evidence into profiles ───────────────────────────────
+
+      - name: Merge — Hun Manet
+        run: python extractor/merge_profile.py hun_manet
+        continue-on-error: true
+
+      - name: Merge — Hun Sen
+        run: python extractor/merge_profile.py hun_sen
+        continue-on-error: true
+
+      - name: Merge — Aun Pornmoniroth
+        run: python extractor/merge_profile.py aun_pornmoniroth
+        continue-on-error: true
+
+      - name: Merge — Cham Nimul
+        run: python extractor/merge_profile.py cham_nimul
+        continue-on-error: true
+
+      # ── rebuild static site ──────────────────────────────────────────────────
+
+      - name: Build site
+        run: python site/build.py --clean
+
+      # ── commit and push any changes ──────────────────────────────────────────
+
+      - name: Commit and push
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add \
+            data/raw/ \
+            data/extracted/ \
+            data/leaders/ \
+            data/twins/ \
+            data/conflicts/ \
+            site/docs/
+          if git diff --cached --quiet; then
+            echo "Nothing to commit — no changes this week."
+          else
+            git commit -m "chore: weekly update $(date -u +%Y-%m-%d)"
+            git push
+          fi

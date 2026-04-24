@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Twins — Precedent</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:       #0a0a08;
+  --surface:  #111110;
+  --border:   #222220;
+  --text:     #f2f0eb;
+  --muted:    #8a8880;
+  --accent:   #d4930a;
+  --accent-dim: #7a5406;
+  --danger:   #c0392b;
+  --warn:     #d4930a;
+  --ok:       #27ae60;
+
+  --mono: 'IBM Plex Mono', monospace;
+  --sans: 'IBM Plex Sans', system-ui, sans-serif;
+
+  --space-xs: 0.375rem;
+  --space-sm: 0.75rem;
+  --space-md: 1.25rem;
+  --space-lg: 2.5rem;
+  --space-xl: 5rem;
+
+  --radius: 3px;
+}
+
+html { font-size: 16px; scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  font-weight: 300;
+  line-height: 1.65;
+  min-height: 100vh;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ── layout ── */
+.site-header {
+  border-bottom: 1px solid var(--border);
+  padding: var(--space-sm) var(--space-lg);
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+}
+
+.site-header .wordmark {
+  font-family: var(--mono);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.site-header nav {
+  display: flex;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.site-header nav a {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  transition: color 0.15s;
+}
+
+.site-header nav a:hover,
+.site-header nav a.active { color: var(--text); text-decoration: none; }
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: var(--space-xl) var(--space-lg);
+}
+
+.page-heading {
+  font-family: var(--mono);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: var(--space-sm);
+}
+
+h1 {
+  font-size: clamp(1.75rem, 3vw + 1rem, 3rem);
+  font-weight: 300;
+  line-height: 1.2;
+  margin-bottom: var(--space-lg);
+}
+
+h2 {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-bottom: var(--space-sm);
+}
+
+h3 {
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: var(--space-xs);
+}
+
+p { margin-bottom: var(--space-sm); }
+p:last-child { margin-bottom: 0; }
+
+/* ── cards ── */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--space-lg);
+  margin-bottom: var(--space-md);
+}
+
+.card + .card { border-top: none; margin-top: calc(-1 * var(--space-md)); }
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.card-grid .card { margin-bottom: 0; }
+
+/* ── leader card ── */
+.leader-title {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  color: var(--muted);
+  margin-bottom: var(--space-xs);
+}
+
+.leader-name {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: var(--space-sm);
+}
+
+.completeness-bar {
+  height: 2px;
+  background: var(--border);
+  border-radius: 1px;
+  margin-bottom: var(--space-sm);
+  overflow: hidden;
+}
+
+.completeness-bar-fill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 1px;
+}
+
+.completeness-label {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  color: var(--muted);
+  margin-bottom: var(--space-md);
+}
+
+/* ── dimension grid ── */
+.dim-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-sm) var(--space-lg);
+  margin-bottom: var(--space-md);
+}
+
+.dim-item {}
+
+.dim-key {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-dim);
+  margin-bottom: 0.2rem;
+}
+
+.dim-value {
+  font-size: 0.875rem;
+  color: var(--text);
+}
+
+.dim-null {
+  font-size: 0.8rem;
+  color: var(--border);
+  font-style: italic;
+}
+
+/* ── blockquote ── */
+blockquote {
+  border-left: 2px solid var(--accent-dim);
+  padding-left: var(--space-md);
+  margin: var(--space-md) 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+/* ── badges ── */
+.badge {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.2em 0.6em;
+  border-radius: 2px;
+  vertical-align: middle;
+}
+
+.badge-primary   { background: var(--accent-dim); color: var(--accent); }
+.badge-secondary { background: var(--border); color: var(--muted); }
+.badge-high      { background: rgba(192,57,43,0.15); color: var(--danger); }
+.badge-medium    { background: rgba(212,147,10,0.15); color: var(--warn); }
+.badge-low       { background: rgba(39,174,96,0.12); color: var(--ok); }
+
+/* ── case card ── */
+.case-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-md);
+  margin-bottom: var(--space-sm);
+}
+
+.case-id {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  color: var(--accent);
+  margin-bottom: 0.2rem;
+}
+
+.case-period {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  color: var(--muted);
+}
+
+/* ── conflict card ── */
+.conflict-dim {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  color: var(--accent);
+  margin-bottom: var(--space-xs);
+}
+
+.conflict-leaders {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-md);
+  margin: var(--space-md) 0;
+}
+
+.conflict-side h4 {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  color: var(--muted);
+  margin-bottom: var(--space-xs);
+}
+
+.conflict-explanation {
+  border-top: 1px solid var(--border);
+  padding-top: var(--space-md);
+  margin-top: var(--space-md);
+}
+
+.prediction-label {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: var(--space-xs);
+}
+
+/* ── empty state ── */
+.empty-state {
+  text-align: center;
+  padding: var(--space-xl) var(--space-lg);
+  color: var(--muted);
+  border: 1px dashed var(--border);
+  border-radius: var(--radius);
+}
+
+.empty-state code {
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  color: var(--accent-dim);
+}
+
+/* ── source link ── */
+.source-link {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  color: var(--muted);
+}
+
+.source-link a { color: var(--muted); }
+.source-link a:hover { color: var(--accent); }
+
+/* ── score ── */
+.score {
+  font-family: var(--mono);
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--accent);
+}
+
+/* ── stat row ── */
+.stat-row {
+  display: flex;
+  gap: var(--space-xl);
+  margin-bottom: var(--space-lg);
+  flex-wrap: wrap;
+}
+
+.stat { text-align: left; }
+
+.stat-value {
+  font-family: var(--mono);
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--accent);
+  line-height: 1;
+  margin-bottom: 0.25rem;
+}
+
+.stat-label {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* ── mobile ── */
+@media (max-width: 640px) {
+  .container { padding: var(--space-lg) var(--space-md); }
+  .site-header { padding: var(--space-sm) var(--space-md); gap: var(--space-md); }
+  .dim-grid { grid-template-columns: 1fr; }
+  .conflict-leaders { grid-template-columns: 1fr; }
+  .stat-row { gap: var(--space-lg); }
+  .case-header { flex-direction: column; }
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <span class="wordmark">Precedent</span>
+  <nav><a href="index.html" class="">Index</a> <a href="leaders.html" class="">Leaders</a> <a href="cases.html" class="">Cases</a> <a href="twins.html" class="active">Twins</a> <a href="conflicts.html" class="">Conflicts</a></nav>
+</header>
+<div class="container">
+  <div class="page-heading">Twin Matches</div>
+  <h1>Structural twins</h1>
+  <div class="empty-state">
+    <p>No twin matches yet.</p>
+    <p style="margin-top:.75rem"><code>python extractor/twin_matcher.py "signal text" --leader hun_manet</code></p>
+  </div>
+</div>
+</body>
+</html>

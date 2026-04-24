@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cases — Precedent</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:       #0a0a08;
+  --surface:  #111110;
+  --border:   #222220;
+  --text:     #f2f0eb;
+  --muted:    #8a8880;
+  --accent:   #d4930a;
+  --accent-dim: #7a5406;
+  --danger:   #c0392b;
+  --warn:     #d4930a;
+  --ok:       #27ae60;
+
+  --mono: 'IBM Plex Mono', monospace;
+  --sans: 'IBM Plex Sans', system-ui, sans-serif;
+
+  --space-xs: 0.375rem;
+  --space-sm: 0.75rem;
+  --space-md: 1.25rem;
+  --space-lg: 2.5rem;
+  --space-xl: 5rem;
+
+  --radius: 3px;
+}
+
+html { font-size: 16px; scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  font-weight: 300;
+  line-height: 1.65;
+  min-height: 100vh;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ── layout ── */
+.site-header {
+  border-bottom: 1px solid var(--border);
+  padding: var(--space-sm) var(--space-lg);
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+}
+
+.site-header .wordmark {
+  font-family: var(--mono);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.site-header nav {
+  display: flex;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.site-header nav a {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  transition: color 0.15s;
+}
+
+.site-header nav a:hover,
+.site-header nav a.active { color: var(--text); text-decoration: none; }
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: var(--space-xl) var(--space-lg);
+}
+
+.page-heading {
+  font-family: var(--mono);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: var(--space-sm);
+}
+
+h1 {
+  font-size: clamp(1.75rem, 3vw + 1rem, 3rem);
+  font-weight: 300;
+  line-height: 1.2;
+  margin-bottom: var(--space-lg);
+}
+
+h2 {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-bottom: var(--space-sm);
+}
+
+h3 {
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: var(--space-xs);
+}
+
+p { margin-bottom: var(--space-sm); }
+p:last-child { margin-bottom: 0; }
+
+/* ── cards ── */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--space-lg);
+  margin-bottom: var(--space-md);
+}
+
+.card + .card { border-top: none; margin-top: calc(-1 * var(--space-md)); }
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.card-grid .card { margin-bottom: 0; }
+
+/* ── leader card ── */
+.leader-title {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  color: var(--muted);
+  margin-bottom: var(--space-xs);
+}
+
+.leader-name {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: var(--space-sm);
+}
+
+.completeness-bar {
+  height: 2px;
+  background: var(--border);
+  border-radius: 1px;
+  margin-bottom: var(--space-sm);
+  overflow: hidden;
+}
+
+.completeness-bar-fill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 1px;
+}
+
+.completeness-label {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  color: var(--muted);
+  margin-bottom: var(--space-md);
+}
+
+/* ── dimension grid ── */
+.dim-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-sm) var(--space-lg);
+  margin-bottom: var(--space-md);
+}
+
+.dim-item {}
+
+.dim-key {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-dim);
+  margin-bottom: 0.2rem;
+}
+
+.dim-value {
+  font-size: 0.875rem;
+  color: var(--text);
+}
+
+.dim-null {
+  font-size: 0.8rem;
+  color: var(--border);
+  font-style: italic;
+}
+
+/* ── blockquote ── */
+blockquote {
+  border-left: 2px solid var(--accent-dim);
+  padding-left: var(--space-md);
+  margin: var(--space-md) 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+/* ── badges ── */
+.badge {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.2em 0.6em;
+  border-radius: 2px;
+  vertical-align: middle;
+}
+
+.badge-primary   { background: var(--accent-dim); color: var(--accent); }
+.badge-secondary { background: var(--border); color: var(--muted); }
+.badge-high      { background: rgba(192,57,43,0.15); color: var(--danger); }
+.badge-medium    { background: rgba(212,147,10,0.15); color: var(--warn); }
+.badge-low       { background: rgba(39,174,96,0.12); color: var(--ok); }
+
+/* ── case card ── */
+.case-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-md);
+  margin-bottom: var(--space-sm);
+}
+
+.case-id {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  color: var(--accent);
+  margin-bottom: 0.2rem;
+}
+
+.case-period {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  color: var(--muted);
+}
+
+/* ── conflict card ── */
+.conflict-dim {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  color: var(--accent);
+  margin-bottom: var(--space-xs);
+}
+
+.conflict-leaders {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-md);
+  margin: var(--space-md) 0;
+}
+
+.conflict-side h4 {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  color: var(--muted);
+  margin-bottom: var(--space-xs);
+}
+
+.conflict-explanation {
+  border-top: 1px solid var(--border);
+  padding-top: var(--space-md);
+  margin-top: var(--space-md);
+}
+
+.prediction-label {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: var(--space-xs);
+}
+
+/* ── empty state ── */
+.empty-state {
+  text-align: center;
+  padding: var(--space-xl) var(--space-lg);
+  color: var(--muted);
+  border: 1px dashed var(--border);
+  border-radius: var(--radius);
+}
+
+.empty-state code {
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  color: var(--accent-dim);
+}
+
+/* ── source link ── */
+.source-link {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  color: var(--muted);
+}
+
+.source-link a { color: var(--muted); }
+.source-link a:hover { color: var(--accent); }
+
+/* ── score ── */
+.score {
+  font-family: var(--mono);
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--accent);
+}
+
+/* ── stat row ── */
+.stat-row {
+  display: flex;
+  gap: var(--space-xl);
+  margin-bottom: var(--space-lg);
+  flex-wrap: wrap;
+}
+
+.stat { text-align: left; }
+
+.stat-value {
+  font-family: var(--mono);
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--accent);
+  line-height: 1;
+  margin-bottom: 0.25rem;
+}
+
+.stat-label {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* ── mobile ── */
+@media (max-width: 640px) {
+  .container { padding: var(--space-lg) var(--space-md); }
+  .site-header { padding: var(--space-sm) var(--space-md); gap: var(--space-md); }
+  .dim-grid { grid-template-columns: 1fr; }
+  .conflict-leaders { grid-template-columns: 1fr; }
+  .stat-row { gap: var(--space-lg); }
+  .case-header { flex-direction: column; }
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <span class="wordmark">Precedent</span>
+  <nav><a href="index.html" class="">Index</a> <a href="leaders.html" class="">Leaders</a> <a href="cases.html" class="active">Cases</a> <a href="twins.html" class="">Twins</a> <a href="conflicts.html" class="">Conflicts</a></nav>
+</header>
+<div class="container">
+  <div class="page-heading">Historical Cases</div>
+  <h1>Structural analogues</h1>
+  
+<div class="card" id="VNM_WTO_2007">
+  <div class="case-header">
+    <div>
+      <div class="case-id">VNM_WTO_2007</div>
+      <h2>Vietnam WTO accession shock — export surge then structural trap</h2>
+      <div class="case-period">Vietnam · 2007-2012 · <span class="badge badge-secondary">trade_liberalisation</span></div>
+    </div>
+  </div>
+  <div style="margin-bottom:var(--space-md)"><span class="badge badge-secondary">trade preference dependency: 0.8</span> <span class="badge badge-secondary">export concentration: 0.75</span> <span class="badge badge-secondary">governance type: dominant_party_developmental</span> <span class="badge badge-secondary">development stage: lower_middle_income_ascending</span> <span class="badge badge-secondary">external market dependency: 0.85</span></div>
+  <h3>Context</h3>
+  <p style="font-size:.875rem;margin-bottom:var(--space-md)">Vietnam joined the WTO in January 2007 after 11 years of negotiations. The country was a lower-middle-income export economy heavily dependent on garments, footwear, and raw commodities. FDI surged post-accession but concentrated in assembly industries with thin domestic value chains.</p>
+  <h3>Trigger</h3>
+  <p style="font-size:.875rem;margin-bottom:var(--space-md)">WTO accession triggered a 40% FDI surge in year 1, but also immediate import competition in agriculture and light manufacturing. Trade deficit widened sharply as imports rose faster than export capability. Inflation hit 23% by 2008, driven partly by commodity imports and credit expansion.</p>
+  <table style='width:100%;border-collapse:collapse;margin-bottom:var(--space-md)'><tr><td style='font-family:var(--mono);font-size:.65rem;color:var(--muted);padding:.25rem .5rem .25rem 0'>gdp growth</td><td style='font-size:.8rem;padding:.25rem 0'>GDP growth averaged 6.5% 2007-2012 but volatile</td></tr><tr><td style='font-family:var(--mono);font-size:.65rem;color:var(--muted);padding:.25rem .5rem .25rem 0'>export diversification</td><td style='font-size:.8rem;padding:.25rem 0'>Minimal — electronics (Samsung) became dominant by 2012 replacing garments but still concentrated</td></tr><tr><td style='font-family:var(--mono);font-size:.65rem;color:var(--muted);padding:.25rem .5rem .25rem 0'>fiscal position</td><td style='font-size:.8rem;padding:.25rem 0'>Deficit widened to 5.5% GDP by 2011</td></tr><tr><td style='font-family:var(--mono);font-size:.65rem;color:var(--muted);padding:.25rem .5rem .25rem 0'>institutional development</td><td style='font-size:.8rem;padding:.25rem 0'>Weak — SOE reform stalled, corruption increased with FDI inflows</td></tr><tr><td style='font-family:var(--mono);font-size:.65rem;color:var(--muted);padding:.25rem .5rem .25rem 0'>poverty reduction</td><td style='font-size:.8rem;padding:.25rem 0'>Continued but slowed relative to pre-WTO trend</td></tr></table>
+  <h3>Causal mechanisms</h3><ul style='padding-left:1.25rem;margin-bottom:var(--space-md)'><li style='margin-bottom:.375rem'>FDI-led growth without domestic linkages creates an enclave economy</li><li style='margin-bottom:.375rem'>Trade liberalisation without complementary SME support hollows out domestic manufacturing</li><li style='margin-bottom:.375rem'>Infrastructure prioritisation over institution-building delays second-stage development</li><li style='margin-bottom:.375rem'>Single large investor concentration (Samsung in Vietnam) creates fragility</li></ul>
+  <h3>Lesson for Cambodia</h3>
+  <p style="font-size:.875rem;margin-bottom:var(--space-md)">Export surge from FDI attraction masks structural dependence. Without domestic capability building and value chain integration, the growth is borrowed — the rents flow out and the economy remains price-competitive only. The 2014-2022 electronics boom disguised that Vietnam&#x27;s domestic sector never caught up.</p>
+  <div class="source-link"><span>World Bank Vietnam Development Report 2008</span> · <span>IMF Article IV Vietnam 2012</span> · <span>OECD Vietnam Economic Survey 2009</span></div>
+</div>
+<div class="card" id="MUS_EPZ_1970_1995">
+  <div class="case-header">
+    <div>
+      <div class="case-id">MUS_EPZ_1970_1995</div>
+      <h2>Mauritius Export Processing Zone — managed diversification success</h2>
+      <div class="case-period">Mauritius · 1970-1995 · <span class="badge badge-secondary">export_zone_industrialisation</span></div>
+    </div>
+  </div>
+  <div style="margin-bottom:var(--space-md)"><span class="badge badge-secondary">trade preference dependency: 0.9</span> <span class="badge badge-secondary">export concentration: 0.85</span> <span class="badge badge-secondary">governance type: competitive_democracy_developmental</span> <span class="badge badge-secondary">development stage: low_income_ascending</span> <span class="badge badge-secondary">external market dependency: 0.9</span></div>
+  <h3>Context</h3>
+  <p style="font-size:.875rem;margin-bottom:var(--space-md)">Mauritius in 1970 was a sugar monoculture island economy with high unemployment and no manufacturing base. The government created Export Processing Zones with tax holidays, cheap labour, and trade preference access to Europe under the Lomé Convention. The strategy deliberately sequenced: EPZ first, services diversification second, financial centre third.</p>
+  <h3>Trigger</h3>
+  <p style="font-size:.875rem;margin-bottom:var(--space-md)">Lomé Convention preferences gave Mauritius tariff-free access to the EC for garment exports. This was the initial anchor demand that made the EPZ viable. Without preference margins, the wage cost advantage alone would not have been sufficient.</p>
+  <table style='width:100%;border-collapse:collapse;margin-bottom:var(--space-md)'><tr><td style='font-family:var(--mono);font-size:.65rem;color:var(--muted);padding:.25rem .5rem .25rem 0'>gdp growth</td><td style='font-size:.8rem;padding:.25rem 0'>GDP per capita rose from $260 in 1970 to $3,500 in 1995 — 13x in 25 years</td></tr><tr><td style='font-family:var(--mono);font-size:.65rem;color:var(--muted);padding:.25rem .5rem .25rem 0'>export diversification</td><td style='font-size:.8rem;padding:.25rem 0'>Moved from 90% sugar to garments (40%), tourism (30%), sugar (20%), services (10%) by 1995</td></tr><tr><td style='font-family:var(--mono);font-size:.65rem;color:var(--muted);padding:.25rem .5rem .25rem 0'>fiscal position</td><td style='font-size:.8rem;padding:.25rem 0'>Fiscal surplus maintained throughout most of EPZ period</td></tr><tr><td style='font-family:var(--mono);font-size:.65rem;color:var(--muted);padding:.25rem .5rem .25rem 0'>institutional development</td><td style='font-size:.8rem;padding:.25rem 0'>Strong — independent judiciary, democratic elections, rule of law maintained</td></tr><tr><td style='font-family:var(--mono);font-size:.65rem;color:var(--muted);padding:.25rem .5rem .25rem 0'>poverty reduction</td><td style='font-size:.8rem;padding:.25rem 0'>Near elimination of absolute poverty by 1990</td></tr></table>
+  <h3>Causal mechanisms</h3><ul style='padding-left:1.25rem;margin-bottom:var(--space-md)'><li style='margin-bottom:.375rem'>Trade preferences provide a temporary comparative advantage window — must be used to build permanent capability</li><li style='margin-bottom:.375rem'>Sequenced diversification (goods → services → finance) worked because each phase built on prior capabilities</li><li style='margin-bottom:.375rem'>Fiscal discipline during boom creates buffer for structural transition</li><li style='margin-bottom:.375rem'>Political stability under competitive democracy enabled long-horizon planning</li></ul>
+  <h3>Lesson for Cambodia</h3>
+  <p style="font-size:.875rem;margin-bottom:var(--space-md)">Trade preference windows are time-limited. Mauritius succeeded because it used the preference window to build education, infrastructure, and institutions simultaneously — not just to maximise short-term export revenue. The EPZ itself was a vehicle for capability accumulation, not an end state.</p>
+  <div class="source-link"><span>Rodrik 2001 — The Global Governance of Trade as if Development Really Mattered</span> · <span>IMF Mauritius Article IV 1996</span> · <span>World Bank Mauritius Economic Memorandum 1992</span></div>
+</div>
+<div class="card" id="BGD_GARMENT_2012">
+  <div class="case-header">
+    <div>
+      <div class="case-id">BGD_GARMENT_2012</div>
+      <h2>Bangladesh garment export lock-in — growth without structural transformation</h2>
+      <div class="case-period">Bangladesh · 2005-2020 · <span class="badge badge-secondary">export_concentration_trap</span></div>
+    </div>
+  </div>
+  <div style="margin-bottom:var(--space-md)"><span class="badge badge-secondary">trade preference dependency: 0.85</span> <span class="badge badge-secondary">export concentration: 0.9</span> <span class="badge badge-secondary">governance type: dominant_party_constrained</span> <span class="badge badge-secondary">development stage: low_middle_income</span> <span class="badge badge-secondary">external market dependency: 0.88</span></div>
+  <h3>Context</h3>
+  <p style="font-size:.875rem;margin-bottom:var(--space-md)">Bangladesh became the world&#x27;s second largest garment exporter after China by 2012. The sector employed 4 million workers (80% women) and accounted for 84% of total exports. GDP growth averaged 6-7% consistently. But the economy remained structurally dependent on one sector, one buyer network (EU/US), and one competitive advantage (cheap labour).</p>
+  <h3>Trigger</h3>
+  <p style="font-size:.875rem;margin-bottom:var(--space-md)">The 2013 Rana Plaza factory collapse (1,134 dead) triggered Western buyer scrutiny and compliance costs that favoured larger factories, accelerating consolidation. The deeper structural issue was already apparent: despite 20 years of garment growth, Bangladesh had not developed a second export sector at scale.</p>
+  <table style='width:100%;border-collapse:collapse;margin-bottom:var(--space-md)'><tr><td style='font-family:var(--mono);font-size:.65rem;color:var(--muted);padding:.25rem .5rem .25rem 0'>gdp growth</td><td style='font-size:.8rem;padding:.25rem 0'>Maintained 6-8% through period despite Rana Plaza</td></tr><tr><td style='font-family:var(--mono);font-size:.65rem;color:var(--muted);padding:.25rem .5rem .25rem 0'>export diversification</td><td style='font-size:.8rem;padding:.25rem 0'>RMG share of exports remained 83-85% — no meaningful diversification</td></tr><tr><td style='font-family:var(--mono);font-size:.65rem;color:var(--muted);padding:.25rem .5rem .25rem 0'>fiscal position</td><td style='font-size:.8rem;padding:.25rem 0'>Stable, remittances provided a second pillar</td></tr><tr><td style='font-family:var(--mono);font-size:.65rem;color:var(--muted);padding:.25rem .5rem .25rem 0'>institutional development</td><td style='font-size:.8rem;padding:.25rem 0'>Weak — labour rights remained restricted, political competition constrained</td></tr><tr><td style='font-family:var(--mono);font-size:.65rem;color:var(--muted);padding:.25rem .5rem .25rem 0'>poverty reduction</td><td style='font-size:.8rem;padding:.25rem 0'>Significant — poverty rate fell from 40% (2005) to 20% (2020)</td></tr></table>
+  <h3>Causal mechanisms</h3><ul style='padding-left:1.25rem;margin-bottom:var(--space-md)'><li style='margin-bottom:.375rem'>Export concentration creates political economy lock-in — the dominant sector captures trade and labour policy</li><li style='margin-bottom:.375rem'>Success in one sector crowds out policy bandwidth for diversification</li><li style='margin-bottom:.375rem'>Low-wage competitive advantage is self-defeating at scale — it resists the wage increases that would force upgrading</li><li style='margin-bottom:.375rem'>External buyer concentration (EU/US) creates geopolitical vulnerability — GSP/EBA preferences can be withdrawn</li></ul>
+  <h3>Lesson for Cambodia</h3>
+  <p style="font-size:.875rem;margin-bottom:var(--space-md)">Bangladesh demonstrates that sustained growth on a single export pillar is achievable for decades — but the longer it runs, the harder structural transformation becomes. The sector&#x27;s political power grows with its economic share. For Cambodia, the RMG parallel is direct: EBA partial withdrawal in 2020 was the first stress test of a structure Bangladesh faces amplified.</p>
+  <div class="source-link"><span>World Bank Bangladesh Development Update 2019</span> · <span>ILO Better Work Bangladesh Programme Evaluation 2015</span> · <span>CPD Bangladesh Economy Report 2020</span></div>
+</div>
+<div class="card" id="LKA_FISCAL_COLLAPSE_2010_2022">
+  <div class="case-header">
+    <div>
+      <div class="case-id">LKA_FISCAL_COLLAPSE_2010_2022</div>
+      <h2>Sri Lanka infrastructure debt trap — fiscal collapse via prestige project overextension</h2>
+      <div class="case-period">Sri Lanka · 2010-2022 · <span class="badge badge-secondary">infrastructure_debt_trap</span></div>
+    </div>
+  </div>
+  <div style="margin-bottom:var(--space-md)"><span class="badge badge-secondary">trade preference dependency: 0.6</span> <span class="badge badge-secondary">export concentration: 0.7</span> <span class="badge badge-secondary">governance type: dominant_party_populist</span> <span class="badge badge-secondary">development stage: lower_middle_income</span> <span class="badge badge-secondary">external market dependency: 0.75</span></div>
+  <h3>Context</h3>
+  <p style="font-size:.875rem;margin-bottom:var(--space-md)">Post-civil war (2009) Sri Lanka embarked on an ambitious infrastructure programme — highways, airports, ports, and power plants — funded heavily by Chinese and international commercial loans at non-concessional rates. The Hambantota Port became the emblematic case. GDP growth was strong 2010-2014 but masked a deteriorating fiscal position.</p>
+  <h3>Trigger</h3>
+  <p style="font-size:.875rem;margin-bottom:var(--space-md)">The 2019 Easter Sunday bombings hit tourism (25% of GDP) exactly when the fiscal position was already fragile. COVID-19 in 2020 eliminated tourism revenue entirely. The government responded with tax cuts in late 2019 that further eroded the revenue base. By 2021, foreign reserves were near zero. In 2022, Sri Lanka defaulted on its sovereign debt — the first South Asian country to do so since independence.</p>
+  <table style='width:100%;border-collapse:collapse;margin-bottom:var(--space-md)'><tr><td style='font-family:var(--mono);font-size:.65rem;color:var(--muted);padding:.25rem .5rem .25rem 0'>gdp growth</td><td style='font-size:.8rem;padding:.25rem 0'>GDP contracted 7.8% in 2022</td></tr><tr><td style='font-family:var(--mono);font-size:.65rem;color:var(--muted);padding:.25rem .5rem .25rem 0'>export diversification</td><td style='font-size:.8rem;padding:.25rem 0'>No meaningful improvement — tourism and garments remained dominant</td></tr><tr><td style='font-family:var(--mono);font-size:.65rem;color:var(--muted);padding:.25rem .5rem .25rem 0'>fiscal position</td><td style='font-size:.8rem;padding:.25rem 0'>Sovereign default April 2022 — first in post-independence history</td></tr><tr><td style='font-family:var(--mono);font-size:.65rem;color:var(--muted);padding:.25rem .5rem .25rem 0'>institutional development</td><td style='font-size:.8rem;padding:.25rem 0'>Democratic institutions held but severely stressed</td></tr><tr><td style='font-family:var(--mono);font-size:.65rem;color:var(--muted);padding:.25rem .5rem .25rem 0'>poverty reduction</td><td style='font-size:.8rem;padding:.25rem 0'>Reversed — poverty rate doubled in 2022</td></tr></table>
+  <h3>Causal mechanisms</h3><ul style='padding-left:1.25rem;margin-bottom:var(--space-md)'><li style='margin-bottom:.375rem'>Non-concessional infrastructure debt creates rigid debt service obligations that crowd out social spending in a downturn</li><li style='margin-bottom:.375rem'>Prestige projects (airports, ports) that don&#x27;t generate sufficient revenue exacerbate fiscal fragility</li><li style='margin-bottom:.375rem'>Revenue concentration in tourism creates catastrophic single-shock vulnerability</li><li style='margin-bottom:.375rem'>Political resistance to IMF engagement delays adjustment and deepens eventual cost</li><li style='margin-bottom:.375rem'>Infrastructure prioritisation over fiscal institution-building leaves no buffer</li></ul>
+  <h3>Lesson for Cambodia</h3>
+  <p style="font-size:.875rem;margin-bottom:var(--space-md)">The Hambantota model — Chinese-financed infrastructure in exchange for political alignment — is structurally fragile when the host country has a narrow revenue base and high import dependency. The lesson for Cambodia is direct: Funan Techo Canal and similar infrastructure is funded on the assumption of continued growth. If the trade preference base (EBA/GSP) erodes while debt service rises, the fiscal arithmetic can deteriorate faster than the political system can respond.</p>
+  <div class="source-link"><span>IMF Sri Lanka 2022 Article IV and Emergency Financing</span> · <span>ADB Sri Lanka Country Partnership Strategy 2018</span> · <span>Chatham House Sri Lanka Debt Analysis 2022</span></div>
+</div>
+<div class="card" id="HND_CAFTA_POST_2005">
+  <div class="case-header">
+    <div>
+      <div class="case-id">HND_CAFTA_POST_2005</div>
+      <h2>Honduras CAFTA integration — preference-dependent maquila growth without upgrading</h2>
+      <div class="case-period">Honduras · 2005-2018 · <span class="badge badge-secondary">trade_agreement_preference_trap</span></div>
+    </div>
+  </div>
+  <div style="margin-bottom:var(--space-md)"><span class="badge badge-secondary">trade preference dependency: 0.8</span> <span class="badge badge-secondary">export concentration: 0.72</span> <span class="badge badge-secondary">governance type: weak_democratic</span> <span class="badge badge-secondary">development stage: lower_middle_income</span> <span class="badge badge-secondary">external market dependency: 0.82</span></div>
+  <h3>Context</h3>
+  <p style="font-size:.875rem;margin-bottom:var(--space-md)">Honduras joined CAFTA-DR in 2005, gaining preferential access to the US market. The maquila (export processing) sector — primarily garments and textiles — expanded rapidly. Honduras positioned itself as a low-cost assembly hub near the US market. GDP growth was moderate but persistent. The maquila sector employed 170,000 workers at peak.</p>
+  <h3>Trigger</h3>
+  <p style="font-size:.875rem;margin-bottom:var(--space-md)">The 2008-2009 global financial crisis hit US import demand sharply. Honduras maquila exports fell 25% in 2009. Recovery was uneven — some capacity relocated to Vietnam and Bangladesh. The structural vulnerability was the lack of any manufacturing capability beyond assembly; the country had not used the preference window to upgrade.</p>
+  <table style='width:100%;border-collapse:collapse;margin-bottom:var(--space-md)'><tr><td style='font-family:var(--mono);font-size:.65rem;color:var(--muted);padding:.25rem .5rem .25rem 0'>gdp growth</td><td style='font-size:.8rem;padding:.25rem 0'>GDP growth averaged 3.5% 2005-2018 — below regional peers</td></tr><tr><td style='font-family:var(--mono);font-size:.65rem;color:var(--muted);padding:.25rem .5rem .25rem 0'>export diversification</td><td style='font-size:.8rem;padding:.25rem 0'>Maquila remained 55% of total exports through 2018</td></tr><tr><td style='font-family:var(--mono);font-size:.65rem;color:var(--muted);padding:.25rem .5rem .25rem 0'>fiscal position</td><td style='font-size:.8rem;padding:.25rem 0'>Persistent deficits, high public debt by regional standards</td></tr><tr><td style='font-family:var(--mono);font-size:.65rem;color:var(--muted);padding:.25rem .5rem .25rem 0'>institutional development</td><td style='font-size:.8rem;padding:.25rem 0'>Weak — corruption, gang activity, and political instability worsened</td></tr><tr><td style='font-family:var(--mono);font-size:.65rem;color:var(--muted);padding:.25rem .5rem .25rem 0'>poverty reduction</td><td style='font-size:.8rem;padding:.25rem 0'>Poverty fell slowly from 65% to 55% — insufficient for income level</td></tr></table>
+  <h3>Causal mechanisms</h3><ul style='padding-left:1.25rem;margin-bottom:var(--space-md)'><li style='margin-bottom:.375rem'>CAFTA preferences created growth but not upgrading — the preference margin was too easily competed away</li><li style='margin-bottom:.375rem'>Geographic proximity to a large market is an advantage but also a trap — it locks in assembly rather than capability</li><li style='margin-bottom:.375rem'>Maquila employer lobby captures trade policy, preventing diversification investments</li><li style='margin-bottom:.375rem'>Weak institutions mean FDI flows into enclaves rather than generating local linkages</li></ul>
+  <h3>Lesson for Cambodia</h3>
+  <p style="font-size:.875rem;margin-bottom:var(--space-md)">Honduras demonstrates the ceiling of pure assembly-sector FDI attraction without complementary upgrading. CAFTA gave Honduras preferential market access — equivalent to Cambodia&#x27;s EBA/ASEAN position — but the country used it to maximise short-term employment rather than long-term capability. The structural lesson for Cambodia: trade preference access that is not actively used to build domestic capability and institutional depth leaves the economy exposed to competitive displacement when the preference margin narrows.</p>
+  <div class="source-link"><span>ECLAC Honduras Economic Survey 2015</span> · <span>World Bank Honduras Systematic Country Diagnostic 2016</span> · <span>IDB Honduras Trade Integration Report 2018</span></div>
+</div>
+</div>
+</body>
+</html>
