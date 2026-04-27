@@ -1,0 +1,25 @@
+{
+  "signal": "Cambodia's US tariff response under Trump 2.0: 49% tariff on Cambodian exports signals need for rapid trade partner diversification beyond US market",
+  "leader_id": "sun_chanthol",
+  "matches": [
+    {
+      "case_id": "HND_CAFTA_POST_2005",
+      "country": "Honduras",
+      "similarity_score": 0.87,
+      "similarity_rationale": "Honduras is structurally near-identical to Cambodia's current position: a small lower-middle-income economy with a dominant assembly-sector export base (maquila/garments), deep US market dependency, preferential access as the primary competitive anchor, and no domestic value-chain depth to absorb external shocks. The 49% Trump tariff on Cambodia directly mirrors the logic of CAFTA preference erosion — in both cases the margin that made the assembly sector viable is compressed by external policy action outside the host country's control. Sun Chanthol's China-Cambodia co-chair role compounds the Honduras parallel: Honduras also lacked a credible alternative anchor market when US demand contracted.",
+      "outcome_summary": "Honduras maquila exports fell 25% during the 2008-2009 US demand shock, some capacity relocated permanently to Vietnam and Bangladesh, and the country never developed a second export sector at scale. The preference window created by CAFTA was used to maximise employment rather than upgrade capabilities, leaving Honduras structurally exposed to competitive displacement.",
+      "cambodia_lesson": "Cambodia must treat the 49% tariff not as a negotiating episode but as the permanent end of US-market-as-primary-anchor; the diversification window is narrow and must be used immediately to build EU, ASEAN, and RCEP buyer relationships with concrete product-upgrading commitments — not just redirected assembly — before Vietnamese and Bangladeshi competitors absorb the displaced US buyer demand that Cambodia will lose.",
+      "risk_flag": "HIGH"
+    },
+    {
+      "case_id": "MUS_EPZ_1970_1995",
+      "country": "Mauritius",
+      "similarity_score": 0.79,
+      "similarity_rationale": "Mauritius at the moment of Lomé Convention preference compression faced the structurally analogous challenge Cambodia now faces: a single-sector export economy (sugar/garments) with near-total external market dependency, where the preference margin anchoring viability was being narrowed by external trade policy shifts. The Mauritius case is the only documented instance in this dataset where a small, governance-constrained, preference-dependent economy successfully executed diversification under time pressure. Sun Chanthol's developmental-state posture at CDC is the institutional equivalent of the Mauritian state's sequenced EPZ-to-services strategy, making the governance analogy actionable rather than merely structural.",
+      "outcome_summary": "Mauritius successfully diversified from sugar monoculture to garment EPZ to financial services and tourism over 25 years, using the Lomé preference window to simultaneously build education, infrastructure, and institutions rather than purely maximise export revenue. It is the only low-income preference-dependent economy in this dataset that avoided the structural trap.",
+      "cambodia_lesson": "The single transferable lesson from Mauritius is sequencing discipline: Cambodia must use whatever preference window remains — EBA, RCEP, bilateral negotiations — not to maximise garment throughput but to fund and build the next-tier capability simultaneously; the Funan Canal and SEZ infrastructure investments only create diversification value if they are paired with deliberate sector-targeting (electronics, agro-processing, digital services) that Sun Chanthol's CDC can operationalise through investment incentive restructuring now.",
+      "risk_flag": "MEDIUM"
+    }
+  ],
+  "analysis_date": "2026-04-27"
+}

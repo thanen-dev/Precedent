@@ -1,0 +1,33 @@
+{
+  "leaders_compared": [
+    "sun_chanthol",
+    "chea_serey"
+  ],
+  "conflicts": [
+    {
+      "dimension": "global_positioning_logic",
+      "leader_a": "sun_chanthol",
+      "leader_a_position": "Chanthol's doctrine is to make Cambodia the most frictionless manufacturing bridge for any origin country — explicitly multi-vector and commercially grounded, selling Cambodia to Western, Japanese, Korean, Australian, and Chinese investors simultaneously as a neutral platform.",
+      "leader_a_quote": "Cambodia as the most frictionless manufacturing bridge between East and West",
+      "leader_b": "chea_serey",
+      "leader_b_position": "Serey's doctrine is to reduce Cambodia's dependence on dollar-intermediated settlement and build riel-denominated regional payment infrastructure as a monetary sovereignty project, explicitly reducing reliance on the US dollar system that underpins most Western FDI and trade finance.",
+      "leader_b_quote": "Cross-border QR links... all settled in riel — reduce Cambodia's dependence on dollar-intermediated settlement",
+      "conflict_explanation": "Chanthol's FDI attraction model depends on Cambodia being maximally legible and low-friction to Western and Japanese multinationals, whose supply chain finance, trade credit, and repatriation flows are almost entirely dollar-denominated. Serey's de-dollarisation agenda systematically dismantles the dollar infrastructure those same investors rely on. A foreign manufacturer evaluating Cambodia as an export platform needs confidence that dollar-denominated contracts, payroll, and profit repatriation will remain operationally simple. Active de-dollarisation — riel-denominated loan requirements, riel-settled cross-border payments, NBC data visibility into transactions — introduces exactly the currency friction and regulatory uncertainty that Chanthol's frictionless platform doctrine promises to eliminate. Both cannot be simultaneously maximised: every incremental success for Serey's riel promotion is an incremental increase in the operational cost and uncertainty that Chanthol must overcome to close the next FDI deal.",
+      "implementation_risk": "HIGH",
+      "prediction": "A large Western or Japanese manufacturer conducting due diligence on a Cambodia manufacturing hub will receive conflicting signals from CDC (dollar-friendly, stable incentives, easy repatriation) and NBC (riel-denomination requirements expanding, dollar loan restrictions tightening). The breaking point will be a publicised deal that stalls or relocates — most likely to Vietnam or Indonesia — when treasury teams flag the currency transition risk, forcing a cabinet-level decision on whether FDI attraction or monetary sovereignty takes policy precedence. This will likely surface in 2026–2027 as riel-denomination requirements reach the banking sector's commercial loan book."
+    },
+    {
+      "dimension": "institution_vs_relationship",
+      "leader_a": "sun_chanthol",
+      "leader_a_position": "Chanthol is institutionally oriented in his investment promotion work — CDC portals, business registries, transparent frameworks — but is personally embedded in the Khau Chhuly business network and uses relationship-based deal closure as a core competency alongside institutional systems.",
+      "leader_a_quote": "",
+      "leader_b": "chea_serey",
+      "leader_b_position": "Serey is the most strongly institution-oriented official in the sample, having built Cambodia's Credit Bureau, Bakong payment system, and NBC Financial Stability Department on the principle that rules-based systems, not personal relationships, are the foundation of financial system integrity.",
+      "leader_b_quote": "",
+      "conflict_explanation": "This is a boundary-case contradiction rather than a direct one, and would not independently qualify. It is noted for completeness but assessed as LOW risk: their jurisdictions are sufficiently distinct (investment promotion vs. monetary/financial regulation) that the contradiction does not force an incoherent single policy. However, if a specific investment deal requires NBC regulatory accommodation — e.g., a foreign investor seeking a special dollar-repatriation carve-out or a fintech licence — Chanthol's relationship-based deal closure instinct will collide directly with Serey's rules-based licensing doctrine. The structural impossibility only materialises at that intersection, not as a general policy contradiction.",
+      "implementation_risk": "LOW",
+      "prediction": "Not a primary breaking point on its own. Elevated to MEDIUM risk only if a flagship FDI deal (e.g., a major Chinese or US fintech or banking-adjacent investor) requires NBC licensing, at which point Chanthol's deal-closing relationship approach and Serey's process-first institutional approach will produce a visible inter-agency deadlock."
+    }
+  ],
+  "analysis_date": "2026-04-27"
+}

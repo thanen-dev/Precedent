@@ -1,0 +1,45 @@
+{
+  "leaders_compared": [
+    "hun_sen",
+    "aun_pornmoniroth"
+  ],
+  "conflicts": [
+    {
+      "dimension": "institution_vs_relationship",
+      "leader_a": "hun_sen",
+      "leader_a_position": "Hun Sen systematically designed every formal institution as a conversion mechanism for relationship outcomes, ensuring no independent body ever constrained his network. Institutions exist to legitimise decisions already made through personal power.",
+      "leader_a_quote": "Every formal body — the judiciary, the electoral commission, the Senate, the Constitutional Council — was designed to convert relationship outcomes into legal form.",
+      "leader_b": "aun_pornmoniroth",
+      "leader_b_position": "Pornmoniroth has actively built institutional infrastructure at MEF — digitised registries, inter-agency coordination bodies, and online approval systems — explicitly designed to reduce personal interface with government and create rule-based processes.",
+      "leader_b_quote": "The business registry digitisation, CamDX platform, and online investment approval system are real institutional outputs — they reduce personal interface with government by design.",
+      "conflict_explanation": "Pornmoniroth's institution-building programme creates automated, rules-based checkpoints that route around the personal relationship networks that are the load-bearing structure of Hun Sen's political economy. A digitised, transparent approval system cannot coexist with a system where outcomes are determined by relationship access: either the digital gate controls the decision (undermining the patronage network) or the patronage network controls who gets through the digital gate (rendering the institution a facade). Simultaneous implementation produces a two-tier system where formal institutions process low-value transactions while high-value decisions bypass them entirely — which is precisely what the institution-building is supposed to prevent.",
+      "implementation_risk": "HIGH",
+      "prediction": "Large FDI approvals and land-use decisions will visibly bypass the CamDX and online systems, creating a documented gap between the digitised process and actual decision pathways. This will trigger investor-confidence complaints and multilateral audit findings, forcing either a rollback of the transparency infrastructure or an open confrontation with the patronage network — the breaking point will be a high-profile investment approval that the digital record cannot account for."
+    },
+    {
+      "dimension": "global_positioning_logic",
+      "leader_a": "hun_sen",
+      "leader_a_position": "Hun Sen's positioning logic explicitly accepts Western economic costs (EBA withdrawal) rather than concede governance reforms, treating China as the primary insurer and ASEAN as legitimising cover. Western engagement is welcome but not worth compromising the patronage system.",
+      "leader_a_quote": "Cambodia's relationship with China is the most reliable friendship in our history.",
+      "leader_b": "aun_pornmoniroth",
+      "leader_b_position": "Pornmoniroth's positioning is multilateral-first: IMF, World Bank, ADB, and AIIB engagement builds the credibility that sustains credit ratings, FDI, and concessional financing. His rapid offer to cut tariffs in response to US pressure reveals a revealed preference for Western economic relationship maintenance over ideological positioning.",
+      "leader_b_quote": "His US tariff response (rapid offer to cut 19[%]) reveals a revealed preference for Western economic relationship maintenance over ideological positioning.",
+      "conflict_explanation": "The two doctrines produce opposite responses to Western conditionality. Hun Sen's doctrine holds that governance concessions to the West must be refused even at economic cost — the 2020 EBA response is the precedent. Pornmoniroth's doctrine holds that rapid accommodation of Western demands preserves the fiscal credibility and market access that underpin his entire macroeconomic model. When the US or EU attach governance or transparency conditions to trade or financing access, the two doctrines mandate contradictory responses: refusal (Hun Sen) vs. rapid concession (Pornmoniroth). Both leaders cannot simultaneously set Cambodia's response to Western conditionality.",
+      "implementation_risk": "HIGH",
+      "prediction": "The next round of EU GSP-plus or US trade preference negotiations will produce a split response — MEF signals concessions on transparency or labour standards to preserve market access while the CPP political apparatus refuses to implement them. The breaking point will be a specific governance condition (e.g., judicial independence benchmarks tied to trade preference renewal) where Pornmoniroth's public commitment to compliance collides with structural non-delivery, damaging Cambodia's multilateral credibility and triggering a credit rating review."
+    },
+    {
+      "dimension": "dependency_assumptions",
+      "leader_a": "hun_sen",
+      "leader_a_position": "Hun Sen's model assumed Western economic engagement would indefinitely tolerate authoritarian governance framed as stability, and that the rural CPP patronage network was self-sustaining. Economic diversification was never pursued because the existing model was assumed durable.",
+      "leader_a_quote": "",
+      "leader_b": "aun_pornmoniroth",
+      "leader_b_position": "Pornmoniroth's fiscal model depends on garment export growth, stable Chinese FDI inflows, and continued tourism recovery — but his 2029 LDC graduation signal shows awareness that the preference-based trade architecture sustaining these assumptions has an expiry date, requiring structural adjustment.",
+      "leader_b_quote": "",
+      "conflict_explanation": "Hun Sen's assumption that Western markets would tolerate governance deficits without structural reform was empirically falsified by the 2020 EBA withdrawal — yet no structural economic reform followed, meaning the patronage system that caused the EBA loss remains intact. Pornmoniroth's fiscal projections depend on garment export volumes that are themselves contingent on trade preference access that the EBA withdrawal has already partially revoked. Simultaneous implementation means the fiscal model projects revenue from an export base whose market access is being structurally eroded by the political model's refusal to reform. The two sets of assumptions cannot both be correct: either governance reforms happen (undermining Hun Sen's model) or they don't (undermining Pornmoniroth's revenue base).",
+      "implementation_risk": "HIGH",
+      "prediction": "The 2027–2029 LDC graduation window will force a concrete confrontation: Cambodia must either demonstrate governance and institutional improvements to retain preferential access (requiring reforms that contradict the patronage system) or accept MFN tariff rates that structurally compress garment sector margins. The breaking point will be a specific budget year in which garment export revenue underperforms MEF projections by a measurable margin directly attributable to preference erosion, exposing the fiscal model's dependency on a political assumption that was never delivered."
+    }
+  ],
+  "analysis_date": "2026-04-27"
+}

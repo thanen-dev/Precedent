@@ -1,0 +1,25 @@
+{
+  "signal": "Cambodia's garment sector faces simultaneous labour standard pressure from international brands and price competition from Vietnam and Bangladesh, threatening 40% of export revenue",
+  "leader_id": "say_sam_al",
+  "matches": [
+    {
+      "case_id": "BGD_RANA_PLAZA_2013",
+      "country": "Bangladesh",
+      "similarity_score": 0.91,
+      "similarity_rationale": "Bangladesh in 2013 faced the identical dual pressure Cambodia confronts now: simultaneous international brand scrutiny over labour standards and price competition from lower-cost rivals, with the garment sector representing an overwhelming share of export revenue. The governance structure — a dominant party with deep industry-government co-regulation through BGMEA/GMAC equivalents and elite networks embedded in enforcement — directly mirrors Cambodia's CPP-garment nexus. Both countries faced buyer reputational pressure as the primary enforcement mechanism in the absence of credible domestic regulatory capacity.",
+      "outcome_summary": "Bangladesh implemented the Accord and Alliance frameworks under intense buyer pressure, achieving structural fire and building safety improvements in first-tier factories, but subcontractor networks remained non-compliant and domestic enforcement capacity was not rebuilt. EU and US did not ultimately remove trade preferences, but the compliance cost burden accelerated consolidation toward larger factories and disadvantaged smaller Cambodian-style manufacturers.",
+      "cambodia_lesson": "Cambodia must negotiate legally binding brand accountability agreements (Accord-style) immediately, because voluntary buyer pressure without binding enforcement will produce cosmetic compliance in visible factories while informal subcontracting networks — where most cost savings are extracted — remain unaddressed; failure to do so will cause buyer flight to Bangladesh and Vietnam rather than compliance investment.",
+      "risk_flag": "HIGH"
+    },
+    {
+      "case_id": "HND_CAFTA_POST_2005",
+      "country": "Honduras",
+      "similarity_score": 0.84,
+      "similarity_rationale": "Honduras post-CAFTA is structurally isomorphic to Cambodia's current position: a lower-middle-income economy with export concentration in garment assembly, high external market dependency on a single preferential trade framework, and a governance structure that prioritised short-term employment maximisation over capability upgrading. Honduras also faced competitive displacement from Vietnam and Bangladesh when preference margins narrowed, precisely the mechanism now threatening Cambodia's 40% export revenue base. Both economies failed to develop domestic supply chains during the preference window.",
+      "outcome_summary": "Honduras maquila exports fell 25% during the 2008-2009 crisis and recovery was structurally incomplete — manufacturing capacity migrated to Vietnam and Bangladesh as Honduran labour costs rose relative to Asian competitors. The country did not develop a second export sector and remained trapped in low-value assembly with stagnating real wages and no productivity upgrading.",
+      "cambodia_lesson": "Cambodia must use any remaining preferential access window to mandate domestic input sourcing requirements and skills upgrading programs within the garment sector, because Honduras proves that maximising employment under preference access without simultaneous supply chain localisation leaves the economy fully exposed to competitive displacement the moment labour cost advantages erode.",
+      "risk_flag": "HIGH"
+    }
+  ],
+  "analysis_date": "2026-04-27"
+}

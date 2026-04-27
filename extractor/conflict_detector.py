@@ -135,26 +135,40 @@ def _profile_block(profile: dict) -> str:
         dim = dims.get(key)
         if not isinstance(dim, dict):
             continue
-        thesis = dim.get("core_thesis") or ""
+
+        # Support both old format (core_thesis/stated_theory) and new format (assessed_position)
+        position = (
+            dim.get("assessed_position") or
+            dim.get("core_thesis") or
+            dim.get("overall_assessment") or ""
+        )
         stated = dim.get("stated_theory")
         if isinstance(stated, dict):
             stated = stated.get("summary", "")
         revealed = dim.get("revealed_preference") or ""
 
+        # primary_quote from new format
+        primary_quote = dim.get("primary_quote") or dim.get("primary_source") or ""
+        subfields = dim.get("subfields", [])
+
         lines.append(f"[{key}]")
-        if thesis:
-            lines.append(f"  Core thesis: {thesis[:300]}")
+        if position:
+            lines.append(f"  Position: {position[:400]}")
         if stated:
             lines.append(f"  Stated theory: {str(stated)[:200]}")
         if revealed:
             lines.append(f"  Revealed preference: {str(revealed)[:200]}")
+        if subfields and isinstance(subfields, list):
+            lines.append(f"  Key areas: {'; '.join(str(s) for s in subfields[:3])}")
 
-        # Pull first evidence quote if available
+        # Pull quote from _evidence or primary_quote
         evidence = dim.get("_evidence", [])
         if evidence and isinstance(evidence[0], dict):
             quote = evidence[0].get("quote", "")
             if quote:
                 lines.append(f"  Quote: \"{quote[:200]}\"")
+        elif primary_quote and isinstance(primary_quote, str) and len(primary_quote) > 20:
+            lines.append(f"  Quote: \"{primary_quote[:200]}\"")
         lines.append("")
 
     return "\n".join(lines)

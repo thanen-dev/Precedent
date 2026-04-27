@@ -1,0 +1,25 @@
+{
+  "signal": "Cambodia's Bakong digital currency and de-dollarisation push represents a monetary sovereignty bet against decades of USD dependency",
+  "leader_id": "chea_vandeth",
+  "matches": [
+    {
+      "case_id": "ARG_FISCAL_COLLAPSE_2001",
+      "country": "Argentina",
+      "similarity_score": 0.81,
+      "similarity_rationale": "Argentina's Convertibility Plan represents the closest historical analogue to Cambodia's de-dollarisation bet: both involve a deeply dollarised economy attempting to reassert monetary sovereignty after decades of USD dependency as the de facto currency. The structural risk is identical — if the de-dollarisation timeline (Riel/Bakong to 30% of transactions by 2028) collides with a trade-preference revenue shock, Cambodia faces Argentina's procyclicality trap where monetary transition and fiscal tightening compound rather than offset each other. The leader profile (digital economy architect pushing fintech-led monetary sovereignty) mirrors Argentina's technocratic confidence in a managed transition that underestimated the behavioural and balance-sheet rigidities of dollarisation.",
+      "outcome_summary": "Argentina's forced abandonment of the convertibility peg in January 2002 produced the largest sovereign default in history at the time, a 70% peso devaluation, GDP contraction of 20% over three years, and a poverty rate surge to 53% — followed by export-led recovery only after full abandonment of the peg and deep debt restructuring.",
+      "cambodia_lesson": "The Bakong/de-dollarisation program must not be run simultaneously with USD-denominated debt service obligations and a fiscal base dependent on EBA-linked trade revenues — if any one of these three pillars weakens, the NBC's Riel transaction targets become incompatible with the MEF's USD budget arithmetic, replicating Argentina's convertibility trap in digital form.",
+      "risk_flag": "HIGH"
+    },
+    {
+      "case_id": "IDN_AFC_RECOVERY_1998",
+      "country": "Indonesia",
+      "similarity_score": 0.72,
+      "similarity_rationale": "Indonesia 1997–1998 is structurally analogous because the Bakong push is not purely a monetary project — it is embedded in a patronage-linked financial system where CPP-connected networks dominate credit allocation and Chinese USD-denominated project financing creates unhedged balance sheet exposure identical to Indonesia's pre-crisis private sector debt structure. The digital currency sovereignty bet, if successful, will route more domestic transactions through Bakong-connected institutions, concentrating systemic risk in politically connected financial intermediaries rather than dispersing it. The Indonesia case shows that when a patronage-banking nexus faces a currency or trade shock, the amplification mechanism is non-linear and politically resistant to external correction.",
+      "outcome_summary": "Indonesia's rupiah lost 70% of its value in weeks, GDP contracted 13.1% in 1998, and the Suharto patronage system collapsed under the weight of unhedged USD debt and IMF conditionality targeting politically protected monopolies — recovery required a decade of banking sector restructuring and democratic transition.",
+      "cambodia_lesson": "Bakong's success as a de-dollarisation instrument depends entirely on whether the institutions processing Riel transactions are creditworthy on fundamentals rather than political connection — if Bakong adoption concentrates transaction flow through CPP-linked banks without simultaneous NPL discipline and capital adequacy enforcement, Cambodia is building Indonesia's 1997 fragility into a digital architecture that will be harder to restructure when the shock arrives.",
+      "risk_flag": "HIGH"
+    }
+  ],
+  "analysis_date": "2026-04-27"
+}

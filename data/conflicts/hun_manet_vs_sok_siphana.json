@@ -1,0 +1,33 @@
+{
+  "leaders_compared": [
+    "hun_manet",
+    "sok_siphana"
+  ],
+  "conflicts": [
+    {
+      "dimension": "institution_vs_relationship",
+      "leader_a": "hun_manet",
+      "leader_a_position": "Hun Manet's growth doctrine prioritises FDI and infrastructure over institution-building when resources are constrained, implying that relationships, brokered deals, and government-intermediated financing (e.g., government-brokered loans for MSMEs) are the operative mechanisms for closing investment and development gaps.",
+      "leader_a_quote": "When resources are constrained, FDI and infrastructure win budget priority over SME and institution-building.",
+      "leader_b": "sok_siphana",
+      "leader_b_position": "Siphana's entire career doctrine holds that binding legal frameworks and international rules-based agreements are the primary mechanism for attracting FDI and sustaining growth — the WTO model works precisely because it constrains arbitrary government action and creates predictable rules that replace discretionary relationships.",
+      "leader_b_quote": "We have to have WTO accession because the fate of 220,000 workers is at stake, if we don't enter. Cambodia can use the WTO as an international force to negotiate. As a small country we don't have the",
+      "conflict_explanation": "Hun Manet's doctrine deprioritises institution-building in favour of brokered FDI attraction and infrastructure, implicitly relying on government relationships and discretionary deal-making as the investment attraction mechanism. Siphana's doctrine holds that FDI attraction is structurally dependent on the very legal frameworks and binding international commitments that Hun Manet's resource-allocation doctrine treats as lower priority. If both are implemented simultaneously, Cambodia would be actively promoting FDI through relationship-based government brokerage while systematically underfunding the institutional infrastructure (property rights, legal certainty, regulatory standardisation) that makes those investments credible and durable. Investors attracted by relationships without institutional anchoring create contingent, revocable commitments; investors attracted by rule-of-law require the institutional investment Hun Manet's model defers. The two FDI theories are structurally incompatible: one treats institutions as a prerequisite, the other treats them as a luxury.",
+      "implementation_risk": "HIGH",
+      "prediction": "A specific investment promotion campaign or SEZ deal will be negotiated at the relationship level by the Prime Minister's office and then stall or fail to close legally because Cambodia cannot provide the contractual certainty, dispute resolution framework, or regulatory predictability that the foreign counterparty's lawyers require — exposing the gap between the relationship-based attraction doctrine and the absent institutional infrastructure Siphana's model requires to be funded first."
+    },
+    {
+      "dimension": "growth_theory",
+      "leader_a": "hun_manet",
+      "leader_a_position": "Hun Manet's growth theory treats export manufacturing (garments) as the near-term revenue base and FDI attraction as the diversification engine, with human capital and digital transformation as long-horizon bets explicitly subordinated to infrastructure and FDI in budget prioritisation.",
+      "leader_a_quote": "When resources are constrained, FDI and infrastructure win budget priority over SME and institution-building.",
+      "leader_b": "sok_siphana",
+      "leader_b_position": "Siphana's growth theory holds that rules-based multilateral integration — specifically the legal reform pressure created by WTO membership and equivalent binding agreements — is the primary growth mechanism. Growth follows from making domestic reform irreversible through international legal commitments, not from infrastructure or FDI attraction as independent levers.",
+      "leader_b_quote": "We have to have WTO accession because the fate of 220,000 workers is at stake, if we don't enter. Cambodia can use the WTO as an international force to negotiate. As a small country we don't have the",
+      "conflict_explanation": "Hun Manet's growth doctrine treats international integration (WTO, trade agreements) as one instrument among several, subordinate to infrastructure and FDI in priority — it is a means to revenue, not the structural forcing function. Siphana's doctrine treats rules-based integration as the causal engine that makes all other growth levers (FDI, manufacturing, SME development) function sustainably, because it forces the legal and regulatory reforms that Cambodia's domestic political economy would otherwise block. If implemented simultaneously, Hun Manet's budget prioritisation logic would systematically underfund the legal reform and trade-policy institutional capacity that Siphana's model requires to function. Siphana's model needs sustained investment in legal frameworks and multilateral negotiating capacity; Hun Manet's model treats these as deferrable. The result is a growth strategy that claims international integration as a pillar while defunding the institutional machinery that makes integration meaningful.",
+      "implementation_risk": "HIGH",
+      "prediction": "The Trade Policy Advisory Board and Council of Legal Reform — Siphana's institutional vehicles — will be structurally underfunded and politically marginalised in budget cycles where Hun Manet's infrastructure and FDI priorities compete for the same fiscal envelope, causing Cambodia to enter or renew trade negotiations (e.g., post-LDC graduation frameworks, RCEP implementation, bilateral FTAs) without the domestic legal harmonisation completed, producing commitments the government cannot operationalise and eroding Cambodia's credibility with multilateral partners."
+    }
+  ],
+  "analysis_date": "2026-04-27"
+}

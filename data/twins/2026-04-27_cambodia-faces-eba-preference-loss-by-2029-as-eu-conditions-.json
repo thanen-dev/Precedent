@@ -1,0 +1,25 @@
+{
+  "signal": "Cambodia faces EBA preference loss by 2029 as EU conditions market access on democratic governance improvements, threatening 700,000 garment jobs",
+  "leader_id": "chea_serey",
+  "matches": [
+    {
+      "case_id": "BGD_GARMENT_2012",
+      "country": "Bangladesh",
+      "similarity_score": 0.91,
+      "similarity_rationale": "Bangladesh is the most structurally direct analogue to Cambodia's EBA threat: both are low-income garment-dominated economies with 80%+ export concentration in RMG, deep EU/US buyer dependency, and a dominant-party governance structure that complicates labour compliance reform. Bangladesh's partial GSP suspension in 2013 following Rana Plaza is the closest documented precedent to Cambodia's EBA conditional withdrawal — a politically conditioned preference threat targeting a single-sector economy with limited diversification capacity.",
+      "outcome_summary": "Bangladesh retained EBA access by making credible compliance commitments (Accord, Alliance) and raising minimum wages, but did not achieve structural transformation — RMG remained 84% of exports through 2020, and the sector's political power actively blocked diversification investment. The preference threat was survived but the structural trap deepened.",
+      "cambodia_lesson": "Cambodia must treat the 2029 EBA deadline as a hard constraint requiring immediate sector-level compliance upgrades (ILO Better Work expansion, legally binding GMAC accountability) to retain buyer relationships independent of preference margins — because if EU buyers exit alongside EBA loss, the 700,000 jobs face compounded demand and access collapse simultaneously, not sequentially.",
+      "risk_flag": "HIGH"
+    },
+    {
+      "case_id": "MUS_EPZ_1970_1995",
+      "country": "Mauritius",
+      "similarity_score": 0.83,
+      "similarity_rationale": "Mauritius in 1970 was structurally analogous to Cambodia today: a small open economy with near-total export concentration, deep EU preference dependency (Lomé Convention), and a deliberate state-led export zone strategy as the primary employment anchor. The governance type — competitive-developmental with capable institutional actors — is the aspirational comparator for Chea Serey's reform agenda, and the Lomé preference window timeline mirrors Cambodia's EBA 2029 horizon as a known, bounded transition opportunity.",
+      "outcome_summary": "Mauritius successfully used the Lomé preference window to simultaneously build education, infrastructure, and financial services capacity, enabling a sequenced transition from garments to tourism to financial services — the EPZ was wound down deliberately as wages rose, not abandoned under crisis pressure. By 1995 Mauritius had escaped the garment export trap and was ascending to upper-middle income.",
+      "cambodia_lesson": "The NBC under Chea Serey should use the 2024–2029 window to anchor a parallel financial sector deepening and digital payments infrastructure build (Bakong/Riel internationalisation) that creates a second economic pillar — exactly as Mauritius used preference rents to fund the institutions that made the next sector viable — because the preference window is a financing opportunity for transformation, not just a revenue stream to protect.",
+      "risk_flag": "LOW"
+    }
+  ],
+  "analysis_date": "2026-04-27"
+}

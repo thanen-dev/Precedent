@@ -1,0 +1,33 @@
+{
+  "leaders_compared": [
+    "aun_pornmoniroth",
+    "cham_nimul"
+  ],
+  "conflicts": [
+    {
+      "dimension": "global_positioning_logic",
+      "leader_a": "aun_pornmoniroth",
+      "leader_a_position": "Pornmoniroth's positioning theory centres on pragmatic multilateral engagement as fiscal stability insurance — he is explicitly pro-stability and non-ideological, responding to bilateral shocks (e.g., US tariffs) through rapid bilateral concession offers (cutting tariffs by 19%) rather than defending rules-based frameworks.",
+      "leader_a_quote": "",
+      "leader_b": "cham_nimul",
+      "leader_b_position": "Nimul's doctrine is that Cambodia's competitive advantage as a small economy depends on predictable, rules-based multilateral access — she explicitly opposes bilateral power negotiation in favour of WTO-anchored frameworks.",
+      "leader_b_quote": "As a small economy, it is crucial that the multilateral trading system remains open and based on rules.",
+      "conflict_explanation": "Pornmoniroth's revealed response to the US 49% tariff shock was to offer unilateral bilateral concessions — a power-negotiation posture that treats market access as a bilateral bargain. Nimul's doctrine holds that Cambodia must anchor to rules-based multilateral frameworks precisely because bilateral power negotiation systematically disadvantages small economies. If both doctrines are simultaneously implemented as government policy, Cambodia simultaneously signals to trading partners that it will make bilateral concessions outside WTO frameworks (Pornmoniroth) while claiming rules-based multilateral legitimacy as its core positioning (Nimul). This is structurally incoherent: the bilateral concession offer undermines the rules-based credibility that Nimul's trade diversification strategy depends on to attract investment and negotiate EBA restoration.",
+      "implementation_risk": "HIGH",
+      "prediction": "The concrete breaking point is the EU EBA restoration negotiation before 2029. Pornmoniroth's bilateral-concession reflex, if applied to EU market access, will signal that Cambodia treats trade preferences as a power-bargaining issue rather than a governance-compliance issue — precisely the framing that caused the 2020 partial EBA withdrawal. Nimul's rules-based framework requires Cambodia to demonstrate institutional governance improvement, not offer tariff deals. A cabinet-level disagreement over whether to pursue EU re-engagement through governance reform (Nimul) or through bilateral economic concessions (Pornmoniroth) will stall the EBA restoration process past the 2029 deadline."
+    },
+    {
+      "dimension": "institution_vs_relationship",
+      "leader_a": "aun_pornmoniroth",
+      "leader_a_position": "Pornmoniroth is institution-building in the fiscal and investment space — MEF's digitisation of business registration, CamDX platform, and online investment approvals are explicitly designed to reduce personal interface with government — but he operates with a relationship overlay through family networks embedded in the elite political economy.",
+      "leader_a_quote": "",
+      "leader_b": "cham_nimul",
+      "leader_b_position": "Nimul operates through strictly procedural WTO and multilateral processes on trade governance, building international reputation on process-correctness, while remaining embedded in CPP domestic relationship networks for non-technical matters.",
+      "leader_b_quote": "",
+      "conflict_explanation": "This is not a genuine logical contradiction — both leaders share the same hybrid model (institutional on technical outputs, relationship-embedded in domestic politics). The structure is consistent, not contradictory. No conflict reported.",
+      "implementation_risk": "LOW",
+      "prediction": "No breaking point identified from this dimension alone."
+    }
+  ],
+  "analysis_date": "2026-04-27"
+}

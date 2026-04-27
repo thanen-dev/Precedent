@@ -1,0 +1,25 @@
+{
+  "signal": "Cambodia's Funan Techo Canal signals infrastructure-led growth prioritised over trade diversification, deepening Chinese infrastructure dependency",
+  "leader_id": "hun_manet",
+  "matches": [
+    {
+      "case_id": "LKA_FISCAL_COLLAPSE_2010_2022",
+      "country": "Sri Lanka",
+      "similarity_score": 0.82,
+      "similarity_rationale": "Sri Lanka pursued Chinese-financed infrastructure (Hambantota Port as emblematic case) under a dominant-party government with a narrow export and revenue base, creating debt servicing obligations that became fiscally catastrophic when external shocks eroded income. Cambodia's Funan Techo Canal replicates this exact structural configuration: Chinese USD-denominated infrastructure financing, a dominant-party political system with limited fiscal flexibility, and continued dependence on trade preferences (EBA/GSP) as the primary revenue anchor. The governance type, development stage, and external market dependency profiles are the closest match across all cases.",
+      "outcome_summary": "Sri Lanka defaulted on its sovereign debt in 2022 — the first South Asian country to do so since independence — after infrastructure debt service obligations collided with a collapsed tourism revenue base and ill-timed tax cuts, reducing foreign reserves to near zero and triggering mass protests that ended Rajapaksa's presidency.",
+      "cambodia_lesson": "Do not allow Chinese infrastructure debt service timelines to be structured on the assumption of uninterrupted trade preference revenue; Cambodia must stress-test Funan Techo Canal debt covenants against a scenario where EBA/GSP revenues fall 20–30% simultaneously, because Sri Lanka's collapse occurred precisely at the intersection of these two vulnerabilities.",
+      "risk_flag": "HIGH"
+    },
+    {
+      "case_id": "BGD_GARMENT_2012",
+      "country": "Bangladesh",
+      "similarity_score": 0.74,
+      "similarity_rationale": "Bangladesh is the most structurally direct analogue to Cambodia's garment-anchored export base: dominant-party governance with constrained accountability, export concentration above 80% in a single labour-intensive sector, and deep EU/US trade preference dependency as the demand anchor. The Funan Techo Canal signal — prioritising infrastructure FDI attraction over export diversification — mirrors Bangladesh's consistent political choice to deepen RMG capacity rather than use the preference window to build a second export sector, a structural decision that became increasingly costly once the preference margin narrowed. Cambodia's EBA partial withdrawal in 2020 is the exact stress test Bangladesh faces at larger scale.",
+      "outcome_summary": "Bangladesh sustained 6–7% GDP growth for over two decades on the RMG pillar but failed to develop any second export sector at scale; by 2020 garments still accounted for 84% of exports, and the sector's political power had grown so large that structural transformation became institutionally blocked rather than merely economically difficult.",
+      "cambodia_lesson": "Infrastructure investment that deepens Chinese dependency without simultaneously forcing export sector diversification will entrench Cambodia in the Bangladesh structural trap — sustained near-term growth that forecloses the medium-term transformation window; Hun Manet must attach explicit second-sector development conditionality to Funan Techo Canal financing timelines or the canal becomes a lock-in mechanism rather than a development catalyst.",
+      "risk_flag": "MEDIUM"
+    }
+  ],
+  "analysis_date": "2026-04-27"
+}

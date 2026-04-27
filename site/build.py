@@ -918,26 +918,65 @@ function filterCases(cat, btn) {
 </script>
 """
 
+JS_SEARCH = """
+<script>
+function initSearch() {
+  var input = document.getElementById('site-search');
+  if (!input) return;
+  var targets = document.querySelectorAll('[data-searchable]');
+  input.addEventListener('input', function() {
+    var q = this.value.trim().toLowerCase();
+    if (!q) { targets.forEach(function(el){ el.style.display = ''; }); return; }
+    targets.forEach(function(el) {
+      var text = el.textContent.toLowerCase();
+      el.style.display = text.includes(q) ? '' : 'none';
+    });
+  });
+}
+document.addEventListener('DOMContentLoaded', initSearch);
+</script>
+"""
+
+
+_BUILD_DATE = "2026-04-27"
+
+_META_DESCRIPTIONS = {
+    "index": "Precedent maps how Cambodia&#8217;s 11 key decision-makers reason — extracting doctrine from primary sources and matching decisions against historical cases. Cambodia faces critical inflection points by 2029.",
+    "leaders": "Decision-maker profiles for Cambodia&#8217;s 11 key leaders — 7-dimension doctrine maps with confidence ratings, primary sources, and performance evaluations.",
+    "cases": "9 historical structural analogues matched to Cambodia&#8217;s 2029 risk scenarios: trade preference loss, fiscal collapse, regulatory shock, and more.",
+    "twins": "Historical twin matches for Cambodia policy signals — structural similarity scoring across 5 dimensions.",
+    "conflicts": "Detected doctrine contradictions between Cambodia&#8217;s senior officials — logical conflicts where simultaneous implementation would produce incoherent policy.",
+    "solutions": "Risk mitigation options for Cambodia&#8217;s three major 2029 risk scenarios, matched to historical response playbooks.",
+    "methodology": "How Precedent works: 7-dimension framework, source methodology, confidence scoring, and twin-matching algorithm.",
+}
+
 
 def _page(title: str, active: str, body: str, extra_js: str = "") -> str:
     nav_links = [
-        ("index.html",     "Index",     "index"),
-        ("leaders.html",   "Leaders",   "leaders"),
-        ("cases.html",     "Cases",     "cases"),
-        ("twins.html",     "Twins",     "twins"),
-        ("conflicts.html", "Conflicts", "conflicts"),
-        ("solutions.html", "Solutions", "solutions"),
+        ("index.html",       "Index",       "index"),
+        ("leaders.html",     "Leaders",     "leaders"),
+        ("cases.html",       "Cases",       "cases"),
+        ("twins.html",       "Twins",       "twins"),
+        ("conflicts.html",   "Conflicts",   "conflicts"),
+        ("solutions.html",   "Solutions",   "solutions"),
+        ("methodology.html", "Methodology", "methodology"),
     ]
     nav = "".join(
         f'<a href="{href}" class="{"active" if k == active else ""}">{label}</a>'
         for href, label, k in nav_links
+    )
+    meta_desc = _META_DESCRIPTIONS.get(active, f"{title} — {SITE_TITLE}")
+    full_title = (
+        "Cambodia Political Intelligence — Precedent" if active == "index"
+        else f"{title} — Cambodia Precedent"
     )
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{html_lib.escape(title)} — {SITE_TITLE}</title>
+<title>{html_lib.escape(full_title)}</title>
+<meta name="description" content="{meta_desc}">
 {FONTS}
 <style>{CSS}</style>
 </head>
@@ -951,6 +990,10 @@ def _page(title: str, active: str, body: str, extra_js: str = "") -> str:
 </header>
 {body}
 {extra_js}
+<footer style="border-top:1px solid var(--b-dim);padding:1.5rem 2rem;margin-top:4rem;display:flex;align-items:center;justify-content:space-between;font-family:var(--mono);font-size:.6rem;color:var(--muted)">
+  <span>{SITE_TITLE} — Cambodia political intelligence</span>
+  <span>Data updated: {_BUILD_DATE}</span>
+</footer>
 </body>
 </html>"""
 
@@ -975,27 +1018,16 @@ def build_index(leaders, cases, twins, conflicts) -> str:
     total_twins = sum(len(t.get("matches", [])) for t in twins)
     total_dims = sum(_dim_completeness(p)[0] for p in leaders)
 
+    def stat_cell(val, label):
+        if val == 0:
+            return ""
+        return f'<div class="stat-cell"><div class="stat-value">{val}</div><div class="stat-label">{label}</div></div>'
     stats = f"""<div class="stat-row">
-  <div class="stat-cell">
-    <div class="stat-value">{len(leaders)}</div>
-    <div class="stat-label">Leaders profiled</div>
-  </div>
-  <div class="stat-cell">
-    <div class="stat-value">{total_dims}</div>
-    <div class="stat-label">Dimensions populated</div>
-  </div>
-  <div class="stat-cell">
-    <div class="stat-value">{len(cases)}</div>
-    <div class="stat-label">Historical cases</div>
-  </div>
-  <div class="stat-cell">
-    <div class="stat-value">{total_twins}</div>
-    <div class="stat-label">Twin matches</div>
-  </div>
-  <div class="stat-cell">
-    <div class="stat-value">{total_conflicts}</div>
-    <div class="stat-label">Conflicts detected</div>
-  </div>
+  {stat_cell(len(leaders), "Leaders profiled")}
+  {stat_cell(total_dims, "Dimensions populated")}
+  {stat_cell(len(cases), "Historical cases")}
+  {stat_cell(total_twins, "Twin analyses")}
+  {stat_cell(total_conflicts, "Conflicts detected")}
 </div>"""
 
     leader_rows = ""
@@ -1034,6 +1066,18 @@ def build_index(leaders, cases, twins, conflicts) -> str:
     <div class="index-tile-body">{total_twins} policy signal matches. Run <code style="font-size:.65rem">twin_matcher.py</code> to populate.</div>
     <span class="tile-link">View twins →</span>
   </a>
+</div>"""
+
+    # ABOUT SECTION
+    about_html = """<div style="margin-bottom:2.5rem;padding:1.5rem 0;border-bottom:1px solid var(--b-dim)">
+  <p style="font-size:1.05rem;line-height:1.75;max-width:68ch;color:var(--text)">
+    Precedent maps how Cambodia&#8217;s 11 key decision-makers actually reason &#8212;
+    extracting doctrine from primary sources and matching their choices against
+    historical cases where similar logic was tried and failed.
+    By 2029, Cambodia faces EBA preference loss, Chinese FDI concentration risk,
+    and a garment sector labour squeeze. This site gives you the decision-maker
+    profiles, the historical precedents, and the predicted breaking points.
+  </p>
 </div>"""
 
     # KEY FINDINGS
@@ -1077,6 +1121,7 @@ def build_index(leaders, cases, twins, conflicts) -> str:
     body = f"""<div class="container">
   <div class="section-label"><span class="section-marker">◈</span>Intelligence overview</div>
   <h1>Cambodia's Operating Doctrine</h1>
+  {about_html}
   {stats}
   {findings_html}
   <div class="section-label" style="margin-bottom:1rem"><span class="section-marker">◈</span>Leaders</div>
@@ -1257,14 +1302,20 @@ def build_leaders(leaders: list[dict]) -> str:
 
         synth = p.get("synthesis", {})
         principles = synth.get("guiding_principles", [])
+        PLACEHOLDER_PREFIXES = ("Use ", "use ", "primary signal", "behavior as primary")
+        real_principles = [
+            pr for pr in principles
+            if isinstance(pr, dict) and pr.get("insight","") and
+            not any(pr.get("insight","").startswith(p) or p in pr.get("insight","") for p in PLACEHOLDER_PREFIXES)
+        ]
         synth_html = ""
-        if principles:
+        if real_principles:
             cells = "".join(
                 f'<div class="synth-cell">'
                 f'<div class="synth-dim">{e(pr.get("dimension",""))}</div>'
                 f'<div class="synth-insight">{e(pr.get("insight",""))}</div>'
                 f'</div>'
-                for pr in principles if isinstance(pr, dict)
+                for pr in real_principles
             )
             synth_html = f'<h3 style="margin:1.25rem 0 0.75rem">Synthesis</h3><div class="synthesis-grid">{cells}</div>'
 
@@ -1278,7 +1329,7 @@ def build_leaders(leaders: list[dict]) -> str:
         sources_str = " · ".join(e(s) for s in sources) if sources else ""
         src_line = f'<div style="font-family:var(--mono);font-size:.6rem;color:var(--muted);margin-top:1rem">Based on: {sources_str}</div>' if sources_str else ""
 
-        detail = f"""<div class="leader-detail" id="dim-{lid_safe}" style="display:block">
+        detail = f"""<div class="leader-detail" id="dim-{lid_safe}" style="display:none">
   <table class="dim-table">
     <thead>
       <tr>
@@ -1297,7 +1348,7 @@ def build_leaders(leaders: list[dict]) -> str:
   {src_line}
 </div>"""
 
-        rows_html += f"""<div class="leader-row">
+        rows_html += f"""<div class="leader-row" id="{lid_safe}" data-searchable>
   <div class="leader-row-header" onclick="toggleLeader('{lid_safe}')">
     <div class="leader-row-meta">
       <span class="leader-name">{name}</span>
@@ -1308,7 +1359,7 @@ def build_leaders(leaders: list[dict]) -> str:
         <div class="completeness-frac">{pop}/{tot}</div>
         <div class="completeness-sub">dims populated</div>
       </div>
-      <span class="expand-arrow" id="arrow-{lid_safe}">▾</span>
+      <span class="expand-arrow" id="arrow-{lid_safe}">▸</span>
     </div>
   </div>
   {bio_html}
@@ -1318,12 +1369,16 @@ def build_leaders(leaders: list[dict]) -> str:
     body = f"""<div class="container">
   <div class="section-label"><span class="section-marker">◈</span>Decision-maker profiles</div>
   <h1>Leaders</h1>
-  <p style="font-size:.8rem;color:var(--muted);margin-bottom:2rem">
-    {len(leaders)} decision-makers profiled — click header to collapse.
-  </p>
+  <div style="display:flex;align-items:center;gap:1rem;margin-bottom:2rem">
+    <p style="font-size:.8rem;color:var(--muted)">
+      {len(leaders)} decision-makers — click to expand.
+    </p>
+    <input id="site-search" type="search" placeholder="Search leaders…"
+      style="margin-left:auto;background:var(--surface);border:1px solid var(--b-mid);color:var(--text);font-family:var(--mono);font-size:.7rem;padding:.4rem .75rem;border-radius:2px;min-width:200px">
+  </div>
   {rows_html}
 </div>"""
-    return _page("Leaders", "leaders", body, JS_ACCORDION)
+    return _page("Leaders", "leaders", body, JS_ACCORDION + JS_SEARCH)
 
 
 # ── cases ─────────────────────────────────────────────────────────────────────
@@ -1358,6 +1413,14 @@ def build_cases(cases: list[dict]) -> str:
             context = e(ctx_raw.get("political_economy", "") or next(iter(ctx_raw.values()), ""))
         else:
             context = e(ctx_raw)
+
+        # policy_response
+        pr_raw = case.get("policy_response", "")
+        if isinstance(pr_raw, dict):
+            pr_text = pr_raw.get("growth_model_invoked", "") or next((v for v in pr_raw.values() if isinstance(v, str)), "")
+        else:
+            pr_text = str(pr_raw) if pr_raw else ""
+        policy_html = (f'<div class="case-section"><h3>Policy response</h3><p>{e(pr_text)}</p></div>' if pr_text else "")
 
         # shock_or_trigger: old=str, new=dict with "event" key
         trig_raw = case.get("shock_or_trigger", "")
@@ -1437,6 +1500,7 @@ def build_cases(cases: list[dict]) -> str:
       <h3>Trigger</h3>
       <p>{trigger}</p>
     </div>
+    {policy_html}
   </div>
   {mech_html}
   {sp_html}
@@ -1689,8 +1753,31 @@ def build_conflicts(conflicts: list[dict]) -> str:
     return _page("Conflicts", "conflicts", body)
 
 
-# ── orchestration ─────────────────────────────────────────────────────────────
 
+# ── methodology ─────────────────────────────────────────────────────────────────────────
+
+def build_methodology() -> str:
+    body = (
+        '<div class="container">' +
+        '<div class="section-label">Methodology</div>' +
+        '<h1>Methodology</h1>' +
+        '<div style="max-width:72ch;line-height:1.8">' +
+        '<h2 style="font-family:var(--mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:var(--accent);margin:2rem 0 .75rem">The 7 Dimensions</h2>' +
+        '<p style="font-size:.875rem;color:var(--muted);margin-bottom:1.5rem">Every leader profile maps doctrine across seven dimensions drawn from political economy. Selected because they are the axes along which development policy choices diverge most sharply.</p>' +
+        '<h2 style="font-family:var(--mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:var(--accent);margin:2rem 0 .75rem">Source Methodology</h2>' +
+        '<p style="font-size:.875rem;color:var(--muted);margin-bottom:1rem">Profiles are built from primary sources only: official speeches, policy documents, legislative records. Each dimension requires a source URL, date, verbatim quote, and confidence score (0.0&#8211;1.0).</p>' +
+        '<h2 style="font-family:var(--mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:var(--accent);margin:2rem 0 .75rem">Historical Twin Matching</h2>' +
+        '<p style="font-size:.875rem;color:var(--muted);margin-bottom:1rem">Twin matching scores a Cambodia policy signal against 9 historical cases across 5 structural dimensions, scored 0.0&#8211;1.0 each. Claude Sonnet 4.6 performs the scoring; reasoning is visible in the rationale field.</p>' +
+        '<h2 style="font-family:var(--mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:var(--accent);margin:2rem 0 .75rem">Conflict Detection</h2>' +
+        '<p style="font-size:.875rem;color:var(--muted);margin-bottom:1rem">A conflict is flagged only when two positions, if simultaneously implemented, would produce incoherent policy. Differences in emphasis or timing are not conflicts.</p>' +
+        '<h2 style="font-family:var(--mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:var(--accent);margin:2rem 0 .75rem">About</h2>' +
+        '<p style="font-size:.875rem;color:var(--muted)">Independent political intelligence system built April 2026. Pipeline: scraper &#8594; extractor &#8594; profile &#8594; site. All source URLs are preserved.</p>' +
+        '</div></div>'
+    )
+    return _page("Methodology", "methodology", body)
+
+
+# ── orchestration ─────────────────────────────────────────────────────────────
 def build(clean: bool = False) -> list[Path]:
     if clean and DOCS_DIR.exists():
         shutil.rmtree(DOCS_DIR)
@@ -1707,7 +1794,8 @@ def build(clean: bool = False) -> list[Path]:
         "cases.html":     build_cases(cases),
         "twins.html":     build_twins(twins),
         "conflicts.html": build_conflicts(conflicts),
-        "solutions.html": build_solutions(cases),
+        "solutions.html":   build_solutions(cases),
+        "methodology.html": build_methodology(),
     }
 
     written = []

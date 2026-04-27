@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Leaders — PRECEDENT</title>
+<title>Leaders — Cambodia Precedent</title>
+<meta name="description" content="Decision-maker profiles for Cambodia&#8217;s 11 key leaders — 7-dimension doctrine maps with confidence ratings, primary sources, and performance evaluations.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -726,15 +727,19 @@ blockquote .bq-source a:hover { color: var(--accent); }
     <a href="index.html" class="masthead-wordmark">PRECEDENT</a>
     <div class="masthead-tagline">Political intelligence — Cambodia's decision-makers</div>
   </div>
-  <nav class="masthead-nav"><a href="index.html" class="">Index</a><a href="leaders.html" class="active">Leaders</a><a href="cases.html" class="">Cases</a><a href="twins.html" class="">Twins</a><a href="conflicts.html" class="">Conflicts</a><a href="solutions.html" class="">Solutions</a></nav>
+  <nav class="masthead-nav"><a href="index.html" class="">Index</a><a href="leaders.html" class="active">Leaders</a><a href="cases.html" class="">Cases</a><a href="twins.html" class="">Twins</a><a href="conflicts.html" class="">Conflicts</a><a href="solutions.html" class="">Solutions</a><a href="methodology.html" class="">Methodology</a></nav>
 </header>
 <div class="container">
   <div class="section-label"><span class="section-marker">◈</span>Decision-maker profiles</div>
   <h1>Leaders</h1>
-  <p style="font-size:.8rem;color:var(--muted);margin-bottom:2rem">
-    11 decision-makers profiled — click header to collapse.
-  </p>
-  <div class="leader-row">
+  <div style="display:flex;align-items:center;gap:1rem;margin-bottom:2rem">
+    <p style="font-size:.8rem;color:var(--muted)">
+      11 decision-makers — click to expand.
+    </p>
+    <input id="site-search" type="search" placeholder="Search leaders…"
+      style="margin-left:auto;background:var(--surface);border:1px solid var(--b-mid);color:var(--text);font-family:var(--mono);font-size:.7rem;padding:.4rem .75rem;border-radius:2px;min-width:200px">
+  </div>
+  <div class="leader-row" id="aun_pornmoniroth" data-searchable>
   <div class="leader-row-header" onclick="toggleLeader('aun_pornmoniroth')">
     <div class="leader-row-meta">
       <span class="leader-name">Aun Pornmoniroth</span>
@@ -745,11 +750,11 @@ blockquote .bq-source a:hover { color: var(--accent); }
         <div class="completeness-frac">7/7</div>
         <div class="completeness-sub">dims populated</div>
       </div>
-      <span class="expand-arrow" id="arrow-aun_pornmoniroth">▾</span>
+      <span class="expand-arrow" id="arrow-aun_pornmoniroth">▸</span>
     </div>
   </div>
   <div style="font-size:.8125rem;color:var(--muted);margin:.4rem 0 .75rem;max-width:72ch">Stub profile — to be populated by extractor pipeline</div>
-  <div class="leader-detail" id="dim-aun_pornmoniroth" style="display:block">
+  <div class="leader-detail" id="dim-aun_pornmoniroth" style="display:none">
   <table class="dim-table">
     <thead>
       <tr>
@@ -767,7 +772,7 @@ blockquote .bq-source a:hover { color: var(--accent); }
   
   
 </div>
-</div><div class="leader-row">
+</div><div class="leader-row" id="cham_nimul" data-searchable>
   <div class="leader-row-header" onclick="toggleLeader('cham_nimul')">
     <div class="leader-row-meta">
       <span class="leader-name">Cham Nimul</span>
@@ -778,11 +783,11 @@ blockquote .bq-source a:hover { color: var(--accent); }
         <div class="completeness-frac">7/7</div>
         <div class="completeness-sub">dims populated</div>
       </div>
-      <span class="expand-arrow" id="arrow-cham_nimul">▾</span>
+      <span class="expand-arrow" id="arrow-cham_nimul">▸</span>
     </div>
   </div>
   <div style="font-size:.8125rem;color:var(--muted);margin:.4rem 0 .75rem;max-width:72ch">Stub profile — to be populated by extractor pipeline</div>
-  <div class="leader-detail" id="dim-cham_nimul" style="display:block">
+  <div class="leader-detail" id="dim-cham_nimul" style="display:none">
   <table class="dim-table">
     <thead>
       <tr>
@@ -800,7 +805,7 @@ blockquote .bq-source a:hover { color: var(--accent); }
   
   
 </div>
-</div><div class="leader-row">
+</div><div class="leader-row" id="chea_serey" data-searchable>
   <div class="leader-row-header" onclick="toggleLeader('chea_serey')">
     <div class="leader-row-meta">
       <span class="leader-name">Chea Serey</span>
@@ -811,11 +816,11 @@ blockquote .bq-source a:hover { color: var(--accent); }
         <div class="completeness-frac">7/7</div>
         <div class="completeness-sub">dims populated</div>
       </div>
-      <span class="expand-arrow" id="arrow-chea_serey">▾</span>
+      <span class="expand-arrow" id="arrow-chea_serey">▸</span>
     </div>
   </div>
   <div style="font-size:.8125rem;color:var(--muted);margin:.4rem 0 .75rem;max-width:72ch">Mental model schema mapping decision-making architecture across 7 dimensions Born 1981, Phnom Penh. Commerce degree (Victoria University, NZ). PhD Economics — financial development and inclusion in ASEAN LDCs (University of Adelaide, 2021). Joined NBC banking supervision 2002. Director-General 2013.</div>
-  <div class="leader-detail" id="dim-chea_serey" style="display:block">
+  <div class="leader-detail" id="dim-chea_serey" style="display:none">
   <table class="dim-table">
     <thead>
       <tr>
@@ -830,10 +835,10 @@ blockquote .bq-source a:hover { color: var(--accent); }
   <div style="margin:1.25rem 0 0"><h3 style="margin-bottom:.6rem">Consistency Ratings</h3><table style="width:100%;border-collapse:collapse"><tbody><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">De-dollarisation</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-muted">MEDIUM-HIGH</span></td><td style="font-size:.78rem;color:var(--muted)">Policy instruments consistent with stated goal; pace necessarily slow</td></tr><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">Bakong / digital payment</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-high">⚠ HIGH</span></td><td style="font-size:.78rem;color:var(--muted)">Cross-border QR expanding; BIS NEXUS entry; 1M+ merchants; A- international rating</td></tr><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">Financial inclusion</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-high">⚠ HIGH</span></td><td style="font-size:.78rem;color:var(--muted)">Credit Bureau, microcredit crackdown, school curricula integration — consistent actions</td></tr><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">NPL management</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-medium">◈ MEDIUM</span></td><td style="font-size:.78rem;color:var(--muted)">NPL above regional average; restructuring measures in place but not yet fully resolved</td></tr></tbody></table></div>
   
   <blockquote>"Maintaining the riel&#x27;s stability has contributed to price stability in the market. In 2023, the riel depreciated only about 0.9%, even as other regional currencies saw much sharper losses."<span class="bq-source">— </span></blockquote>
-  <h3 style="margin:1.25rem 0 0.75rem">Synthesis</h3><div class="synthesis-grid"><div class="synth-cell"><div class="synth-dim"></div><div class="synth-insight">Use growth_theory behavior as primary signal</div></div><div class="synth-cell"><div class="synth-dim"></div><div class="synth-insight">Use risk_tolerance behavior as primary signal</div></div><div class="synth-cell"><div class="synth-dim"></div><div class="synth-insight">Use time_horizon behavior as primary signal</div></div></div>
+  
   <div style="font-family:var(--mono);font-size:.6rem;color:var(--muted);margin-top:1rem">Based on: PMO speeches · Khmer Times · Phnom Penh Post · WTO TPR · ADB · World Bank · IMF · Kamnotra.io · Open Development Cambodia</div>
 </div>
-</div><div class="leader-row">
+</div><div class="leader-row" id="chea_vandeth" data-searchable>
   <div class="leader-row-header" onclick="toggleLeader('chea_vandeth')">
     <div class="leader-row-meta">
       <span class="leader-name">Chea Vandeth</span>
@@ -844,11 +849,11 @@ blockquote .bq-source a:hover { color: var(--accent); }
         <div class="completeness-frac">7/7</div>
         <div class="completeness-sub">dims populated</div>
       </div>
-      <span class="expand-arrow" id="arrow-chea_vandeth">▾</span>
+      <span class="expand-arrow" id="arrow-chea_vandeth">▸</span>
     </div>
   </div>
   <div style="font-size:.8125rem;color:var(--muted);margin:.4rem 0 .75rem;max-width:72ch">Mental model schema mapping decision-making architecture across 7 dimensions Minister of Post and Telecommunications since April 2020. Rebuilt the ministry from a low-visibility infrastructure unit into Cambodia&#x27;s digital transformation lead. Launched Cambodia Digital Economy and Society Policy Fram</div>
-  <div class="leader-detail" id="dim-chea_vandeth" style="display:block">
+  <div class="leader-detail" id="dim-chea_vandeth" style="display:none">
   <table class="dim-table">
     <thead>
       <tr>
@@ -863,10 +868,10 @@ blockquote .bq-source a:hover { color: var(--accent); }
   <div style="margin:1.25rem 0 0"><h3 style="margin-bottom:.6rem">Consistency Ratings</h3><table style="width:100%;border-collapse:collapse"><tbody><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">Digital government infrastructure</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-high">⚠ HIGH</span></td><td style="font-size:.78rem;color:var(--muted)">DWF, VERIFY.GOV.KH, CamDX — real systems producing measurable revenue uplift</td></tr><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">Digital citizen programme</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-medium">◈ MEDIUM</span></td><td style="font-size:.78rem;color:var(--muted)">600 scholarships, 42 labs — started; scale relative to 16M population is small</td></tr><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">5G rollout</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-muted">LOW-MEDIUM</span></td><td style="font-size:.78rem;color:var(--muted)">Committed 2026 start; technical and investment preparation details unclear</td></tr><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">Cybersecurity legal framework</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-low">◈ LOW</span></td><td style="font-size:.78rem;color:var(--muted)">Acknowledged as gap; legal bills in draft; no enacted framework as of 2025</td></tr></tbody></table></div>
   
   <blockquote>"For a developing country like Cambodia, new technologies provide an opportunity to leapfrog, bypassing traditional phases of development. We want to transform our government to be digital and reduce as much as possible the use of paper."<span class="bq-source">— </span></blockquote>
-  <h3 style="margin:1.25rem 0 0.75rem">Synthesis</h3><div class="synthesis-grid"><div class="synth-cell"><div class="synth-dim"></div><div class="synth-insight">Use growth_theory behavior as primary signal</div></div><div class="synth-cell"><div class="synth-dim"></div><div class="synth-insight">Use risk_tolerance behavior as primary signal</div></div><div class="synth-cell"><div class="synth-dim"></div><div class="synth-insight">Use time_horizon behavior as primary signal</div></div></div>
+  
   <div style="font-family:var(--mono);font-size:.6rem;color:var(--muted);margin-top:1rem">Based on: PMO speeches · Khmer Times · Phnom Penh Post · WTO TPR · ADB · World Bank · IMF · Kamnotra.io · Open Development Cambodia</div>
 </div>
-</div><div class="leader-row">
+</div><div class="leader-row" id="hang_chuon_naron" data-searchable>
   <div class="leader-row-header" onclick="toggleLeader('hang_chuon_naron')">
     <div class="leader-row-meta">
       <span class="leader-name">Hang Chuon Naron</span>
@@ -877,11 +882,11 @@ blockquote .bq-source a:hover { color: var(--accent); }
         <div class="completeness-frac">7/7</div>
         <div class="completeness-sub">dims populated</div>
       </div>
-      <span class="expand-arrow" id="arrow-hang_chuon_naron">▾</span>
+      <span class="expand-arrow" id="arrow-hang_chuon_naron">▸</span>
     </div>
   </div>
   <div style="font-size:.8125rem;color:var(--muted);margin:.4rem 0 .75rem;max-width:72ch">Mental model schema mapping decision-making architecture across 7 dimensions Born 1962. PhD in International Economics (Moscow State Institute of International Relations, 1991). LLM (Royal University of Law and Economics / Lyon 2). PhD in Education Administration (Chulalongkorn University, Thailand,</div>
-  <div class="leader-detail" id="dim-hang_chuon_naron" style="display:block">
+  <div class="leader-detail" id="dim-hang_chuon_naron" style="display:none">
   <table class="dim-table">
     <thead>
       <tr>
@@ -896,10 +901,10 @@ blockquote .bq-source a:hover { color: var(--accent); }
   <div style="margin:1.25rem 0 0"><h3 style="margin-bottom:.6rem">Consistency Ratings</h3><table style="width:100%;border-collapse:collapse"><tbody><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">Anti-cheating / assessment integrity</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-high">⚠ HIGH</span></td><td style="font-size:.78rem;color:var(--muted)">Held policy through significant political pressure; pass rates recovered as quality improved</td></tr><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">Curriculum reform</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-high">⚠ HIGH</span></td><td style="font-size:.78rem;color:var(--muted)">ESP 2024-2028 implemented with genuine multi-stakeholder process</td></tr><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">Teacher quality / salary</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-medium">◈ MEDIUM</span></td><td style="font-size:.78rem;color:var(--muted)">Correctly identified as binding constraint; not yet resolved at fiscal level</td></tr><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">STEM / vocational track</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-muted">MEDIUM-LOW</span></td><td style="font-size:.78rem;color:var(--muted)">Pilot announced 2025; scale and funding not yet committed</td></tr><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">AI / EdTech integration</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-medium">◈ MEDIUM</span></td><td style="font-size:.78rem;color:var(--muted)">Teacher training integration underway; student-level deployment early stage</td></tr></tbody></table></div>
   
   <blockquote>"Reforming education pathways is necessary to build skilled human capital, align with Cambodia&#x27;s economic structure, reduce the dropout rate, boost higher education enrolment — particularly in STEM — and equip students with technical and vocational sk"<span class="bq-source">— </span></blockquote>
-  <h3 style="margin:1.25rem 0 0.75rem">Synthesis</h3><div class="synthesis-grid"><div class="synth-cell"><div class="synth-dim"></div><div class="synth-insight">Use growth_theory behavior as primary signal</div></div><div class="synth-cell"><div class="synth-dim"></div><div class="synth-insight">Use risk_tolerance behavior as primary signal</div></div><div class="synth-cell"><div class="synth-dim"></div><div class="synth-insight">Use time_horizon behavior as primary signal</div></div></div>
+  
   <div style="font-family:var(--mono);font-size:.6rem;color:var(--muted);margin-top:1rem">Based on: PMO speeches · Khmer Times · Phnom Penh Post · WTO TPR · ADB · World Bank · IMF · Kamnotra.io · Open Development Cambodia</div>
 </div>
-</div><div class="leader-row">
+</div><div class="leader-row" id="hem_vanndy" data-searchable>
   <div class="leader-row-header" onclick="toggleLeader('hem_vanndy')">
     <div class="leader-row-meta">
       <span class="leader-name">Hem Vanndy</span>
@@ -910,11 +915,11 @@ blockquote .bq-source a:hover { color: var(--accent); }
         <div class="completeness-frac">7/7</div>
         <div class="completeness-sub">dims populated</div>
       </div>
-      <span class="expand-arrow" id="arrow-hem_vanndy">▾</span>
+      <span class="expand-arrow" id="arrow-hem_vanndy">▸</span>
     </div>
   </div>
   <div style="font-size:.8125rem;color:var(--muted);margin:.4rem 0 .75rem;max-width:72ch">Mental model schema mapping decision-making architecture across 7 dimensions New generation technocrat minister. Focus on Industry 4.0, SME formalisation, economic diversification, and industrial value-add. Chairs Khmer Enterprise (national entrepreneurship fund). Has pitched Cambodia to Singaporean</div>
-  <div class="leader-detail" id="dim-hem_vanndy" style="display:block">
+  <div class="leader-detail" id="dim-hem_vanndy" style="display:none">
   <table class="dim-table">
     <thead>
       <tr>
@@ -929,10 +934,10 @@ blockquote .bq-source a:hover { color: var(--accent); }
   <div style="margin:1.25rem 0 0"><h3 style="margin-bottom:.6rem">Consistency Ratings</h3><table style="width:100%;border-collapse:collapse"><tbody><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">SME formalisation</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-medium">◈ MEDIUM</span></td><td style="font-size:.78rem;color:var(--muted)">1,292 new registrations in 2024; far short of 500,000 MSME transformation target</td></tr><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">Industry 4.0 / digital factory</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-muted">LOW-MEDIUM</span></td><td style="font-size:.78rem;color:var(--muted)">Framing advanced; sensor/IoT installation programme has not yet produced scale</td></tr><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">Anti-regulatory harassment</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-muted">MEDIUM-HIGH</span></td><td style="font-size:.78rem;color:var(--muted)">Joint inspection mechanism is a real reform; whether it reduced rent-seeking is unverified</td></tr><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">Data integration across ministries</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-medium">◈ MEDIUM</span></td><td style="font-size:.78rem;color:var(--muted)">Common SME definition agreed; full CamDX integration is in progress</td></tr></tbody></table></div>
   
   <blockquote>"You can&#x27;t shake a tree that has just begun to grow. Instead, it&#x27;s essential to nurture it with water, provide it with fertilisers and take care of it regularly. MISTI advocates for support, not interference in fostering private sector engagement."<span class="bq-source">— </span></blockquote>
-  <h3 style="margin:1.25rem 0 0.75rem">Synthesis</h3><div class="synthesis-grid"><div class="synth-cell"><div class="synth-dim"></div><div class="synth-insight">Use growth_theory behavior as primary signal</div></div><div class="synth-cell"><div class="synth-dim"></div><div class="synth-insight">Use risk_tolerance behavior as primary signal</div></div><div class="synth-cell"><div class="synth-dim"></div><div class="synth-insight">Use time_horizon behavior as primary signal</div></div></div>
+  
   <div style="font-family:var(--mono);font-size:.6rem;color:var(--muted);margin-top:1rem">Based on: PMO speeches · Khmer Times · Phnom Penh Post · WTO TPR · ADB · World Bank · IMF · Kamnotra.io · Open Development Cambodia</div>
 </div>
-</div><div class="leader-row">
+</div><div class="leader-row" id="hun_manet" data-searchable>
   <div class="leader-row-header" onclick="toggleLeader('hun_manet')">
     <div class="leader-row-meta">
       <span class="leader-name">Hun Manet</span>
@@ -943,11 +948,11 @@ blockquote .bq-source a:hover { color: var(--accent); }
         <div class="completeness-frac">7/7</div>
         <div class="completeness-sub">dims populated</div>
       </div>
-      <span class="expand-arrow" id="arrow-hun_manet">▾</span>
+      <span class="expand-arrow" id="arrow-hun_manet">▸</span>
     </div>
   </div>
   <div style="font-size:.8125rem;color:var(--muted);margin:.4rem 0 .75rem;max-width:72ch">Predictive schema of Hun Manet&#x27;s decision-making architecture across seven dimensions.</div>
-  <div class="leader-detail" id="dim-hun_manet" style="display:block">
+  <div class="leader-detail" id="dim-hun_manet" style="display:none">
   <table class="dim-table">
     <thead>
       <tr>
@@ -965,7 +970,7 @@ blockquote .bq-source a:hover { color: var(--accent); }
   <h3 style="margin:1.25rem 0 0.75rem">Synthesis</h3><div class="synthesis-grid"><div class="synth-cell"><div class="synth-dim">growth_theory</div><div class="synth-insight">Budget priorities will continue to favour FDI-attracting infrastructure (airports, ports, SEZs) over institutional SME development. Garment sector support likely to continue until a credible alternative revenue base exists.</div></div><div class="synth-cell"><div class="synth-dim">risk_tolerance</div><div class="synth-insight">Hun Manet is unlikely to accept short-term pain for long-term structural gain voluntarily. Policy experimentation will be gradual, consensus-based, and reversible if politically costly. Crisis responses will be fast on optics, slower on underlying structure.</div></div><div class="synth-cell"><div class="synth-dim">time_horizon</div><div class="synth-insight">The 2029 LDC graduation problem is likely to be underplayed until late. External partners should not assume the government has an internal solution to preference loss; evidence suggests it does not.</div></div><div class="synth-cell"><div class="synth-dim">dependency_assumptions</div><div class="synth-insight">The live stress scenario is a &#x27;triple squeeze&#x27;: US tariffs + Chinese slowdown + EBA loss. Cambodia’s BATNA is structurally weaker than its diplomatic posture suggests in any negotiation under this scenario.</div></div><div class="synth-cell"><div class="synth-dim">institution_vs_relationship</div><div class="synth-insight">Formal institutions and agreements matter less than who is present in the decision room. The Hun family and CPP inner circle are the true decision nodes. Institutional channels are primarily for legitimation, not actual decision-making.</div></div><div class="synth-cell"><div class="synth-dim">global_positioning_logic</div><div class="synth-insight">Cambodia will avoid choosing sides and will keep extracting value from both China and the West. The core question is not alignment but what Cambodia seeks from each engagement: usually investment, trade access, and diplomatic legitimacy.</div></div><div class="synth-cell"><div class="synth-dim">consistency_score</div><div class="synth-insight">Foreign policy behaviour is the most reliable predictor of future actions. Domestic governance and reform commitments should be discounted until anchored by concrete budget lines or structural judicial changes.</div></div></div>
   <div style="font-family:var(--mono);font-size:.6rem;color:var(--muted);margin-top:1rem">Based on: Pentagonal Strategy Phase I · PMO speeches · key interviews · multilateral research</div>
 </div>
-</div><div class="leader-row">
+</div><div class="leader-row" id="hun_sen" data-searchable>
   <div class="leader-row-header" onclick="toggleLeader('hun_sen')">
     <div class="leader-row-meta">
       <span class="leader-name">Hun Sen</span>
@@ -976,11 +981,11 @@ blockquote .bq-source a:hover { color: var(--accent); }
         <div class="completeness-frac">7/7</div>
         <div class="completeness-sub">dims populated</div>
       </div>
-      <span class="expand-arrow" id="arrow-hun_sen">▾</span>
+      <span class="expand-arrow" id="arrow-hun_sen">▸</span>
     </div>
   </div>
   <div style="font-size:.8125rem;color:var(--muted);margin:.4rem 0 .75rem;max-width:72ch">Stub profile — to be populated by extractor pipeline</div>
-  <div class="leader-detail" id="dim-hun_sen" style="display:block">
+  <div class="leader-detail" id="dim-hun_sen" style="display:none">
   <table class="dim-table">
     <thead>
       <tr>
@@ -998,7 +1003,7 @@ blockquote .bq-source a:hover { color: var(--accent); }
   
   
 </div>
-</div><div class="leader-row">
+</div><div class="leader-row" id="say_sam_al" data-searchable>
   <div class="leader-row-header" onclick="toggleLeader('say_sam_al')">
     <div class="leader-row-meta">
       <span class="leader-name">Say Sam Al</span>
@@ -1009,11 +1014,11 @@ blockquote .bq-source a:hover { color: var(--accent); }
         <div class="completeness-frac">7/7</div>
         <div class="completeness-sub">dims populated</div>
       </div>
-      <span class="expand-arrow" id="arrow-say_sam_al">▾</span>
+      <span class="expand-arrow" id="arrow-say_sam_al">▸</span>
     </div>
   </div>
   <div style="font-size:.8125rem;color:var(--muted);margin:.4rem 0 .75rem;max-width:72ch">Mental model schema mapping decision-making architecture across 7 dimensions Environment minister since 2013. Cambodia&#x27;s forests have seen accelerating destruction during his tenure — 24% of forest cover lost 2001–2018. The ministry has a dual mandate that creates an intrinsic conflict: attracting i</div>
-  <div class="leader-detail" id="dim-say_sam_al" style="display:block">
+  <div class="leader-detail" id="dim-say_sam_al" style="display:none">
   <table class="dim-table">
     <thead>
       <tr>
@@ -1028,10 +1033,10 @@ blockquote .bq-source a:hover { color: var(--accent); }
   <div style="margin:1.25rem 0 0"><h3 style="margin-bottom:.6rem">Consistency Ratings</h3><table style="width:100%;border-collapse:collapse"><tbody><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">Forest conservation</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-low">◈ LOW</span></td><td style="font-size:.78rem;color:var(--muted)">24% forest loss 2001-2018; no reversal under his tenure</td></tr><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">Environmental enforcement</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-low">◈ LOW</span></td><td style="font-size:.78rem;color:var(--muted)">Zero prosecutions for illegal logging; NGO crackdown instead</td></tr><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">Climate commitments</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-low">◈ LOW</span></td><td style="font-size:.78rem;color:var(--muted)">NDC targets vs actual emissions trajectory — no convergence</td></tr><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">Concession regulation</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-low">◈ LOW</span></td><td style="font-size:.78rem;color:var(--muted)">Concessions on communally occupied and protected land continue</td></tr></tbody></table></div>
   
   
-  <h3 style="margin:1.25rem 0 0.75rem">Synthesis</h3><div class="synthesis-grid"><div class="synth-cell"><div class="synth-dim"></div><div class="synth-insight">Use growth_theory behavior as primary signal</div></div><div class="synth-cell"><div class="synth-dim"></div><div class="synth-insight">Use risk_tolerance behavior as primary signal</div></div><div class="synth-cell"><div class="synth-dim"></div><div class="synth-insight">Use time_horizon behavior as primary signal</div></div></div>
+  
   <div style="font-family:var(--mono);font-size:.6rem;color:var(--muted);margin-top:1rem">Based on: PMO speeches · Khmer Times · Phnom Penh Post · WTO TPR · ADB · World Bank · IMF · Kamnotra.io · Open Development Cambodia</div>
 </div>
-</div><div class="leader-row">
+</div><div class="leader-row" id="sok_siphana" data-searchable>
   <div class="leader-row-header" onclick="toggleLeader('sok_siphana')">
     <div class="leader-row-meta">
       <span class="leader-name">Sok Siphana</span>
@@ -1042,11 +1047,11 @@ blockquote .bq-source a:hover { color: var(--accent); }
         <div class="completeness-frac">7/7</div>
         <div class="completeness-sub">dims populated</div>
       </div>
-      <span class="expand-arrow" id="arrow-sok_siphana">▾</span>
+      <span class="expand-arrow" id="arrow-sok_siphana">▸</span>
     </div>
   </div>
   <div style="font-size:.8125rem;color:var(--muted);margin:.4rem 0 .75rem;max-width:72ch">Mental model schema mapping decision-making architecture across 7 dimensions Born 1960. Khmer Rouge survivor. Fled to US 1980. JD (Widener), PhD in Law (Bond University, Australia), Docteur en Droit (Paris II). Led Cambodia&#x27;s WTO accession 1999–2004 as lead negotiator. Director at ITC/WTO Geneva 200</div>
-  <div class="leader-detail" id="dim-sok_siphana" style="display:block">
+  <div class="leader-detail" id="dim-sok_siphana" style="display:none">
   <table class="dim-table">
     <thead>
       <tr>
@@ -1061,10 +1066,10 @@ blockquote .bq-source a:hover { color: var(--accent); }
   <div style="margin:1.25rem 0 0"><h3 style="margin-bottom:.6rem">Consistency Ratings</h3><table style="width:100%;border-collapse:collapse"><tbody><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">Trade law and multilateral engagement</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-high">⚠ HIGH</span></td><td style="font-size:.78rem;color:var(--muted)">Career-long consistency from WTO accession through TPAB chairmanship</td></tr><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">Legal reform advocacy</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-high">⚠ HIGH</span></td><td style="font-size:.78rem;color:var(--muted)">1st Vice-Chair Council of Legal Reform; WTO law framework for Cambodia</td></tr><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">2029 preparation</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-muted">MEDIUM-HIGH</span></td><td style="font-size:.78rem;color:var(--muted)">Most analytically prepared; implementation pace depends on political will above his level</td></tr><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">Independence from patronage system</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-medium">◈ MEDIUM</span></td><td style="font-size:.78rem;color:var(--muted)">Institutionally oriented but appointed by and answerable to CPP PM; operates within system</td></tr></tbody></table></div>
   
   <blockquote>"We have to have WTO accession because the fate of 220,000 workers is at stake, if we don&#x27;t enter. Cambodia can use the WTO as an international force to negotiate. As a small country we don&#x27;t have the bargaining power to negotiate bilaterally — if we"<span class="bq-source">— </span></blockquote>
-  <h3 style="margin:1.25rem 0 0.75rem">Synthesis</h3><div class="synthesis-grid"><div class="synth-cell"><div class="synth-dim"></div><div class="synth-insight">Use growth_theory behavior as primary signal</div></div><div class="synth-cell"><div class="synth-dim"></div><div class="synth-insight">Use risk_tolerance behavior as primary signal</div></div><div class="synth-cell"><div class="synth-dim"></div><div class="synth-insight">Use time_horizon behavior as primary signal</div></div></div>
+  
   <div style="font-family:var(--mono);font-size:.6rem;color:var(--muted);margin-top:1rem">Based on: PMO speeches · Khmer Times · Phnom Penh Post · WTO TPR · ADB · World Bank · IMF · Kamnotra.io · Open Development Cambodia</div>
 </div>
-</div><div class="leader-row">
+</div><div class="leader-row" id="sun_chanthol" data-searchable>
   <div class="leader-row-header" onclick="toggleLeader('sun_chanthol')">
     <div class="leader-row-meta">
       <span class="leader-name">Sun Chanthol</span>
@@ -1075,11 +1080,11 @@ blockquote .bq-source a:hover { color: var(--accent); }
         <div class="completeness-frac">7/7</div>
         <div class="completeness-sub">dims populated</div>
       </div>
-      <span class="expand-arrow" id="arrow-sun_chanthol">▾</span>
+      <span class="expand-arrow" id="arrow-sun_chanthol">▸</span>
     </div>
   </div>
   <div style="font-size:.8125rem;color:var(--muted);margin:.4rem 0 .75rem;max-width:72ch">Mental model schema mapping decision-making architecture across 7 dimensions Born 1956. BS Business Administration (American University), MPA (Harvard), Advanced Management Program (Wharton). 16 years at General Electric in senior finance/GM roles. Former Minister of Commerce (2013–16) and Public Wo</div>
-  <div class="leader-detail" id="dim-sun_chanthol" style="display:block">
+  <div class="leader-detail" id="dim-sun_chanthol" style="display:none">
   <table class="dim-table">
     <thead>
       <tr>
@@ -1094,7 +1099,7 @@ blockquote .bq-source a:hover { color: var(--accent); }
   <div style="margin:1.25rem 0 0"><h3 style="margin-bottom:.6rem">Consistency Ratings</h3><table style="width:100%;border-collapse:collapse"><tbody><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">FDI attraction outcomes</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-high">⚠ HIGH</span></td><td style="font-size:.78rem;color:var(--muted)">CDC data tracks his rhetoric; 40-60% annual investment growth 2023-2025</td></tr><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">Anti-corruption via digitisation</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-medium">◈ MEDIUM</span></td><td style="font-size:.78rem;color:var(--muted)">Online systems real; informal facilitation layer unaddressed</td></tr><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">Clean energy 2030 commitment</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-muted">LOW-MEDIUM</span></td><td style="font-size:.78rem;color:var(--muted)">Stated in March 2024; no published investment pipeline to substantiate</td></tr><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">Sectoral diversification</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-medium">◈ MEDIUM</span></td><td style="font-size:.78rem;color:var(--muted)">Electronics and automotive growth real but small relative to garment dependence</td></tr></tbody></table></div>
   
   <blockquote>"Peace, political stability, and economic growth coupled with investment incentives and policies are catalysts in attracting new investment to invest in Cambodia, create jobs, boost exports, and contribute to socio-economic development."<span class="bq-source">— </span></blockquote>
-  <h3 style="margin:1.25rem 0 0.75rem">Synthesis</h3><div class="synthesis-grid"><div class="synth-cell"><div class="synth-dim"></div><div class="synth-insight">Use growth_theory behavior as primary signal</div></div><div class="synth-cell"><div class="synth-dim"></div><div class="synth-insight">Use risk_tolerance behavior as primary signal</div></div><div class="synth-cell"><div class="synth-dim"></div><div class="synth-insight">Use time_horizon behavior as primary signal</div></div></div>
+  
   <div style="font-family:var(--mono);font-size:.6rem;color:var(--muted);margin-top:1rem">Based on: PMO speeches · Khmer Times · Phnom Penh Post · WTO TPR · ADB · World Bank · IMF · Kamnotra.io · Open Development Cambodia</div>
 </div>
 </div>
@@ -1115,5 +1120,26 @@ function toggleLeader(id) {
 }
 </script>
 
+<script>
+function initSearch() {
+  var input = document.getElementById('site-search');
+  if (!input) return;
+  var targets = document.querySelectorAll('[data-searchable]');
+  input.addEventListener('input', function() {
+    var q = this.value.trim().toLowerCase();
+    if (!q) { targets.forEach(function(el){ el.style.display = ''; }); return; }
+    targets.forEach(function(el) {
+      var text = el.textContent.toLowerCase();
+      el.style.display = text.includes(q) ? '' : 'none';
+    });
+  });
+}
+document.addEventListener('DOMContentLoaded', initSearch);
+</script>
+
+<footer style="border-top:1px solid var(--b-dim);padding:1.5rem 2rem;margin-top:4rem;display:flex;align-items:center;justify-content:space-between;font-family:var(--mono);font-size:.6rem;color:var(--muted)">
+  <span>PRECEDENT — Cambodia political intelligence</span>
+  <span>Data updated: 2026-04-27</span>
+</footer>
 </body>
 </html>

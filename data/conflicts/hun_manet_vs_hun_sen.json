@@ -1,0 +1,57 @@
+{
+  "leaders_compared": [
+    "hun_manet",
+    "hun_sen"
+  ],
+  "conflicts": [
+    {
+      "dimension": "institution_vs_relationship",
+      "leader_a": "hun_manet",
+      "leader_a_position": "Hun Manet's growth doctrine treats FDI attraction as a primary engine of diversification, which structurally requires credible, predictable rules-based frameworks to attract and retain foreign capital at scale.",
+      "leader_a_quote": "",
+      "leader_b": "hun_sen",
+      "leader_b_position": "Hun Sen built zero independent institutions in 38 years; every formal body was designed to convert relationship outcomes into legal form, with the judiciary scoring 0/4 on independence and no corruption convictions as an explicit design feature.",
+      "leader_b_quote": "No officials convicted of corruption in 38 years is not an accident — it is a design specification.",
+      "conflict_explanation": "Hun Manet's FDI-led diversification doctrine requires that investors can rely on contract enforcement, dispute resolution, and regulatory predictability independent of personal relationships with the ruling family. Hun Sen's institutional legacy is explicitly the opposite: every formal body exists to ratify relationship-based outcomes, not to constrain them. If both doctrines are simultaneously operative — which they are, since Hun Sen retains Senate presidency and CPP structural control — then any investor who relies on Hun Manet's rule-of-law signals will encounter Hun Sen's relationship-based reality when a dispute arises. The two frameworks cannot both be true at the operating layer: either courts are independent or they are not.",
+      "implementation_risk": "HIGH",
+      "prediction": "A high-profile FDI dispute (likely in real estate, telecoms, or special economic zones) will reach the Cambodian judiciary and be resolved in favor of a CPP-connected party, publicly falsifying Hun Manet's rule-of-law FDI narrative and triggering investor reassessment of the entire diversification program."
+    },
+    {
+      "dimension": "growth_theory",
+      "leader_a": "hun_manet",
+      "leader_a_position": "Hun Manet's stated growth theory prioritizes human capital, digital transformation, and MSME development as long-horizon bets, with infrastructure and FDI receiving budget priority when resources are constrained.",
+      "leader_a_quote": "",
+      "leader_b": "hun_sen",
+      "leader_b_position": "Hun Sen's growth model was never a coherent economic theory but a political economy theory: stability through personal control generates investor confidence; FDI and garments are welcomed only insofar as they sustain CPP legitimacy, with no industrial policy, no SOE restructuring, and preservation of the patronage system as the non-negotiable constraint.",
+      "leader_b_quote": "I am committed to transform Cambodia into an upper-middle-income economy by 2030 and a developed country by 2050.",
+      "conflict_explanation": "Hun Manet's growth doctrine requires reallocating budget and policy priority toward human capital and SME development — which necessarily means reducing the patronage payroll and SOE rent flows that Hun Sen's model depends on for political stability. The 122% expansion of senior civil service posts under Hun Sen was explicitly a succession-preparation and patronage-absorption mechanism. Any genuine human capital reorientation would require defunding or restructuring those posts, directly threatening the loyalty infrastructure Hun Sen built. Both growth models cannot be implemented simultaneously: one requires productive reallocation of rents, the other requires their preservation.",
+      "implementation_risk": "HIGH",
+      "prediction": "Budget negotiations for the 2026-2028 cycle will reveal that civil service wage obligations and patronage commitments (Hun Sen's legacy load) consume the fiscal space theoretically allocated to Hun Manet's human capital and digital transformation priorities, forcing a public retreat from the diversification agenda or a debt-financed fiction of pursuing both."
+    },
+    {
+      "dimension": "global_positioning_logic",
+      "leader_a": "hun_manet",
+      "leader_a_position": "Hun Manet's FDI diversification and digital transformation agenda implicitly requires repairing Western economic relationships — particularly EU EBA access and US market credibility — to attract non-Chinese capital and reduce single-source dependency.",
+      "leader_a_quote": "",
+      "leader_b": "hun_sen",
+      "leader_b_position": "Hun Sen explicitly accepted the 2020 EU EBA partial withdrawal rather than make governance concessions, declared China 'the most reliable friendship in our history,' and structured Ream Naval Base access as a strategic commitment to Chinese positioning that is not reversible without catastrophic relationship cost.",
+      "leader_b_quote": "Cambodia's relationship with China is the most reliable friendship in our history.",
+      "conflict_explanation": "Hun Manet's diversification doctrine requires signaling credibly to Western investors and trade partners that Cambodia is not a Chinese strategic dependency — because that perception directly deters non-Chinese FDI and risks further trade preference erosion. Hun Sen's legacy commitments (Ream Naval Base, 'all-weather partnership' declaration, EBA sacrifice) are not merely rhetorical: they are structural geopolitical facts that Western governments use to classify Cambodia's alignment. Hun Manet cannot simultaneously honor Hun Sen's China commitments and credibly court Western capital reengagement, because Western due diligence on Cambodia explicitly cites those commitments as disqualifying risk factors.",
+      "implementation_risk": "HIGH",
+      "prediction": "Hun Manet's attempt to attract EU or US-linked manufacturers (particularly those reshoring from China under friend-shoring frameworks) will be blocked at the due-diligence or government-approval stage by Cambodia's classification as a Chinese-aligned state, forcing Hun Manet to either publicly distance from Hun Sen's China doctrine — risking internal CPP fracture — or abandon the Western FDI diversification narrative entirely."
+    },
+    {
+      "dimension": "time_horizon",
+      "leader_a": "hun_manet",
+      "leader_a_position": "Hun Manet's stated doctrine commits to long-horizon bets on human capital and digital transformation, implying willingness to defer short-term patronage distribution in favor of structural investment with payoffs beyond a single political cycle.",
+      "leader_a_quote": "",
+      "leader_b": "hun_sen",
+      "leader_b_position": "Hun Sen's actual operating horizon was succession security, not Cambodia's development; every economic decision from 2019 onward was succession preparation, and the Vision 2050 framework is described explicitly as 'a successor government's problem, not his.'",
+      "leader_b_quote": "The 25-year Vision 2050 is a successor government's problem, not his.",
+      "conflict_explanation": "Hun Sen structured the CPP's institutional and financial architecture around short-horizon loyalty purchasing — the civil service expansion, military placements, and patronage networks are all funded by current rent extraction, not future productivity gains. Hun Manet's long-horizon human capital doctrine requires compressing those rent flows to fund investments with 10-20 year payoffs. Because Hun Sen remains Senate President and retains CPP structural authority, any budget move by Hun Manet that cuts patronage flows to fund long-horizon programs will be interpreted — correctly — as threatening the loyalty infrastructure that keeps both men in power. The two time horizons are not merely different in degree; they require opposite budget allocation logics.",
+      "implementation_risk": "HIGH",
+      "prediction": "Within 24 months of any serious Hun Manet budget reorientation toward education or digital infrastructure at the expense of civil service headcount or military budgets, CPP internal factionalism will surface publicly, with Hun Sen-aligned figures (including his other sons) signaling opposition, forcing Hun Manet to reverse course and demonstrating that the long-horizon doctrine was never operationally sovereign."
+    }
+  ],
+  "analysis_date": "2026-04-27"
+}

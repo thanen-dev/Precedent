@@ -1,0 +1,21 @@
+{
+  "leaders_compared": [
+    "hun_manet",
+    "chea_serey"
+  ],
+  "conflicts": [
+    {
+      "dimension": "growth_theory",
+      "leader_a": "hun_manet",
+      "leader_a_position": "When resources are constrained, FDI and infrastructure win budget priority over SME and institution-building; growth follows investable infrastructure with a garment-export revenue base.",
+      "leader_a_quote": "people, roads, water, electricity, and digital technology as five key priorities; growth follows investable infrastructure",
+      "leader_b": "chea_serey",
+      "leader_b_position": "Monetary sovereignty and financial inclusion are prerequisites for growth agency; de-dollarisation and the riel-based payment system are themselves growth infrastructure, not subordinate to physical FDI-attracting infrastructure.",
+      "leader_b_quote": "Maintaining the riel's stability has contributed to price stability in the market. In 2023, the riel depreciated only about 0.9%, even as other regional currencies saw much sharper losses.",
+      "conflict_explanation": "Hun Manet's doctrine treats FDI attraction as the primary growth lever and implicitly accepts the dollar-denominated financial environment that makes Cambodia legible to foreign investors. Serey's doctrine requires progressively replacing that dollar-denominated environment with riel-denominated infrastructure as a precondition for genuine growth agency. Simultaneously implemented: the government would be maximising dollar-denominated FDI inflows (which deepens dollarisation and dollar-denominated bank liabilities) while the NBC is structurally reducing the dollar's role and building riel settlement infrastructure. Each policy actively undermines the other's load-bearing assumption — FDI attraction depends on dollar stability and convertibility; de-dollarisation requires reducing the primacy of that same dollar infrastructure.",
+      "implementation_risk": "HIGH",
+      "prediction": "A large FDI deal or infrastructure financing round denominated in USD — of the type Manet's team actively courts — will require NBC to allow dollar-intermediated settlement terms that contradict NBC's de-dollarisation loan-ratio mandates. The breaking point will be a specific regulation: either NBC's 10% riel-loan requirement will be quietly waived for FDI-linked banking products, or a foreign investor will publicly cite NBC's currency policies as a conversion-risk deterrent, forcing the cabinet to choose between the FDI pipeline and the de-dollarisation timeline."
+    }
+  ],
+  "analysis_date": "2026-04-27"
+}
