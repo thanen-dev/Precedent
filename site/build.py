@@ -977,21 +977,27 @@ def _page(title: str, active: str, body: str, extra_js: str = "") -> str:
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{html_lib.escape(full_title)}</title>
 <meta name="description" content="{meta_desc}">
-{FONTS}
-<style>{CSS}</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="masthead">
-  <div class="masthead-top">
-    <a href="index.html" class="masthead-wordmark">{SITE_TITLE}</a>
-    <div class="masthead-tagline">{SITE_TAGLINE}</div>
+  <div class="masthead-inner">
+    <div class="masthead-brand">
+      <a href="index.html" class="masthead-wordmark">{SITE_TITLE}</a>
+      <span class="masthead-version">v0.2</span>
+    </div>
+    <nav class="masthead-nav">{nav}</nav>
+    <div class="masthead-meta">Political Intelligence · Cambodia's Decision-Makers</div>
   </div>
-  <nav class="masthead-nav">{nav}</nav>
 </header>
+<div class="date-strip">
+  <span>{_BUILD_DATE} · Intelligence Update</span>
+  <span>Coverage: Cambodia's senior leadership</span>
+</div>
 {body}
 {extra_js}
-<footer style="border-top:1px solid var(--b-dim);padding:1.5rem 2rem;margin-top:4rem;display:flex;align-items:center;justify-content:space-between;font-family:var(--mono);font-size:.6rem;color:var(--muted)">
-  <span>{SITE_TITLE} — Cambodia political intelligence</span>
+<footer class="site-footer">
+  <span>{SITE_TITLE} · Cambodia Political Intelligence · v0.2</span>
   <span>Data updated: {_BUILD_DATE}</span>
 </footer>
 </body>
@@ -1798,12 +1804,18 @@ def build(clean: bool = False) -> list[Path]:
         "methodology.html": build_methodology(),
     }
 
+    css_src = Path(__file__).parent / "style.css"
+    css_dest = DOCS_DIR / "style.css"
+    if css_src.exists():
+        shutil.copy2(css_src, css_dest)
+
     written = []
     for filename, content in pages.items():
         path = DOCS_DIR / filename
         path.write_text(content, encoding="utf-8")
         written.append(path)
 
+    written.insert(0, css_dest)
     return written
 
 
