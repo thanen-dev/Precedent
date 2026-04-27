@@ -209,10 +209,45 @@ def merge_one(
     return actions
 
 
+def _create_profile_stub(leader_id: str) -> dict:
+    """
+    Build a minimal valid profile stub for a new leader.
+    All dimension fields are null; evidence lists are empty.
+    """
+    dim_stub = {
+        "core_thesis": None,
+        "stated_theory": None,
+        "revealed_preference": None,
+        "tension": None,
+        "_evidence": [],
+    }
+    return {
+        "id": leader_id,
+        "full_name": leader_id.replace("_", " ").title(),
+        "title": "",
+        "updated": str(Date.today()),
+        "leader": {
+            "name": leader_id.replace("_", " ").title(),
+            "position": "",
+            "in_office_since": "",
+            "compiled": str(Date.today()),
+            "based_on": [],
+            "purpose": "Auto-generated stub — populate via extractor pipeline",
+        },
+        "dimensions": {k: dict(dim_stub) for k in DIMENSION_KEYS},
+        "synthesis": {
+            "guiding_principles": [],
+            "key_external_analysis_quote": {"quote": "", "source": ""},
+            "sources": [],
+        },
+    }
+
+
 def merge_all(
     leader_id: str,
     force: bool = False,
     dry_run: bool = False,
+    create: bool = False,
 ) -> None:
     extracted_dir = EXTRACTED_DIR / leader_id
     if not extracted_dir.exists():
@@ -221,8 +256,18 @@ def merge_all(
 
     profile_path = LEADERS_DIR / f"{leader_id}_profile.json"
     if not profile_path.exists():
-        log.error("Profile not found: %s", profile_path)
-        sys.exit(1)
+        if not create:
+            log.error(
+                "Profile not found: %s  (use --create to auto-generate a stub)",
+                profile_path,
+            )
+            sys.exit(1)
+        stub = _create_profile_stub(leader_id)
+        LEADERS_DIR.mkdir(parents=True, exist_ok=True)
+        profile_path.write_text(
+            json.dumps(stub, indent=4, ensure_ascii=False), encoding="utf-8"
+        )
+        log.info("Created profile stub: %s", profile_path.relative_to(PROJECT_ROOT))
 
     # Load and validate profile before touching it
     profile_raw = json.loads(profile_path.read_text(encoding="utf-8"))
@@ -296,8 +341,12 @@ def main() -> None:
         "--force", action="store_true",
         help="Re-merge even already-ledgered docs",
     )
+    parser.add_argument(
+        "--create", action="store_true",
+        help="Auto-create a profile stub if none exists for this leader",
+    )
     args = parser.parse_args()
-    merge_all(args.leader_id, force=args.force, dry_run=args.dry_run)
+    merge_all(args.leader_id, force=args.force, dry_run=args.dry_run, create=args.create)
 
 
 if __name__ == "__main__":

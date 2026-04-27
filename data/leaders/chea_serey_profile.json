@@ -1,0 +1,146 @@
+{
+  "id": "chea_serey",
+  "full_name": "Chea Serey",
+  "title": "Governor, National Bank of Cambodia  |  First female central bank governor in Cambodia's history  |  Permanent Vice-Chair, National Coordination Committee on AML/CFT",
+  "updated": "2026-04-25",
+  "leader": {
+    "name": "Chea Serey",
+    "position": "Governor, National Bank of Cambodia",
+    "in_office_since": "2023",
+    "compiled": "April 2026",
+    "purpose": "Mental model schema mapping decision-making architecture across 7 dimensions Born 1981, Phnom Penh. Commerce degree (Victoria University, NZ). PhD Economics — financial development and inclusion in ASEAN LDCs (University of Adelaide, 2021). Joined NBC banking supervision 2002. Director-General 2013. Governor July 2023. Daughter of predecessor Chea Chanto (governor 1994–2023). Rated A- by Global Finance 2024 and 2025.",
+    "based_on": [
+      "PMO speeches",
+      "Khmer Times",
+      "Phnom Penh Post",
+      "WTO TPR",
+      "ADB",
+      "World Bank",
+      "IMF",
+      "Kamnotra.io",
+      "Open Development Cambodia"
+    ]
+  },
+  "dimensions": {
+    "growth_theory": {
+      "assessed_position": "Serey's growth theory is structurally distinct from all other profiles: she focuses on the financial system as an independent growth lever. Her PhD dissertation examined how financial development and inclusion reduce poverty and support growth in ASEAN LDCs. Her two signature programmes reflect this: the de-dollarisation agenda (strengthen the riel to give NBC genuine monetary policy tools) and th",
+      "primary_quote": "Maintaining the riel's stability has contributed to price stability in the market. In 2023, the riel depreciated only about 0.9%, even as other regional currencies saw much sharper losses.",
+      "primary_source": "Chea Serey, NBC annual conference, 2024",
+      "subfields": [
+        "Core Thesis: Monetary sovereignty and financial inclusion as prerequisites for growth agency",
+        "De-dollarisation as growth infrastructure",
+        "Direct Quote"
+      ],
+      "_evidence": [
+        {
+          "url": "",
+          "date": "2026-04-01",
+          "quote": "Maintaining the riel's stability has contributed to price stability in the market. In 2023, the riel depreciated only about 0.9%, even as other regional currencies saw much sharper losses.",
+          "value": "Serey's growth theory is structurally distinct from all other profiles: she focuses on the financial system as an independent growth lever. Her PhD dissertation examined how financial development and ",
+          "confidence": 0.7,
+          "source_file": "docx_profile_chea_serey"
+        }
+      ]
+    },
+    "risk_tolerance": {
+      "assessed_position": "Serey has taken genuine institutional risks: launching Bakong as a blockchain-based retail payment system (first of its kind in the region); piloting CBDC-adjacent cross-border QR with Japan, Singapore, India; pushing de-dollarisation against entrenched banking sector resistance. She cracked down on fraudulent microcredit institutions (50 licences terminated H1 2018 alone) despite industry pushbac",
+      "primary_quote": null,
+      "primary_source": null,
+      "subfields": [
+        "Assessment: MEDIUM — Innovative on instruments; conservative on systemic risk"
+      ],
+      "_evidence": []
+    },
+    "time_horizon": {
+      "assessed_position": "De-dollarisation is generationally long — she acknowledges it will take decades to shift Cambodian behaviour from USD to riel. Her Bakong cross-border payment links (Japan Phase 1 2025, Singapore/India 2025, BIS NEXUS entry 2025) are 10-year infrastructure investments. Her school curriculum integration of financial literacy is a 20-year human capital project. She is simultaneously managing near-te",
+      "primary_quote": null,
+      "primary_source": null,
+      "subfields": [
+        "Revealed: 10–20 years (de-dollarisation)  |  Near: 2025 (NPL management, credit slowdown)"
+      ],
+      "_evidence": []
+    },
+    "dependency_assumptions": {
+      "assessed_position": "1. Riel adoption is voluntary behaviour change, not just regulatory mandate: NBC can require banks to hold 10% of loans in riel and require government pricing in riel, but actual riel adoption depends on public trust that will not be legislated. 2. Dollar-denominated bank liabilities do not create systemic risk before de-dollarisation is complete: Cambodian banks borrow externally in dollars, whic",
+      "primary_quote": null,
+      "primary_source": null,
+      "subfields": [
+        "The monetary transition model's load-bearing assumptions"
+      ],
+      "_evidence": []
+    },
+    "institution_vs_relationship": {
+      "assessed_position": "Serey is the most strongly institution-oriented official in the sample. She built the Credit Bureau Cambodia (Cambodia's first), the Bakong payment system, and NBC's Financial Stability Department. Her PhD on financial inclusion reflects intellectual institutional commitment, not merely positional. The significant caveat: she directly succeeded her father as NBC Governor, which raises legitimate q",
+      "primary_quote": null,
+      "primary_source": null,
+      "subfields": [
+        "Verdict: Strongly institutional — with a significant legacy question"
+      ],
+      "_evidence": []
+    },
+    "global_positioning_logic": {
+      "assessed_position": "Serey's global positioning is financial sovereignty through regional infrastructure. Cross-border QR links with Thailand, Laos, Vietnam, Malaysia, South Korea, Japan, and through Alipay+ with 10+ international wallets — all settled in riel — reduce Cambodia's dependence on dollar-intermediated settlement and give NBC more transaction-level monetary data. Her BIS NEXUS Observatory entry (August 202",
+      "primary_quote": null,
+      "primary_source": null,
+      "subfields": [
+        "Theory: Regional payment architecture as monetary sovereignty infrastructure"
+      ],
+      "_evidence": []
+    },
+    "consistency_score": {
+      "assessed_position": null,
+      "primary_quote": null,
+      "primary_source": null,
+      "subfields": [
+        "Ratings",
+        "Overall: HIGHEST consistency score alongside Sok Siphana. Her stated reasoning (monetary sovereignty through riel promotion and digital infrastructure) reliably predicts her actions. Institutional integrity question on the appointment process is the only structural caveat."
+      ],
+      "_evidence": [],
+      "ratings": [
+        {
+          "dimension": "De-dollarisation",
+          "verdict": "MEDIUM-HIGH",
+          "evidence": "Policy instruments consistent with stated goal; pace necessarily slow"
+        },
+        {
+          "dimension": "Bakong / digital payment",
+          "verdict": "HIGH",
+          "evidence": "Cross-border QR expanding; BIS NEXUS entry; 1M+ merchants; A- international rating"
+        },
+        {
+          "dimension": "Financial inclusion",
+          "verdict": "HIGH",
+          "evidence": "Credit Bureau, microcredit crackdown, school curricula integration — consistent actions"
+        },
+        {
+          "dimension": "NPL management",
+          "verdict": "MEDIUM",
+          "evidence": "NPL above regional average; restructuring measures in place but not yet fully resolved"
+        }
+      ]
+    }
+  },
+  "synthesis": {
+    "guiding_principles": [
+      {
+        "dimension": "",
+        "insight": "Use growth_theory behavior as primary signal"
+      },
+      {
+        "dimension": "",
+        "insight": "Use risk_tolerance behavior as primary signal"
+      },
+      {
+        "dimension": "",
+        "insight": "Use time_horizon behavior as primary signal"
+      }
+    ],
+    "key_external_analysis_quote": {
+      "quote": "Maintaining the riel's stability has contributed to price stability in the market. In 2023, the riel depreciated only about 0.9%, even as other regional currencies saw much sharper losses.",
+      "source": ""
+    },
+    "sources": [
+      "Compiled from DOCX profile generator, April 2026"
+    ]
+  }
+}

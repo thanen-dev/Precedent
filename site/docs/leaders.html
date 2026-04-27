@@ -3,33 +3,26 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Leaders — Precedent</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<title>Leaders — PRECEDENT</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --bg:       #0a0a08;
-  --surface:  #111110;
-  --border:   #222220;
-  --text:     #f2f0eb;
-  --muted:    #8a8880;
-  --accent:   #d4930a;
-  --accent-dim: #7a5406;
-  --danger:   #c0392b;
-  --warn:     #d4930a;
-  --ok:       #27ae60;
+  --bg:        #0a0a08;
+  --surface:   #0f0f0d;
+  --b-dim:     rgba(242,240,235,0.12);
+  --b-mid:     rgba(242,240,235,0.28);
+  --text:      #f2f0eb;
+  --muted:     #8a8880;
+  --accent:    #d4930a;
+  --danger:    #c0392b;
+  --warn:      #d4930a;
+  --ok:        #1e6b3c;
 
-  --mono: 'IBM Plex Mono', monospace;
-  --sans: 'IBM Plex Sans', system-ui, sans-serif;
-
-  --space-xs: 0.375rem;
-  --space-sm: 0.75rem;
-  --space-md: 1.25rem;
-  --space-lg: 2.5rem;
-  --space-xl: 5rem;
-
-  --radius: 3px;
+  --bebas:  'Bebas Neue', 'Arial Narrow', sans-serif;
+  --mono:   'IBM Plex Mono', monospace;
+  --sans:   'IBM Plex Sans', system-ui, sans-serif;
 }
 
 html { font-size: 16px; scroll-behavior: smooth; }
@@ -39,311 +32,139 @@ body {
   color: var(--text);
   font-family: var(--sans);
   font-weight: 300;
-  line-height: 1.65;
+  line-height: 1.6;
   min-height: 100vh;
 }
 
-a { color: var(--accent); text-decoration: none; }
-a:hover { text-decoration: underline; }
+a { color: inherit; text-decoration: none; }
+a:hover { color: var(--accent); }
 
-/* ── layout ── */
-.site-header {
-  border-bottom: 1px solid var(--border);
-  padding: var(--space-sm) var(--space-lg);
-  display: flex;
-  align-items: center;
-  gap: var(--space-lg);
+/* ── masthead ── */
+.masthead {
+  border-bottom: 1px solid var(--b-mid);
+  padding: 0 3rem;
 }
 
-.site-header .wordmark {
+.masthead-top {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 2rem 0 0.75rem;
+  border-bottom: 1px solid var(--b-dim);
+}
+
+.masthead-wordmark {
+  font-family: var(--bebas);
+  font-size: clamp(3.5rem, 6vw, 4.5rem);
+  line-height: 1;
+  color: var(--text);
+  letter-spacing: 0.04em;
+}
+
+.masthead-tagline {
   font-family: var(--mono);
-  font-size: 0.8125rem;
-  font-weight: 500;
+  font-size: 0.65rem;
+  color: var(--muted);
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--accent);
+  padding-bottom: 0.5rem;
 }
 
-.site-header nav {
+.masthead-nav {
   display: flex;
-  gap: var(--space-md);
-  flex-wrap: wrap;
+  gap: 0;
+  padding: 0.5rem 0;
 }
 
-.site-header nav a {
+.masthead-nav a {
   font-family: var(--mono);
-  font-size: 0.75rem;
-  letter-spacing: 0.06em;
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--muted);
-  transition: color 0.15s;
+  padding: 0.35rem 1rem;
+  border-right: 1px solid var(--b-dim);
+  transition: color 0.1s;
 }
 
-.site-header nav a:hover,
-.site-header nav a.active { color: var(--text); text-decoration: none; }
-
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: var(--space-xl) var(--space-lg);
-}
-
-.page-heading {
-  font-family: var(--mono);
-  font-size: 0.6875rem;
-  font-weight: 500;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
+.masthead-nav a:first-child { padding-left: 0; }
+.masthead-nav a:last-child { border-right: none; }
+.masthead-nav a:hover,
+.masthead-nav a.active { color: var(--text); }
+.masthead-nav a.active {
   color: var(--accent);
-  margin-bottom: var(--space-sm);
+  border-bottom: 1px solid var(--accent);
+  margin-bottom: -1px;
 }
 
+/* ── layout ── */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem;
+}
+
+/* ── section label ── */
+.section-label {
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+}
+
+.section-marker {
+  color: var(--accent);
+  margin-right: 0.4rem;
+}
+
+/* ── display heading ── */
 h1 {
-  font-size: clamp(1.75rem, 3vw + 1rem, 3rem);
-  font-weight: 300;
-  line-height: 1.2;
-  margin-bottom: var(--space-lg);
+  font-family: var(--bebas);
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  line-height: 1;
+  margin-bottom: 2rem;
 }
 
 h2 {
-  font-size: 1.125rem;
-  font-weight: 500;
-  margin-bottom: var(--space-sm);
+  font-family: var(--bebas);
+  font-size: 1.5rem;
+  letter-spacing: 0.04em;
+  font-weight: 400;
+  line-height: 1;
 }
 
 h3 {
   font-family: var(--mono);
-  font-size: 0.8rem;
-  font-weight: 500;
-  letter-spacing: 0.06em;
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--muted);
-  margin-bottom: var(--space-xs);
+  margin-bottom: 0.5rem;
 }
 
-p { margin-bottom: var(--space-sm); }
-p:last-child { margin-bottom: 0; }
-
-/* ── cards ── */
-.card {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: var(--space-lg);
-  margin-bottom: var(--space-md);
-}
-
-.card + .card { border-top: none; margin-top: calc(-1 * var(--space-md)); }
-
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: var(--space-md);
-  margin-bottom: var(--space-lg);
-}
-
-.card-grid .card { margin-bottom: 0; }
-
-/* ── leader card ── */
-.leader-title {
-  font-family: var(--mono);
-  font-size: 0.7rem;
-  color: var(--muted);
-  margin-bottom: var(--space-xs);
-}
-
-.leader-name {
-  font-size: 1.25rem;
-  font-weight: 500;
-  margin-bottom: var(--space-sm);
-}
-
-.completeness-bar {
-  height: 2px;
-  background: var(--border);
-  border-radius: 1px;
-  margin-bottom: var(--space-sm);
-  overflow: hidden;
-}
-
-.completeness-bar-fill {
-  height: 100%;
-  background: var(--accent);
-  border-radius: 1px;
-}
-
-.completeness-label {
-  font-family: var(--mono);
-  font-size: 0.65rem;
-  color: var(--muted);
-  margin-bottom: var(--space-md);
-}
-
-/* ── dimension grid ── */
-.dim-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space-sm) var(--space-lg);
-  margin-bottom: var(--space-md);
-}
-
-.dim-item {}
-
-.dim-key {
-  font-family: var(--mono);
-  font-size: 0.65rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--accent-dim);
-  margin-bottom: 0.2rem;
-}
-
-.dim-value {
-  font-size: 0.875rem;
-  color: var(--text);
-}
-
-.dim-null {
-  font-size: 0.8rem;
-  color: var(--border);
-  font-style: italic;
-}
-
-/* ── blockquote ── */
-blockquote {
-  border-left: 2px solid var(--accent-dim);
-  padding-left: var(--space-md);
-  margin: var(--space-md) 0;
-  color: var(--muted);
-  font-size: 0.9rem;
-  font-style: italic;
-}
-
-/* ── badges ── */
-.badge {
-  display: inline-block;
-  font-family: var(--mono);
-  font-size: 0.6rem;
-  font-weight: 500;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  padding: 0.2em 0.6em;
-  border-radius: 2px;
-  vertical-align: middle;
-}
-
-.badge-primary   { background: var(--accent-dim); color: var(--accent); }
-.badge-secondary { background: var(--border); color: var(--muted); }
-.badge-high      { background: rgba(192,57,43,0.15); color: var(--danger); }
-.badge-medium    { background: rgba(212,147,10,0.15); color: var(--warn); }
-.badge-low       { background: rgba(39,174,96,0.12); color: var(--ok); }
-
-/* ── case card ── */
-.case-header {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: var(--space-md);
-  margin-bottom: var(--space-sm);
-}
-
-.case-id {
-  font-family: var(--mono);
-  font-size: 0.7rem;
-  color: var(--accent);
-  margin-bottom: 0.2rem;
-}
-
-.case-period {
-  font-family: var(--mono);
-  font-size: 0.65rem;
-  color: var(--muted);
-}
-
-/* ── conflict card ── */
-.conflict-dim {
-  font-family: var(--mono);
-  font-size: 0.65rem;
-  color: var(--accent);
-  margin-bottom: var(--space-xs);
-}
-
-.conflict-leaders {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space-md);
-  margin: var(--space-md) 0;
-}
-
-.conflict-side h4 {
-  font-family: var(--mono);
-  font-size: 0.7rem;
-  color: var(--muted);
-  margin-bottom: var(--space-xs);
-}
-
-.conflict-explanation {
-  border-top: 1px solid var(--border);
-  padding-top: var(--space-md);
-  margin-top: var(--space-md);
-}
-
-.prediction-label {
-  font-family: var(--mono);
-  font-size: 0.65rem;
-  color: var(--muted);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  margin-bottom: var(--space-xs);
-}
-
-/* ── empty state ── */
-.empty-state {
-  text-align: center;
-  padding: var(--space-xl) var(--space-lg);
-  color: var(--muted);
-  border: 1px dashed var(--border);
-  border-radius: var(--radius);
-}
-
-.empty-state code {
-  font-family: var(--mono);
-  font-size: 0.8rem;
-  color: var(--accent-dim);
-}
-
-/* ── source link ── */
-.source-link {
-  font-family: var(--mono);
-  font-size: 0.65rem;
-  color: var(--muted);
-}
-
-.source-link a { color: var(--muted); }
-.source-link a:hover { color: var(--accent); }
-
-/* ── score ── */
-.score {
-  font-family: var(--mono);
-  font-size: 1.5rem;
-  font-weight: 500;
-  color: var(--accent);
-}
-
-/* ── stat row ── */
+/* ── stat block ── */
 .stat-row {
   display: flex;
-  gap: var(--space-xl);
-  margin-bottom: var(--space-lg);
-  flex-wrap: wrap;
+  gap: 0;
+  border: 1px solid var(--b-mid);
+  margin-bottom: 3rem;
 }
 
-.stat { text-align: left; }
+.stat-cell {
+  flex: 1;
+  padding: 1.25rem 1.75rem;
+  border-right: 1px solid var(--b-dim);
+}
+
+.stat-cell:last-child { border-right: none; }
 
 .stat-value {
-  font-family: var(--mono);
-  font-size: 2rem;
-  font-weight: 500;
+  font-family: var(--bebas);
+  font-size: 2.75rem;
   color: var(--accent);
   line-height: 1;
   margin-bottom: 0.25rem;
@@ -351,188 +172,948 @@ blockquote {
 
 .stat-label {
   font-family: var(--mono);
-  font-size: 0.65rem;
-  color: var(--muted);
+  font-size: 0.6rem;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  color: var(--muted);
 }
 
+/* ── leader row (accordion) ── */
+.leader-row {
+  border-left: 3px solid var(--accent);
+  border-bottom: 1px solid var(--b-dim);
+  margin-bottom: 0;
+}
+
+.leader-row:last-child { border-bottom: 1px solid var(--b-mid); }
+
+.leader-row-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 1.75rem 1.25rem 1.5rem;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.1s;
+}
+
+.leader-row-header:hover { background: rgba(212,147,10,0.04); }
+
+.leader-row-meta {
+  display: flex;
+  align-items: baseline;
+  gap: 1.5rem;
+}
+
+.leader-name {
+  font-family: var(--bebas);
+  font-size: 1.75rem;
+  letter-spacing: 0.04em;
+  color: var(--text);
+  line-height: 1;
+}
+
+.leader-title-tag {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  color: var(--muted);
+  letter-spacing: 0.06em;
+}
+
+.leader-row-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.completeness-display {
+  text-align: right;
+}
+
+.completeness-frac {
+  font-family: var(--bebas);
+  font-size: 1.25rem;
+  color: var(--accent);
+  line-height: 1;
+}
+
+.completeness-sub {
+  font-family: var(--mono);
+  font-size: 0.55rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.expand-arrow {
+  font-size: 0.875rem;
+  color: var(--muted);
+  width: 1rem;
+  text-align: center;
+  transition: transform 0.15s;
+}
+
+/* ── dimension table ── */
+.leader-detail {
+  display: none;
+  border-top: 1px solid var(--b-dim);
+  padding: 0 1.75rem 1.5rem 1.5rem;
+}
+
+.dim-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+}
+
+.dim-table th {
+  font-family: var(--mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-align: left;
+  padding: 0.75rem 0.75rem 0.75rem 0;
+  border-bottom: 1px solid var(--b-mid);
+}
+
+.dim-table td {
+  font-size: 0.8125rem;
+  padding: 0.875rem 0.75rem 0.875rem 0;
+  border-bottom: 1px solid var(--b-dim);
+  vertical-align: top;
+}
+
+.dim-table tr:last-child td { border-bottom: none; }
+
+.dim-name-cell {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+  white-space: nowrap;
+  width: 22%;
+}
+
+.dim-position-cell { width: 46%; }
+.dim-position-cell.empty { color: var(--muted); font-style: italic; }
+
+.conf-cell { width: 12%; white-space: nowrap; }
+.conf-bar-wrap {
+  height: 2px;
+  background: var(--b-mid);
+  margin-top: 0.4rem;
+  width: 100%;
+}
+.conf-bar-fill { height: 2px; background: var(--accent); }
+.conf-val {
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  color: var(--muted);
+}
+
+.source-cell {
+  width: 20%;
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  color: var(--muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 180px;
+}
+
+.source-cell a { color: var(--muted); }
+.source-cell a:hover { color: var(--accent); }
+
+/* ── blockquote ── */
+blockquote {
+  border-left: 2px solid var(--accent);
+  padding: 0.75rem 1rem;
+  margin: 1rem 0;
+  color: var(--muted);
+  font-size: 0.875rem;
+  font-style: italic;
+}
+
+blockquote .bq-source {
+  display: block;
+  font-style: normal;
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  color: var(--muted);
+  margin-top: 0.4rem;
+}
+
+blockquote .bq-source a { color: var(--muted); }
+blockquote .bq-source a:hover { color: var(--accent); }
+
+/* ── synthesis block ── */
+.synthesis-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border: 1px solid var(--b-dim);
+  margin-top: 1rem;
+}
+
+.synth-cell {
+  padding: 1rem 1.25rem;
+  border-right: 1px solid var(--b-dim);
+  border-bottom: 1px solid var(--b-dim);
+}
+
+.synth-cell:nth-child(2n) { border-right: none; }
+.synth-cell:nth-last-child(-n+2) { border-bottom: none; }
+
+.synth-dim {
+  font-family: var(--mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.35rem;
+}
+
+.synth-insight { font-size: 0.8rem; color: var(--muted); }
+
+/* ── badges / pills ── */
+.pill {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 0.58rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.2em 0.55em;
+  border-radius: 2px;
+  vertical-align: middle;
+}
+
+.pill-high    { background: rgba(192,57,43,0.18);   color: #e74c3c; border: 1px solid rgba(192,57,43,0.4); }
+.pill-medium  { background: rgba(212,147,10,0.15);  color: #d4930a; border: 1px solid rgba(212,147,10,0.4); }
+.pill-low     { background: rgba(30,107,60,0.18);   color: #2ecc71; border: 1px solid rgba(30,107,60,0.4); }
+.pill-primary { background: rgba(212,147,10,0.12);  color: var(--accent); border: 1px solid rgba(212,147,10,0.3); }
+.pill-muted   { background: rgba(242,240,235,0.06); color: var(--muted);  border: 1px solid var(--b-dim); }
+
+/* ── case blocks ── */
+.filter-bar {
+  display: flex;
+  gap: 0;
+  margin-bottom: 2rem;
+  border: 1px solid var(--b-mid);
+  width: fit-content;
+}
+
+.filter-btn {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  background: none;
+  border: none;
+  border-right: 1px solid var(--b-dim);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: color 0.1s, background 0.1s;
+}
+
+.filter-btn:last-child { border-right: none; }
+.filter-btn:hover { color: var(--text); background: rgba(242,240,235,0.04); }
+.filter-btn.active { color: var(--accent); background: rgba(212,147,10,0.08); }
+
+.case-block {
+  border: 1px solid var(--b-dim);
+  border-left: 3px solid var(--b-mid);
+  margin-bottom: 1rem;
+}
+
+.case-head {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 1.5rem;
+  align-items: start;
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid var(--b-dim);
+  background: var(--surface);
+}
+
+.case-id-label {
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.3rem;
+}
+
+.case-country {
+  font-family: var(--bebas);
+  font-size: 1.375rem;
+  letter-spacing: 0.05em;
+  line-height: 1;
+}
+
+.case-period-tag {
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  color: var(--muted);
+  margin-top: 0.25rem;
+}
+
+.case-body {
+  padding: 1.25rem 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.case-section h3 { margin-bottom: 0.4rem; }
+.case-section p { font-size: 0.8125rem; color: var(--muted); }
+
+.case-mechanisms {
+  padding: 0 1.5rem 1.25rem;
+}
+
+.case-mechanisms ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.35rem;
+}
+
+.case-mechanisms ul li {
+  font-size: 0.75rem;
+  color: var(--muted);
+  padding-left: 1rem;
+  position: relative;
+}
+
+.case-mechanisms ul li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-family: var(--mono);
+}
+
+.case-lesson {
+  border-top: 1px solid var(--b-dim);
+  padding: 1rem 1.5rem;
+  background: rgba(212,147,10,0.04);
+  font-size: 0.8125rem;
+}
+
+.case-lesson strong {
+  font-family: var(--mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  display: block;
+  margin-bottom: 0.35rem;
+}
+
+/* ── twin match ── */
+.twin-block {
+  border: 1px solid var(--b-dim);
+  margin-bottom: 1.5rem;
+}
+
+.twin-signal {
+  background: var(--surface);
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid var(--b-dim);
+}
+
+.twin-signal-label {
+  font-family: var(--mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.4rem;
+}
+
+.twin-signal-text {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--muted);
+}
+
+.twin-matches { display: grid; grid-template-columns: 1fr 1fr; }
+
+.twin-match-card {
+  padding: 1.25rem 1.5rem;
+  border-right: 1px solid var(--b-dim);
+}
+
+.twin-match-card:last-child { border-right: none; }
+
+.twin-score {
+  font-family: var(--bebas);
+  font-size: 3rem;
+  color: var(--accent);
+  line-height: 1;
+}
+
+.twin-score-label {
+  font-family: var(--mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.75rem;
+}
+
+.twin-match-country {
+  font-family: var(--bebas);
+  font-size: 1.25rem;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.25rem;
+}
+
+.twin-section { margin-top: 0.75rem; }
+.twin-section h3 { margin-bottom: 0.25rem; }
+.twin-section p { font-size: 0.8rem; color: var(--muted); }
+
+/* ── conflict block ── */
+.conflict-block {
+  border: 1px solid var(--b-dim);
+  border-left: 3px solid var(--danger);
+  margin-bottom: 1.25rem;
+}
+
+.conflict-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.875rem 1.25rem;
+  background: var(--surface);
+  border-bottom: 1px solid var(--b-dim);
+}
+
+.conflict-dim-label {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.conflict-leaders-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: 1px solid var(--b-dim);
+}
+
+.conflict-side {
+  padding: 1.25rem 1.5rem;
+  border-right: 1px solid var(--b-dim);
+}
+
+.conflict-side:last-child { border-right: none; }
+
+.conflict-leader-name {
+  font-family: var(--bebas);
+  font-size: 1.25rem;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.5rem;
+}
+
+.conflict-pos { font-size: 0.8125rem; margin-bottom: 0.5rem; }
+
+.conflict-footer {
+  padding: 1rem 1.5rem;
+}
+
+.conflict-footer h3 { margin-bottom: 0.4rem; }
+.conflict-footer p { font-size: 0.8125rem; color: var(--muted); }
+
+.prediction-block {
+  border-top: 1px solid var(--b-dim);
+  padding-top: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+/* ── index quick-links ── */
+.index-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  border: 1px solid var(--b-mid);
+  margin-top: 3rem;
+}
+
+.index-tile {
+  padding: 1.5rem;
+  border-right: 1px solid var(--b-dim);
+  transition: background 0.1s;
+}
+
+.index-tile:last-child { border-right: none; }
+.index-tile:hover { background: rgba(242,240,235,0.02); }
+
+.index-tile-label {
+  font-family: var(--mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.6rem;
+}
+
+.index-tile-body {
+  font-size: 0.8rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.index-tile a.tile-link {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin-top: 0.75rem;
+  text-transform: uppercase;
+}
+
+.index-tile a.tile-link:hover { color: var(--accent); }
+
+/* ── empty state ── */
+.empty-state {
+  padding: 4rem 2rem;
+  text-align: center;
+  border: 1px dashed var(--b-mid);
+  color: var(--muted);
+}
+
+.empty-state code {
+  display: block;
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  color: rgba(212,147,10,0.6);
+  margin-top: 1rem;
+}
+
+/* ── divider ── */
+.rule { border: none; border-top: 1px solid var(--b-dim); margin: 2rem 0; }
+
 /* ── mobile ── */
-@media (max-width: 640px) {
-  .container { padding: var(--space-lg) var(--space-md); }
-  .site-header { padding: var(--space-sm) var(--space-md); gap: var(--space-md); }
-  .dim-grid { grid-template-columns: 1fr; }
-  .conflict-leaders { grid-template-columns: 1fr; }
-  .stat-row { gap: var(--space-lg); }
-  .case-header { flex-direction: column; }
+@media (max-width: 700px) {
+  .masthead { padding: 0 1.25rem; }
+  .container { padding: 2rem 1.25rem; }
+  .masthead-top { flex-direction: column; gap: 0.5rem; }
+  .masthead-nav { flex-wrap: wrap; }
+  .stat-row { flex-direction: column; }
+  .stat-cell { border-right: none; border-bottom: 1px solid var(--b-dim); }
+  .case-body { grid-template-columns: 1fr; }
+  .case-mechanisms ul { grid-template-columns: 1fr; }
+  .twin-matches { grid-template-columns: 1fr; }
+  .conflict-leaders-grid { grid-template-columns: 1fr; }
+  .index-grid { grid-template-columns: 1fr; }
+  .synthesis-grid { grid-template-columns: 1fr; }
+  .leader-row-meta { flex-direction: column; gap: 0.25rem; }
+  .dim-table { font-size: 0.75rem; }
 }
 </style>
 </head>
 <body>
-<header class="site-header">
-  <span class="wordmark">Precedent</span>
-  <nav><a href="index.html" class="">Index</a> <a href="leaders.html" class="active">Leaders</a> <a href="cases.html" class="">Cases</a> <a href="twins.html" class="">Twins</a> <a href="conflicts.html" class="">Conflicts</a></nav>
+<header class="masthead">
+  <div class="masthead-top">
+    <a href="index.html" class="masthead-wordmark">PRECEDENT</a>
+    <div class="masthead-tagline">Political intelligence — Cambodia's decision-makers</div>
+  </div>
+  <nav class="masthead-nav"><a href="index.html" class="">Index</a><a href="leaders.html" class="active">Leaders</a><a href="cases.html" class="">Cases</a><a href="twins.html" class="">Twins</a><a href="conflicts.html" class="">Conflicts</a><a href="solutions.html" class="">Solutions</a></nav>
 </header>
 <div class="container">
-  <div class="page-heading">Leaders</div>
-  <h1>Decision-maker profiles</h1>
-  
-<div class="card" id="aun_pornmoniroth">
-  <div class="leader-title">Deputy Prime Minister; Minister of Economy and Finance</div>
-  <h2>Aun Pornmoniroth</h2>
-  <div style="font-family:var(--mono);font-size:.65rem;color:var(--muted);margin-bottom:var(--space-md)">
-    In office since 2013-09-01 &nbsp;·&nbsp; <code style="color:var(--accent-dim)">aun_pornmoniroth</code>
+  <div class="section-label"><span class="section-marker">◈</span>Decision-maker profiles</div>
+  <h1>Leaders</h1>
+  <p style="font-size:.8rem;color:var(--muted);margin-bottom:2rem">
+    11 decision-makers profiled — click header to collapse.
+  </p>
+  <div class="leader-row">
+  <div class="leader-row-header" onclick="toggleLeader('aun_pornmoniroth')">
+    <div class="leader-row-meta">
+      <span class="leader-name">Aun Pornmoniroth</span>
+      <span class="leader-title-tag">Deputy Prime Minister; Minister of Economy and Finance</span>
+    </div>
+    <div class="leader-row-right">
+      <div class="completeness-display">
+        <div class="completeness-frac">7/7</div>
+        <div class="completeness-sub">dims populated</div>
+      </div>
+      <span class="expand-arrow" id="arrow-aun_pornmoniroth">▾</span>
+    </div>
   </div>
-  <div class="dim-grid"><div class="dim-item">
-  <div class="dim-key">growth theory</div>
-  <div class="dim-value"><span class="dim-null">No data yet</span></div>
+  <div style="font-size:.8125rem;color:var(--muted);margin:.4rem 0 .75rem;max-width:72ch">Stub profile — to be populated by extractor pipeline</div>
+  <div class="leader-detail" id="dim-aun_pornmoniroth" style="display:block">
+  <table class="dim-table">
+    <thead>
+      <tr>
+        <th>Dimension</th>
+        <th>Assessed position</th>
+        <th>Confidence</th>
+        <th>Source</th>
+      </tr>
+    </thead>
+    <tbody><tr><td class="dim-name-cell">GROWTH THEORY</td><td class="dim-position-cell">Macroeconomic stability as the precondition for everything else. Pornmoniroth&#x27;s growth model is explicitly fiscal-first: budget discipline, low inflation, revenue mobilisation, and a stable riel environment create the platform on which FDI and export manufacturing can operate. He is not an industrial strategist — he is a fiscal architect. His stated priorities when managing the economy are: GDP gr<blockquote style="margin:.5rem 0 0;font-size:.75rem">"For 2024, Cambodia&#x27;s economy is forecast to achieve a growth rate of around 6.6 percent, which will increase the GDP to 35.16 billion US dollars."<span class="bq-source">Pornmoniroth to National Assembly, November 2023</span></blockquote><ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>Core Thesis</li><li>Direct Quote</li><li>What He Funds vs. Defunds</li></ul></td><td class="conf-cell"><span class="conf-val">70%</span><div class="conf-bar-wrap"><div class="conf-bar-fill" style="width:70%"></div></div></td><td class="source-cell">Pornmoniroth to National Assembly, November 2023</td></tr><tr><td class="dim-name-cell">RISK TOLERANCE</td><td class="dim-position-cell">Pornmoniroth has never made a bold unilateral bet. His 12-year tenure at MEF is marked by incremental improvement within a stable macro framework. He projected 6.6% growth publicly while IMF/ADB projected 5.3–5.4%, but this is a communications risk, not a policy risk. His actual fiscal management has been conservative: deficit targets maintained, debt levels managed, reserves built. The one area o<ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>Assessment: LOW-MEDIUM — Institutionally cautious, fiscally orthodox</li></ul></td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr><tr><td class="dim-name-cell">TIME HORIZON</td><td class="dim-position-cell">Pornmoniroth chairs the Supreme National Economic Council and is involved in the Pentagonal Strategy&#x27;s 25-year framing, but his actual decision-making operates on a 1–3 year fiscal cycle. Budget laws are his primary policy instrument. The 2030 digital economy strategy is his longest-horizon published document. His public framing consistently references Cambodia&#x27;s 2030 upper-middle-income target, b<ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>Stated: Vision 2050  |  Revealed: ~5 years (budget cycle)</li><li>2029 LDC Signal</li></ul></td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr><tr><td class="dim-name-cell">DEPENDENCY ASSUMPTIONS</td><td class="dim-position-cell">1. Garment and travel goods exports sustain or grow: industrial sector projected to grow 8.5% in 2024, driven by garment and construction. If US tariffs (49% shock in 2025) had not been negotiated down, this assumption would have failed. 2. FDI inflows from China remain stable: budget projections do not adjust for a China slowdown scenario. 3. Tourism recovery continues: accommodations and food se<ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>Load-bearing assumptions in the fiscal model</li></ul></td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr><tr><td class="dim-name-cell">INSTITUTION VS RELATIONSHIP</td><td class="dim-position-cell">More institutionally oriented than most of his cabinet peers. MEF has built genuine inter-agency coordination mechanisms (NCFS, CEFP, Digital Economy and Business Committee). The business registry digitisation, CamDX platform, and online investment approval system are real institutional outputs — they reduce personal interface with government by design. However, his family networks (marriage into<ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>Verdict: Institution-building with relationship overlay</li></ul></td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr><tr><td class="dim-name-cell">GLOBAL POSITIONING LOGIC</td><td class="dim-position-cell">Pornmoniroth chairs the AIIB board, coordinates with IMF and World Bank, and engages with ADB as Cambodia&#x27;s key multilateral partners. His positioning theory is that multilateral engagement builds the credibility that sustains FDI, credit ratings, and concessional financing access. He is not ideologically anti-West or anti-China — he is pro-stability. His US tariff response (rapid offer to cut 19<ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>Theory: Multilateral engagement as fiscal stability insurance</li></ul></td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr><tr><td class="dim-name-cell">CONSISTENCY SCORE</td><td class="dim-position-cell">—<ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>Ratings</li><li>Overall: MEDIUM-HIGH on fiscal mechanics; LOW on structural transformation</li></ul></td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr></tbody>
+  </table>
+  <div style="margin:1.25rem 0 0"><h3 style="margin-bottom:.6rem">Consistency Ratings</h3><table style="width:100%;border-collapse:collapse"><tbody><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">Fiscal discipline</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-high">⚠ HIGH</span></td><td style="font-size:.78rem;color:var(--muted)">Budget targets consistently maintained; reserves built steadily</td></tr><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">Macro optimism vs reality</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-medium">◈ MEDIUM</span></td><td style="font-size:.78rem;color:var(--muted)">Projects 6.6% while multilaterals project 5.3%; communication gap</td></tr><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">Digital economy rhetoric</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-high">⚠ HIGH</span></td><td style="font-size:.78rem;color:var(--muted)">CamDX, online registry, DEBC, digital payment infrastructure — real outputs</td></tr><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">2029 LDC preparation</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-low">◈ LOW</span></td><td style="font-size:.78rem;color:var(--muted)">Optimistic framing; no published fiscal adjustment roadmap for EBA loss</td></tr></tbody></table></div>
   
-</div><div class="dim-item">
-  <div class="dim-key">risk tolerance</div>
-  <div class="dim-value"><span class="dim-null">No data yet</span></div>
-  
-</div><div class="dim-item">
-  <div class="dim-key">time horizon</div>
-  <div class="dim-value"><span class="dim-null">No data yet</span></div>
-  
-</div><div class="dim-item">
-  <div class="dim-key">dependency assumptions</div>
-  <div class="dim-value"><span class="dim-null">No data yet</span></div>
-  
-</div><div class="dim-item">
-  <div class="dim-key">institution vs relationship</div>
-  <div class="dim-value"><span class="dim-null">No data yet</span></div>
-  
-</div><div class="dim-item">
-  <div class="dim-key">global positioning logic</div>
-  <div class="dim-value"><span class="dim-null">No data yet</span></div>
-  
-</div><div class="dim-item">
-  <div class="dim-key">consistency score</div>
-  <div class="dim-value"><span class="dim-null">No data yet</span></div>
-  
-</div></div>
   
   
   
 </div>
-<div class="card" id="cham_nimul">
-  <div class="leader-title">Minister of Commerce</div>
-  <h2>Cham Nimul</h2>
-  <div style="font-family:var(--mono);font-size:.65rem;color:var(--muted);margin-bottom:var(--space-md)">
-    In office since 2023-08-22 &nbsp;·&nbsp; <code style="color:var(--accent-dim)">cham_nimul</code>
+</div><div class="leader-row">
+  <div class="leader-row-header" onclick="toggleLeader('cham_nimul')">
+    <div class="leader-row-meta">
+      <span class="leader-name">Cham Nimul</span>
+      <span class="leader-title-tag">Minister of Commerce</span>
+    </div>
+    <div class="leader-row-right">
+      <div class="completeness-display">
+        <div class="completeness-frac">7/7</div>
+        <div class="completeness-sub">dims populated</div>
+      </div>
+      <span class="expand-arrow" id="arrow-cham_nimul">▾</span>
+    </div>
   </div>
-  <div class="dim-grid"><div class="dim-item">
-  <div class="dim-key">growth theory</div>
-  <div class="dim-value"><span class="dim-null">No data yet</span></div>
+  <div style="font-size:.8125rem;color:var(--muted);margin:.4rem 0 .75rem;max-width:72ch">Stub profile — to be populated by extractor pipeline</div>
+  <div class="leader-detail" id="dim-cham_nimul" style="display:block">
+  <table class="dim-table">
+    <thead>
+      <tr>
+        <th>Dimension</th>
+        <th>Assessed position</th>
+        <th>Confidence</th>
+        <th>Source</th>
+      </tr>
+    </thead>
+    <tbody><tr><td class="dim-name-cell">GROWTH THEORY</td><td class="dim-position-cell">Nimul&#x27;s growth theory is explicitly trade-through-rules: WTO membership as the institutional anchor for market access; export diversification beyond garments as the mechanism for economic resilience; and multilateral engagement as the legitimacy multiplier. Her WTO speech framework is development-evidence-based — she cites declining poverty rates (60% to 16%), the GDP trajectory ($5.3B in 2004 to<blockquote style="margin:.5rem 0 0;font-size:.75rem">"Cambodia must turn these challenges into opportunities to strengthen and further enhance competitiveness in regional supply chains and global value chains through market diversification and improving competitiveness."<span class="bq-source">Cham Nimul, WTO 20th Anniversary, October 2024</span></blockquote><ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>Core Thesis: Trade diversification as development strategy</li><li>Direct Quote</li><li>2029 gap between framing and action</li></ul></td><td class="conf-cell"><span class="conf-val">70%</span><div class="conf-bar-wrap"><div class="conf-bar-fill" style="width:70%"></div></div></td><td class="source-cell">Cham Nimul, WTO 20th Anniversary, October 2024</td></tr><tr><td class="dim-name-cell">RISK TOLERANCE</td><td class="dim-position-cell">Nimul works through multilateral processes and consultation workshops rather than unilateral declarations. Her engagement with UNDP, UNCTAD, ADB, and the EU on the LDC graduation roadmap is genuinely multi-stakeholder and evidence-based. This is methodologically sound but structurally slow relative to the 2029 timeline. She accepts the risk of the graduation process itself but defaults to consulta<ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>Assessment: LOW-MEDIUM — Process-oriented, multilateral-anchored</li></ul></td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr><tr><td class="dim-name-cell">TIME HORIZON</td><td class="dim-position-cell">Nimul is the cabinet member whose stated and revealed horizon most closely align. Her 2029 deadline is real and binding — EU EBA termination is not a policy choice, it is a legal event. The Cambodia Trade Policy Framework toward 2030 that she is developing is a genuine medium-term planning exercise, not window dressing. However, the urgency of the implementation against the timeline is still insuf<ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>Revealed: 2029–2030  |  Genuinely the longest horizon in the cabinet on trade</li></ul></td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr><tr><td class="dim-name-cell">DEPENDENCY ASSUMPTIONS</td><td class="dim-position-cell">1. EU EBA partial withdrawal does not escalate further before 2029: Cambodia&#x27;s 2020 partial EBA withdrawal has not been restored. If further sanctions are applied (e.g., over labour rights or governance), the transition window shrinks. 2. Rules of origin compliance is achievable for garments: EU double transformation rules require fabric to be woven in Cambodia or an eligible country — most Cambod<ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>Assumptions embedded in the trade transition model</li></ul></td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr><tr><td class="dim-name-cell">INSTITUTION VS RELATIONSHIP</td><td class="dim-position-cell">Nimul operates through WTO procedures, ministerial consultation processes, and formal policy frameworks. Her engagement with international bodies (WTO DG, EU, UNCTAD, ADB) is process-correct and reputation-building. She is Cambodia&#x27;s most internationally-engaged minister on trade governance. Within the domestic political system, she is embedded in CPP relationship networks but her technical role —<ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>Verdict: Strongly institutional on trade policy; embedded in CPP relationship system</li></ul></td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr><tr><td class="dim-name-cell">GLOBAL POSITIONING LOGIC</td><td class="dim-position-cell">Nimul&#x27;s global positioning is explicitly multilateral-rules-based: &#x27;As a small economy, it is crucial that the multilateral trading system remains open and based on rules.&#x27; She understands that Cambodia&#x27;s competitive advantage as a small economy lies in predictable, rules-based access rather than bilateral power negotiation. Her stated support for WTO reform, investment facilitation agreement, and<ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>Theory: Cambodia as rule-abiding multilateral actor; extract development flexibilities while LDC status lasts</li></ul></td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr><tr><td class="dim-name-cell">CONSISTENCY SCORE</td><td class="dim-position-cell">—<ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>Ratings</li><li>Overall: MEDIUM-HIGH on process and diagnosis; LOW on funded implementation pace relative to the 2029 timeline.</li></ul></td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr></tbody>
+  </table>
+  <div style="margin:1.25rem 0 0"><h3 style="margin-bottom:.6rem">Consistency Ratings</h3><table style="width:100%;border-collapse:collapse"><tbody><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">Trade rules engagement</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-high">⚠ HIGH</span></td><td style="font-size:.78rem;color:var(--muted)">WTO TPR preparation, fisheries subsidies agreement, trade facilitation — real outputs</td></tr><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">LDC graduation planning</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-medium">◈ MEDIUM</span></td><td style="font-size:.78rem;color:var(--muted)">Diagnosis correct; funded implementation plan absent</td></tr><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">Export diversification</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-muted">LOW-MEDIUM</span></td><td style="font-size:.78rem;color:var(--muted)">Rice and electronics growing but garment/footwear still ~85% of exports</td></tr><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">EU green trade compliance</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-low">◈ LOW</span></td><td style="font-size:.78rem;color:var(--muted)">CBAM, double transformation, CSDD — Cambodia has not begun substantial preparation</td></tr></tbody></table></div>
   
-</div><div class="dim-item">
-  <div class="dim-key">risk tolerance</div>
-  <div class="dim-value"><span class="dim-null">No data yet</span></div>
-  
-</div><div class="dim-item">
-  <div class="dim-key">time horizon</div>
-  <div class="dim-value"><span class="dim-null">No data yet</span></div>
-  
-</div><div class="dim-item">
-  <div class="dim-key">dependency assumptions</div>
-  <div class="dim-value"><span class="dim-null">No data yet</span></div>
-  
-</div><div class="dim-item">
-  <div class="dim-key">institution vs relationship</div>
-  <div class="dim-value"><span class="dim-null">No data yet</span></div>
-  
-</div><div class="dim-item">
-  <div class="dim-key">global positioning logic</div>
-  <div class="dim-value"><span class="dim-null">No data yet</span></div>
-  
-</div><div class="dim-item">
-  <div class="dim-key">consistency score</div>
-  <div class="dim-value"><span class="dim-null">No data yet</span></div>
-  
-</div></div>
   
   
   
 </div>
-<div class="card" id="hun_manet">
-  <div class="leader-title">Prime Minister of Cambodia</div>
-  <h2>Hun Manet</h2>
-  <div style="font-family:var(--mono);font-size:.65rem;color:var(--muted);margin-bottom:var(--space-md)">
-    In office since August 2023 &nbsp;·&nbsp; <code style="color:var(--accent-dim)">hun_manet</code>
+</div><div class="leader-row">
+  <div class="leader-row-header" onclick="toggleLeader('chea_serey')">
+    <div class="leader-row-meta">
+      <span class="leader-name">Chea Serey</span>
+      <span class="leader-title-tag">Governor, National Bank of Cambodia  |  First female central bank governor in Cambodia&#x27;s history  |  Permanent Vice-Chair, National Coordination Committee on AML/CFT</span>
+    </div>
+    <div class="leader-row-right">
+      <div class="completeness-display">
+        <div class="completeness-frac">7/7</div>
+        <div class="completeness-sub">dims populated</div>
+      </div>
+      <span class="expand-arrow" id="arrow-chea_serey">▾</span>
+    </div>
   </div>
-  <div class="dim-grid"><div class="dim-item">
-  <div class="dim-key">growth theory</div>
-  <div class="dim-value">Hybrid model: export manufacturing (garments) as near-term revenue base, FDI attraction as diversification engine, human capital and digital transformation as long-horizon bet. When resources are constrained, FDI and infrastructure win budget priority over SME and institution-building.</div>
+  <div style="font-size:.8125rem;color:var(--muted);margin:.4rem 0 .75rem;max-width:72ch">Mental model schema mapping decision-making architecture across 7 dimensions Born 1981, Phnom Penh. Commerce degree (Victoria University, NZ). PhD Economics — financial development and inclusion in ASEAN LDCs (University of Adelaide, 2021). Joined NBC banking supervision 2002. Director-General 2013.</div>
+  <div class="leader-detail" id="dim-chea_serey" style="display:block">
+  <table class="dim-table">
+    <thead>
+      <tr>
+        <th>Dimension</th>
+        <th>Assessed position</th>
+        <th>Confidence</th>
+        <th>Source</th>
+      </tr>
+    </thead>
+    <tbody><tr><td class="dim-name-cell">GROWTH THEORY</td><td class="dim-position-cell">Serey&#x27;s growth theory is structurally distinct from all other profiles: she focuses on the financial system as an independent growth lever. Her PhD dissertation examined how financial development and inclusion reduce poverty and support growth in ASEAN LDCs. Her two signature programmes reflect this: the de-dollarisation agenda (strengthen the riel to give NBC genuine monetary policy tools) and th<blockquote style="margin:.5rem 0 0;font-size:.75rem">"Maintaining the riel&#x27;s stability has contributed to price stability in the market. In 2023, the riel depreciated only about 0.9%, even as other regional currencies saw much sharper losses."<span class="bq-source">Chea Serey, NBC annual conference, 2024</span></blockquote><ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>Core Thesis: Monetary sovereignty and financial inclusion as prerequisites for growth agency</li><li>De-dollarisation as growth infrastructure</li><li>Direct Quote</li></ul></td><td class="conf-cell"><span class="conf-val">70%</span><div class="conf-bar-wrap"><div class="conf-bar-fill" style="width:70%"></div></div></td><td class="source-cell">Chea Serey, NBC annual conference, 2024</td></tr><tr><td class="dim-name-cell">RISK TOLERANCE</td><td class="dim-position-cell">Serey has taken genuine institutional risks: launching Bakong as a blockchain-based retail payment system (first of its kind in the region); piloting CBDC-adjacent cross-border QR with Japan, Singapore, India; pushing de-dollarisation against entrenched banking sector resistance. She cracked down on fraudulent microcredit institutions (50 licences terminated H1 2018 alone) despite industry pushbac<ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>Assessment: MEDIUM — Innovative on instruments; conservative on systemic risk</li></ul></td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr><tr><td class="dim-name-cell">TIME HORIZON</td><td class="dim-position-cell">De-dollarisation is generationally long — she acknowledges it will take decades to shift Cambodian behaviour from USD to riel. Her Bakong cross-border payment links (Japan Phase 1 2025, Singapore/India 2025, BIS NEXUS entry 2025) are 10-year infrastructure investments. Her school curriculum integration of financial literacy is a 20-year human capital project. She is simultaneously managing near-te<ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>Revealed: 10–20 years (de-dollarisation)  |  Near: 2025 (NPL management, credit slowdown)</li></ul></td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr><tr><td class="dim-name-cell">DEPENDENCY ASSUMPTIONS</td><td class="dim-position-cell">1. Riel adoption is voluntary behaviour change, not just regulatory mandate: NBC can require banks to hold 10% of loans in riel and require government pricing in riel, but actual riel adoption depends on public trust that will not be legislated. 2. Dollar-denominated bank liabilities do not create systemic risk before de-dollarisation is complete: Cambodian banks borrow externally in dollars, whic<ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>The monetary transition model&#x27;s load-bearing assumptions</li></ul></td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr><tr><td class="dim-name-cell">INSTITUTION VS RELATIONSHIP</td><td class="dim-position-cell">Serey is the most strongly institution-oriented official in the sample. She built the Credit Bureau Cambodia (Cambodia&#x27;s first), the Bakong payment system, and NBC&#x27;s Financial Stability Department. Her PhD on financial inclusion reflects intellectual institutional commitment, not merely positional. The significant caveat: she directly succeeded her father as NBC Governor, which raises legitimate q<ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>Verdict: Strongly institutional — with a significant legacy question</li></ul></td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr><tr><td class="dim-name-cell">GLOBAL POSITIONING LOGIC</td><td class="dim-position-cell">Serey&#x27;s global positioning is financial sovereignty through regional infrastructure. Cross-border QR links with Thailand, Laos, Vietnam, Malaysia, South Korea, Japan, and through Alipay+ with 10+ international wallets — all settled in riel — reduce Cambodia&#x27;s dependence on dollar-intermediated settlement and give NBC more transaction-level monetary data. Her BIS NEXUS Observatory entry (August 202<ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>Theory: Regional payment architecture as monetary sovereignty infrastructure</li></ul></td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr><tr><td class="dim-name-cell">CONSISTENCY SCORE</td><td class="dim-position-cell">—<ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>Ratings</li><li>Overall: HIGHEST consistency score alongside Sok Siphana. Her stated reasoning (monetary sovereignty through riel promotion and digital infrastructure) reliably predicts her actions. Institutional integrity question on the appointment process is the only structural caveat.</li></ul></td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr></tbody>
+  </table>
+  <div style="margin:1.25rem 0 0"><h3 style="margin-bottom:.6rem">Consistency Ratings</h3><table style="width:100%;border-collapse:collapse"><tbody><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">De-dollarisation</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-muted">MEDIUM-HIGH</span></td><td style="font-size:.78rem;color:var(--muted)">Policy instruments consistent with stated goal; pace necessarily slow</td></tr><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">Bakong / digital payment</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-high">⚠ HIGH</span></td><td style="font-size:.78rem;color:var(--muted)">Cross-border QR expanding; BIS NEXUS entry; 1M+ merchants; A- international rating</td></tr><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">Financial inclusion</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-high">⚠ HIGH</span></td><td style="font-size:.78rem;color:var(--muted)">Credit Bureau, microcredit crackdown, school curricula integration — consistent actions</td></tr><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">NPL management</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-medium">◈ MEDIUM</span></td><td style="font-size:.78rem;color:var(--muted)">NPL above regional average; restructuring measures in place but not yet fully resolved</td></tr></tbody></table></div>
   
-</div><div class="dim-item">
-  <div class="dim-key">risk tolerance</div>
-  <div class="dim-value"><span class="dim-null">No data yet</span></div>
-  
-</div><div class="dim-item">
-  <div class="dim-key">time horizon</div>
-  <div class="dim-value"><span class="dim-null">No data yet</span></div>
-  
-</div><div class="dim-item">
-  <div class="dim-key">dependency assumptions</div>
-  <div class="dim-value"><span class="dim-null">No data yet</span></div>
-  
-</div><div class="dim-item">
-  <div class="dim-key">institution vs relationship</div>
-  <div class="dim-value"><span class="dim-null">No data yet</span></div>
-  
-</div><div class="dim-item">
-  <div class="dim-key">global positioning logic</div>
-  <div class="dim-value"><span class="dim-null">No data yet</span></div>
-  
-</div><div class="dim-item">
-  <div class="dim-key">consistency score</div>
-  <div class="dim-value"><span class="dim-null">No data yet</span></div>
-  
-</div></div>
-  <h3>Synthesis</h3><ul style='padding-left:1.25rem;margin-bottom:var(--space-md)'><li style='margin-bottom:.5rem'><strong style='font-family:var(--mono);font-size:.7rem;color:var(--accent-dim)'>growth_theory</strong><br>Budget priorities will continue to favour FDI-attracting infrastructure (airports, ports, SEZs) over institutional SME development. Garment sector support likely to continue until a credible alternative revenue base exists.</li><li style='margin-bottom:.5rem'><strong style='font-family:var(--mono);font-size:.7rem;color:var(--accent-dim)'>risk_tolerance</strong><br>Hun Manet is unlikely to accept short-term pain for long-term structural gain voluntarily. Policy experimentation will be gradual, consensus-based, and reversible if politically costly. Crisis responses will be fast on optics, slower on underlying structure.</li><li style='margin-bottom:.5rem'><strong style='font-family:var(--mono);font-size:.7rem;color:var(--accent-dim)'>time_horizon</strong><br>The 2029 LDC graduation problem is likely to be underplayed until late. External partners should not assume the government has an internal solution to preference loss; evidence suggests it does not.</li><li style='margin-bottom:.5rem'><strong style='font-family:var(--mono);font-size:.7rem;color:var(--accent-dim)'>dependency_assumptions</strong><br>The live stress scenario is a &#x27;triple squeeze&#x27;: US tariffs + Chinese slowdown + EBA loss. Cambodia’s BATNA is structurally weaker than its diplomatic posture suggests in any negotiation under this scenario.</li><li style='margin-bottom:.5rem'><strong style='font-family:var(--mono);font-size:.7rem;color:var(--accent-dim)'>institution_vs_relationship</strong><br>Formal institutions and agreements matter less than who is present in the decision room. The Hun family and CPP inner circle are the true decision nodes. Institutional channels are primarily for legitimation, not actual decision-making.</li><li style='margin-bottom:.5rem'><strong style='font-family:var(--mono);font-size:.7rem;color:var(--accent-dim)'>global_positioning_logic</strong><br>Cambodia will avoid choosing sides and will keep extracting value from both China and the West. The core question is not alignment but what Cambodia seeks from each engagement: usually investment, trade access, and diplomatic legitimacy.</li><li style='margin-bottom:.5rem'><strong style='font-family:var(--mono);font-size:.7rem;color:var(--accent-dim)'>consistency_score</strong><br>Foreign policy behaviour is the most reliable predictor of future actions. Domestic governance and reform commitments should be discounted until anchored by concrete budget lines or structural judicial changes.</li></ul>
-  <blockquote>"The transition from Hun Sen to Hun Manet was not a break from the past, but rather a strategic generational reset secured through a systematic expansion of state bureaucracy." <span class="source-link">— 9Dashline analysis, March 2026</span></blockquote>
-  <div class="source-link" style="margin-top:var(--space-md)">Based on: <span>Pentagonal Strategy Phase I</span> · <span>PMO speeches</span> · <span>key interviews</span> · <span>multilateral research</span></div>
+  <blockquote>"Maintaining the riel&#x27;s stability has contributed to price stability in the market. In 2023, the riel depreciated only about 0.9%, even as other regional currencies saw much sharper losses."<span class="bq-source">— </span></blockquote>
+  <h3 style="margin:1.25rem 0 0.75rem">Synthesis</h3><div class="synthesis-grid"><div class="synth-cell"><div class="synth-dim"></div><div class="synth-insight">Use growth_theory behavior as primary signal</div></div><div class="synth-cell"><div class="synth-dim"></div><div class="synth-insight">Use risk_tolerance behavior as primary signal</div></div><div class="synth-cell"><div class="synth-dim"></div><div class="synth-insight">Use time_horizon behavior as primary signal</div></div></div>
+  <div style="font-family:var(--mono);font-size:.6rem;color:var(--muted);margin-top:1rem">Based on: PMO speeches · Khmer Times · Phnom Penh Post · WTO TPR · ADB · World Bank · IMF · Kamnotra.io · Open Development Cambodia</div>
 </div>
-<div class="card" id="hun_sen">
-  <div class="leader-title">President of the Senate; Former Prime Minister of Cambodia (1985–2023)</div>
-  <h2>Hun Sen</h2>
-  <div style="font-family:var(--mono);font-size:.65rem;color:var(--muted);margin-bottom:var(--space-md)">
-    In office since 2023-08-22 &nbsp;·&nbsp; <code style="color:var(--accent-dim)">hun_sen</code>
+</div><div class="leader-row">
+  <div class="leader-row-header" onclick="toggleLeader('chea_vandeth')">
+    <div class="leader-row-meta">
+      <span class="leader-name">Chea Vandeth</span>
+      <span class="leader-title-tag">Minister of Post and Telecommunications  |  Chair, Digital Government Committee  |  Digital Economy and Society Policy 2021–2035 Architect</span>
+    </div>
+    <div class="leader-row-right">
+      <div class="completeness-display">
+        <div class="completeness-frac">7/7</div>
+        <div class="completeness-sub">dims populated</div>
+      </div>
+      <span class="expand-arrow" id="arrow-chea_vandeth">▾</span>
+    </div>
   </div>
-  <div class="dim-grid"><div class="dim-item">
-  <div class="dim-key">growth theory</div>
-  <div class="dim-value"><span class="dim-null">No data yet</span></div>
+  <div style="font-size:.8125rem;color:var(--muted);margin:.4rem 0 .75rem;max-width:72ch">Mental model schema mapping decision-making architecture across 7 dimensions Minister of Post and Telecommunications since April 2020. Rebuilt the ministry from a low-visibility infrastructure unit into Cambodia&#x27;s digital transformation lead. Launched Cambodia Digital Economy and Society Policy Fram</div>
+  <div class="leader-detail" id="dim-chea_vandeth" style="display:block">
+  <table class="dim-table">
+    <thead>
+      <tr>
+        <th>Dimension</th>
+        <th>Assessed position</th>
+        <th>Confidence</th>
+        <th>Source</th>
+      </tr>
+    </thead>
+    <tbody><tr><td class="dim-name-cell">GROWTH THEORY</td><td class="dim-position-cell">Vandeth&#x27;s growth theory is technological leapfrog: a country at Cambodia&#x27;s income level can bypass traditional development stages by building digital infrastructure that enables all sectors to operate more efficiently simultaneously. His three-pillar framework — digital government, digital citizens, digital businesses — is internally consistent and operationally specific. The DWF (Document Work Fl<blockquote style="margin:.5rem 0 0;font-size:.75rem">"For a developing country like Cambodia, new technologies provide an opportunity to leapfrog, bypassing traditional phases of development. We want to transform our government to be digital and reduce as much as possible the use of paper."<span class="bq-source">Chea Vandeth, Digital Economy Forum</span></blockquote><ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>Core Thesis: Digital infrastructure as economic leapfrog platform</li><li>Direct Quote</li></ul></td><td class="conf-cell"><span class="conf-val">70%</span><div class="conf-bar-wrap"><div class="conf-bar-fill" style="width:70%"></div></div></td><td class="source-cell">Chea Vandeth, Digital Economy Forum</td></tr><tr><td class="dim-name-cell">RISK TOLERANCE</td><td class="dim-position-cell">Vandeth pioneered blockchain-registered documents (VERIFY.GOV.KH), advocated digital labs in primary schools in provinces where digital literacy is near-zero, and initiated Starlink discussions for connectivity coverage. These are non-trivial implementation risks in a bureaucratically resistant environment. His acknowledgement that cybercrime and data privacy risks are growing — and his call for l<ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>Assessment: MEDIUM-HIGH — Willing to build new systems; avoids political risks</li></ul></td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr><tr><td class="dim-name-cell">TIME HORIZON</td><td class="dim-position-cell">The Cambodia Digital Economy and Society Policy Framework runs to 2035 — a 14-year planning horizon that is the longest of any operational policy document in this cohort except Sok Siphana&#x27;s trade framework. 5G rollout scheduled to begin 2026. The 42 digital labs programme targets grade 4–9 students — a 10-year human capital investment. Vandeth has the longest and most institutionally-anchored tim<ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>Revealed: 2035 (Digital Policy horizon)  |  Near: 2026 (5G rollout)</li></ul></td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr><tr><td class="dim-name-cell">DEPENDENCY ASSUMPTIONS</td><td class="dim-position-cell">1. Connectivity infrastructure reaches rural and peri-urban Cambodia at scale: urban digital adoption is real; rural connectivity is the gap. The Starlink discussion is a recognition of this problem. 2. Digital literacy translates to economic productivity: building 42 labs and offering 600 annual digital skills scholarships is a beginning, not a system. The workforce transformation required for a<ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>The digital transformation model&#x27;s assumptions</li></ul></td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr><tr><td class="dim-name-cell">INSTITUTION VS RELATIONSHIP</td><td class="dim-position-cell">Within his ministry, Vandeth has built genuine institutional infrastructure: four national digital policy strategies approved by Royal Government, the DWF system, VERIFY.GOV.KH, the Telecoms Cambodia reform programme, the Digital Government Committee. These are real institutions with operational mandates. His 2024 Telecom Cambodia meeting (restructuring the state-owned telecom into a viable enterp<ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>Verdict: Strongly institutional within MPTC; relationship-embedded in broader system</li></ul></td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr><tr><td class="dim-name-cell">GLOBAL POSITIONING LOGIC</td><td class="dim-position-cell">Vandeth&#x27;s global positioning logic is technical-diplomacy led: winning ASEAN Digital Awards, engaging AmCham&#x27;s ICT committee, co-ordinating with UNESCO on digital literacy, co-ordinating with Singapore&#x27;s MAS on fintech — these are all positioning moves that build Cambodia&#x27;s reputation in the digital governance space independent of political controversies. His ASEAN Chair 2022 contributions to digi<ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>Theory: Cambodia as regional digital hub through infrastructure leadership</li></ul></td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr><tr><td class="dim-name-cell">CONSISTENCY SCORE</td><td class="dim-position-cell">—<ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>Ratings</li><li>Overall: HIGH on government digitisation; MEDIUM on citizen digital inclusion; LOW on regulatory framework for risks he has himself identified. The infrastructure is ahead of the governance.</li></ul></td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr></tbody>
+  </table>
+  <div style="margin:1.25rem 0 0"><h3 style="margin-bottom:.6rem">Consistency Ratings</h3><table style="width:100%;border-collapse:collapse"><tbody><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">Digital government infrastructure</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-high">⚠ HIGH</span></td><td style="font-size:.78rem;color:var(--muted)">DWF, VERIFY.GOV.KH, CamDX — real systems producing measurable revenue uplift</td></tr><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">Digital citizen programme</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-medium">◈ MEDIUM</span></td><td style="font-size:.78rem;color:var(--muted)">600 scholarships, 42 labs — started; scale relative to 16M population is small</td></tr><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">5G rollout</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-muted">LOW-MEDIUM</span></td><td style="font-size:.78rem;color:var(--muted)">Committed 2026 start; technical and investment preparation details unclear</td></tr><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">Cybersecurity legal framework</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-low">◈ LOW</span></td><td style="font-size:.78rem;color:var(--muted)">Acknowledged as gap; legal bills in draft; no enacted framework as of 2025</td></tr></tbody></table></div>
   
-</div><div class="dim-item">
-  <div class="dim-key">risk tolerance</div>
-  <div class="dim-value"><span class="dim-null">No data yet</span></div>
+  <blockquote>"For a developing country like Cambodia, new technologies provide an opportunity to leapfrog, bypassing traditional phases of development. We want to transform our government to be digital and reduce as much as possible the use of paper."<span class="bq-source">— </span></blockquote>
+  <h3 style="margin:1.25rem 0 0.75rem">Synthesis</h3><div class="synthesis-grid"><div class="synth-cell"><div class="synth-dim"></div><div class="synth-insight">Use growth_theory behavior as primary signal</div></div><div class="synth-cell"><div class="synth-dim"></div><div class="synth-insight">Use risk_tolerance behavior as primary signal</div></div><div class="synth-cell"><div class="synth-dim"></div><div class="synth-insight">Use time_horizon behavior as primary signal</div></div></div>
+  <div style="font-family:var(--mono);font-size:.6rem;color:var(--muted);margin-top:1rem">Based on: PMO speeches · Khmer Times · Phnom Penh Post · WTO TPR · ADB · World Bank · IMF · Kamnotra.io · Open Development Cambodia</div>
+</div>
+</div><div class="leader-row">
+  <div class="leader-row-header" onclick="toggleLeader('hang_chuon_naron')">
+    <div class="leader-row-meta">
+      <span class="leader-name">Hang Chuon Naron</span>
+      <span class="leader-title-tag">Deputy Prime Minister &amp; Minister of Education, Youth and Sport  |  Vice-Chairman, Supreme National Economic Council</span>
+    </div>
+    <div class="leader-row-right">
+      <div class="completeness-display">
+        <div class="completeness-frac">7/7</div>
+        <div class="completeness-sub">dims populated</div>
+      </div>
+      <span class="expand-arrow" id="arrow-hang_chuon_naron">▾</span>
+    </div>
+  </div>
+  <div style="font-size:.8125rem;color:var(--muted);margin:.4rem 0 .75rem;max-width:72ch">Mental model schema mapping decision-making architecture across 7 dimensions Born 1962. PhD in International Economics (Moscow State Institute of International Relations, 1991). LLM (Royal University of Law and Economics / Lyon 2). PhD in Education Administration (Chulalongkorn University, Thailand,</div>
+  <div class="leader-detail" id="dim-hang_chuon_naron" style="display:block">
+  <table class="dim-table">
+    <thead>
+      <tr>
+        <th>Dimension</th>
+        <th>Assessed position</th>
+        <th>Confidence</th>
+        <th>Source</th>
+      </tr>
+    </thead>
+    <tbody><tr><td class="dim-name-cell">GROWTH THEORY</td><td class="dim-position-cell">Naron&#x27;s growth theory is human capital first. As Vice-Chairman of the Supreme National Economic Council, he sits at the intersection of education and economic strategy and has argued consistently that Cambodia&#x27;s growth cannot be sustained without a workforce that can operate in a knowledge economy. His Education Strategic Plan 2024–2028 identifies eight reform priorities, all of which are inputs t<blockquote style="margin:.5rem 0 0;font-size:.75rem">"Reforming education pathways is necessary to build skilled human capital, align with Cambodia&#x27;s economic structure, reduce the dropout rate, boost higher education enrolment — particularly in STEM — and equip students with technical and vocational sk"<span class="bq-source">Hang Chuon Naron, Education Ministry, 2025</span></blockquote><ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>Core Thesis: Human capital as the binding constraint on Cambodia&#x27;s development trajectory</li><li>Direct Quote</li><li>The structural challenge he is managing</li></ul></td><td class="conf-cell"><span class="conf-val">70%</span><div class="conf-bar-wrap"><div class="conf-bar-fill" style="width:70%"></div></div></td><td class="source-cell">Hang Chuon Naron, Education Ministry, 2025</td></tr><tr><td class="dim-name-cell">RISK TOLERANCE</td><td class="dim-position-cell">Naron&#x27;s anti-cheating examination reform is the clearest evidence of risk tolerance in his record. The 2014–2016 anti-cheating crackdown caused national pass rates to plummet, triggered political pressure from families, and generated media controversy — he held the policy regardless, creating a significant short-term political cost for a long-term credibility gain. This is the highest-evidence ris<ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>Assessment: MEDIUM-HIGH — Willing to take on institutional reform; political risks managed carefully</li></ul></td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr><tr><td class="dim-name-cell">TIME HORIZON</td><td class="dim-position-cell">Human capital investments are by nature long-horizon — a student entering grade 4 in 2025 enters the labour market in 2035–2040. Naron has been in his position since 2013 — the only member of this cohort with a 12-year track record in the same portfolio, which itself reveals a long-horizon orientation (education ministers who plan short-term rotate faster). His Education Strategic Plan 2024–2028 i<ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>Revealed: 10–20 years (human capital investment)  |  Operational: 4 years (ESP 2024-2028)</li></ul></td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr><tr><td class="dim-name-cell">DEPENDENCY ASSUMPTIONS</td><td class="dim-position-cell">1. Teacher salary increases are politically funded: Naron explicitly raised teacher salary inadequacy as a constraint — if teachers cannot live on their salaries, they teach in private schools, which undermines the public system. This requires a fiscal commitment that MEF controls. 2. Higher education quality improves alongside access: Cambodia has 169 HEIs with very mixed quality. Simply increasi<ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>The human capital model&#x27;s assumptions</li></ul></td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr><tr><td class="dim-name-cell">INSTITUTION VS RELATIONSHIP</td><td class="dim-position-cell">The anti-cheating reform, the Education Strategic Plan 2024–2028 (developed with UNICEF, SEA-PLM, and international experts), the founding of Cambodia&#x27;s first national teacher training curriculum reform process, and the Evidence-to-Policy planning linkages are all genuine institution-building acts. As Vice-Chairman of SNEC, he coordinates across economic ministries on human capital strategy — a cr<ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>Verdict: The strongest institution-builder in his domain; with systemic constraints</li></ul></td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr><tr><td class="dim-name-cell">GLOBAL POSITIONING LOGIC</td><td class="dim-position-cell">Naron engages with SEA-PLM (ASEAN learning assessment programme), UNESCO, UNICEF, and international research institutions as a matter of routine policy practice — not for diplomatic optics, but for comparative data and technical assistance. His participation in the 2025 ASEAN Ministerial Roundtable on foundational learning and the Foundational Learning Forum reflects a genuine orientation toward i<ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>Theory: Education quality as international credibility and economic graduation signal</li></ul></td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr><tr><td class="dim-name-cell">CONSISTENCY SCORE</td><td class="dim-position-cell">—<ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>Ratings</li><li>Overall: SECOND HIGHEST consistency score after Serey and Siphana. 12-year tenure with demonstrable reform outputs is the strongest evidence base in the sample. Primary gap: his agenda requires fiscal and political support from others — teacher salaries, STEM lab funding, vocational infrastructure — which are not in his control.</li></ul></td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr></tbody>
+  </table>
+  <div style="margin:1.25rem 0 0"><h3 style="margin-bottom:.6rem">Consistency Ratings</h3><table style="width:100%;border-collapse:collapse"><tbody><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">Anti-cheating / assessment integrity</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-high">⚠ HIGH</span></td><td style="font-size:.78rem;color:var(--muted)">Held policy through significant political pressure; pass rates recovered as quality improved</td></tr><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">Curriculum reform</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-high">⚠ HIGH</span></td><td style="font-size:.78rem;color:var(--muted)">ESP 2024-2028 implemented with genuine multi-stakeholder process</td></tr><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">Teacher quality / salary</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-medium">◈ MEDIUM</span></td><td style="font-size:.78rem;color:var(--muted)">Correctly identified as binding constraint; not yet resolved at fiscal level</td></tr><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">STEM / vocational track</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-muted">MEDIUM-LOW</span></td><td style="font-size:.78rem;color:var(--muted)">Pilot announced 2025; scale and funding not yet committed</td></tr><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">AI / EdTech integration</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-medium">◈ MEDIUM</span></td><td style="font-size:.78rem;color:var(--muted)">Teacher training integration underway; student-level deployment early stage</td></tr></tbody></table></div>
   
-</div><div class="dim-item">
-  <div class="dim-key">time horizon</div>
-  <div class="dim-value"><span class="dim-null">No data yet</span></div>
+  <blockquote>"Reforming education pathways is necessary to build skilled human capital, align with Cambodia&#x27;s economic structure, reduce the dropout rate, boost higher education enrolment — particularly in STEM — and equip students with technical and vocational sk"<span class="bq-source">— </span></blockquote>
+  <h3 style="margin:1.25rem 0 0.75rem">Synthesis</h3><div class="synthesis-grid"><div class="synth-cell"><div class="synth-dim"></div><div class="synth-insight">Use growth_theory behavior as primary signal</div></div><div class="synth-cell"><div class="synth-dim"></div><div class="synth-insight">Use risk_tolerance behavior as primary signal</div></div><div class="synth-cell"><div class="synth-dim"></div><div class="synth-insight">Use time_horizon behavior as primary signal</div></div></div>
+  <div style="font-family:var(--mono);font-size:.6rem;color:var(--muted);margin-top:1rem">Based on: PMO speeches · Khmer Times · Phnom Penh Post · WTO TPR · ADB · World Bank · IMF · Kamnotra.io · Open Development Cambodia</div>
+</div>
+</div><div class="leader-row">
+  <div class="leader-row-header" onclick="toggleLeader('hem_vanndy')">
+    <div class="leader-row-meta">
+      <span class="leader-name">Hem Vanndy</span>
+      <span class="leader-title-tag">Minister of Industry, Science, Technology and Innovation (MISTI)  |  Chairman, Khmer Enterprise Board of Trustees</span>
+    </div>
+    <div class="leader-row-right">
+      <div class="completeness-display">
+        <div class="completeness-frac">7/7</div>
+        <div class="completeness-sub">dims populated</div>
+      </div>
+      <span class="expand-arrow" id="arrow-hem_vanndy">▾</span>
+    </div>
+  </div>
+  <div style="font-size:.8125rem;color:var(--muted);margin:.4rem 0 .75rem;max-width:72ch">Mental model schema mapping decision-making architecture across 7 dimensions New generation technocrat minister. Focus on Industry 4.0, SME formalisation, economic diversification, and industrial value-add. Chairs Khmer Enterprise (national entrepreneurship fund). Has pitched Cambodia to Singaporean</div>
+  <div class="leader-detail" id="dim-hem_vanndy" style="display:block">
+  <table class="dim-table">
+    <thead>
+      <tr>
+        <th>Dimension</th>
+        <th>Assessed position</th>
+        <th>Confidence</th>
+        <th>Source</th>
+      </tr>
+    </thead>
+    <tbody><tr><td class="dim-name-cell">GROWTH THEORY</td><td class="dim-position-cell">Vanndy&#x27;s growth model centres on the domestic productive base rather than FDI attraction (that&#x27;s Chanthol&#x27;s domain). His theory: Cambodia&#x27;s 500,000+ MSMEs are a latent growth engine that requires formalisation, data visibility, and technology access to realise their potential. The 2023–2028 Strategic Plan on Informal Economic Development — which he co-chairs with the Minister of Labour — is the pr<blockquote style="margin:.5rem 0 0;font-size:.75rem">"You can&#x27;t shake a tree that has just begun to grow. Instead, it&#x27;s essential to nurture it with water, provide it with fertilisers and take care of it regularly. MISTI advocates for support, not interference in fostering private sector engagement."<span class="bq-source">Hem Vanndy, DISTI visit, Prey Veng, 2024</span></blockquote><ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>Core Thesis: Industrial diversification through SME formalisation + Industry 4.0 adaptation</li><li>Direct Quote</li><li>What he actually does</li></ul></td><td class="conf-cell"><span class="conf-val">70%</span><div class="conf-bar-wrap"><div class="conf-bar-fill" style="width:70%"></div></div></td><td class="source-cell">Hem Vanndy, DISTI visit, Prey Veng, 2024</td></tr><tr><td class="dim-name-cell">RISK TOLERANCE</td><td class="dim-position-cell">Vanndy pushed through the coordinated joint inter-ministerial inspection mechanism — replacing multiple separate ministry inspections with a single coordinated process — which directly attacked a source of rent-seeking by inspectors. This is a genuine governance risk within the system. His 2025 data synchronisation initiative requires ministries to share data and accept a common SME definition — a<ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>Assessment: MEDIUM — Reform-minded but within political constraints</li></ul></td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr><tr><td class="dim-name-cell">TIME HORIZON</td><td class="dim-position-cell">Vanndy&#x27;s 2025 planning conference projections (5.2% GDP in 2025, 5% in 2026) are based on Industrial sector growth of 7.2% — realistic near-term targets. His LDC graduation references are consistent (every speech mentions 2029 as the planning horizon) but his implementation tools are 5-year strategy documents, not 25-year industrial roadmaps. He is working to the right timeline but needs to accele<ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>Revealed: 5 years (Pentagonal Strategy Phase I)  |  Aspirational: 2030</li></ul></td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr><tr><td class="dim-name-cell">DEPENDENCY ASSUMPTIONS</td><td class="dim-position-cell">1. Formal SME registration translates to productivity improvement: the government&#x27;s theory is that formalisation unlocks credit, training, and market access. Whether this holds in practice — or whether formal registration is just a compliance cost for small businesses — depends on the quality of the support ecosystem. 2. Industry 4.0 readiness can be built within Cambodia&#x27;s current skill base: the<ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>The industrial diversification model&#x27;s assumptions</li></ul></td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr><tr><td class="dim-name-cell">INSTITUTION VS RELATIONSHIP</td><td class="dim-position-cell">Vanndy&#x27;s signature move is data systems: CamDX integration, SME data synchronisation across ministries, ISO membership, factory monitoring sensors. These are institutional infrastructure investments. His emphasis on &#x27;informed decision-making and policy formulation&#x27; and his call for seamless data flows reflect a genuine orientation toward evidence-based governance. He is also Khmer Enterprise chair<ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>Verdict: More institutional than average; data-oriented</li></ul></td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr><tr><td class="dim-name-cell">GLOBAL POSITIONING LOGIC</td><td class="dim-position-cell">Vanndy&#x27;s Singapore keynote pitch and ADB engagement reflect an &#x27;alternative to China&#x27; positioning for mid-tier manufacturing. His emphasis on 30 SEZs across 12 provinces, the ISO membership, the ASEAN Plus Three science connections, and the Industry 4.0 framing are all designed to signal that Cambodia is moving up the value chain — not just a cheap labour destination. Whether the underlying produc<ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>Theory: Position Cambodia as the innovation-friendly low-middle-income alternative to China</li></ul></td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr><tr><td class="dim-name-cell">CONSISTENCY SCORE</td><td class="dim-position-cell">—<ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>Ratings</li><li>Overall: MEDIUM. Correct diagnosis; correct instruments; scale of implementation lags the ambition by a significant margin.</li></ul></td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr></tbody>
+  </table>
+  <div style="margin:1.25rem 0 0"><h3 style="margin-bottom:.6rem">Consistency Ratings</h3><table style="width:100%;border-collapse:collapse"><tbody><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">SME formalisation</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-medium">◈ MEDIUM</span></td><td style="font-size:.78rem;color:var(--muted)">1,292 new registrations in 2024; far short of 500,000 MSME transformation target</td></tr><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">Industry 4.0 / digital factory</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-muted">LOW-MEDIUM</span></td><td style="font-size:.78rem;color:var(--muted)">Framing advanced; sensor/IoT installation programme has not yet produced scale</td></tr><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">Anti-regulatory harassment</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-muted">MEDIUM-HIGH</span></td><td style="font-size:.78rem;color:var(--muted)">Joint inspection mechanism is a real reform; whether it reduced rent-seeking is unverified</td></tr><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">Data integration across ministries</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-medium">◈ MEDIUM</span></td><td style="font-size:.78rem;color:var(--muted)">Common SME definition agreed; full CamDX integration is in progress</td></tr></tbody></table></div>
   
-</div><div class="dim-item">
-  <div class="dim-key">dependency assumptions</div>
-  <div class="dim-value"><span class="dim-null">No data yet</span></div>
+  <blockquote>"You can&#x27;t shake a tree that has just begun to grow. Instead, it&#x27;s essential to nurture it with water, provide it with fertilisers and take care of it regularly. MISTI advocates for support, not interference in fostering private sector engagement."<span class="bq-source">— </span></blockquote>
+  <h3 style="margin:1.25rem 0 0.75rem">Synthesis</h3><div class="synthesis-grid"><div class="synth-cell"><div class="synth-dim"></div><div class="synth-insight">Use growth_theory behavior as primary signal</div></div><div class="synth-cell"><div class="synth-dim"></div><div class="synth-insight">Use risk_tolerance behavior as primary signal</div></div><div class="synth-cell"><div class="synth-dim"></div><div class="synth-insight">Use time_horizon behavior as primary signal</div></div></div>
+  <div style="font-family:var(--mono);font-size:.6rem;color:var(--muted);margin-top:1rem">Based on: PMO speeches · Khmer Times · Phnom Penh Post · WTO TPR · ADB · World Bank · IMF · Kamnotra.io · Open Development Cambodia</div>
+</div>
+</div><div class="leader-row">
+  <div class="leader-row-header" onclick="toggleLeader('hun_manet')">
+    <div class="leader-row-meta">
+      <span class="leader-name">Hun Manet</span>
+      <span class="leader-title-tag">Prime Minister of Cambodia</span>
+    </div>
+    <div class="leader-row-right">
+      <div class="completeness-display">
+        <div class="completeness-frac">7/7</div>
+        <div class="completeness-sub">dims populated</div>
+      </div>
+      <span class="expand-arrow" id="arrow-hun_manet">▾</span>
+    </div>
+  </div>
+  <div style="font-size:.8125rem;color:var(--muted);margin:.4rem 0 .75rem;max-width:72ch">Predictive schema of Hun Manet&#x27;s decision-making architecture across seven dimensions.</div>
+  <div class="leader-detail" id="dim-hun_manet" style="display:block">
+  <table class="dim-table">
+    <thead>
+      <tr>
+        <th>Dimension</th>
+        <th>Assessed position</th>
+        <th>Confidence</th>
+        <th>Source</th>
+      </tr>
+    </thead>
+    <tbody><tr><td class="dim-name-cell">GROWTH THEORY</td><td class="dim-position-cell">Hybrid model: export manufacturing (garments) as near-term revenue base, FDI attraction as diversification engine, human capital and digital transformation as long-horizon bet. When resources are constrained, FDI and infrastructure win budget priority over SME and institution-building.</td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr><tr><td class="dim-name-cell">RISK TOLERANCE</td><td class="dim-position-cell">MODERATE-LOW</td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr><tr><td class="dim-name-cell">TIME HORIZON</td><td class="dim-position-cell">25 years (Vision 2050)</td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr><tr><td class="dim-name-cell">DEPENDENCY ASSUMPTIONS</td><td class="dim-position-cell">—</td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr><tr><td class="dim-name-cell">INSTITUTION VS RELATIONSHIP</td><td class="dim-position-cell">Governance is structurally relationship-based. Mass-patronage system from Hun Sen has been preserved and expanded. Formal institutions are often used as vehicles for personal and factional loyalty rather than autonomous actors.</td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr><tr><td class="dim-name-cell">GLOBAL POSITIONING LOGIC</td><td class="dim-position-cell">Not simple China alignment. Strategy is to preserve China’s structural economic role while expanding Western and regional engagement to attract investment, reduce vulnerability, and secure diplomatic legitimacy. Aim is to avoid overdependence on any single power.<blockquote style="margin:.5rem 0 0;font-size:.75rem">"{&#x27;quote&#x27;: &quot;Cambodia&#x27;s relationships with China and the U.S. are not mutually exclusive.&quot;, &#x27;source&#x27;: &#x27;Hun Manet, Reuters interview, Washington, 2025&#x27;}"</blockquote></td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr><tr><td class="dim-name-cell">CONSISTENCY SCORE</td><td class="dim-position-cell">Compare stated reasoning with actual budget and decree outcomes.</td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr></tbody>
+  </table>
   
-</div><div class="dim-item">
-  <div class="dim-key">institution vs relationship</div>
-  <div class="dim-value"><span class="dim-null">No data yet</span></div>
   
-</div><div class="dim-item">
-  <div class="dim-key">global positioning logic</div>
-  <div class="dim-value"><span class="dim-null">No data yet</span></div>
+  <blockquote>"The transition from Hun Sen to Hun Manet was not a break from the past, but rather a strategic generational reset secured through a systematic expansion of state bureaucracy."<span class="bq-source">— 9Dashline analysis, March 2026</span></blockquote>
+  <h3 style="margin:1.25rem 0 0.75rem">Synthesis</h3><div class="synthesis-grid"><div class="synth-cell"><div class="synth-dim">growth_theory</div><div class="synth-insight">Budget priorities will continue to favour FDI-attracting infrastructure (airports, ports, SEZs) over institutional SME development. Garment sector support likely to continue until a credible alternative revenue base exists.</div></div><div class="synth-cell"><div class="synth-dim">risk_tolerance</div><div class="synth-insight">Hun Manet is unlikely to accept short-term pain for long-term structural gain voluntarily. Policy experimentation will be gradual, consensus-based, and reversible if politically costly. Crisis responses will be fast on optics, slower on underlying structure.</div></div><div class="synth-cell"><div class="synth-dim">time_horizon</div><div class="synth-insight">The 2029 LDC graduation problem is likely to be underplayed until late. External partners should not assume the government has an internal solution to preference loss; evidence suggests it does not.</div></div><div class="synth-cell"><div class="synth-dim">dependency_assumptions</div><div class="synth-insight">The live stress scenario is a &#x27;triple squeeze&#x27;: US tariffs + Chinese slowdown + EBA loss. Cambodia’s BATNA is structurally weaker than its diplomatic posture suggests in any negotiation under this scenario.</div></div><div class="synth-cell"><div class="synth-dim">institution_vs_relationship</div><div class="synth-insight">Formal institutions and agreements matter less than who is present in the decision room. The Hun family and CPP inner circle are the true decision nodes. Institutional channels are primarily for legitimation, not actual decision-making.</div></div><div class="synth-cell"><div class="synth-dim">global_positioning_logic</div><div class="synth-insight">Cambodia will avoid choosing sides and will keep extracting value from both China and the West. The core question is not alignment but what Cambodia seeks from each engagement: usually investment, trade access, and diplomatic legitimacy.</div></div><div class="synth-cell"><div class="synth-dim">consistency_score</div><div class="synth-insight">Foreign policy behaviour is the most reliable predictor of future actions. Domestic governance and reform commitments should be discounted until anchored by concrete budget lines or structural judicial changes.</div></div></div>
+  <div style="font-family:var(--mono);font-size:.6rem;color:var(--muted);margin-top:1rem">Based on: Pentagonal Strategy Phase I · PMO speeches · key interviews · multilateral research</div>
+</div>
+</div><div class="leader-row">
+  <div class="leader-row-header" onclick="toggleLeader('hun_sen')">
+    <div class="leader-row-meta">
+      <span class="leader-name">Hun Sen</span>
+      <span class="leader-title-tag">President of the Senate; Former Prime Minister of Cambodia (1985–2023)</span>
+    </div>
+    <div class="leader-row-right">
+      <div class="completeness-display">
+        <div class="completeness-frac">7/7</div>
+        <div class="completeness-sub">dims populated</div>
+      </div>
+      <span class="expand-arrow" id="arrow-hun_sen">▾</span>
+    </div>
+  </div>
+  <div style="font-size:.8125rem;color:var(--muted);margin:.4rem 0 .75rem;max-width:72ch">Stub profile — to be populated by extractor pipeline</div>
+  <div class="leader-detail" id="dim-hun_sen" style="display:block">
+  <table class="dim-table">
+    <thead>
+      <tr>
+        <th>Dimension</th>
+        <th>Assessed position</th>
+        <th>Confidence</th>
+        <th>Source</th>
+      </tr>
+    </thead>
+    <tbody><tr><td class="dim-name-cell">GROWTH THEORY</td><td class="dim-position-cell">Hun Sen&#x27;s growth model was never a coherent economic theory — it was a political economy theory. His operating belief: political stability achieved through personal control generates the confidence investors need. FDI and garment exports were welcomed insofar as they sustained the employment base that legitimised CPP rule. Studwell&#x27;s framework (How Asia Works) would diagnose Hun Sen as having fail<blockquote style="margin:.5rem 0 0;font-size:.75rem">"I am committed to transform Cambodia into an upper-middle-income economy by 2030 and a developed country by 2050."<span class="bq-source">Hun Sen, Office of the Council of Ministers, 2017</span></blockquote><ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>Core Thesis: Stability first, growth follows, institutions are instruments</li><li>Direct Quote</li></ul></td><td class="conf-cell"><span class="conf-val">70%</span><div class="conf-bar-wrap"><div class="conf-bar-fill" style="width:70%"></div></div></td><td class="source-cell">Hun Sen, Office of the Council of Ministers, 2017</td></tr><tr><td class="dim-name-cell">RISK TOLERANCE</td><td class="dim-position-cell">In the political domain, Hun Sen was one of the highest-risk political operators in modern Southeast Asian history — orchestrating a coup (1997), dissolving the main opposition party (2017), engineering dynastic succession (2023). In the economic domain, he was deeply risk-averse: no structural land reform, no industrial policy, no SOE restructuring. He preserved the patronage system because the r<ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>Assessment: HIGH for political consolidation; LOW for economic experimentation</li></ul></td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr><tr><td class="dim-name-cell">TIME HORIZON</td><td class="dim-position-cell">Hun Sen&#x27;s terminal horizon was not Cambodia&#x27;s development — it was the security of his dynastic succession. Every economic decision from 2019 onward can be reread as succession preparation: the 122% expansion of senior civil service posts (to absorb both generations of loyalists), the military placements of his sons, the CPP constitutional lock. The 25-year Vision 2050 is a successor government&#x27;s<ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>Actual horizon: Succession security  |  Stated: 2050</li></ul></td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr><tr><td class="dim-name-cell">DEPENDENCY ASSUMPTIONS</td><td class="dim-position-cell">1. Chinese investment and diplomatic cover would continue indefinitely: Cambodia received USD 17.7B+ in Chinese aid by 2024; Ream Naval Base access was granted; &#x27;all-weather&#x27; partnership declared. 2. Western economic engagement would tolerate authoritarian governance if framed as stability: this assumption held until the 2020 EU partial EBA withdrawal. 3. The CPP&#x27;s rural patronage networks would o<ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>His model&#x27;s hidden load-bearing assumptions</li></ul></td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr><tr><td class="dim-name-cell">INSTITUTION VS RELATIONSHIP</td><td class="dim-position-cell">Hun Sen built no independent institution in 38 years. Every formal body — the judiciary, the electoral commission, the Senate, the Constitutional Council — was designed to convert relationship outcomes into legal form. The Bertelsmann Transformation Index 2024 gives Cambodia 0/4 on judicial independence. No officials convicted of corruption in 38 years is not an accident — it is a design specifica<ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>Verdict: Pure relationship. Institutions as legitimation tools.</li></ul></td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr><tr><td class="dim-name-cell">GLOBAL POSITIONING LOGIC</td><td class="dim-position-cell">Hun Sen&#x27;s positioning logic was: take China&#x27;s economic and diplomatic insurance (infrastructure, diplomatic veto cover) while maintaining enough Western economic engagement (EU EBA, US market) to sustain export jobs. When the West conditioned engagement on governance reforms (2020 EBA partial withdrawal), he accepted the economic cost rather than make concessions. ASEAN membership legitimised the<blockquote style="margin:.5rem 0 0;font-size:.75rem">"Cambodia&#x27;s relationship with China is the most reliable friendship in our history."<span class="bq-source">Hun Sen, multiple occasions 2017–2022</span></blockquote><ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>Theory: China as insurer, West as income source, ASEAN as cover</li></ul></td><td class="conf-cell"><span class="conf-val">70%</span><div class="conf-bar-wrap"><div class="conf-bar-fill" style="width:70%"></div></div></td><td class="source-cell">Hun Sen, multiple occasions 2017–2022</td></tr><tr><td class="dim-name-cell">CONSISTENCY SCORE</td><td class="dim-position-cell">—<ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>Ratings</li><li>Overall: VERY HIGH on political survival logic; VERY LOW on development delivery. The most predictable leader on political behavior; least reliable on economic promises.</li></ul></td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr></tbody>
+  </table>
+  <div style="margin:1.25rem 0 0"><h3 style="margin-bottom:.6rem">Consistency Ratings</h3><table style="width:100%;border-collapse:collapse"><tbody><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">Political consolidation</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-high">⚠ HIGH</span></td><td style="font-size:.78rem;color:var(--muted)">Behavior matched stated reasoning — stability through control — consistently for 38 years</td></tr><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">Economic development rhetoric</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-low">◈ LOW</span></td><td style="font-size:.78rem;color:var(--muted)">Stated 2030/2050 targets; built patronage economy with no industrial base</td></tr><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">Anti-corruption</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-low">◈ LOW</span></td><td style="font-size:.78rem;color:var(--muted)">Zero convictions of officials in 38 years; judicial weaponised against opponents</td></tr><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">Succession preparation</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-high">⚠ HIGH</span></td><td style="font-size:.78rem;color:var(--muted)">The system was meticulously designed for this outcome; executed without disruption</td></tr></tbody></table></div>
   
-</div><div class="dim-item">
-  <div class="dim-key">consistency score</div>
-  <div class="dim-value"><span class="dim-null">No data yet</span></div>
-  
-</div></div>
   
   
   
 </div>
+</div><div class="leader-row">
+  <div class="leader-row-header" onclick="toggleLeader('say_sam_al')">
+    <div class="leader-row-meta">
+      <span class="leader-name">Say Sam Al</span>
+      <span class="leader-title-tag">Minister of Environment  |  Son-in-law of Supreme Court Justice Dith Munty  |  Brother of Say Samath (National Bank Deputy Governor)</span>
+    </div>
+    <div class="leader-row-right">
+      <div class="completeness-display">
+        <div class="completeness-frac">7/7</div>
+        <div class="completeness-sub">dims populated</div>
+      </div>
+      <span class="expand-arrow" id="arrow-say_sam_al">▾</span>
+    </div>
+  </div>
+  <div style="font-size:.8125rem;color:var(--muted);margin:.4rem 0 .75rem;max-width:72ch">Mental model schema mapping decision-making architecture across 7 dimensions Environment minister since 2013. Cambodia&#x27;s forests have seen accelerating destruction during his tenure — 24% of forest cover lost 2001–2018. The ministry has a dual mandate that creates an intrinsic conflict: attracting i</div>
+  <div class="leader-detail" id="dim-say_sam_al" style="display:block">
+  <table class="dim-table">
+    <thead>
+      <tr>
+        <th>Dimension</th>
+        <th>Assessed position</th>
+        <th>Confidence</th>
+        <th>Source</th>
+      </tr>
+    </thead>
+    <tbody><tr><td class="dim-name-cell">GROWTH THEORY</td><td class="dim-position-cell">Say Sam Al&#x27;s revealed growth theory is resource extraction-as-development: the environment ministry under his tenure has functioned primarily as a permitting and regulatory body for economic activities that generate short-term revenue from natural assets. Large-scale land concessions, agribusiness development on protected and communal land, and a failure to enforce environmental impact assessments<ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>Core Thesis: Land and natural resources as FDI attraction instruments</li></ul></td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr><tr><td class="dim-name-cell">RISK TOLERANCE</td><td class="dim-position-cell">Say Sam Al accepts the political risk of approving controversial concessions because the CPP&#x27;s relationship with land developers is a core patronage revenue stream. He faces minimal personal enforcement risk — prosecutions of officials for environment failures are non-existent. The regulatory risk he avoids is the risk of blocking investments that powerful CPP-aligned interests want approved. This<ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>Assessment: LOW for regulatory enforcement; HIGH for political risk acceptance</li></ul></td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr><tr><td class="dim-name-cell">TIME HORIZON</td><td class="dim-position-cell">The deforestation pattern is diagnostic of a very short time horizon — the value of forest is extracted once (logging, land clearing) and the long-term value of the ecosystem is discounted to near zero. There is no published 20-year forest conservation plan with funded targets under his ministry. The Cambodian Climate Change Strategic Plan exists on paper; the enforcement reality diverges sharply<ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>Revealed: 1–3 years (concession revenue cycle)</li></ul></td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr><tr><td class="dim-name-cell">DEPENDENCY ASSUMPTIONS</td><td class="dim-position-cell">1. International carbon and biodiversity markets remain distant enough not to create immediate cost for deforestation: CBAM and EU due diligence directives are beginning to change this — agribusiness exports to Europe will face mandatory deforestation-free sourcing requirements. 2. Cambodian tourism can be sustained despite environmental degradation: tourist revenue from Angkor Wat and coastal are<ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>Hidden assumptions in the resource extraction model</li></ul></td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr><tr><td class="dim-name-cell">INSTITUTION VS RELATIONSHIP</td><td class="dim-position-cell">Environmental impact assessment procedures exist in Cambodian law. The Ministry of Environment has formal regulatory authority. In practice, the concession approval process flows through political relationships — the Ministry ratifies decisions made elsewhere. The 2017 dissolution of environmental NGOs&#x27; operating space, the 2024 Mother Nature prosecutions, and the failure to prosecute a single ill<ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>Verdict: Pure relationship. Environmental institutions are facades.</li></ul></td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr><tr><td class="dim-name-cell">GLOBAL POSITIONING LOGIC</td><td class="dim-position-cell">Say Sam Al attends climate summits and participates in ASEAN environmental forums, but Cambodia&#x27;s environmental compliance commitments have no operational implementation mechanism. The gap between Cambodia&#x27;s NDC (Nationally Determined Contribution) under Paris Agreement and actual deforestation and emissions trends is among the widest in the region. His ministry&#x27;s global positioning logic is: sign<ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>No coherent global positioning theory on environment</li></ul></td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr><tr><td class="dim-name-cell">CONSISTENCY SCORE</td><td class="dim-position-cell">—<ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>Ratings</li><li>Overall: LOWEST consistency score in the sample. His stated environmental mandate is consistently contradicted by his revealed behaviour. His revealed theory — land as patronage resource — is itself highly consistent. The right framing is: he is highly consistent in serving the patronage system, not in serving his stated environmental mandate.</li></ul></td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr></tbody>
+  </table>
+  <div style="margin:1.25rem 0 0"><h3 style="margin-bottom:.6rem">Consistency Ratings</h3><table style="width:100%;border-collapse:collapse"><tbody><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">Forest conservation</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-low">◈ LOW</span></td><td style="font-size:.78rem;color:var(--muted)">24% forest loss 2001-2018; no reversal under his tenure</td></tr><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">Environmental enforcement</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-low">◈ LOW</span></td><td style="font-size:.78rem;color:var(--muted)">Zero prosecutions for illegal logging; NGO crackdown instead</td></tr><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">Climate commitments</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-low">◈ LOW</span></td><td style="font-size:.78rem;color:var(--muted)">NDC targets vs actual emissions trajectory — no convergence</td></tr><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">Concession regulation</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-low">◈ LOW</span></td><td style="font-size:.78rem;color:var(--muted)">Concessions on communally occupied and protected land continue</td></tr></tbody></table></div>
+  
+  
+  <h3 style="margin:1.25rem 0 0.75rem">Synthesis</h3><div class="synthesis-grid"><div class="synth-cell"><div class="synth-dim"></div><div class="synth-insight">Use growth_theory behavior as primary signal</div></div><div class="synth-cell"><div class="synth-dim"></div><div class="synth-insight">Use risk_tolerance behavior as primary signal</div></div><div class="synth-cell"><div class="synth-dim"></div><div class="synth-insight">Use time_horizon behavior as primary signal</div></div></div>
+  <div style="font-family:var(--mono);font-size:.6rem;color:var(--muted);margin-top:1rem">Based on: PMO speeches · Khmer Times · Phnom Penh Post · WTO TPR · ADB · World Bank · IMF · Kamnotra.io · Open Development Cambodia</div>
 </div>
+</div><div class="leader-row">
+  <div class="leader-row-header" onclick="toggleLeader('sok_siphana')">
+    <div class="leader-row-meta">
+      <span class="leader-name">Sok Siphana</span>
+      <span class="leader-title-tag">Senior Minister in charge of Special Missions (Multilateral Trade and Economic Affairs)  |  1st Vice-Chair, Council of Legal Reform  |  Chair, Trade Policy Advisory Board</span>
+    </div>
+    <div class="leader-row-right">
+      <div class="completeness-display">
+        <div class="completeness-frac">7/7</div>
+        <div class="completeness-sub">dims populated</div>
+      </div>
+      <span class="expand-arrow" id="arrow-sok_siphana">▾</span>
+    </div>
+  </div>
+  <div style="font-size:.8125rem;color:var(--muted);margin:.4rem 0 .75rem;max-width:72ch">Mental model schema mapping decision-making architecture across 7 dimensions Born 1960. Khmer Rouge survivor. Fled to US 1980. JD (Widener), PhD in Law (Bond University, Australia), Docteur en Droit (Paris II). Led Cambodia&#x27;s WTO accession 1999–2004 as lead negotiator. Director at ITC/WTO Geneva 200</div>
+  <div class="leader-detail" id="dim-sok_siphana" style="display:block">
+  <table class="dim-table">
+    <thead>
+      <tr>
+        <th>Dimension</th>
+        <th>Assessed position</th>
+        <th>Confidence</th>
+        <th>Source</th>
+      </tr>
+    </thead>
+    <tbody><tr><td class="dim-name-cell">GROWTH THEORY</td><td class="dim-position-cell">Sok Siphana&#x27;s entire career operationalises a single growth theory: international rules-based integration creates irreversible reform pressure that overcomes domestic vested interests. His WTO accession work proves the model — WTO membership forced Cambodia to establish legal frameworks for private property, regulate economic activity, and standardise procedures with foreign corporations. He used<blockquote style="margin:.5rem 0 0;font-size:.75rem">"We have to have WTO accession because the fate of 220,000 workers is at stake, if we don&#x27;t enter. Cambodia can use the WTO as an international force to negotiate. As a small country we don&#x27;t have the bargaining power to negotiate bilaterally — if we"<span class="bq-source">Sok Siphana, WTO Senate Debate, 2004</span></blockquote><ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>Core Thesis: Rules-based integration as the primary growth mechanism</li><li>Direct Quote — on the WTO accession strategy</li></ul></td><td class="conf-cell"><span class="conf-val">70%</span><div class="conf-bar-wrap"><div class="conf-bar-fill" style="width:70%"></div></div></td><td class="source-cell">Sok Siphana, WTO Senate Debate, 2004</td></tr><tr><td class="dim-name-cell">RISK TOLERANCE</td><td class="dim-position-cell">Siphana accepted significant professional risk in negotiating WTO accession — he faced Oxfam criticism, National Assembly resistance, and internal government scepticism. He pushed through consensus-building with 110+ senior officials across government, private sector, NGOs, and donors. This required consistent willingness to engage critics and hold firm on commitments. As a legal practitioner turn<ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>Assessment: HIGH for institutional reform; MEDIUM for political confrontation</li></ul></td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr><tr><td class="dim-name-cell">TIME HORIZON</td><td class="dim-position-cell">Siphana&#x27;s WTO accession took 10 years of negotiation (1994–2004). His PhD dissertation examined ASEAN financial integration and LDC financial inclusion — a 20-year academic and policy arc. His Trade Policy Advisory Board mandate is explicitly focused on the 2030 trade policy framework. He is one of the few officials in the room whose revealed time horizon — measured by what he actually worked on a<ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>Structural long horizon — 10–20 years</li></ul></td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr><tr><td class="dim-name-cell">DEPENDENCY ASSUMPTIONS</td><td class="dim-position-cell">Siphana&#x27;s rules-based integration model assumes that multilateral institutions (WTO, UNCTAD, ITC) remain credible and effective. If WTO reform stalls, if major economies defect from multilateral rules (US tariff shock being a warning signal), or if preferential treatment for LDCs is eroded without adequate transition support, the model&#x27;s anchoring mechanism weakens. He is aware of this — Cambodia<ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>His model&#x27;s key assumption</li></ul></td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr><tr><td class="dim-name-cell">INSTITUTION VS RELATIONSHIP</td><td class="dim-position-cell">Siphana is the clearest institution-builder in this cohort. His career has been defined by building legal frameworks, negotiating binding international agreements, establishing the Trade Policy Advisory Board, and chairing the Council of Legal Reform. His 13 years at MFAIC and his WTO work are fundamentally about making agreements that constrain future governments&#x27; ability to act arbitrarily. His<ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>Verdict: Most strongly institutionally-oriented official in the sample</li></ul></td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr><tr><td class="dim-name-cell">GLOBAL POSITIONING LOGIC</td><td class="dim-position-cell">Siphana&#x27;s positioning logic is more values-based than most of his peers. His framing of Cambodia at the WTO is explicitly about sovereign dignity: a small, LDC country that has earned its place in a rules-based system and uses that platform to advocate for its interests on equal terms. His outreach to India (emphasising cultural and spiritual ties, trade in cashews and textiles) and his engagement<ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>Theory: Sovereign dignity through multilateral equality — Cambodia&#x27;s voice matters when rules are equal</li></ul></td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr><tr><td class="dim-name-cell">CONSISTENCY SCORE</td><td class="dim-position-cell">—<ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>Ratings</li><li>Overall: HIGHEST consistency score in the sample. His stated reasoning (rules-based multilateral integration) reliably predicts his actions. The gap is not his behaviour — it is the political system&#x27;s willingness to implement what he advises.</li></ul></td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr></tbody>
+  </table>
+  <div style="margin:1.25rem 0 0"><h3 style="margin-bottom:.6rem">Consistency Ratings</h3><table style="width:100%;border-collapse:collapse"><tbody><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">Trade law and multilateral engagement</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-high">⚠ HIGH</span></td><td style="font-size:.78rem;color:var(--muted)">Career-long consistency from WTO accession through TPAB chairmanship</td></tr><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">Legal reform advocacy</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-high">⚠ HIGH</span></td><td style="font-size:.78rem;color:var(--muted)">1st Vice-Chair Council of Legal Reform; WTO law framework for Cambodia</td></tr><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">2029 preparation</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-muted">MEDIUM-HIGH</span></td><td style="font-size:.78rem;color:var(--muted)">Most analytically prepared; implementation pace depends on political will above his level</td></tr><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">Independence from patronage system</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-medium">◈ MEDIUM</span></td><td style="font-size:.78rem;color:var(--muted)">Institutionally oriented but appointed by and answerable to CPP PM; operates within system</td></tr></tbody></table></div>
+  
+  <blockquote>"We have to have WTO accession because the fate of 220,000 workers is at stake, if we don&#x27;t enter. Cambodia can use the WTO as an international force to negotiate. As a small country we don&#x27;t have the bargaining power to negotiate bilaterally — if we"<span class="bq-source">— </span></blockquote>
+  <h3 style="margin:1.25rem 0 0.75rem">Synthesis</h3><div class="synthesis-grid"><div class="synth-cell"><div class="synth-dim"></div><div class="synth-insight">Use growth_theory behavior as primary signal</div></div><div class="synth-cell"><div class="synth-dim"></div><div class="synth-insight">Use risk_tolerance behavior as primary signal</div></div><div class="synth-cell"><div class="synth-dim"></div><div class="synth-insight">Use time_horizon behavior as primary signal</div></div></div>
+  <div style="font-family:var(--mono);font-size:.6rem;color:var(--muted);margin-top:1rem">Based on: PMO speeches · Khmer Times · Phnom Penh Post · WTO TPR · ADB · World Bank · IMF · Kamnotra.io · Open Development Cambodia</div>
+</div>
+</div><div class="leader-row">
+  <div class="leader-row-header" onclick="toggleLeader('sun_chanthol')">
+    <div class="leader-row-meta">
+      <span class="leader-name">Sun Chanthol</span>
+      <span class="leader-title-tag">Deputy Prime Minister  |  First Vice-Chairman, Council for the Development of Cambodia  |  Co-Chair, China-Cambodia Intergovernmental Coordination Committee</span>
+    </div>
+    <div class="leader-row-right">
+      <div class="completeness-display">
+        <div class="completeness-frac">7/7</div>
+        <div class="completeness-sub">dims populated</div>
+      </div>
+      <span class="expand-arrow" id="arrow-sun_chanthol">▾</span>
+    </div>
+  </div>
+  <div style="font-size:.8125rem;color:var(--muted);margin:.4rem 0 .75rem;max-width:72ch">Mental model schema mapping decision-making architecture across 7 dimensions Born 1956. BS Business Administration (American University), MPA (Harvard), Advanced Management Program (Wharton). 16 years at General Electric in senior finance/GM roles. Former Minister of Commerce (2013–16) and Public Wo</div>
+  <div class="leader-detail" id="dim-sun_chanthol" style="display:block">
+  <table class="dim-table">
+    <thead>
+      <tr>
+        <th>Dimension</th>
+        <th>Assessed position</th>
+        <th>Confidence</th>
+        <th>Source</th>
+      </tr>
+    </thead>
+    <tbody><tr><td class="dim-name-cell">GROWTH THEORY</td><td class="dim-position-cell">Chanthol is Cambodia&#x27;s most credible FDI promoter and the country&#x27;s clearest articulation of the &#x27;platform state&#x27; growth theory: build the infrastructure, legal framework, and stability signal that makes Cambodia a rational choice for multinational manufacturing relocation. His four-factor framework, stated consistently across all CDC communications: peace and political stability, macroeconomic st<blockquote style="margin:.5rem 0 0;font-size:.75rem">"Peace, political stability, and economic growth coupled with investment incentives and policies are catalysts in attracting new investment to invest in Cambodia, create jobs, boost exports, and contribute to socio-economic development."<span class="bq-source">Sun Chanthol, CDC, December 2025</span></blockquote><ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>Core Thesis: FDI attraction through platform quality and stability signalling</li><li>Direct Quote</li><li>Results under his tenure</li></ul></td><td class="conf-cell"><span class="conf-val">70%</span><div class="conf-bar-wrap"><div class="conf-bar-fill" style="width:70%"></div></div></td><td class="source-cell">Sun Chanthol, CDC, December 2025</td></tr><tr><td class="dim-name-cell">RISK TOLERANCE</td><td class="dim-position-cell">Chanthol&#x27;s General Electric background instilled a dealmaking mentality — identify the investor, structure the incentive, close. The tariff negotiation with the US in 2025 (Cambodia offered to cut 19 import categories to 5% as a goodwill gesture when facing 49% tariffs) was rapid and effective — he acted within days of the shock. He is comfortable with risk on the investment facilitation layer. He<ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>Assessment: MEDIUM-HIGH — Willing to move fast on deals; cautious on structural change</li></ul></td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr><tr><td class="dim-name-cell">TIME HORIZON</td><td class="dim-position-cell">Chanthol operates on a pipeline horizon — what investments can be registered in the next 12–24 months, and what new sectors can be attracted before 2027. His public framing references 2030 upper-middle-income status but his actionable planning is investment-by-investment. The 70% clean energy by 2030 commitment, announced in a meeting with Vietnamese investors in March 2024, is a notable long-hori<ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>Revealed: 3–5 years (deal pipeline); Stated: 2030</li></ul></td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr><tr><td class="dim-name-cell">DEPENDENCY ASSUMPTIONS</td><td class="dim-position-cell">1. China-plus-one relocation continues: Chanthol&#x27;s FDI surge is heavily driven by manufacturers diversifying away from China due to US tariff pressure — Cambodia benefits while the trade war persists. If US-China tensions ease and supply chains reconsolidate, this driver weakens. 2. Political stability signal holds: A single significant political disruption (Thai border escalation, elite successio<ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>The FDI attraction model&#x27;s assumptions</li></ul></td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr><tr><td class="dim-name-cell">INSTITUTION VS RELATIONSHIP</td><td class="dim-position-cell">Chanthol is the most institutionally-oriented senior official after Chea Serey. The online business registry, the CDC investment portal, the companies registry (introduced when he was at Commerce) are genuine institution-building acts. His Harvard/Wharton background gives him a genuine preference for process over personality. However, he is married into the Khau Chhuly business network and sits on<ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>Verdict: Institutional-leaning, but embedded in relationship system</li></ul></td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr><tr><td class="dim-name-cell">GLOBAL POSITIONING LOGIC</td><td class="dim-position-cell">Chanthol&#x27;s positioning theory is explicitly multi-vector and commercially grounded: Cambodia should be the easiest place to set up manufacturing for any origin country. His CSIS Washington appearance (2024), his UK-ASEAN Business Council engagement (2024), his Japanese investor meetings, his Australian convention centre pitch — these are all expressions of a &#x27;sell Cambodia to everyone&#x27; doctrine th<ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>Theory: Cambodia as the most frictionless manufacturing bridge between East and West</li></ul></td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr><tr><td class="dim-name-cell">CONSISTENCY SCORE</td><td class="dim-position-cell">—<ul style="margin:.5rem 0 0;padding-left:1.25rem;font-size:.75rem;color:var(--muted)"><li>Ratings</li><li>Overall: The most outcome-consistent senior official on the dimensions he controls. Consistency drops where he depends on political relationships or structural change.</li></ul></td><td class="conf-cell"><span class="conf-val">—</span></td><td class="source-cell">—</td></tr></tbody>
+  </table>
+  <div style="margin:1.25rem 0 0"><h3 style="margin-bottom:.6rem">Consistency Ratings</h3><table style="width:100%;border-collapse:collapse"><tbody><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">FDI attraction outcomes</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-high">⚠ HIGH</span></td><td style="font-size:.78rem;color:var(--muted)">CDC data tracks his rhetoric; 40-60% annual investment growth 2023-2025</td></tr><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">Anti-corruption via digitisation</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-medium">◈ MEDIUM</span></td><td style="font-size:.78rem;color:var(--muted)">Online systems real; informal facilitation layer unaddressed</td></tr><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">Clean energy 2030 commitment</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-muted">LOW-MEDIUM</span></td><td style="font-size:.78rem;color:var(--muted)">Stated in March 2024; no published investment pipeline to substantiate</td></tr><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--muted);text-transform:uppercase;padding:.35rem .75rem .35rem 0;white-space:nowrap">Sectoral diversification</td><td style="padding:.35rem .75rem .35rem 0"><span class="pill pill-medium">◈ MEDIUM</span></td><td style="font-size:.78rem;color:var(--muted)">Electronics and automotive growth real but small relative to garment dependence</td></tr></tbody></table></div>
+  
+  <blockquote>"Peace, political stability, and economic growth coupled with investment incentives and policies are catalysts in attracting new investment to invest in Cambodia, create jobs, boost exports, and contribute to socio-economic development."<span class="bq-source">— </span></blockquote>
+  <h3 style="margin:1.25rem 0 0.75rem">Synthesis</h3><div class="synthesis-grid"><div class="synth-cell"><div class="synth-dim"></div><div class="synth-insight">Use growth_theory behavior as primary signal</div></div><div class="synth-cell"><div class="synth-dim"></div><div class="synth-insight">Use risk_tolerance behavior as primary signal</div></div><div class="synth-cell"><div class="synth-dim"></div><div class="synth-insight">Use time_horizon behavior as primary signal</div></div></div>
+  <div style="font-family:var(--mono);font-size:.6rem;color:var(--muted);margin-top:1rem">Based on: PMO speeches · Khmer Times · Phnom Penh Post · WTO TPR · ADB · World Bank · IMF · Kamnotra.io · Open Development Cambodia</div>
+</div>
+</div>
+</div>
+
+<script>
+function toggleLeader(id) {
+  var el = document.getElementById('dim-' + id);
+  var arrow = document.getElementById('arrow-' + id);
+  if (!el) return;
+  if (el.style.display === 'block') {
+    el.style.display = 'none';
+    arrow.textContent = '▸';
+  } else {
+    el.style.display = 'block';
+    arrow.textContent = '▾';
+  }
+}
+</script>
+
 </body>
 </html>

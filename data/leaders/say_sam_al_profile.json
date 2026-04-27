@@ -1,0 +1,135 @@
+{
+  "id": "say_sam_al",
+  "full_name": "Say Sam Al",
+  "title": "Minister of Environment  |  Son-in-law of Supreme Court Justice Dith Munty  |  Brother of Say Samath (National Bank Deputy Governor)",
+  "updated": "2026-04-25",
+  "leader": {
+    "name": "Say Sam Al",
+    "position": "Minister of Environment",
+    "in_office_since": "2023",
+    "compiled": "April 2026",
+    "purpose": "Mental model schema mapping decision-making architecture across 7 dimensions Environment minister since 2013. Cambodia's forests have seen accelerating destruction during his tenure — 24% of forest cover lost 2001–2018. The ministry has a dual mandate that creates an intrinsic conflict: attracting investment in land and agriculture vs. protecting forest and environmental resources. Say Sam Al's tenure is characterised by permitting large land concessions that overlap with environmental mandates.",
+    "based_on": [
+      "PMO speeches",
+      "Khmer Times",
+      "Phnom Penh Post",
+      "WTO TPR",
+      "ADB",
+      "World Bank",
+      "IMF",
+      "Kamnotra.io",
+      "Open Development Cambodia"
+    ]
+  },
+  "dimensions": {
+    "growth_theory": {
+      "assessed_position": "Say Sam Al's revealed growth theory is resource extraction-as-development: the environment ministry under his tenure has functioned primarily as a permitting and regulatory body for economic activities that generate short-term revenue from natural assets. Large-scale land concessions, agribusiness development on protected and communal land, and a failure to enforce environmental impact assessments",
+      "primary_quote": null,
+      "primary_source": null,
+      "subfields": [
+        "Core Thesis: Land and natural resources as FDI attraction instruments"
+      ],
+      "_evidence": []
+    },
+    "risk_tolerance": {
+      "assessed_position": "Say Sam Al accepts the political risk of approving controversial concessions because the CPP's relationship with land developers is a core patronage revenue stream. He faces minimal personal enforcement risk — prosecutions of officials for environment failures are non-existent. The regulatory risk he avoids is the risk of blocking investments that powerful CPP-aligned interests want approved. This",
+      "primary_quote": null,
+      "primary_source": null,
+      "subfields": [
+        "Assessment: LOW for regulatory enforcement; HIGH for political risk acceptance"
+      ],
+      "_evidence": []
+    },
+    "time_horizon": {
+      "assessed_position": "The deforestation pattern is diagnostic of a very short time horizon — the value of forest is extracted once (logging, land clearing) and the long-term value of the ecosystem is discounted to near zero. There is no published 20-year forest conservation plan with funded targets under his ministry. The Cambodian Climate Change Strategic Plan exists on paper; the enforcement reality diverges sharply ",
+      "primary_quote": null,
+      "primary_source": null,
+      "subfields": [
+        "Revealed: 1–3 years (concession revenue cycle)"
+      ],
+      "_evidence": []
+    },
+    "dependency_assumptions": {
+      "assessed_position": "1. International carbon and biodiversity markets remain distant enough not to create immediate cost for deforestation: CBAM and EU due diligence directives are beginning to change this — agribusiness exports to Europe will face mandatory deforestation-free sourcing requirements. 2. Cambodian tourism can be sustained despite environmental degradation: tourist revenue from Angkor Wat and coastal are",
+      "primary_quote": null,
+      "primary_source": null,
+      "subfields": [
+        "Hidden assumptions in the resource extraction model"
+      ],
+      "_evidence": []
+    },
+    "institution_vs_relationship": {
+      "assessed_position": "Environmental impact assessment procedures exist in Cambodian law. The Ministry of Environment has formal regulatory authority. In practice, the concession approval process flows through political relationships — the Ministry ratifies decisions made elsewhere. The 2017 dissolution of environmental NGOs' operating space, the 2024 Mother Nature prosecutions, and the failure to prosecute a single ill",
+      "primary_quote": null,
+      "primary_source": null,
+      "subfields": [
+        "Verdict: Pure relationship. Environmental institutions are facades."
+      ],
+      "_evidence": []
+    },
+    "global_positioning_logic": {
+      "assessed_position": "Say Sam Al attends climate summits and participates in ASEAN environmental forums, but Cambodia's environmental compliance commitments have no operational implementation mechanism. The gap between Cambodia's NDC (Nationally Determined Contribution) under Paris Agreement and actual deforestation and emissions trends is among the widest in the region. His ministry's global positioning logic is: sign",
+      "primary_quote": null,
+      "primary_source": null,
+      "subfields": [
+        "No coherent global positioning theory on environment"
+      ],
+      "_evidence": []
+    },
+    "consistency_score": {
+      "assessed_position": null,
+      "primary_quote": null,
+      "primary_source": null,
+      "subfields": [
+        "Ratings",
+        "Overall: LOWEST consistency score in the sample. His stated environmental mandate is consistently contradicted by his revealed behaviour. His revealed theory — land as patronage resource — is itself highly consistent. The right framing is: he is highly consistent in serving the patronage system, not in serving his stated environmental mandate."
+      ],
+      "_evidence": [],
+      "ratings": [
+        {
+          "dimension": "Forest conservation",
+          "verdict": "LOW",
+          "evidence": "24% forest loss 2001-2018; no reversal under his tenure"
+        },
+        {
+          "dimension": "Environmental enforcement",
+          "verdict": "LOW",
+          "evidence": "Zero prosecutions for illegal logging; NGO crackdown instead"
+        },
+        {
+          "dimension": "Climate commitments",
+          "verdict": "LOW",
+          "evidence": "NDC targets vs actual emissions trajectory — no convergence"
+        },
+        {
+          "dimension": "Concession regulation",
+          "verdict": "LOW",
+          "evidence": "Concessions on communally occupied and protected land continue"
+        }
+      ]
+    }
+  },
+  "synthesis": {
+    "guiding_principles": [
+      {
+        "dimension": "",
+        "insight": "Use growth_theory behavior as primary signal"
+      },
+      {
+        "dimension": "",
+        "insight": "Use risk_tolerance behavior as primary signal"
+      },
+      {
+        "dimension": "",
+        "insight": "Use time_horizon behavior as primary signal"
+      }
+    ],
+    "key_external_analysis_quote": {
+      "quote": "",
+      "source": ""
+    },
+    "sources": [
+      "Compiled from DOCX profile generator, April 2026"
+    ]
+  }
+}

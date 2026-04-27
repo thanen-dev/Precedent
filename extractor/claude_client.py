@@ -32,7 +32,7 @@ from extractor.claude_prompts import EXTRACTION_SYSTEM
 
 logger = logging.getLogger(__name__)
 
-MODEL = "claude-sonnet-4-6"
+MODEL = "claude-haiku-4-5-20251001"
 
 
 def _load_api_key() -> str:

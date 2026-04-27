@@ -1,0 +1,145 @@
+{
+  "id": "sok_siphana",
+  "full_name": "Sok Siphana",
+  "title": "Senior Minister in charge of Special Missions (Multilateral Trade and Economic Affairs)  |  1st Vice-Chair, Council of Legal Reform  |  Chair, Trade Policy Advisory Board",
+  "updated": "2026-04-25",
+  "leader": {
+    "name": "Sok Siphana",
+    "position": "Senior Minister in charge of Special Missions (Multilateral Trade and Economic Affairs)",
+    "in_office_since": "2023",
+    "compiled": "April 2026",
+    "purpose": "Mental model schema mapping decision-making architecture across 7 dimensions Born 1960. Khmer Rouge survivor. Fled to US 1980. JD (Widener), PhD in Law (Bond University, Australia), Docteur en Droit (Paris II). Led Cambodia's WTO accession 1999–2004 as lead negotiator. Director at ITC/WTO Geneva 2005–09. Founding partner SokSiphana & Associates 2010–23. Appointed Senior Minister August 2023.",
+    "based_on": [
+      "PMO speeches",
+      "Khmer Times",
+      "Phnom Penh Post",
+      "WTO TPR",
+      "ADB",
+      "World Bank",
+      "IMF",
+      "Kamnotra.io",
+      "Open Development Cambodia"
+    ]
+  },
+  "dimensions": {
+    "growth_theory": {
+      "assessed_position": "Sok Siphana's entire career operationalises a single growth theory: international rules-based integration creates irreversible reform pressure that overcomes domestic vested interests. His WTO accession work proves the model — WTO membership forced Cambodia to establish legal frameworks for private property, regulate economic activity, and standardise procedures with foreign corporations. He used ",
+      "primary_quote": "We have to have WTO accession because the fate of 220,000 workers is at stake, if we don't enter. Cambodia can use the WTO as an international force to negotiate. As a small country we don't have the bargaining power to negotiate bilaterally — if we ",
+      "primary_source": "Sok Siphana, WTO Senate Debate, 2004",
+      "subfields": [
+        "Core Thesis: Rules-based integration as the primary growth mechanism",
+        "Direct Quote — on the WTO accession strategy"
+      ],
+      "_evidence": [
+        {
+          "url": "",
+          "date": "2026-04-01",
+          "quote": "We have to have WTO accession because the fate of 220,000 workers is at stake, if we don't enter. Cambodia can use the WTO as an international force to negotiate. As a small country we don't have the bargaining power to negotiate bilaterally — if we ",
+          "value": "Sok Siphana's entire career operationalises a single growth theory: international rules-based integration creates irreversible reform pressure that overcomes domestic vested interests. His WTO accessi",
+          "confidence": 0.7,
+          "source_file": "docx_profile_sok_siphana"
+        }
+      ]
+    },
+    "risk_tolerance": {
+      "assessed_position": "Siphana accepted significant professional risk in negotiating WTO accession — he faced Oxfam criticism, National Assembly resistance, and internal government scepticism. He pushed through consensus-building with 110+ senior officials across government, private sector, NGOs, and donors. This required consistent willingness to engage critics and hold firm on commitments. As a legal practitioner turn",
+      "primary_quote": null,
+      "primary_source": null,
+      "subfields": [
+        "Assessment: HIGH for institutional reform; MEDIUM for political confrontation"
+      ],
+      "_evidence": []
+    },
+    "time_horizon": {
+      "assessed_position": "Siphana's WTO accession took 10 years of negotiation (1994–2004). His PhD dissertation examined ASEAN financial integration and LDC financial inclusion — a 20-year academic and policy arc. His Trade Policy Advisory Board mandate is explicitly focused on the 2030 trade policy framework. He is one of the few officials in the room whose revealed time horizon — measured by what he actually worked on a",
+      "primary_quote": null,
+      "primary_source": null,
+      "subfields": [
+        "Structural long horizon — 10–20 years"
+      ],
+      "_evidence": []
+    },
+    "dependency_assumptions": {
+      "assessed_position": "Siphana's rules-based integration model assumes that multilateral institutions (WTO, UNCTAD, ITC) remain credible and effective. If WTO reform stalls, if major economies defect from multilateral rules (US tariff shock being a warning signal), or if preferential treatment for LDCs is eroded without adequate transition support, the model's anchoring mechanism weakens. He is aware of this — Cambodia ",
+      "primary_quote": null,
+      "primary_source": null,
+      "subfields": [
+        "His model's key assumption"
+      ],
+      "_evidence": []
+    },
+    "institution_vs_relationship": {
+      "assessed_position": "Siphana is the clearest institution-builder in this cohort. His career has been defined by building legal frameworks, negotiating binding international agreements, establishing the Trade Policy Advisory Board, and chairing the Council of Legal Reform. His 13 years at MFAIC and his WTO work are fundamentally about making agreements that constrain future governments' ability to act arbitrarily. His ",
+      "primary_quote": null,
+      "primary_source": null,
+      "subfields": [
+        "Verdict: Most strongly institutionally-oriented official in the sample"
+      ],
+      "_evidence": []
+    },
+    "global_positioning_logic": {
+      "assessed_position": "Siphana's positioning logic is more values-based than most of his peers. His framing of Cambodia at the WTO is explicitly about sovereign dignity: a small, LDC country that has earned its place in a rules-based system and uses that platform to advocate for its interests on equal terms. His outreach to India (emphasising cultural and spiritual ties, trade in cashews and textiles) and his engagement",
+      "primary_quote": null,
+      "primary_source": null,
+      "subfields": [
+        "Theory: Sovereign dignity through multilateral equality — Cambodia's voice matters when rules are equal"
+      ],
+      "_evidence": []
+    },
+    "consistency_score": {
+      "assessed_position": null,
+      "primary_quote": null,
+      "primary_source": null,
+      "subfields": [
+        "Ratings",
+        "Overall: HIGHEST consistency score in the sample. His stated reasoning (rules-based multilateral integration) reliably predicts his actions. The gap is not his behaviour — it is the political system's willingness to implement what he advises."
+      ],
+      "_evidence": [],
+      "ratings": [
+        {
+          "dimension": "Trade law and multilateral engagement",
+          "verdict": "HIGH",
+          "evidence": "Career-long consistency from WTO accession through TPAB chairmanship"
+        },
+        {
+          "dimension": "Legal reform advocacy",
+          "verdict": "HIGH",
+          "evidence": "1st Vice-Chair Council of Legal Reform; WTO law framework for Cambodia"
+        },
+        {
+          "dimension": "2029 preparation",
+          "verdict": "MEDIUM-HIGH",
+          "evidence": "Most analytically prepared; implementation pace depends on political will above his level"
+        },
+        {
+          "dimension": "Independence from patronage system",
+          "verdict": "MEDIUM",
+          "evidence": "Institutionally oriented but appointed by and answerable to CPP PM; operates within system"
+        }
+      ]
+    }
+  },
+  "synthesis": {
+    "guiding_principles": [
+      {
+        "dimension": "",
+        "insight": "Use growth_theory behavior as primary signal"
+      },
+      {
+        "dimension": "",
+        "insight": "Use risk_tolerance behavior as primary signal"
+      },
+      {
+        "dimension": "",
+        "insight": "Use time_horizon behavior as primary signal"
+      }
+    ],
+    "key_external_analysis_quote": {
+      "quote": "We have to have WTO accession because the fate of 220,000 workers is at stake, if we don't enter. Cambodia can use the WTO as an international force to negotiate. As a small country we don't have the bargaining power to negotiate bilaterally — if we ",
+      "source": ""
+    },
+    "sources": [
+      "Compiled from DOCX profile generator, April 2026"
+    ]
+  }
+}

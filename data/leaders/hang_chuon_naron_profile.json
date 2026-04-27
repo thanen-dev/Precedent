@@ -1,0 +1,151 @@
+{
+  "id": "hang_chuon_naron",
+  "full_name": "Hang Chuon Naron",
+  "title": "Deputy Prime Minister & Minister of Education, Youth and Sport  |  Vice-Chairman, Supreme National Economic Council",
+  "updated": "2026-04-25",
+  "leader": {
+    "name": "Hang Chuon Naron",
+    "position": "Deputy Prime Minister & Minister of Education, Youth and Sport",
+    "in_office_since": "2023",
+    "compiled": "April 2026",
+    "purpose": "Mental model schema mapping decision-making architecture across 7 dimensions Born 1962. PhD in International Economics (Moscow State Institute of International Relations, 1991). LLM (Royal University of Law and Economics / Lyon 2). PhD in Education Administration (Chulalongkorn University, Thailand, 2018). Secretary of State of Economy and Finance 2004–2013. Minister of Education since 2013. Has implemented Cambodia's most sustained reform programme of the sample — anti-cheating exams, curriculum reform, Education Strategic Plan 2024–2028.",
+    "based_on": [
+      "PMO speeches",
+      "Khmer Times",
+      "Phnom Penh Post",
+      "WTO TPR",
+      "ADB",
+      "World Bank",
+      "IMF",
+      "Kamnotra.io",
+      "Open Development Cambodia"
+    ]
+  },
+  "dimensions": {
+    "growth_theory": {
+      "assessed_position": "Naron's growth theory is human capital first. As Vice-Chairman of the Supreme National Economic Council, he sits at the intersection of education and economic strategy and has argued consistently that Cambodia's growth cannot be sustained without a workforce that can operate in a knowledge economy. His Education Strategic Plan 2024–2028 identifies eight reform priorities, all of which are inputs t",
+      "primary_quote": "Reforming education pathways is necessary to build skilled human capital, align with Cambodia's economic structure, reduce the dropout rate, boost higher education enrolment — particularly in STEM — and equip students with technical and vocational sk",
+      "primary_source": "Hang Chuon Naron, Education Ministry, 2025",
+      "subfields": [
+        "Core Thesis: Human capital as the binding constraint on Cambodia's development trajectory",
+        "Direct Quote",
+        "The structural challenge he is managing"
+      ],
+      "_evidence": [
+        {
+          "url": "",
+          "date": "2026-04-01",
+          "quote": "Reforming education pathways is necessary to build skilled human capital, align with Cambodia's economic structure, reduce the dropout rate, boost higher education enrolment — particularly in STEM — and equip students with technical and vocational sk",
+          "value": "Naron's growth theory is human capital first. As Vice-Chairman of the Supreme National Economic Council, he sits at the intersection of education and economic strategy and has argued consistently that",
+          "confidence": 0.7,
+          "source_file": "docx_profile_hang_chuon_naron"
+        }
+      ]
+    },
+    "risk_tolerance": {
+      "assessed_position": "Naron's anti-cheating examination reform is the clearest evidence of risk tolerance in his record. The 2014–2016 anti-cheating crackdown caused national pass rates to plummet, triggered political pressure from families, and generated media controversy — he held the policy regardless, creating a significant short-term political cost for a long-term credibility gain. This is the highest-evidence ris",
+      "primary_quote": null,
+      "primary_source": null,
+      "subfields": [
+        "Assessment: MEDIUM-HIGH — Willing to take on institutional reform; political risks managed carefully"
+      ],
+      "_evidence": []
+    },
+    "time_horizon": {
+      "assessed_position": "Human capital investments are by nature long-horizon — a student entering grade 4 in 2025 enters the labour market in 2035–2040. Naron has been in his position since 2013 — the only member of this cohort with a 12-year track record in the same portfolio, which itself reveals a long-horizon orientation (education ministers who plan short-term rotate faster). His Education Strategic Plan 2024–2028 i",
+      "primary_quote": null,
+      "primary_source": null,
+      "subfields": [
+        "Revealed: 10–20 years (human capital investment)  |  Operational: 4 years (ESP 2024-2028)"
+      ],
+      "_evidence": []
+    },
+    "dependency_assumptions": {
+      "assessed_position": "1. Teacher salary increases are politically funded: Naron explicitly raised teacher salary inadequacy as a constraint — if teachers cannot live on their salaries, they teach in private schools, which undermines the public system. This requires a fiscal commitment that MEF controls. 2. Higher education quality improves alongside access: Cambodia has 169 HEIs with very mixed quality. Simply increasi",
+      "primary_quote": null,
+      "primary_source": null,
+      "subfields": [
+        "The human capital model's assumptions"
+      ],
+      "_evidence": []
+    },
+    "institution_vs_relationship": {
+      "assessed_position": "The anti-cheating reform, the Education Strategic Plan 2024–2028 (developed with UNICEF, SEA-PLM, and international experts), the founding of Cambodia's first national teacher training curriculum reform process, and the Evidence-to-Policy planning linkages are all genuine institution-building acts. As Vice-Chairman of SNEC, he coordinates across economic ministries on human capital strategy — a cr",
+      "primary_quote": null,
+      "primary_source": null,
+      "subfields": [
+        "Verdict: The strongest institution-builder in his domain; with systemic constraints"
+      ],
+      "_evidence": []
+    },
+    "global_positioning_logic": {
+      "assessed_position": "Naron engages with SEA-PLM (ASEAN learning assessment programme), UNESCO, UNICEF, and international research institutions as a matter of routine policy practice — not for diplomatic optics, but for comparative data and technical assistance. His participation in the 2025 ASEAN Ministerial Roundtable on foundational learning and the Foundational Learning Forum reflects a genuine orientation toward i",
+      "primary_quote": null,
+      "primary_source": null,
+      "subfields": [
+        "Theory: Education quality as international credibility and economic graduation signal"
+      ],
+      "_evidence": []
+    },
+    "consistency_score": {
+      "assessed_position": null,
+      "primary_quote": null,
+      "primary_source": null,
+      "subfields": [
+        "Ratings",
+        "Overall: SECOND HIGHEST consistency score after Serey and Siphana. 12-year tenure with demonstrable reform outputs is the strongest evidence base in the sample. Primary gap: his agenda requires fiscal and political support from others — teacher salaries, STEM lab funding, vocational infrastructure — which are not in his control."
+      ],
+      "_evidence": [],
+      "ratings": [
+        {
+          "dimension": "Anti-cheating / assessment integrity",
+          "verdict": "HIGH",
+          "evidence": "Held policy through significant political pressure; pass rates recovered as quality improved"
+        },
+        {
+          "dimension": "Curriculum reform",
+          "verdict": "HIGH",
+          "evidence": "ESP 2024-2028 implemented with genuine multi-stakeholder process"
+        },
+        {
+          "dimension": "Teacher quality / salary",
+          "verdict": "MEDIUM",
+          "evidence": "Correctly identified as binding constraint; not yet resolved at fiscal level"
+        },
+        {
+          "dimension": "STEM / vocational track",
+          "verdict": "MEDIUM-LOW",
+          "evidence": "Pilot announced 2025; scale and funding not yet committed"
+        },
+        {
+          "dimension": "AI / EdTech integration",
+          "verdict": "MEDIUM",
+          "evidence": "Teacher training integration underway; student-level deployment early stage"
+        }
+      ]
+    }
+  },
+  "synthesis": {
+    "guiding_principles": [
+      {
+        "dimension": "",
+        "insight": "Use growth_theory behavior as primary signal"
+      },
+      {
+        "dimension": "",
+        "insight": "Use risk_tolerance behavior as primary signal"
+      },
+      {
+        "dimension": "",
+        "insight": "Use time_horizon behavior as primary signal"
+      }
+    ],
+    "key_external_analysis_quote": {
+      "quote": "Reforming education pathways is necessary to build skilled human capital, align with Cambodia's economic structure, reduce the dropout rate, boost higher education enrolment — particularly in STEM — and equip students with technical and vocational sk",
+      "source": ""
+    },
+    "sources": [
+      "Compiled from DOCX profile generator, April 2026"
+    ]
+  }
+}

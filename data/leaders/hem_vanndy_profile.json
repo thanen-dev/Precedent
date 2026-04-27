@@ -1,0 +1,146 @@
+{
+  "id": "hem_vanndy",
+  "full_name": "Hem Vanndy",
+  "title": "Minister of Industry, Science, Technology and Innovation (MISTI)  |  Chairman, Khmer Enterprise Board of Trustees",
+  "updated": "2026-04-25",
+  "leader": {
+    "name": "Hem Vanndy",
+    "position": "Minister of Industry, Science, Technology and Innovation (MISTI)",
+    "in_office_since": "2023",
+    "compiled": "April 2026",
+    "purpose": "Mental model schema mapping decision-making architecture across 7 dimensions New generation technocrat minister. Focus on Industry 4.0, SME formalisation, economic diversification, and industrial value-add. Chairs Khmer Enterprise (national entrepreneurship fund). Has pitched Cambodia to Singaporean investors and visited ADB HQ. Framing is entrepreneurship-enabling rather than state-led industrial policy.",
+    "based_on": [
+      "PMO speeches",
+      "Khmer Times",
+      "Phnom Penh Post",
+      "WTO TPR",
+      "ADB",
+      "World Bank",
+      "IMF",
+      "Kamnotra.io",
+      "Open Development Cambodia"
+    ]
+  },
+  "dimensions": {
+    "growth_theory": {
+      "assessed_position": "Vanndy's growth model centres on the domestic productive base rather than FDI attraction (that's Chanthol's domain). His theory: Cambodia's 500,000+ MSMEs are a latent growth engine that requires formalisation, data visibility, and technology access to realise their potential. The 2023–2028 Strategic Plan on Informal Economic Development — which he co-chairs with the Minister of Labour — is the pr",
+      "primary_quote": "You can't shake a tree that has just begun to grow. Instead, it's essential to nurture it with water, provide it with fertilisers and take care of it regularly. MISTI advocates for support, not interference in fostering private sector engagement.",
+      "primary_source": "Hem Vanndy, DISTI visit, Prey Veng, 2024",
+      "subfields": [
+        "Core Thesis: Industrial diversification through SME formalisation + Industry 4.0 adaptation",
+        "Direct Quote",
+        "What he actually does"
+      ],
+      "_evidence": [
+        {
+          "url": "",
+          "date": "2026-04-01",
+          "quote": "You can't shake a tree that has just begun to grow. Instead, it's essential to nurture it with water, provide it with fertilisers and take care of it regularly. MISTI advocates for support, not interference in fostering private sector engagement.",
+          "value": "Vanndy's growth model centres on the domestic productive base rather than FDI attraction (that's Chanthol's domain). His theory: Cambodia's 500,000+ MSMEs are a latent growth engine that requires form",
+          "confidence": 0.7,
+          "source_file": "docx_profile_hem_vanndy"
+        }
+      ]
+    },
+    "risk_tolerance": {
+      "assessed_position": "Vanndy pushed through the coordinated joint inter-ministerial inspection mechanism — replacing multiple separate ministry inspections with a single coordinated process — which directly attacked a source of rent-seeking by inspectors. This is a genuine governance risk within the system. His 2025 data synchronisation initiative requires ministries to share data and accept a common SME definition — a",
+      "primary_quote": null,
+      "primary_source": null,
+      "subfields": [
+        "Assessment: MEDIUM — Reform-minded but within political constraints"
+      ],
+      "_evidence": []
+    },
+    "time_horizon": {
+      "assessed_position": "Vanndy's 2025 planning conference projections (5.2% GDP in 2025, 5% in 2026) are based on Industrial sector growth of 7.2% — realistic near-term targets. His LDC graduation references are consistent (every speech mentions 2029 as the planning horizon) but his implementation tools are 5-year strategy documents, not 25-year industrial roadmaps. He is working to the right timeline but needs to accele",
+      "primary_quote": null,
+      "primary_source": null,
+      "subfields": [
+        "Revealed: 5 years (Pentagonal Strategy Phase I)  |  Aspirational: 2030"
+      ],
+      "_evidence": []
+    },
+    "dependency_assumptions": {
+      "assessed_position": "1. Formal SME registration translates to productivity improvement: the government's theory is that formalisation unlocks credit, training, and market access. Whether this holds in practice — or whether formal registration is just a compliance cost for small businesses — depends on the quality of the support ecosystem. 2. Industry 4.0 readiness can be built within Cambodia's current skill base: the",
+      "primary_quote": null,
+      "primary_source": null,
+      "subfields": [
+        "The industrial diversification model's assumptions"
+      ],
+      "_evidence": []
+    },
+    "institution_vs_relationship": {
+      "assessed_position": "Vanndy's signature move is data systems: CamDX integration, SME data synchronisation across ministries, ISO membership, factory monitoring sensors. These are institutional infrastructure investments. His emphasis on 'informed decision-making and policy formulation' and his call for seamless data flows reflect a genuine orientation toward evidence-based governance. He is also Khmer Enterprise chair",
+      "primary_quote": null,
+      "primary_source": null,
+      "subfields": [
+        "Verdict: More institutional than average; data-oriented"
+      ],
+      "_evidence": []
+    },
+    "global_positioning_logic": {
+      "assessed_position": "Vanndy's Singapore keynote pitch and ADB engagement reflect an 'alternative to China' positioning for mid-tier manufacturing. His emphasis on 30 SEZs across 12 provinces, the ISO membership, the ASEAN Plus Three science connections, and the Industry 4.0 framing are all designed to signal that Cambodia is moving up the value chain — not just a cheap labour destination. Whether the underlying produc",
+      "primary_quote": null,
+      "primary_source": null,
+      "subfields": [
+        "Theory: Position Cambodia as the innovation-friendly low-middle-income alternative to China"
+      ],
+      "_evidence": []
+    },
+    "consistency_score": {
+      "assessed_position": null,
+      "primary_quote": null,
+      "primary_source": null,
+      "subfields": [
+        "Ratings",
+        "Overall: MEDIUM. Correct diagnosis; correct instruments; scale of implementation lags the ambition by a significant margin."
+      ],
+      "_evidence": [],
+      "ratings": [
+        {
+          "dimension": "SME formalisation",
+          "verdict": "MEDIUM",
+          "evidence": "1,292 new registrations in 2024; far short of 500,000 MSME transformation target"
+        },
+        {
+          "dimension": "Industry 4.0 / digital factory",
+          "verdict": "LOW-MEDIUM",
+          "evidence": "Framing advanced; sensor/IoT installation programme has not yet produced scale"
+        },
+        {
+          "dimension": "Anti-regulatory harassment",
+          "verdict": "MEDIUM-HIGH",
+          "evidence": "Joint inspection mechanism is a real reform; whether it reduced rent-seeking is unverified"
+        },
+        {
+          "dimension": "Data integration across ministries",
+          "verdict": "MEDIUM",
+          "evidence": "Common SME definition agreed; full CamDX integration is in progress"
+        }
+      ]
+    }
+  },
+  "synthesis": {
+    "guiding_principles": [
+      {
+        "dimension": "",
+        "insight": "Use growth_theory behavior as primary signal"
+      },
+      {
+        "dimension": "",
+        "insight": "Use risk_tolerance behavior as primary signal"
+      },
+      {
+        "dimension": "",
+        "insight": "Use time_horizon behavior as primary signal"
+      }
+    ],
+    "key_external_analysis_quote": {
+      "quote": "You can't shake a tree that has just begun to grow. Instead, it's essential to nurture it with water, provide it with fertilisers and take care of it regularly. MISTI advocates for support, not interference in fostering private sector engagement.",
+      "source": ""
+    },
+    "sources": [
+      "Compiled from DOCX profile generator, April 2026"
+    ]
+  }
+}

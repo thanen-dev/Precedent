@@ -179,5 +179,396 @@
       "development_stage": "lower_middle_income",
       "external_market_dependency": 0.82
     }
+  },
+  {
+    "case_id": "ARG_FISCAL_COLLAPSE_2001",
+    "country": "Argentina",
+    "period": "1999–2005",
+    "label": "Sovereign Default, Convertibility Collapse, and Heterodox Recovery",
+    "category": "fiscal_collapse",
+    "sources": [
+      "IMF Independent Evaluation Office, Lessons from the Crisis in Argentina (2004)",
+      "IMF Staff Country Report No. 03/226, Argentina Article IV Consultation (2003)",
+      "CIGI Papers No. 110, An Analysis of Argentina’s 2001 Debt Crisis and Restructuring (Octubre 2016)",
+      "CRS Report RL32637, Argentina’s Sovereign Debt Restructuring (2005)",
+      "CRS Report RL31582, The Argentine Financial Crisis: A Chronology of Events (2003)",
+      "NACLA, Argentina 20 Years After La Crisis del 2001 (2021)"
+    ],
+    "context": {
+      "baseline_gdp_per_capita_usd": 7800,
+      "baseline_poverty_rate_pct": 27,
+      "debt_to_gdp_pct_1999": 47,
+      "currency_regime": "Convertibility Plan (1:1 peso-dollar peg since 1991)",
+      "political_economy": "Federal democratic republic; currency peg maintained through austerity; IMF-supported programs from 1994; large primary deficit entering recession"
+    },
+    "shock_or_trigger": {
+      "type": "fiscal_and_debt_sustainability_collapse",
+      "event": "After four years of deepening recession, Argentina’s government collapsed in December 2001 and suspended all debt payments — at the time the largest sovereign default in history (USD 100 billion)",
+      "key_triggers": [
+        "1998–2002 recession: GDP fell 20% cumulatively over three years",
+        "Currency peg (convertibility) made export adjustment impossible — peso was 3.5x overvalued in real effective terms by 2001",
+        "Debt-to-GDP surged from 47% (1999) to 164% (2002) as GDP collapsed and peso devalued",
+        "Corralito (bank freeze) December 2001: government restricted withdrawals to USD 250/week, triggering mass protests",
+        "Five presidents in 12 days: De la Rúa resigned December 20, 2001; Rodriguez Saá announced default December 22",
+        "IMF austerity program (March 2001) explicitly assumed 2.5% GDP growth for 2001; actual outcome was -3.7%"
+      ],
+      "immediate_external_effect": "Total reserves collapsed from USD 27B (1999) to USD 10.5B (2002); sovereign credit rating hit CCC; capital flight, poverty rate surged to 53% by 2002"
+    },
+    "policy_response": {
+      "growth_model_invoked": "Post-default heterodox recovery: competitive real exchange rate + primary fiscal surplus + commodity export windfall; deliberate rejection of IMF structural conditionality",
+      "instruments": [
+        "January 2002: Convertibility abandoned, peso floated; immediate 3:1 devaluation (eventually 3.9:1 by mid-2002)",
+        "Pesification of contracts: dollar-denominated domestic obligations converted to pesos at 1:1, partially protecting debtors",
+        "Primary fiscal surplus built from 0.6% GDP (2002) to 5.1% GDP (2004) through tax collection reform and expenditure compression",
+        "Competitive exchange rate sustained: real devaluation made Argentine exports globally competitive for the first time since 1991",
+        "2005 debt restructuring: 76% of defaulted bonds brought out of default with 65–70% face-value haircut; holdout litigation continued until 2016",
+        "January 2006: Kirchner repaid remaining USD 9.81B to IMF in single payment, severing conditionality relationship"
+      ],
+      "what_was_not_done": [
+        "No independent central bank reform: monetary policy remained subordinate to fiscal needs",
+        "Structural reforms to labour market, pension system, and provincial finances deferred",
+        "Holdout bondholder litigation left unresolved for 15 years, restricting capital market access",
+        "Inflation management tools were weak: inflation re-emerged as chronic problem post-2006"
+      ]
+    },
+    "outcomes": {
+      "growth": {
+        "gdp_growth_2002_pct": -10.9,
+        "gdp_growth_2003_pct": 8.8,
+        "gdp_growth_2004_pct": 9.0,
+        "gdp_growth_2005_pct": 9.2,
+        "note": "V-shaped recovery: sharpest contraction in 2002, then three consecutive years above 8%. Devaluation + commodity boom drove export-led rebound"
+      },
+      "fiscal": {
+        "primary_balance_2001_pct_gdp": -1.3,
+        "primary_balance_2003_pct_gdp": 3.0,
+        "primary_balance_2005_pct_gdp": 3.7,
+        "debt_to_gdp_2013_pct": 8.3,
+        "note": "Debt-to-GDP fell from 164% in 2002 to 8.3% by 2013 — one of the most dramatic debt-to-GDP reversals in emerging market history, driven by growth and restructuring haircut"
+      },
+      "social": {
+        "poverty_rate_2002_pct": 53.0,
+        "poverty_rate_2006_pct": 26.9,
+        "note": "Poverty halved in four years post-default. Conditional cash transfers (Plan Jefes) cushioned impact during adjustment"
+      },
+      "unintended_consequences": [
+        "Chronic inflation returned by 2007: the same heterodox policies that drove recovery (fiscal expansion, low rates) eventually embedded inflationary expectations",
+        "Capital market isolation: Argentina was shut out of international bond markets from 2002 to 2016 due to holdout litigation",
+        "Pesification created massive wealth transfers: dollar depositors received pesos at unfavorable rates, generating lasting legal and social conflict",
+        "Recurring cycle: Argentina repeated a comparable crisis in 2018 (Macri IMF program) and 2019–2020, suggesting structural vulnerabilities were not resolved"
+      ]
+    },
+    "causal_mechanisms": {
+      "confirmed": [
+        "Currency peg overvaluation was the primary structural cause: the convertibility plan made adjustment through exchange rate impossible, forcing all adjustment through deflation and unemployment",
+        "Procyclical IMF austerity deepened recession: cutting spending into a recession reduced growth, which increased the debt-to-GDP ratio, which triggered more austerity — a doom loop",
+        "Post-default devaluation enabled export competitiveness: the peso’s collapse made Argentine goods globally competitive almost overnight, particularly in soy, manufacturing, and tourism",
+        "Commodity supercycle (2003–2011) was exogenous and favorable: Chinese demand for Argentine soy and metals provided fiscal windfall that funded recovery without reform"
+      ],
+      "contested": [
+        "Whether the IMF or Argentina’s fiscal policy was the primary cause is disputed: IMF self-assessment (2004) acknowledges its program design failed; Argentine government blamed IMF conditionality exclusively",
+        "Whether heterodox recovery model was sustainable: post-2007 inflation suggests the model had an expiry date; growth slowed sharply once commodity boom faded"
+      ]
+    },
+    "lessons": {
+      "what_worked": "Abandoning an unsustainable peg decisively rather than defending it with austerity; building primary fiscal surplus post-default; using competitive exchange rate to drive export recovery; negotiating a deep debt haircut that restored debt sustainability",
+      "what_failed": "IMF procyclical austerity in recession: cutting spending to meet deficit targets during a demand shock turned recession into depression; defending the currency peg to the last depleted reserves and deepened the inevitable adjustment",
+      "structural_failure": "The convertibility plan created a decade of false stability by pricing out adjustment mechanisms. When the peg broke, all the suppressed adjustment happened at once, compressing into 2001–2002",
+      "transferability_notes": "Directly applicable to any country with USD-denominated debt, a fixed or managed exchange rate, and a single dominant export sector. The sequence — peg + austerity + recession + collapse + devaluation + recovery — is a recurring pattern across emerging markets (Ecuador 1999, Turkey 2001, Greece 2010)",
+      "cambodia_2029_relevance": "Cambodia is highly dollarised (USD is de facto currency), carries significant Chinese USD-denominated debt, and is pursuing de-dollarisation (Riel/Bakong) while simultaneously planning EBA-transition fiscal adjustments. If EBA loss triggers a revenue shortfall and Cambodia tightens fiscal policy into a slowdown — the Argentine procyclicality trap is the exact risk. The NBC’s de-dollarisation timeline (Riel to 30% of transactions by 2028) and MEF’s USD-denominated budget assumptions may not be simultaneously achievable — this is Cambodia’s version of the convertibility trap."
+    }
+  },
+  {
+    "case_id": "IDN_AFC_RECOVERY_1998",
+    "country": "Indonesia",
+    "period": "1997–2003",
+    "label": "Asian Financial Crisis: Patronage System Collapse and Contested IMF Recovery",
+    "category": "fiscal_collapse",
+    "sources": [
+      "IMF, Recovery from the Asian Crisis and the Role of the IMF (Issues Brief, June 2000)",
+      "IMF Occasional Paper 178, IMF-Supported Programs in Indonesia, Korea, and Thailand: A Preliminary Assessment (1999)",
+      "ADB, Financial Crisis and Recovery: Patterns of Adjustment in East Asia, 1996–99 (2002)",
+      "IMF, Realizing Indonesia’s Economic Potential: Chapter 2, Twenty Years after the Asian Financial Crisis (2018)",
+      "Federal Reserve History, Asian Financial Crisis (2013)",
+      "Indonesia-Investments.com, Asian Financial Crisis — Indonesia (2014)"
+    ],
+    "context": {
+      "baseline_gdp_per_capita_usd": 1100,
+      "baseline_gdp_growth_pct": 7.8,
+      "external_debt_usd_bn": 115,
+      "short_term_private_debt_pct_of_reserves": "High — unhedged USD-denominated private loans were the primary vulnerability",
+      "political_economy": "Suharto’s New Order regime (1966–1998): single-party authoritarian state, crony capitalist networks, patronage-based licensing system; IMF conditionality explicitly targeted cronies’ monopolies"
+    },
+    "shock_or_trigger": {
+      "type": "contagion_currency_crisis_plus_political_collapse",
+      "event": "Thai baht collapse July 1997 spread to Indonesian rupiah by August 1997; rupiah floated and immediately began depreciating; by January 1998 the rupiah had lost 70% of its value within days",
+      "key_triggers": [
+        "Large unhedged private USD-denominated short-term debt — when rupiah fell, corporate debt-to-GDP exploded",
+        "IMF closed 16 insolvent banks in November 1997, triggering bank runs on remaining institutions",
+        "Suharto health speculation and political uncertainty compounded investor flight",
+        "El Niño drought (1997–98): forest fires and poor harvests added food crisis to financial crisis",
+        "Second IMF agreement (January 1998) included 50-point reform program targeting Suharto’s patronage network — Suharto refused to implement it faithfully",
+        "Suharto resigned May 1998 after mass protests; political transition added governance uncertainty"
+      ],
+      "immediate_external_effect": "GDP fell 13.1% in 1998 — deepest contraction of any Asian crisis country; poverty rate spiked; rupiah at low of 16,000 per USD (versus 2,400 pre-crisis)"
+    },
+    "policy_response": {
+      "growth_model_invoked": "IMF-led stabilisation: fiscal contraction, high interest rates, bank closures, structural reform; then gradual relaxation as stabilisation took hold in mid-1998; post-Suharto: banking sector restructuring and democratic transition",
+      "instruments": [
+        "Three IMF stand-by arrangements: November 1997 (USD 10B), augmented July 1998 (USD 1.4B); total international support USD 43B including World Bank and bilateral donors",
+        "Indonesian Bank Restructuring Agency (IBRA) established January 1998 to absorb bad bank assets",
+        "Blanket government guarantee on all bank liabilities to restore confidence",
+        "High interest rates (to 65%+) to defend currency — later shown to be counterproductive as it increased corporate NPLs",
+        "Third IMF agreement (April 1998): more flexible, allowed food subsidies and wider deficit, added bankruptcy courts",
+        "Post-Suharto: democratic transition (1998–2004) restructured political economy away from crony networks"
+      ],
+      "what_was_not_done": [
+        "First IMF program did not address Suharto patronage system — the structural cause of financial fragility; second program tried and was refused",
+        "High interest rates were maintained too long: deepened corporate distress rather than defending currency",
+        "Bank closures without adequate deposit insurance caused bank runs rather than restoring confidence"
+      ]
+    },
+    "outcomes": {
+      "growth": {
+        "gdp_growth_1997_pct": 4.7,
+        "gdp_growth_1998_pct": -13.1,
+        "gdp_growth_1999_pct": 0.8,
+        "gdp_growth_2000_pct": 4.9,
+        "gdp_growth_2003_pct": 4.8,
+        "note": "Recovery was slower than Korea and Thailand — Indonesia’s deeper political transition delayed economic normalisation. Full pre-crisis growth rates not restored until mid-2000s"
+      },
+      "banking": {
+        "npls_1998_pct": "High (estimated 50–70% of loans)",
+        "npls_2008_pct": 4.0,
+        "car_2008_pct": 17.0,
+        "note": "Decade of banking sector reform transformed Indonesia’s financial system: NPLs fell from crisis levels to below 4% by 2008, enabling Indonesia to weather 2008 global crisis with minimal impact"
+      },
+      "political": {
+        "outcome": "Suharto resigned May 1998 after 32 years; democratic transition 1998–2004 produced competitive elections, regional autonomy, civil liberties; New Order patronage network dismantled unevenly",
+        "note": "Political transformation was the most consequential long-run outcome — Indonesia became one of Asia’s largest democracies"
+      },
+      "unintended_consequences": [
+        "IMF bank closures (November 1997) caused bank runs rather than restoring confidence — the opposite of intended effect",
+        "High interest rate prescription increased NPLs and worsened corporate debt crisis rather than defending currency",
+        "Blanket bank guarantee created moral hazard: bank owners had reduced incentive to manage risk",
+        "Indonesia paid back IMF loans by 2003 and exited IMF relationship early, gaining policy autonomy but at cost of Paris Club debt rescheduling access"
+      ]
+    },
+    "causal_mechanisms": {
+      "confirmed": [
+        "Unhedged private USD debt was the transmission mechanism: Thai baht collapse caused investors to reassess regional risk; rupiah selling triggered corporate balance sheet deterioration",
+        "Patronage system was the structural vulnerability: Suharto’s crony network created moral hazard in banking (politically connected borrowers did not face credit discipline) and prevented IMF reforms from taking hold",
+        "Democratic transition enabled structural reform: only after Suharto fell could banking sector restructuring and anti-monopoly measures be credibly implemented",
+        "ADB cross-country study finding: recovery speed was driven by export orientation and macroeconomic flexibility, not IMF program design — IMF financial assistance had no independent impact on recovery"
+      ],
+      "contested": [
+        "Whether IMF prescriptions (high interest rates, bank closures) made the crisis worse is debated: IMF self-assessment acknowledges bank closure design was flawed; standard IMF defence is that without intervention the crisis would have been deeper",
+        "Whether political transition was a prerequisite for recovery or a complicating factor: accelerated democratic change created short-term governance uncertainty while enabling long-run institutional improvement"
+      ]
+    },
+    "lessons": {
+      "what_worked": "Banking sector restructuring post-crisis: decade of NPL reduction and capital adequacy improvement made Indonesia resilient to 2008 global crisis; democratic transition dismantled patronage networks that made financial system fragile",
+      "what_failed": "IMF initial program design: high interest rates, rapid bank closures without deposit insurance, and fiscal contraction into a demand collapse deepened the crisis before stabilisation; conditionality that targeted political patronage without political preconditions for reform was unimplementable",
+      "structural_failure": "Patronage-based financial system: banks that lend on political connections rather than creditworthiness accumulate fragility that is invisible until a shock arrives, then collapses catastrophically",
+      "transferability_notes": "Highly relevant to any country combining: (1) a patronage-based governance system where elite networks control credit allocation, (2) significant unhedged USD-denominated private debt, (3) a fixed or managed exchange rate. The Indonesia case is also a cautionary model for how IMF conditionality targeting political structures fails when the political authority controls implementation",
+      "cambodia_2029_relevance": "Cambodia’s banking system shows early warning signs of Indonesia-1997 structural vulnerabilities: CPP-connected networks dominate credit allocation; household debt has grown rapidly (flagged by analysts in 2024); Chinese USD-denominated project financing creates balance sheet exposure. If a Cambodia-specific shock (EBA loss + Chinese FDI pullback) triggers a credit deterioration, the patronage-banking nexus is the amplification mechanism. The IMF lesson is explicit: conditionality that requires dismantling political patronage networks cannot be externally imposed — it requires internal political change."
+    }
+  },
+  {
+    "case_id": "BGD_RANA_PLAZA_2013",
+    "country": "Bangladesh",
+    "period": "2013‘2018",
+    "label": "Rana Plaza: Industrial Disaster as Regulatory Shock and Compliance Transformation",
+    "category": "regulatory_shock",
+    "sources": [
+      "World Bank / IZA Discussion Paper 13782, The Effects of International Scrutiny on Manufacturing Workers: Evidence from the Rana Plaza Collapse in Bangladesh (2020)",
+      "ILO, After Rana Plaza: How Has Safety Improved for Garment Workers? (Podcast, April 2023)",
+      "Human Rights Watch, Whoever Raises their Head Suffers the Most: Workers’ Rights in Bangladesh’s Garment Factories (2015)",
+      "Al Jazeera, Ten Years of Rana Plaza: How Safe is Bangladesh Garment Industry? (April 2023)",
+      "ADB, In Bangladesh, ADB Helped Build A Safer and Healthier Workplace (2023)",
+      "McKinsey & Company, Bangladesh’s Garment Sector as Frontrunner in Transparency (2021)",
+      "QIMA Global Supply Chain Compliance Report (2021)"
+    ],
+    "context": {
+      "baseline_year": 2012,
+      "rmg_workers_million": 4.4,
+      "rmg_share_of_exports_pct": 80,
+      "rmg_share_of_gdp_pct": 11,
+      "regulatory_baseline": "Labour Law Act 2006 existed but was unenforced: Dhaka district had 18 inspectors for 100,000 factories; fines minimal; advance notice given to factory owners before inspections; 37% of female garment workers reported abuse in Q1 2013",
+      "political_economy": "Competitive authoritarian state; garment factory owners held significant political power within Parliament; BGMEA (industry association) had direct government access"
+    },
+    "shock_or_trigger": {
+      "type": "industrial_disaster_regulatory_shock",
+      "events": [
+        {
+          "event": "Tazreen Fashions fire, November 2012: 117 workers killed; evidence of locked exit doors",
+          "significance": "International buyers began reassessing Bangladesh sourcing risk"
+        },
+        {
+          "event": "Rana Plaza collapse, April 24, 2013: 1,134 workers killed, 2,500 injured in nine-storey building collapse; workers had reported cracks in the building the day before and were ordered to return anyway",
+          "significance": "Deadliest industrial disaster in garment industry history; global media coverage triggered immediate buyer and government responses"
+        }
+      ],
+      "immediate_external_effect": "US suspended GSP trade benefits for Bangladesh in June 2013; EU threatened EBA removal; global brands faced consumer boycotts; insurance and liability questions forced supply chain accountability"
+    },
+    "policy_response": {
+      "growth_model_invoked": "Compliance-as-competitive-advantage: use safety reform as a tool to retain international buyer confidence and defend export market position, rather than accepting factory relocations to competitors",
+      "instruments": [
+        "Accord on Fire and Building Safety in Bangladesh (May 2013): legally binding agreement between 200+ global brands and Bangladeshi unions; independent inspections, mandatory remediation, worker complaint mechanisms",
+        "Alliance for Bangladesh Worker Safety (July 2013): parallel US-retailer-led voluntary initiative covering 700+ factories",
+        "Labour Law Amendment (July 2013): eased union registration requirements; added safety provisions",
+        "Minimum wage increase: from BDT 3,000 to BDT 5,300/month in 2013 (77% increase); to BDT 8,000 in 2018",
+        "Department of Inspection for Factories and Establishments (DIFE) expanded: inspectors increased, digital factory registry created",
+        "Rana Plaza Arrangement: compensation fund for survivors (USD 30M raised from international brands)"
+      ],
+      "what_was_not_done": [
+        "Independent judiciary for labour disputes: factory owners retained political influence over enforcement; prosecution of Rana Plaza owner took years",
+        "Freedom of association: union formation easier on paper but employer retaliation increased as unions organized; HRW documented physical abuse of union leaders",
+        "Subcontractor oversight: Accord and Alliance covered first-tier factories; informal subcontractors (40%+ of production) remained outside compliance systems"
+      ]
+    },
+    "outcomes": {
+      "working_conditions": {
+        "improvement_standard_deviations": 0.8,
+        "source": "World Bank / IZA triple-difference study, 2020",
+        "note": "Working conditions improved by 0.80 standard deviations in Accord/Alliance-covered districts vs control group — one of the largest measured improvements in manufacturing labour conditions in any peer-reviewed study"
+      },
+      "wages": {
+        "wage_increase_pct_post_rana_plaza": 10,
+        "note": "Contrary to compensating differentials theory (which predicts wages fall when conditions improve), wages increased 10% alongside working condition improvements — international buyer accountability created wage floor"
+      },
+      "factory_safety": {
+        "compliance_pct_2023": 80,
+        "source": "Bangladesh Garment Manufacturers and Exporters Association (BGMEA)",
+        "note": "Over 80% of Bangladesh’s 3,200 RMG factories now internationally compliant by 2023; McKinsey (2021) ranked Bangladesh RMG sector first globally in supply chain transparency"
+      },
+      "trade_performance": {
+        "rmg_exports_2015_usd_bn": 19,
+        "rmg_exports_2022_usd_bn": 34,
+        "growth_pct": 79,
+        "note": "Garment exports grew 79% from 2015 to 2022 despite (and partly because of) compliance investment; Bangladesh maintained position as world’s second-largest apparel exporter"
+      },
+      "unintended_consequences": [
+        "Rana Plaza survivors: 63%+ did not return to garment work post-disaster (ActionAid survey, 2023) — trauma-driven labour market exit",
+        "Compliance cost increased barriers to entry: smaller factories unable to afford remediation closed or consolidated; sector became more concentrated",
+        "Accord ended 2018: replacement body (RSC) had weaker legal bindingness than original Accord; brand commitments became voluntary again",
+        "Union repression continued: while union registration was easier, employer retaliation against organizers increased — legal reform did not change power dynamics"
+      ]
+    },
+    "causal_mechanisms": {
+      "confirmed": [
+        "Legal bindingness of Accord was the critical differentiator: the Accord’s contractual obligations (brands could be sued for non-compliance) outperformed the Alliance’s voluntary commitments in achieving remediation",
+        "International buyer reputational risk created private enforcement: brands faced consumer boycotts and shareholder pressure; this created stronger enforcement incentives than government regulation",
+        "Wage increase alongside condition improvement shows supply chain leverage works: when brands accepted accountability for supplier conditions, worker outcomes improved without the trade-off standard economics predicts",
+        "Accident rate in covered factories dropped dramatically: Accord-covered factories showed measurable structural remediation; worker fatalities from preventable causes declined"
+      ],
+      "contested": [
+        "Whether reform was sustainable: when Accord’s legal bindingness ended in 2018, voluntary successor showed weaker compliance discipline; long-run sustainability of buyer-driven standards without state enforcement is disputed",
+        "Distribution of gains: formal-sector workers in covered factories gained; informal subcontract workers and Rana Plaza survivors who left the sector did not"
+      ]
+    },
+    "lessons": {
+      "what_worked": "Legally binding buyer agreements with independent verification and worker complaint mechanisms; minimum wage increase as floor-setting mechanism; public international pressure creating private enforcement that outperformed government regulation",
+      "what_failed": "Government’s own enforcement capacity was not rebuilt: DIFE expansion was insufficient; when international buyer accountability receded, domestic enforcement did not step in; union protection on paper but not in practice",
+      "critical_gap": "Subcontractor coverage: compliance systems covered visible first-tier factories but informal production networks (where worst conditions persist) remained outside accountability frameworks",
+      "transferability_notes": "Directly applicable to any export-dependent garment economy facing international regulatory pressure. The key variable is buyer leverage: the Accord model works when brands have reputational exposure large enough to create private enforcement. Countries producing for less brand-conscious markets (commodity garments, regional buyers) cannot rely on buyer-driven accountability",
+      "cambodia_2029_relevance": "Cambodia’s garment sector faces a comparable inflection: EBA graduation removes the EU’s preferential access, but EU buyers often require ILO compliance standards as a condition of continued sourcing. If EBA loss is accompanied by buyer reputational pressure on labour standards — the Rana Plaza pattern applies. Cambodia’s risk is the opposite of Bangladesh’s success scenario: if labour conditions do not improve alongside market access loss, buyers may shift to Bangladesh or Vietnam rather than stay. The GMAC (Garment Manufacturers Association in Cambodia) model of government-industry co-regulation needs a legal bindingness upgrade that it currently lacks."
+    }
+  },
+  {
+    "case_id": "MEX_NAFTA_LABOR_1994",
+    "country": "Mexico",
+    "period": "1994–2004",
+    "label": "NAFTA Maquiladora Surge: Market Access Without Labour Upgrading",
+    "category": "regulatory_shock",
+    "sources": [
+      "Carnegie Endowment for International Peace, Mexican Employment, Productivity and Income a Decade after NAFTA (2004)",
+      "Economic Policy Institute, NAFTA at Seven: Its Impact on Workers in All Three Nations (2001)",
+      "US International Trade Commission, The Impact of Trade Agreements on US Workers (2003)",
+      "Comité Fronterizo de Obreras, 23 Years of NAFTA: A View from Inside the Maquiladoras (2017)",
+      "Federal Reserve Bank of Dallas, NAFTA and Maquiladoras: Is the Growth Connected? (2001)",
+      "Florida State University Journal of Transnational Law & Policy, Workers’ Rights in the Mexican Maquiladora Sector (2005)"
+    ],
+    "context": {
+      "baseline_year": 1993,
+      "maquiladora_workers_pre_nafta": 420000,
+      "us_mexico_trade_1993_usd_bn": 81,
+      "primary_export_sectors": [
+        "crude oil",
+        "maquiladora assembly (electronics, auto parts, apparel)",
+        "agriculture"
+      ],
+      "regulatory_baseline": "Maquiladora Decree (1989) already established export processing framework; NAFTA created free trade zone with US and Canada from January 1, 1994; peso devaluation crisis hit simultaneously December 1994",
+      "political_economy": "PRI one-party state transitioning to multiparty democracy; labour unions corporatist and controlled; NAFTA sold domestically as modernisation and development pathway"
+    },
+    "shock_or_trigger": {
+      "type": "trade_agreement_plus_currency_crisis",
+      "event": "NAFTA entered into force January 1, 1994, eliminating tariffs across US-Mexico-Canada and massively expanding maquiladora eligibility beyond border zones; simultaneously, peso devaluation crisis (December 1994–January 1995) made Mexican labour dramatically cheaper in dollar terms",
+      "key_commitments": [
+        "Elimination of most tariffs between US, Mexico, Canada over 15 years",
+        "NAFTA Side Agreement on Labor (NAALC): created complaints mechanism but no binding labour standards or sanctions",
+        "Maquiladora expanded from border zones to all of Mexico",
+        "100% foreign ownership permitted in manufacturing",
+        "Investor-state dispute mechanism (Chapter 11) gave foreign investors right to sue government over regulation"
+      ],
+      "immediate_external_effect": "US-Mexico trade grew from USD 81B (1993) to USD 345B (2006); maquiladora employment surged from 420,000 (1993) to 1.3M (2000); peso devaluation of 50%+ made Mexican labour 50% cheaper in dollar terms overnight"
+    },
+    "policy_response": {
+      "growth_model_invoked": "Export-led growth through maquiladora FDI attraction; government positioned NAFTA as the modernisation mechanism that would raise living standards through integration into North American production networks",
+      "instruments": [
+        "IMMEX program (2006): merged Maquiladora Decree with PITEX, expanding eligibility and flexibility for exporters",
+        "No independent labour standard enforcement: NAALC side agreement had no sanctions; labour complaints were processed through political rather than judicial mechanisms",
+        "Duty-free import of inputs and machinery for maquiladoras: zero-tariff inputs for re-export production",
+        "Special Economic Zones: northern border states became integrated into US production networks for auto, electronics, apparel"
+      ],
+      "what_was_not_done": [
+        "No binding labour standards: NAFTA’s labour side agreement had no sanctions; wage convergence with US was not a NAFTA objective and did not occur",
+        "No domestic supply chain development: maquiladoras operated as enclaves — inputs imported, output exported, minimal linkage to Mexican economy",
+        "No agricultural transition support: NAFTA eliminated corn tariffs, displacing 1–2M small farmers who then either migrated to maquiladora cities or to the US",
+        "No wage floor mechanism: real wages in manufacturing fell in the decade after NAFTA despite productivity gains"
+      ]
+    },
+    "outcomes": {
+      "employment": {
+        "maquiladora_jobs_added_1994_2000": 800000,
+        "maquiladora_jobs_lost_2000_2003": 250000,
+        "net_jobs_above_pre_nafta": 550000,
+        "note": "Employment boom peaked in 2000 at 1.3M workers, then shed 250,000 jobs by 2003 as China entered WTO and undercut Mexican labour costs; net gain of 550,000 maquiladora jobs over pre-NAFTA baseline"
+      },
+      "trade": {
+        "us_mexico_trade_2006_usd_bn": 345,
+        "growth_multiple_vs_1993": 4.3,
+        "note": "Trade quadrupled in 13 years; Mexico became US’s second-largest trading partner"
+      },
+      "wages": {
+        "real_manufacturing_wage_trend": "Fell in the decade post-NAFTA despite productivity growth",
+        "note": "Carnegie Endowment study (2004): real wages in manufacturing were lower in 2003 than in 1994 except in microenterprises. Maquiladora workers’ wages rose in nominal terms but were consistently below 10% of US manufacturing wages — wage convergence did not occur"
+      },
+      "unintended_consequences": [
+        "China WTO accession (2001) exposed the model’s fragility: Mexico lost an estimated 500,000 maquiladora jobs to China by 2004 because the model was built on low wages, not capabilities",
+        "Agricultural displacement: NAFTA corn tariff elimination displaced 1–2M Mexican farmers; migration to border cities and US surged — annual migration doubled from 370,000 (1993) to 770,000 (2000)",
+        "Enclave economy: maquiladoras remained isolated from Mexican domestic economy; local content rarely exceeded 3–5%; value added in Mexico was primarily labour cost",
+        "Wage suppression: corporatist unions signed agreements without worker input; real wages did not converge with productivity growth; poverty reduction was slower than trade growth implied"
+      ]
+    },
+    "causal_mechanisms": {
+      "confirmed": [
+        "Market access alone does not produce development: NAFTA provided duty-free access and FDI flows, but without domestic supply chain development, value capture remained minimal — Mexican economy gained jobs but not capabilities",
+        "Labour standards vacuum enabled a race to the bottom: NAALC’s absence of sanctions meant employers could violate labour law without consequence; corporatist unions suppressed worker organisation",
+        "China competition exposed the low-wage model’s limits: once China entered WTO (2001) at comparable wage levels with superior manufacturing scale, Mexico’s cost advantage disappeared in electronics and apparel",
+        "Currency devaluation (1994–95) amplified NAFTA effects: the peso crisis made Mexican labour dramatically cheaper in dollar terms and drove the maquiladora surge more than NAFTA itself in the short run"
+      ],
+      "contested": [
+        "Whether NAFTA was net positive or negative for Mexican workers is disputed: macro trade growth was real; micro wage and employment data for manufacturing workers is more pessimistic; agricultural workers were clear net losers",
+        "Counterfactual: what would have happened without NAFTA is unknown; proponents argue Mexico would have had fewer manufacturing jobs; critics argue domestic-market industrialisation would have been more welfare-enhancing"
+      ]
+    },
+    "lessons": {
+      "what_worked": "Trade agreement as FDI magnet: NAFTA’s investment protections and tariff elimination did attract substantial FDI into manufacturing; auto sector in particular developed genuine capabilities over time",
+      "what_failed": "Market access without labour standards produced wage suppression rather than development; maquiladora enclave structure prevented economic linkages that would have raised domestic capability; agricultural sector received no transition support",
+      "critical_gap": "No domestic supply chain requirement: maquiladoras imported nearly all inputs and exported nearly all output — Mexican economy got jobs but not technology transfer, skills upgrading, or supply chain integration. Honduras post-CAFTA repeated this exact pattern.",
+      "transferability_notes": "The Mexico-NAFTA case is the template for what happens when trade market access is secured without accompanying (1) binding labour standards, (2) domestic supply chain development policy, and (3) transition support for displaced workers. It is the cautionary complement to Mauritius’s success — same preferential access instrument, opposite development outcome",
+      "cambodia_2029_relevance": "Cambodia’s garment sector is structurally analogous to Mexico’s maquiladora model: export-oriented, foreign-owned, low domestic value capture, imported inputs (Chinese fabrics), labour-cost competitive. The Mexico lesson is that this model has an expiry date — it lasts only as long as Cambodia is the cheapest option. When Vietnam or Myanmar undercuts Cambodia’s labour costs, Cambodia faces the same China-shock that Mexico faced in 2001. The 2029 transition window is Cambodia’s equivalent of Mexico’s need to move up the value chain before cost competition eliminated the maquiladora advantage — and Cambodia, like Mexico, has no domestic supply chain policy that would enable the transition."
+    }
   }
 ]

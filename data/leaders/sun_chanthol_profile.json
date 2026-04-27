@@ -1,0 +1,146 @@
+{
+  "id": "sun_chanthol",
+  "full_name": "Sun Chanthol",
+  "title": "Deputy Prime Minister  |  First Vice-Chairman, Council for the Development of Cambodia  |  Co-Chair, China-Cambodia Intergovernmental Coordination Committee",
+  "updated": "2026-04-25",
+  "leader": {
+    "name": "Sun Chanthol",
+    "position": "Deputy Prime Minister",
+    "in_office_since": "2023",
+    "compiled": "April 2026",
+    "purpose": "Mental model schema mapping decision-making architecture across 7 dimensions Born 1956. BS Business Administration (American University), MPA (Harvard), Advanced Management Program (Wharton). 16 years at General Electric in senior finance/GM roles. Former Minister of Commerce (2013–16) and Public Works & Transport (2004–08, 2016–23). Dual Cambodian-US citizen. Chief CAFTA-analogue tariff negotiator in 2025 US tariff talks.",
+    "based_on": [
+      "PMO speeches",
+      "Khmer Times",
+      "Phnom Penh Post",
+      "WTO TPR",
+      "ADB",
+      "World Bank",
+      "IMF",
+      "Kamnotra.io",
+      "Open Development Cambodia"
+    ]
+  },
+  "dimensions": {
+    "growth_theory": {
+      "assessed_position": "Chanthol is Cambodia's most credible FDI promoter and the country's clearest articulation of the 'platform state' growth theory: build the infrastructure, legal framework, and stability signal that makes Cambodia a rational choice for multinational manufacturing relocation. His four-factor framework, stated consistently across all CDC communications: peace and political stability, macroeconomic st",
+      "primary_quote": "Peace, political stability, and economic growth coupled with investment incentives and policies are catalysts in attracting new investment to invest in Cambodia, create jobs, boost exports, and contribute to socio-economic development.",
+      "primary_source": "Sun Chanthol, CDC, December 2025",
+      "subfields": [
+        "Core Thesis: FDI attraction through platform quality and stability signalling",
+        "Direct Quote",
+        "Results under his tenure"
+      ],
+      "_evidence": [
+        {
+          "url": "",
+          "date": "2026-04-01",
+          "quote": "Peace, political stability, and economic growth coupled with investment incentives and policies are catalysts in attracting new investment to invest in Cambodia, create jobs, boost exports, and contribute to socio-economic development.",
+          "value": "Chanthol is Cambodia's most credible FDI promoter and the country's clearest articulation of the 'platform state' growth theory: build the infrastructure, legal framework, and stability signal that ma",
+          "confidence": 0.7,
+          "source_file": "docx_profile_sun_chanthol"
+        }
+      ]
+    },
+    "risk_tolerance": {
+      "assessed_position": "Chanthol's General Electric background instilled a dealmaking mentality — identify the investor, structure the incentive, close. The tariff negotiation with the US in 2025 (Cambodia offered to cut 19 import categories to 5% as a goodwill gesture when facing 49% tariffs) was rapid and effective — he acted within days of the shock. He is comfortable with risk on the investment facilitation layer. He",
+      "primary_quote": null,
+      "primary_source": null,
+      "subfields": [
+        "Assessment: MEDIUM-HIGH — Willing to move fast on deals; cautious on structural change"
+      ],
+      "_evidence": []
+    },
+    "time_horizon": {
+      "assessed_position": "Chanthol operates on a pipeline horizon — what investments can be registered in the next 12–24 months, and what new sectors can be attracted before 2027. His public framing references 2030 upper-middle-income status but his actionable planning is investment-by-investment. The 70% clean energy by 2030 commitment, announced in a meeting with Vietnamese investors in March 2024, is a notable long-hori",
+      "primary_quote": null,
+      "primary_source": null,
+      "subfields": [
+        "Revealed: 3–5 years (deal pipeline); Stated: 2030"
+      ],
+      "_evidence": []
+    },
+    "dependency_assumptions": {
+      "assessed_position": "1. China-plus-one relocation continues: Chanthol's FDI surge is heavily driven by manufacturers diversifying away from China due to US tariff pressure — Cambodia benefits while the trade war persists. If US-China tensions ease and supply chains reconsolidate, this driver weakens. 2. Political stability signal holds: A single significant political disruption (Thai border escalation, elite successio",
+      "primary_quote": null,
+      "primary_source": null,
+      "subfields": [
+        "The FDI attraction model's assumptions"
+      ],
+      "_evidence": []
+    },
+    "institution_vs_relationship": {
+      "assessed_position": "Chanthol is the most institutionally-oriented senior official after Chea Serey. The online business registry, the CDC investment portal, the companies registry (introduced when he was at Commerce) are genuine institution-building acts. His Harvard/Wharton background gives him a genuine preference for process over personality. However, he is married into the Khau Chhuly business network and sits on",
+      "primary_quote": null,
+      "primary_source": null,
+      "subfields": [
+        "Verdict: Institutional-leaning, but embedded in relationship system"
+      ],
+      "_evidence": []
+    },
+    "global_positioning_logic": {
+      "assessed_position": "Chanthol's positioning theory is explicitly multi-vector and commercially grounded: Cambodia should be the easiest place to set up manufacturing for any origin country. His CSIS Washington appearance (2024), his UK-ASEAN Business Council engagement (2024), his Japanese investor meetings, his Australian convention centre pitch — these are all expressions of a 'sell Cambodia to everyone' doctrine th",
+      "primary_quote": null,
+      "primary_source": null,
+      "subfields": [
+        "Theory: Cambodia as the most frictionless manufacturing bridge between East and West"
+      ],
+      "_evidence": []
+    },
+    "consistency_score": {
+      "assessed_position": null,
+      "primary_quote": null,
+      "primary_source": null,
+      "subfields": [
+        "Ratings",
+        "Overall: The most outcome-consistent senior official on the dimensions he controls. Consistency drops where he depends on political relationships or structural change."
+      ],
+      "_evidence": [],
+      "ratings": [
+        {
+          "dimension": "FDI attraction outcomes",
+          "verdict": "HIGH",
+          "evidence": "CDC data tracks his rhetoric; 40-60% annual investment growth 2023-2025"
+        },
+        {
+          "dimension": "Anti-corruption via digitisation",
+          "verdict": "MEDIUM",
+          "evidence": "Online systems real; informal facilitation layer unaddressed"
+        },
+        {
+          "dimension": "Clean energy 2030 commitment",
+          "verdict": "LOW-MEDIUM",
+          "evidence": "Stated in March 2024; no published investment pipeline to substantiate"
+        },
+        {
+          "dimension": "Sectoral diversification",
+          "verdict": "MEDIUM",
+          "evidence": "Electronics and automotive growth real but small relative to garment dependence"
+        }
+      ]
+    }
+  },
+  "synthesis": {
+    "guiding_principles": [
+      {
+        "dimension": "",
+        "insight": "Use growth_theory behavior as primary signal"
+      },
+      {
+        "dimension": "",
+        "insight": "Use risk_tolerance behavior as primary signal"
+      },
+      {
+        "dimension": "",
+        "insight": "Use time_horizon behavior as primary signal"
+      }
+    ],
+    "key_external_analysis_quote": {
+      "quote": "Peace, political stability, and economic growth coupled with investment incentives and policies are catalysts in attracting new investment to invest in Cambodia, create jobs, boost exports, and contribute to socio-economic development.",
+      "source": ""
+    },
+    "sources": [
+      "Compiled from DOCX profile generator, April 2026"
+    ]
+  }
+}

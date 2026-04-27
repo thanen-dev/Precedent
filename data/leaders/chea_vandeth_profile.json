@@ -1,0 +1,145 @@
+{
+  "id": "chea_vandeth",
+  "full_name": "Chea Vandeth",
+  "title": "Minister of Post and Telecommunications  |  Chair, Digital Government Committee  |  Digital Economy and Society Policy 2021–2035 Architect",
+  "updated": "2026-04-25",
+  "leader": {
+    "name": "Chea Vandeth",
+    "position": "Minister of Post and Telecommunications",
+    "in_office_since": "2023",
+    "compiled": "April 2026",
+    "purpose": "Mental model schema mapping decision-making architecture across 7 dimensions Minister of Post and Telecommunications since April 2020. Rebuilt the ministry from a low-visibility infrastructure unit into Cambodia's digital transformation lead. Launched Cambodia Digital Economy and Society Policy Framework 2021-2035; Cambodia Digital Government Policy 2022-2035. VERIFY.GOV.KH won ASEAN Digital Awards gold medal 2024. First government official to discuss Starlink integration (February 2025). Revenue collection 2020-2024 was $804M — more than triple the 2015-2019 period of $216M.",
+    "based_on": [
+      "PMO speeches",
+      "Khmer Times",
+      "Phnom Penh Post",
+      "WTO TPR",
+      "ADB",
+      "World Bank",
+      "IMF",
+      "Kamnotra.io",
+      "Open Development Cambodia"
+    ]
+  },
+  "dimensions": {
+    "growth_theory": {
+      "assessed_position": "Vandeth's growth theory is technological leapfrog: a country at Cambodia's income level can bypass traditional development stages by building digital infrastructure that enables all sectors to operate more efficiently simultaneously. His three-pillar framework — digital government, digital citizens, digital businesses — is internally consistent and operationally specific. The DWF (Document Work Fl",
+      "primary_quote": "For a developing country like Cambodia, new technologies provide an opportunity to leapfrog, bypassing traditional phases of development. We want to transform our government to be digital and reduce as much as possible the use of paper.",
+      "primary_source": "Chea Vandeth, Digital Economy Forum",
+      "subfields": [
+        "Core Thesis: Digital infrastructure as economic leapfrog platform",
+        "Direct Quote"
+      ],
+      "_evidence": [
+        {
+          "url": "",
+          "date": "2026-04-01",
+          "quote": "For a developing country like Cambodia, new technologies provide an opportunity to leapfrog, bypassing traditional phases of development. We want to transform our government to be digital and reduce as much as possible the use of paper.",
+          "value": "Vandeth's growth theory is technological leapfrog: a country at Cambodia's income level can bypass traditional development stages by building digital infrastructure that enables all sectors to operate",
+          "confidence": 0.7,
+          "source_file": "docx_profile_chea_vandeth"
+        }
+      ]
+    },
+    "risk_tolerance": {
+      "assessed_position": "Vandeth pioneered blockchain-registered documents (VERIFY.GOV.KH), advocated digital labs in primary schools in provinces where digital literacy is near-zero, and initiated Starlink discussions for connectivity coverage. These are non-trivial implementation risks in a bureaucratically resistant environment. His acknowledgement that cybercrime and data privacy risks are growing — and his call for l",
+      "primary_quote": null,
+      "primary_source": null,
+      "subfields": [
+        "Assessment: MEDIUM-HIGH — Willing to build new systems; avoids political risks"
+      ],
+      "_evidence": []
+    },
+    "time_horizon": {
+      "assessed_position": "The Cambodia Digital Economy and Society Policy Framework runs to 2035 — a 14-year planning horizon that is the longest of any operational policy document in this cohort except Sok Siphana's trade framework. 5G rollout scheduled to begin 2026. The 42 digital labs programme targets grade 4–9 students — a 10-year human capital investment. Vandeth has the longest and most institutionally-anchored tim",
+      "primary_quote": null,
+      "primary_source": null,
+      "subfields": [
+        "Revealed: 2035 (Digital Policy horizon)  |  Near: 2026 (5G rollout)"
+      ],
+      "_evidence": []
+    },
+    "dependency_assumptions": {
+      "assessed_position": "1. Connectivity infrastructure reaches rural and peri-urban Cambodia at scale: urban digital adoption is real; rural connectivity is the gap. The Starlink discussion is a recognition of this problem. 2. Digital literacy translates to economic productivity: building 42 labs and offering 600 annual digital skills scholarships is a beginning, not a system. The workforce transformation required for a ",
+      "primary_quote": null,
+      "primary_source": null,
+      "subfields": [
+        "The digital transformation model's assumptions"
+      ],
+      "_evidence": []
+    },
+    "institution_vs_relationship": {
+      "assessed_position": "Within his ministry, Vandeth has built genuine institutional infrastructure: four national digital policy strategies approved by Royal Government, the DWF system, VERIFY.GOV.KH, the Telecoms Cambodia reform programme, the Digital Government Committee. These are real institutions with operational mandates. His 2024 Telecom Cambodia meeting (restructuring the state-owned telecom into a viable enterp",
+      "primary_quote": null,
+      "primary_source": null,
+      "subfields": [
+        "Verdict: Strongly institutional within MPTC; relationship-embedded in broader system"
+      ],
+      "_evidence": []
+    },
+    "global_positioning_logic": {
+      "assessed_position": "Vandeth's global positioning logic is technical-diplomacy led: winning ASEAN Digital Awards, engaging AmCham's ICT committee, co-ordinating with UNESCO on digital literacy, co-ordinating with Singapore's MAS on fintech — these are all positioning moves that build Cambodia's reputation in the digital governance space independent of political controversies. His ASEAN Chair 2022 contributions to digi",
+      "primary_quote": null,
+      "primary_source": null,
+      "subfields": [
+        "Theory: Cambodia as regional digital hub through infrastructure leadership"
+      ],
+      "_evidence": []
+    },
+    "consistency_score": {
+      "assessed_position": null,
+      "primary_quote": null,
+      "primary_source": null,
+      "subfields": [
+        "Ratings",
+        "Overall: HIGH on government digitisation; MEDIUM on citizen digital inclusion; LOW on regulatory framework for risks he has himself identified. The infrastructure is ahead of the governance."
+      ],
+      "_evidence": [],
+      "ratings": [
+        {
+          "dimension": "Digital government infrastructure",
+          "verdict": "HIGH",
+          "evidence": "DWF, VERIFY.GOV.KH, CamDX — real systems producing measurable revenue uplift"
+        },
+        {
+          "dimension": "Digital citizen programme",
+          "verdict": "MEDIUM",
+          "evidence": "600 scholarships, 42 labs — started; scale relative to 16M population is small"
+        },
+        {
+          "dimension": "5G rollout",
+          "verdict": "LOW-MEDIUM",
+          "evidence": "Committed 2026 start; technical and investment preparation details unclear"
+        },
+        {
+          "dimension": "Cybersecurity legal framework",
+          "verdict": "LOW",
+          "evidence": "Acknowledged as gap; legal bills in draft; no enacted framework as of 2025"
+        }
+      ]
+    }
+  },
+  "synthesis": {
+    "guiding_principles": [
+      {
+        "dimension": "",
+        "insight": "Use growth_theory behavior as primary signal"
+      },
+      {
+        "dimension": "",
+        "insight": "Use risk_tolerance behavior as primary signal"
+      },
+      {
+        "dimension": "",
+        "insight": "Use time_horizon behavior as primary signal"
+      }
+    ],
+    "key_external_analysis_quote": {
+      "quote": "For a developing country like Cambodia, new technologies provide an opportunity to leapfrog, bypassing traditional phases of development. We want to transform our government to be digital and reduce as much as possible the use of paper.",
+      "source": ""
+    },
+    "sources": [
+      "Compiled from DOCX profile generator, April 2026"
+    ]
+  }
+}

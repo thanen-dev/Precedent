@@ -1,70 +1,122 @@
 {
-    "id": "aun_pornmoniroth",
-    "full_name": "Aun Pornmoniroth",
-    "title": "Deputy Prime Minister; Minister of Economy and Finance",
-    "updated": "2026-04-19",
-    "leader": {
-        "name": "Aun Pornmoniroth",
-        "position": "Deputy Prime Minister; Minister of Economy and Finance",
-        "in_office_since": "2013-09-01",
-        "compiled": "2026-04-19",
-        "based_on": [],
-        "purpose": "Stub profile — to be populated by extractor pipeline"
-    },
-    "dimensions": {
-        "growth_theory": {
-            "core_thesis": null,
-            "stated_theory": null,
-            "revealed_preference": null,
-            "tension": null,
-            "_evidence": []
-        },
-        "risk_tolerance": {
-            "core_thesis": null,
-            "stated_theory": null,
-            "revealed_preference": null,
-            "tension": null,
-            "_evidence": []
-        },
-        "time_horizon": {
-            "core_thesis": null,
-            "stated_theory": null,
-            "revealed_preference": null,
-            "tension": null,
-            "_evidence": []
-        },
-        "dependency_assumptions": {
-            "core_thesis": null,
-            "stated_theory": null,
-            "revealed_preference": null,
-            "tension": null,
-            "_evidence": []
-        },
-        "institution_vs_relationship": {
-            "core_thesis": null,
-            "stated_theory": null,
-            "revealed_preference": null,
-            "tension": null,
-            "_evidence": []
-        },
-        "global_positioning_logic": {
-            "core_thesis": null,
-            "stated_theory": null,
-            "revealed_preference": null,
-            "tension": null,
-            "_evidence": []
-        },
-        "consistency_score": {
-            "core_thesis": null,
-            "stated_theory": null,
-            "revealed_preference": null,
-            "tension": null,
-            "_evidence": []
+  "id": "aun_pornmoniroth",
+  "full_name": "Aun Pornmoniroth",
+  "title": "Deputy Prime Minister; Minister of Economy and Finance",
+  "updated": "2026-04-19",
+  "leader": {
+    "name": "Aun Pornmoniroth",
+    "position": "Deputy Prime Minister; Minister of Economy and Finance",
+    "in_office_since": "2013-09-01",
+    "compiled": "2026-04-19",
+    "based_on": [],
+    "purpose": "Stub profile — to be populated by extractor pipeline"
+  },
+  "dimensions": {
+    "growth_theory": {
+      "assessed_position": "Macroeconomic stability as the precondition for everything else. Pornmoniroth's growth model is explicitly fiscal-first: budget discipline, low inflation, revenue mobilisation, and a stable riel environment create the platform on which FDI and export manufacturing can operate. He is not an industrial strategist — he is a fiscal architect. His stated priorities when managing the economy are: GDP gr",
+      "primary_quote": "For 2024, Cambodia's economy is forecast to achieve a growth rate of around 6.6 percent, which will increase the GDP to 35.16 billion US dollars.",
+      "primary_source": "Pornmoniroth to National Assembly, November 2023",
+      "subfields": [
+        "Core Thesis",
+        "Direct Quote",
+        "What He Funds vs. Defunds"
+      ],
+      "_evidence": [
+        {
+          "url": "",
+          "date": "2026-04-01",
+          "quote": "For 2024, Cambodia's economy is forecast to achieve a growth rate of around 6.6 percent, which will increase the GDP to 35.16 billion US dollars.",
+          "value": "Macroeconomic stability as the precondition for everything else. Pornmoniroth's growth model is explicitly fiscal-first: budget discipline, low inflation, revenue mobilisation, and a stable riel envir",
+          "confidence": 0.7,
+          "source_file": "docx_profile_aun_pornmoniroth"
         }
+      ]
     },
-    "synthesis": {
-        "guiding_principles": [],
-        "key_external_analysis_quote": {"quote": "", "source": ""},
-        "sources": []
+    "risk_tolerance": {
+      "assessed_position": "Pornmoniroth has never made a bold unilateral bet. His 12-year tenure at MEF is marked by incremental improvement within a stable macro framework. He projected 6.6% growth publicly while IMF/ADB projected 5.3–5.4%, but this is a communications risk, not a policy risk. His actual fiscal management has been conservative: deficit targets maintained, debt levels managed, reserves built. The one area o",
+      "primary_quote": null,
+      "primary_source": null,
+      "subfields": [
+        "Assessment: LOW-MEDIUM — Institutionally cautious, fiscally orthodox"
+      ],
+      "_evidence": []
+    },
+    "time_horizon": {
+      "assessed_position": "Pornmoniroth chairs the Supreme National Economic Council and is involved in the Pentagonal Strategy's 25-year framing, but his actual decision-making operates on a 1–3 year fiscal cycle. Budget laws are his primary policy instrument. The 2030 digital economy strategy is his longest-horizon published document. His public framing consistently references Cambodia's 2030 upper-middle-income target, b",
+      "primary_quote": null,
+      "primary_source": null,
+      "subfields": [
+        "Stated: Vision 2050  |  Revealed: ~5 years (budget cycle)",
+        "2029 LDC Signal"
+      ],
+      "_evidence": []
+    },
+    "dependency_assumptions": {
+      "assessed_position": "1. Garment and travel goods exports sustain or grow: industrial sector projected to grow 8.5% in 2024, driven by garment and construction. If US tariffs (49% shock in 2025) had not been negotiated down, this assumption would have failed. 2. FDI inflows from China remain stable: budget projections do not adjust for a China slowdown scenario. 3. Tourism recovery continues: accommodations and food se",
+      "primary_quote": null,
+      "primary_source": null,
+      "subfields": [
+        "Load-bearing assumptions in the fiscal model"
+      ],
+      "_evidence": []
+    },
+    "institution_vs_relationship": {
+      "assessed_position": "More institutionally oriented than most of his cabinet peers. MEF has built genuine inter-agency coordination mechanisms (NCFS, CEFP, Digital Economy and Business Committee). The business registry digitisation, CamDX platform, and online investment approval system are real institutional outputs — they reduce personal interface with government by design. However, his family networks (marriage into ",
+      "primary_quote": null,
+      "primary_source": null,
+      "subfields": [
+        "Verdict: Institution-building with relationship overlay"
+      ],
+      "_evidence": []
+    },
+    "global_positioning_logic": {
+      "assessed_position": "Pornmoniroth chairs the AIIB board, coordinates with IMF and World Bank, and engages with ADB as Cambodia's key multilateral partners. His positioning theory is that multilateral engagement builds the credibility that sustains FDI, credit ratings, and concessional financing access. He is not ideologically anti-West or anti-China — he is pro-stability. His US tariff response (rapid offer to cut 19 ",
+      "primary_quote": null,
+      "primary_source": null,
+      "subfields": [
+        "Theory: Multilateral engagement as fiscal stability insurance"
+      ],
+      "_evidence": []
+    },
+    "consistency_score": {
+      "assessed_position": null,
+      "primary_quote": null,
+      "primary_source": null,
+      "subfields": [
+        "Ratings",
+        "Overall: MEDIUM-HIGH on fiscal mechanics; LOW on structural transformation"
+      ],
+      "_evidence": [],
+      "ratings": [
+        {
+          "dimension": "Fiscal discipline",
+          "verdict": "HIGH",
+          "evidence": "Budget targets consistently maintained; reserves built steadily"
+        },
+        {
+          "dimension": "Macro optimism vs reality",
+          "verdict": "MEDIUM",
+          "evidence": "Projects 6.6% while multilaterals project 5.3%; communication gap"
+        },
+        {
+          "dimension": "Digital economy rhetoric",
+          "verdict": "HIGH",
+          "evidence": "CamDX, online registry, DEBC, digital payment infrastructure — real outputs"
+        },
+        {
+          "dimension": "2029 LDC preparation",
+          "verdict": "LOW",
+          "evidence": "Optimistic framing; no published fiscal adjustment roadmap for EBA loss"
+        }
+      ]
     }
+  },
+  "synthesis": {
+    "guiding_principles": [],
+    "key_external_analysis_quote": {
+      "quote": "",
+      "source": ""
+    },
+    "sources": []
+  }
 }
