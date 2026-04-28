@@ -5,6 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Conflicts — Cambodia Precedent</title>
 <meta name="description" content="Detected doctrine contradictions between Cambodia&#8217;s senior officials — logical conflicts where simultaneous implementation would produce incoherent policy.">
+<meta property="og:title" content="Conflicts — Cambodia Precedent">
+<meta property="og:description" content="Detected doctrine contradictions between Cambodia&#8217;s senior officials — logical conflicts where simultaneous implementation would produce incoherent policy.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231c1a17'/%3E%3Ctext x='4' y='24' font-family='serif' font-size='22' fill='%238c5e14'%3EP%3C/text%3E%3C/svg%3E" type="image/svg+xml">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,18 +18,37 @@
       <a href="index.html" class="masthead-wordmark">PRECEDENT</a>
       <span class="masthead-version">v0.2</span>
     </div>
-    <nav class="masthead-nav"><a href="index.html" class="">Index</a><a href="leaders.html" class="">Leaders</a><a href="cases.html" class="">Cases</a><a href="twins.html" class="">Twins</a><a href="conflicts.html" class="active">Conflicts</a><a href="solutions.html" class="">Solutions</a><a href="methodology.html" class="">Methodology</a></nav>
+    <nav class="masthead-nav" aria-label="Main navigation"><a href="index.html" class="">Index</a><a href="leaders.html" class="">Leaders</a><a href="cases.html" class="">Cases</a><a href="twins.html" class="">Twins</a><a href="conflicts.html" class="active">Conflicts</a><a href="solutions.html" class="">Solutions</a><a href="methodology.html" class="">Methodology</a></nav>
     <div class="masthead-meta">Political Intelligence · Cambodia's Decision-Makers</div>
+    <div class="masthead-search">
+      <input id="global-search" class="masthead-search-input" type="search"
+        placeholder="Search…" aria-label="Search site" autocomplete="off">
+      <div id="search-overlay" class="search-results-overlay"></div>
+    </div>
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()"
+      aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
   </div>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation"><a href="index.html" class="">Index</a><a href="leaders.html" class="">Leaders</a><a href="cases.html" class="">Cases</a><a href="twins.html" class="">Twins</a><a href="conflicts.html" class="active">Conflicts</a><a href="solutions.html" class="">Solutions</a><a href="methodology.html" class="">Methodology</a></nav>
 </header>
 <div class="date-strip">
   <span>2026-04-27 · Intelligence Update</span>
   <span>Coverage: Cambodia's senior leadership</span>
 </div>
+<nav class="breadcrumbs" aria-label="breadcrumb"><a href="index.html">Precedent</a><span class="bc-sep">/</span><span class="bc-current">Conflicts</span></nav>
 <div class="container">
   <div class="section-label"><span class="section-marker">◈</span>Doctrine contradictions</div>
   <h1>Detected Conflicts</h1>
-  <div class="conflict-block">
+  <p class="prose" style="margin-bottom:1.5rem;color:var(--muted)">14 doctrine contradictions detected. A conflict is flagged only when two positions, if simultaneously implemented, would produce incoherent policy.</p>
+  <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:2rem">
+  <div class="filter-bar">
+    <button class="filter-btn active" onclick="filterConflicts('ALL',this)">All</button>
+    <button class="filter-btn" onclick="filterConflicts('HIGH',this)">HIGH</button><button class="filter-btn" onclick="filterConflicts('LOW',this)">LOW</button>
+  </div>
+  <div class="filter-bar"><button class="filter-btn" onclick="filterConflicts('DEPENDENCY ASSUMPTIONS',this)">DEPENDENCY ASSUMPTIONS</button><button class="filter-btn" onclick="filterConflicts('GLOBAL POSITIONING LOGIC',this)">GLOBAL POSITIONING LOGIC</button><button class="filter-btn" onclick="filterConflicts('GROWTH THEORY',this)">GROWTH THEORY</button><button class="filter-btn" onclick="filterConflicts('INSTITUTION VS RELATIONSHIP',this)">INSTITUTION VS RELATIONSHIP</button><button class="filter-btn" onclick="filterConflicts('TIME HORIZON',this)">TIME HORIZON</button></div>
+</div>
+  <div class="conflict-block" data-dim="GLOBAL POSITIONING LOGIC" data-risk="HIGH">
   <div class="conflict-head">
     <span class="conflict-dim-label">⚠ GLOBAL POSITIONING LOGIC</span>
     <div style="display:flex;align-items:center;gap:1rem">
@@ -35,14 +58,14 @@
   </div>
   <div class="conflict-leaders-grid">
     <div class="conflict-side">
-      <div class="conflict-leader-name">aun_pornmoniroth</div>
+      <div class="conflict-leader-name"><a class="conflict-leader-link" href="leaders.html#aun_pornmoniroth">aun_pornmoniroth</a></div>
       <div class="conflict-pos">Pornmoniroth&#x27;s positioning theory centres on pragmatic multilateral engagement as fiscal stability insurance — he is explicitly pro-stability and non-ideological, responding to bilateral shocks (e.g., US tariffs) through rapid bilateral concession offers (cutting tariffs by 19%) rather than defending rules-based frameworks.</div>
       
     </div>
     <div class="conflict-side">
-      <div class="conflict-leader-name">cham_nimul</div>
+      <div class="conflict-leader-name"><a class="conflict-leader-link" href="leaders.html#cham_nimul">cham_nimul</a></div>
       <div class="conflict-pos">Nimul&#x27;s doctrine is that Cambodia&#x27;s competitive advantage as a small economy depends on predictable, rules-based multilateral access — she explicitly opposes bilateral power negotiation in favour of WTO-anchored frameworks.</div>
-      <blockquote style="margin-top:.5rem;font-size:.75rem">"As a small economy, it is crucial that the multilateral trading system remains open and based on rules."</blockquote>
+      <blockquote>&#8220;As a small economy, it is crucial that the multilateral trading system remains open and based on rules.&#8221;</blockquote>
     </div>
   </div>
   <div class="conflict-footer">
@@ -53,7 +76,7 @@
       <p>The concrete breaking point is the EU EBA restoration negotiation before 2029. Pornmoniroth&#x27;s bilateral-concession reflex, if applied to EU market access, will signal that Cambodia treats trade preferences as a power-bargaining issue rather than a governance-compliance issue — precisely the framing that caused the 2020 partial EBA withdrawal. Nimul&#x27;s rules-based framework requires Cambodia to demonstrate institutional governance improvement, not offer tariff deals. A cabinet-level disagreement over whether to pursue EU re-engagement through governance reform (Nimul) or through bilateral economic concessions (Pornmoniroth) will stall the EBA restoration process past the 2029 deadline.</p>
     </div>
   </div>
-</div><div class="conflict-block">
+</div><div class="conflict-block" data-dim="INSTITUTION VS RELATIONSHIP" data-risk="LOW">
   <div class="conflict-head">
     <span class="conflict-dim-label">⚠ INSTITUTION VS RELATIONSHIP</span>
     <div style="display:flex;align-items:center;gap:1rem">
@@ -63,12 +86,12 @@
   </div>
   <div class="conflict-leaders-grid">
     <div class="conflict-side">
-      <div class="conflict-leader-name">aun_pornmoniroth</div>
+      <div class="conflict-leader-name"><a class="conflict-leader-link" href="leaders.html#aun_pornmoniroth">aun_pornmoniroth</a></div>
       <div class="conflict-pos">Pornmoniroth is institution-building in the fiscal and investment space — MEF&#x27;s digitisation of business registration, CamDX platform, and online investment approvals are explicitly designed to reduce personal interface with government — but he operates with a relationship overlay through family networks embedded in the elite political economy.</div>
       
     </div>
     <div class="conflict-side">
-      <div class="conflict-leader-name">cham_nimul</div>
+      <div class="conflict-leader-name"><a class="conflict-leader-link" href="leaders.html#cham_nimul">cham_nimul</a></div>
       <div class="conflict-pos">Nimul operates through strictly procedural WTO and multilateral processes on trade governance, building international reputation on process-correctness, while remaining embedded in CPP domestic relationship networks for non-technical matters.</div>
       
     </div>
@@ -81,7 +104,7 @@
       <p>No breaking point identified from this dimension alone.</p>
     </div>
   </div>
-</div><div class="conflict-block">
+</div><div class="conflict-block" data-dim="GROWTH THEORY" data-risk="HIGH">
   <div class="conflict-head">
     <span class="conflict-dim-label">⚠ GROWTH THEORY</span>
     <div style="display:flex;align-items:center;gap:1rem">
@@ -91,14 +114,14 @@
   </div>
   <div class="conflict-leaders-grid">
     <div class="conflict-side">
-      <div class="conflict-leader-name">hun_manet</div>
+      <div class="conflict-leader-name"><a class="conflict-leader-link" href="leaders.html#hun_manet">hun_manet</a></div>
       <div class="conflict-pos">When resources are constrained, FDI and infrastructure win budget priority over SME and institution-building; growth follows investable infrastructure with a garment-export revenue base.</div>
-      <blockquote style="margin-top:.5rem;font-size:.75rem">"people, roads, water, electricity, and digital technology as five key priorities; growth follows investable infrastructure"</blockquote>
+      <blockquote>&#8220;people, roads, water, electricity, and digital technology as five key priorities; growth follows investable infrastructure&#8221;</blockquote>
     </div>
     <div class="conflict-side">
-      <div class="conflict-leader-name">chea_serey</div>
+      <div class="conflict-leader-name"><a class="conflict-leader-link" href="leaders.html#chea_serey">chea_serey</a></div>
       <div class="conflict-pos">Monetary sovereignty and financial inclusion are prerequisites for growth agency; de-dollarisation and the riel-based payment system are themselves growth infrastructure, not subordinate to physical FDI-attracting infrastructure.</div>
-      <blockquote style="margin-top:.5rem;font-size:.75rem">"Maintaining the riel&#x27;s stability has contributed to price stability in the market. In 2023, the riel depreciated only about 0.9%, even as other regional currencies saw much sharper losses."</blockquote>
+      <blockquote>&#8220;Maintaining the riel&#x27;s stability has contributed to price stability in the market. In 2023, the riel depreciated only about 0.9%, even as other regional currencies saw much sharper losses.&#8221;</blockquote>
     </div>
   </div>
   <div class="conflict-footer">
@@ -109,7 +132,7 @@
       <p>A large FDI deal or infrastructure financing round denominated in USD — of the type Manet&#x27;s team actively courts — will require NBC to allow dollar-intermediated settlement terms that contradict NBC&#x27;s de-dollarisation loan-ratio mandates. The breaking point will be a specific regulation: either NBC&#x27;s 10% riel-loan requirement will be quietly waived for FDI-linked banking products, or a foreign investor will publicly cite NBC&#x27;s currency policies as a conversion-risk deterrent, forcing the cabinet to choose between the FDI pipeline and the de-dollarisation timeline.</p>
     </div>
   </div>
-</div><div class="conflict-block">
+</div><div class="conflict-block" data-dim="INSTITUTION VS RELATIONSHIP" data-risk="HIGH">
   <div class="conflict-head">
     <span class="conflict-dim-label">⚠ INSTITUTION VS RELATIONSHIP</span>
     <div style="display:flex;align-items:center;gap:1rem">
@@ -119,14 +142,14 @@
   </div>
   <div class="conflict-leaders-grid">
     <div class="conflict-side">
-      <div class="conflict-leader-name">hun_manet</div>
+      <div class="conflict-leader-name"><a class="conflict-leader-link" href="leaders.html#hun_manet">hun_manet</a></div>
       <div class="conflict-pos">Hun Manet&#x27;s growth doctrine treats FDI attraction as a primary engine of diversification, which structurally requires credible, predictable rules-based frameworks to attract and retain foreign capital at scale.</div>
       
     </div>
     <div class="conflict-side">
-      <div class="conflict-leader-name">hun_sen</div>
+      <div class="conflict-leader-name"><a class="conflict-leader-link" href="leaders.html#hun_sen">hun_sen</a></div>
       <div class="conflict-pos">Hun Sen built zero independent institutions in 38 years; every formal body was designed to convert relationship outcomes into legal form, with the judiciary scoring 0/4 on independence and no corruption convictions as an explicit design feature.</div>
-      <blockquote style="margin-top:.5rem;font-size:.75rem">"No officials convicted of corruption in 38 years is not an accident — it is a design specification."</blockquote>
+      <blockquote>&#8220;No officials convicted of corruption in 38 years is not an accident — it is a design specification.&#8221;</blockquote>
     </div>
   </div>
   <div class="conflict-footer">
@@ -137,7 +160,7 @@
       <p>A high-profile FDI dispute (likely in real estate, telecoms, or special economic zones) will reach the Cambodian judiciary and be resolved in favor of a CPP-connected party, publicly falsifying Hun Manet&#x27;s rule-of-law FDI narrative and triggering investor reassessment of the entire diversification program.</p>
     </div>
   </div>
-</div><div class="conflict-block">
+</div><div class="conflict-block" data-dim="GROWTH THEORY" data-risk="HIGH">
   <div class="conflict-head">
     <span class="conflict-dim-label">⚠ GROWTH THEORY</span>
     <div style="display:flex;align-items:center;gap:1rem">
@@ -147,14 +170,14 @@
   </div>
   <div class="conflict-leaders-grid">
     <div class="conflict-side">
-      <div class="conflict-leader-name">hun_manet</div>
+      <div class="conflict-leader-name"><a class="conflict-leader-link" href="leaders.html#hun_manet">hun_manet</a></div>
       <div class="conflict-pos">Hun Manet&#x27;s stated growth theory prioritizes human capital, digital transformation, and MSME development as long-horizon bets, with infrastructure and FDI receiving budget priority when resources are constrained.</div>
       
     </div>
     <div class="conflict-side">
-      <div class="conflict-leader-name">hun_sen</div>
+      <div class="conflict-leader-name"><a class="conflict-leader-link" href="leaders.html#hun_sen">hun_sen</a></div>
       <div class="conflict-pos">Hun Sen&#x27;s growth model was never a coherent economic theory but a political economy theory: stability through personal control generates investor confidence; FDI and garments are welcomed only insofar as they sustain CPP legitimacy, with no industrial policy, no SOE restructuring, and preservation of the patronage system as the non-negotiable constraint.</div>
-      <blockquote style="margin-top:.5rem;font-size:.75rem">"I am committed to transform Cambodia into an upper-middle-income economy by 2030 and a developed country by 2050."</blockquote>
+      <blockquote>&#8220;I am committed to transform Cambodia into an upper-middle-income economy by 2030 and a developed country by 2050.&#8221;</blockquote>
     </div>
   </div>
   <div class="conflict-footer">
@@ -165,7 +188,7 @@
       <p>Budget negotiations for the 2026-2028 cycle will reveal that civil service wage obligations and patronage commitments (Hun Sen&#x27;s legacy load) consume the fiscal space theoretically allocated to Hun Manet&#x27;s human capital and digital transformation priorities, forcing a public retreat from the diversification agenda or a debt-financed fiction of pursuing both.</p>
     </div>
   </div>
-</div><div class="conflict-block">
+</div><div class="conflict-block" data-dim="GLOBAL POSITIONING LOGIC" data-risk="HIGH">
   <div class="conflict-head">
     <span class="conflict-dim-label">⚠ GLOBAL POSITIONING LOGIC</span>
     <div style="display:flex;align-items:center;gap:1rem">
@@ -175,14 +198,14 @@
   </div>
   <div class="conflict-leaders-grid">
     <div class="conflict-side">
-      <div class="conflict-leader-name">hun_manet</div>
+      <div class="conflict-leader-name"><a class="conflict-leader-link" href="leaders.html#hun_manet">hun_manet</a></div>
       <div class="conflict-pos">Hun Manet&#x27;s FDI diversification and digital transformation agenda implicitly requires repairing Western economic relationships — particularly EU EBA access and US market credibility — to attract non-Chinese capital and reduce single-source dependency.</div>
       
     </div>
     <div class="conflict-side">
-      <div class="conflict-leader-name">hun_sen</div>
+      <div class="conflict-leader-name"><a class="conflict-leader-link" href="leaders.html#hun_sen">hun_sen</a></div>
       <div class="conflict-pos">Hun Sen explicitly accepted the 2020 EU EBA partial withdrawal rather than make governance concessions, declared China &#x27;the most reliable friendship in our history,&#x27; and structured Ream Naval Base access as a strategic commitment to Chinese positioning that is not reversible without catastrophic relationship cost.</div>
-      <blockquote style="margin-top:.5rem;font-size:.75rem">"Cambodia&#x27;s relationship with China is the most reliable friendship in our history."</blockquote>
+      <blockquote>&#8220;Cambodia&#x27;s relationship with China is the most reliable friendship in our history.&#8221;</blockquote>
     </div>
   </div>
   <div class="conflict-footer">
@@ -193,7 +216,7 @@
       <p>Hun Manet&#x27;s attempt to attract EU or US-linked manufacturers (particularly those reshoring from China under friend-shoring frameworks) will be blocked at the due-diligence or government-approval stage by Cambodia&#x27;s classification as a Chinese-aligned state, forcing Hun Manet to either publicly distance from Hun Sen&#x27;s China doctrine — risking internal CPP fracture — or abandon the Western FDI diversification narrative entirely.</p>
     </div>
   </div>
-</div><div class="conflict-block">
+</div><div class="conflict-block" data-dim="TIME HORIZON" data-risk="HIGH">
   <div class="conflict-head">
     <span class="conflict-dim-label">⚠ TIME HORIZON</span>
     <div style="display:flex;align-items:center;gap:1rem">
@@ -203,14 +226,14 @@
   </div>
   <div class="conflict-leaders-grid">
     <div class="conflict-side">
-      <div class="conflict-leader-name">hun_manet</div>
+      <div class="conflict-leader-name"><a class="conflict-leader-link" href="leaders.html#hun_manet">hun_manet</a></div>
       <div class="conflict-pos">Hun Manet&#x27;s stated doctrine commits to long-horizon bets on human capital and digital transformation, implying willingness to defer short-term patronage distribution in favor of structural investment with payoffs beyond a single political cycle.</div>
       
     </div>
     <div class="conflict-side">
-      <div class="conflict-leader-name">hun_sen</div>
+      <div class="conflict-leader-name"><a class="conflict-leader-link" href="leaders.html#hun_sen">hun_sen</a></div>
       <div class="conflict-pos">Hun Sen&#x27;s actual operating horizon was succession security, not Cambodia&#x27;s development; every economic decision from 2019 onward was succession preparation, and the Vision 2050 framework is described explicitly as &#x27;a successor government&#x27;s problem, not his.&#x27;</div>
-      <blockquote style="margin-top:.5rem;font-size:.75rem">"The 25-year Vision 2050 is a successor government&#x27;s problem, not his."</blockquote>
+      <blockquote>&#8220;The 25-year Vision 2050 is a successor government&#x27;s problem, not his.&#8221;</blockquote>
     </div>
   </div>
   <div class="conflict-footer">
@@ -221,7 +244,7 @@
       <p>Within 24 months of any serious Hun Manet budget reorientation toward education or digital infrastructure at the expense of civil service headcount or military budgets, CPP internal factionalism will surface publicly, with Hun Sen-aligned figures (including his other sons) signaling opposition, forcing Hun Manet to reverse course and demonstrating that the long-horizon doctrine was never operationally sovereign.</p>
     </div>
   </div>
-</div><div class="conflict-block">
+</div><div class="conflict-block" data-dim="INSTITUTION VS RELATIONSHIP" data-risk="HIGH">
   <div class="conflict-head">
     <span class="conflict-dim-label">⚠ INSTITUTION VS RELATIONSHIP</span>
     <div style="display:flex;align-items:center;gap:1rem">
@@ -231,14 +254,14 @@
   </div>
   <div class="conflict-leaders-grid">
     <div class="conflict-side">
-      <div class="conflict-leader-name">hun_manet</div>
+      <div class="conflict-leader-name"><a class="conflict-leader-link" href="leaders.html#hun_manet">hun_manet</a></div>
       <div class="conflict-pos">Hun Manet&#x27;s growth doctrine prioritises FDI and infrastructure over institution-building when resources are constrained, implying that relationships, brokered deals, and government-intermediated financing (e.g., government-brokered loans for MSMEs) are the operative mechanisms for closing investment and development gaps.</div>
-      <blockquote style="margin-top:.5rem;font-size:.75rem">"When resources are constrained, FDI and infrastructure win budget priority over SME and institution-building."</blockquote>
+      <blockquote>&#8220;When resources are constrained, FDI and infrastructure win budget priority over SME and institution-building.&#8221;</blockquote>
     </div>
     <div class="conflict-side">
-      <div class="conflict-leader-name">sok_siphana</div>
+      <div class="conflict-leader-name"><a class="conflict-leader-link" href="leaders.html#sok_siphana">sok_siphana</a></div>
       <div class="conflict-pos">Siphana&#x27;s entire career doctrine holds that binding legal frameworks and international rules-based agreements are the primary mechanism for attracting FDI and sustaining growth — the WTO model works precisely because it constrains arbitrary government action and creates predictable rules that replace discretionary relationships.</div>
-      <blockquote style="margin-top:.5rem;font-size:.75rem">"We have to have WTO accession because the fate of 220,000 workers is at stake, if we don&#x27;t enter. Cambodia can use the WTO as an international force to negotiate. As a small country we don&#x27;t have the"</blockquote>
+      <blockquote>&#8220;We have to have WTO accession because the fate of 220,000 workers is at stake, if we don&#x27;t enter. Cambodia can use the WTO as an international force to negotiate. As a small country we don&#x27;t have the&#8221;</blockquote>
     </div>
   </div>
   <div class="conflict-footer">
@@ -249,7 +272,7 @@
       <p>A specific investment promotion campaign or SEZ deal will be negotiated at the relationship level by the Prime Minister&#x27;s office and then stall or fail to close legally because Cambodia cannot provide the contractual certainty, dispute resolution framework, or regulatory predictability that the foreign counterparty&#x27;s lawyers require — exposing the gap between the relationship-based attraction doctrine and the absent institutional infrastructure Siphana&#x27;s model requires to be funded first.</p>
     </div>
   </div>
-</div><div class="conflict-block">
+</div><div class="conflict-block" data-dim="GROWTH THEORY" data-risk="HIGH">
   <div class="conflict-head">
     <span class="conflict-dim-label">⚠ GROWTH THEORY</span>
     <div style="display:flex;align-items:center;gap:1rem">
@@ -259,14 +282,14 @@
   </div>
   <div class="conflict-leaders-grid">
     <div class="conflict-side">
-      <div class="conflict-leader-name">hun_manet</div>
+      <div class="conflict-leader-name"><a class="conflict-leader-link" href="leaders.html#hun_manet">hun_manet</a></div>
       <div class="conflict-pos">Hun Manet&#x27;s growth theory treats export manufacturing (garments) as the near-term revenue base and FDI attraction as the diversification engine, with human capital and digital transformation as long-horizon bets explicitly subordinated to infrastructure and FDI in budget prioritisation.</div>
-      <blockquote style="margin-top:.5rem;font-size:.75rem">"When resources are constrained, FDI and infrastructure win budget priority over SME and institution-building."</blockquote>
+      <blockquote>&#8220;When resources are constrained, FDI and infrastructure win budget priority over SME and institution-building.&#8221;</blockquote>
     </div>
     <div class="conflict-side">
-      <div class="conflict-leader-name">sok_siphana</div>
+      <div class="conflict-leader-name"><a class="conflict-leader-link" href="leaders.html#sok_siphana">sok_siphana</a></div>
       <div class="conflict-pos">Siphana&#x27;s growth theory holds that rules-based multilateral integration — specifically the legal reform pressure created by WTO membership and equivalent binding agreements — is the primary growth mechanism. Growth follows from making domestic reform irreversible through international legal commitments, not from infrastructure or FDI attraction as independent levers.</div>
-      <blockquote style="margin-top:.5rem;font-size:.75rem">"We have to have WTO accession because the fate of 220,000 workers is at stake, if we don&#x27;t enter. Cambodia can use the WTO as an international force to negotiate. As a small country we don&#x27;t have the"</blockquote>
+      <blockquote>&#8220;We have to have WTO accession because the fate of 220,000 workers is at stake, if we don&#x27;t enter. Cambodia can use the WTO as an international force to negotiate. As a small country we don&#x27;t have the&#8221;</blockquote>
     </div>
   </div>
   <div class="conflict-footer">
@@ -277,7 +300,7 @@
       <p>The Trade Policy Advisory Board and Council of Legal Reform — Siphana&#x27;s institutional vehicles — will be structurally underfunded and politically marginalised in budget cycles where Hun Manet&#x27;s infrastructure and FDI priorities compete for the same fiscal envelope, causing Cambodia to enter or renew trade negotiations (e.g., post-LDC graduation frameworks, RCEP implementation, bilateral FTAs) without the domestic legal harmonisation completed, producing commitments the government cannot operationalise and eroding Cambodia&#x27;s credibility with multilateral partners.</p>
     </div>
   </div>
-</div><div class="conflict-block">
+</div><div class="conflict-block" data-dim="INSTITUTION VS RELATIONSHIP" data-risk="HIGH">
   <div class="conflict-head">
     <span class="conflict-dim-label">⚠ INSTITUTION VS RELATIONSHIP</span>
     <div style="display:flex;align-items:center;gap:1rem">
@@ -287,14 +310,14 @@
   </div>
   <div class="conflict-leaders-grid">
     <div class="conflict-side">
-      <div class="conflict-leader-name">hun_sen</div>
+      <div class="conflict-leader-name"><a class="conflict-leader-link" href="leaders.html#hun_sen">hun_sen</a></div>
       <div class="conflict-pos">Hun Sen systematically designed every formal institution as a conversion mechanism for relationship outcomes, ensuring no independent body ever constrained his network. Institutions exist to legitimise decisions already made through personal power.</div>
-      <blockquote style="margin-top:.5rem;font-size:.75rem">"Every formal body — the judiciary, the electoral commission, the Senate, the Constitutional Council — was designed to convert relationship outcomes into legal form."</blockquote>
+      <blockquote>&#8220;Every formal body — the judiciary, the electoral commission, the Senate, the Constitutional Council — was designed to convert relationship outcomes into legal form.&#8221;</blockquote>
     </div>
     <div class="conflict-side">
-      <div class="conflict-leader-name">aun_pornmoniroth</div>
+      <div class="conflict-leader-name"><a class="conflict-leader-link" href="leaders.html#aun_pornmoniroth">aun_pornmoniroth</a></div>
       <div class="conflict-pos">Pornmoniroth has actively built institutional infrastructure at MEF — digitised registries, inter-agency coordination bodies, and online approval systems — explicitly designed to reduce personal interface with government and create rule-based processes.</div>
-      <blockquote style="margin-top:.5rem;font-size:.75rem">"The business registry digitisation, CamDX platform, and online investment approval system are real institutional outputs — they reduce personal interface with government by design."</blockquote>
+      <blockquote>&#8220;The business registry digitisation, CamDX platform, and online investment approval system are real institutional outputs — they reduce personal interface with government by design.&#8221;</blockquote>
     </div>
   </div>
   <div class="conflict-footer">
@@ -305,7 +328,7 @@
       <p>Large FDI approvals and land-use decisions will visibly bypass the CamDX and online systems, creating a documented gap between the digitised process and actual decision pathways. This will trigger investor-confidence complaints and multilateral audit findings, forcing either a rollback of the transparency infrastructure or an open confrontation with the patronage network — the breaking point will be a high-profile investment approval that the digital record cannot account for.</p>
     </div>
   </div>
-</div><div class="conflict-block">
+</div><div class="conflict-block" data-dim="GLOBAL POSITIONING LOGIC" data-risk="HIGH">
   <div class="conflict-head">
     <span class="conflict-dim-label">⚠ GLOBAL POSITIONING LOGIC</span>
     <div style="display:flex;align-items:center;gap:1rem">
@@ -315,14 +338,14 @@
   </div>
   <div class="conflict-leaders-grid">
     <div class="conflict-side">
-      <div class="conflict-leader-name">hun_sen</div>
+      <div class="conflict-leader-name"><a class="conflict-leader-link" href="leaders.html#hun_sen">hun_sen</a></div>
       <div class="conflict-pos">Hun Sen&#x27;s positioning logic explicitly accepts Western economic costs (EBA withdrawal) rather than concede governance reforms, treating China as the primary insurer and ASEAN as legitimising cover. Western engagement is welcome but not worth compromising the patronage system.</div>
-      <blockquote style="margin-top:.5rem;font-size:.75rem">"Cambodia&#x27;s relationship with China is the most reliable friendship in our history."</blockquote>
+      <blockquote>&#8220;Cambodia&#x27;s relationship with China is the most reliable friendship in our history.&#8221;</blockquote>
     </div>
     <div class="conflict-side">
-      <div class="conflict-leader-name">aun_pornmoniroth</div>
+      <div class="conflict-leader-name"><a class="conflict-leader-link" href="leaders.html#aun_pornmoniroth">aun_pornmoniroth</a></div>
       <div class="conflict-pos">Pornmoniroth&#x27;s positioning is multilateral-first: IMF, World Bank, ADB, and AIIB engagement builds the credibility that sustains credit ratings, FDI, and concessional financing. His rapid offer to cut tariffs in response to US pressure reveals a revealed preference for Western economic relationship maintenance over ideological positioning.</div>
-      <blockquote style="margin-top:.5rem;font-size:.75rem">"His US tariff response (rapid offer to cut 19[%]) reveals a revealed preference for Western economic relationship maintenance over ideological positioning."</blockquote>
+      <blockquote>&#8220;His US tariff response (rapid offer to cut 19[%]) reveals a revealed preference for Western economic relationship maintenance over ideological positioning.&#8221;</blockquote>
     </div>
   </div>
   <div class="conflict-footer">
@@ -333,7 +356,7 @@
       <p>The next round of EU GSP-plus or US trade preference negotiations will produce a split response — MEF signals concessions on transparency or labour standards to preserve market access while the CPP political apparatus refuses to implement them. The breaking point will be a specific governance condition (e.g., judicial independence benchmarks tied to trade preference renewal) where Pornmoniroth&#x27;s public commitment to compliance collides with structural non-delivery, damaging Cambodia&#x27;s multilateral credibility and triggering a credit rating review.</p>
     </div>
   </div>
-</div><div class="conflict-block">
+</div><div class="conflict-block" data-dim="DEPENDENCY ASSUMPTIONS" data-risk="HIGH">
   <div class="conflict-head">
     <span class="conflict-dim-label">⚠ DEPENDENCY ASSUMPTIONS</span>
     <div style="display:flex;align-items:center;gap:1rem">
@@ -343,12 +366,12 @@
   </div>
   <div class="conflict-leaders-grid">
     <div class="conflict-side">
-      <div class="conflict-leader-name">hun_sen</div>
+      <div class="conflict-leader-name"><a class="conflict-leader-link" href="leaders.html#hun_sen">hun_sen</a></div>
       <div class="conflict-pos">Hun Sen&#x27;s model assumed Western economic engagement would indefinitely tolerate authoritarian governance framed as stability, and that the rural CPP patronage network was self-sustaining. Economic diversification was never pursued because the existing model was assumed durable.</div>
       
     </div>
     <div class="conflict-side">
-      <div class="conflict-leader-name">aun_pornmoniroth</div>
+      <div class="conflict-leader-name"><a class="conflict-leader-link" href="leaders.html#aun_pornmoniroth">aun_pornmoniroth</a></div>
       <div class="conflict-pos">Pornmoniroth&#x27;s fiscal model depends on garment export growth, stable Chinese FDI inflows, and continued tourism recovery — but his 2029 LDC graduation signal shows awareness that the preference-based trade architecture sustaining these assumptions has an expiry date, requiring structural adjustment.</div>
       
     </div>
@@ -361,7 +384,7 @@
       <p>The 2027–2029 LDC graduation window will force a concrete confrontation: Cambodia must either demonstrate governance and institutional improvements to retain preferential access (requiring reforms that contradict the patronage system) or accept MFN tariff rates that structurally compress garment sector margins. The breaking point will be a specific budget year in which garment export revenue underperforms MEF projections by a measurable margin directly attributable to preference erosion, exposing the fiscal model&#x27;s dependency on a political assumption that was never delivered.</p>
     </div>
   </div>
-</div><div class="conflict-block">
+</div><div class="conflict-block" data-dim="GLOBAL POSITIONING LOGIC" data-risk="HIGH">
   <div class="conflict-head">
     <span class="conflict-dim-label">⚠ GLOBAL POSITIONING LOGIC</span>
     <div style="display:flex;align-items:center;gap:1rem">
@@ -371,14 +394,14 @@
   </div>
   <div class="conflict-leaders-grid">
     <div class="conflict-side">
-      <div class="conflict-leader-name">sun_chanthol</div>
+      <div class="conflict-leader-name"><a class="conflict-leader-link" href="leaders.html#sun_chanthol">sun_chanthol</a></div>
       <div class="conflict-pos">Chanthol&#x27;s doctrine is to make Cambodia the most frictionless manufacturing bridge for any origin country — explicitly multi-vector and commercially grounded, selling Cambodia to Western, Japanese, Korean, Australian, and Chinese investors simultaneously as a neutral platform.</div>
-      <blockquote style="margin-top:.5rem;font-size:.75rem">"Cambodia as the most frictionless manufacturing bridge between East and West"</blockquote>
+      <blockquote>&#8220;Cambodia as the most frictionless manufacturing bridge between East and West&#8221;</blockquote>
     </div>
     <div class="conflict-side">
-      <div class="conflict-leader-name">chea_serey</div>
+      <div class="conflict-leader-name"><a class="conflict-leader-link" href="leaders.html#chea_serey">chea_serey</a></div>
       <div class="conflict-pos">Serey&#x27;s doctrine is to reduce Cambodia&#x27;s dependence on dollar-intermediated settlement and build riel-denominated regional payment infrastructure as a monetary sovereignty project, explicitly reducing reliance on the US dollar system that underpins most Western FDI and trade finance.</div>
-      <blockquote style="margin-top:.5rem;font-size:.75rem">"Cross-border QR links... all settled in riel — reduce Cambodia&#x27;s dependence on dollar-intermediated settlement"</blockquote>
+      <blockquote>&#8220;Cross-border QR links... all settled in riel — reduce Cambodia&#x27;s dependence on dollar-intermediated settlement&#8221;</blockquote>
     </div>
   </div>
   <div class="conflict-footer">
@@ -389,7 +412,7 @@
       <p>A large Western or Japanese manufacturer conducting due diligence on a Cambodia manufacturing hub will receive conflicting signals from CDC (dollar-friendly, stable incentives, easy repatriation) and NBC (riel-denomination requirements expanding, dollar loan restrictions tightening). The breaking point will be a publicised deal that stalls or relocates — most likely to Vietnam or Indonesia — when treasury teams flag the currency transition risk, forcing a cabinet-level decision on whether FDI attraction or monetary sovereignty takes policy precedence. This will likely surface in 2026–2027 as riel-denomination requirements reach the banking sector&#x27;s commercial loan book.</p>
     </div>
   </div>
-</div><div class="conflict-block">
+</div><div class="conflict-block" data-dim="INSTITUTION VS RELATIONSHIP" data-risk="LOW">
   <div class="conflict-head">
     <span class="conflict-dim-label">⚠ INSTITUTION VS RELATIONSHIP</span>
     <div style="display:flex;align-items:center;gap:1rem">
@@ -399,12 +422,12 @@
   </div>
   <div class="conflict-leaders-grid">
     <div class="conflict-side">
-      <div class="conflict-leader-name">sun_chanthol</div>
+      <div class="conflict-leader-name"><a class="conflict-leader-link" href="leaders.html#sun_chanthol">sun_chanthol</a></div>
       <div class="conflict-pos">Chanthol is institutionally oriented in his investment promotion work — CDC portals, business registries, transparent frameworks — but is personally embedded in the Khau Chhuly business network and uses relationship-based deal closure as a core competency alongside institutional systems.</div>
       
     </div>
     <div class="conflict-side">
-      <div class="conflict-leader-name">chea_serey</div>
+      <div class="conflict-leader-name"><a class="conflict-leader-link" href="leaders.html#chea_serey">chea_serey</a></div>
       <div class="conflict-pos">Serey is the most strongly institution-oriented official in the sample, having built Cambodia&#x27;s Credit Bureau, Bakong payment system, and NBC Financial Stability Department on the principle that rules-based systems, not personal relationships, are the foundation of financial system integrity.</div>
       
     </div>
@@ -419,6 +442,184 @@
   </div>
 </div>
 </div>
+
+<script>
+/* #14 — keyboard-accessible accordion */
+function toggleLeader(id, event) {
+  if (event && event.type === 'keydown' && event.key !== 'Enter' && event.key !== ' ') return;
+  if (event && event.type === 'keydown') event.preventDefault();
+  var el = document.getElementById('dim-' + id);
+  var arrow = document.getElementById('arrow-' + id);
+  if (!el) return;
+  var open = el.style.display === 'block';
+  el.style.display = open ? 'none' : 'block';
+  arrow.textContent = open ? '▸' : '▾';
+  /* #50 — persist open state */
+  try {
+    var openSet = JSON.parse(sessionStorage.getItem('openLeaders') || '[]');
+    if (open) { openSet = openSet.filter(function(x){ return x !== id; }); }
+    else if (!openSet.includes(id)) { openSet.push(id); }
+    sessionStorage.setItem('openLeaders', JSON.stringify(openSet));
+  } catch(e) {}
+}
+
+/* #43 — expand-all / collapse-all */
+function expandAll() {
+  document.querySelectorAll('.leader-detail').forEach(function(el) {
+    el.style.display = 'block';
+    var arrow = document.getElementById(el.id.replace('dim-','arrow-'));
+    if (arrow) arrow.textContent = '▾';
+  });
+  try { sessionStorage.setItem('openLeaders', JSON.stringify(
+    Array.from(document.querySelectorAll('.leader-detail')).map(function(el){ return el.id.replace('dim-',''); })
+  )); } catch(e){}
+}
+function collapseAll() {
+  document.querySelectorAll('.leader-detail').forEach(function(el) {
+    el.style.display = 'none';
+    var arrow = document.getElementById(el.id.replace('dim-','arrow-'));
+    if (arrow) arrow.textContent = '▸';
+  });
+  try { sessionStorage.setItem('openLeaders', '[]'); } catch(e){}
+}
+
+/* #50 — restore open state */
+function restoreOpenLeaders() {
+  try {
+    var openSet = JSON.parse(sessionStorage.getItem('openLeaders') || '[]');
+    openSet.forEach(function(id) {
+      var el = document.getElementById('dim-' + id);
+      var arrow = document.getElementById('arrow-' + id);
+      if (el) { el.style.display = 'block'; }
+      if (arrow) { arrow.textContent = '▾'; }
+    });
+  } catch(e) {}
+}
+
+/* #42 — persist case filter in URL hash */
+function filterCases(cat, btn) {
+  document.querySelectorAll('.case-block').forEach(function(el) {
+    el.style.display = (cat === 'ALL' || el.dataset.category === cat) ? '' : 'none';
+  });
+  document.querySelectorAll('.filter-btn').forEach(function(b) {
+    b.classList.toggle('active', b === btn);
+  });
+  try { history.replaceState(null,'', cat === 'ALL' ? location.pathname : '#cat=' + cat); } catch(e){}
+}
+
+/* #37 — filter conflicts by dimension or risk */
+function filterConflicts(val, btn) {
+  document.querySelectorAll('.conflict-block').forEach(function(el) {
+    var match = val === 'ALL' || el.dataset.dim === val || el.dataset.risk === val;
+    el.style.display = match ? '' : 'none';
+  });
+  document.querySelectorAll('.filter-btn').forEach(function(b) {
+    b.classList.toggle('active', b === btn);
+  });
+}
+
+/* #42 — restore filter from URL hash */
+function restoreFilter() {
+  var hash = location.hash;
+  if (hash && hash.startsWith('#cat=')) {
+    var cat = hash.slice(5);
+    var btn = Array.from(document.querySelectorAll('.filter-btn'))
+      .find(function(b){ return b.textContent.trim() === cat; });
+    if (btn) filterCases(cat, btn);
+  }
+}
+
+/* #09 — hamburger menu */
+function toggleMenu() {
+  var btn = document.getElementById('hamburger');
+  var nav = document.getElementById('mobile-nav');
+  if (!btn || !nav) return;
+  btn.classList.toggle('open');
+  nav.classList.toggle('open');
+}
+
+/* #15 — global search */
+function initGlobalSearch() {
+  var input = document.getElementById('global-search');
+  var overlay = document.getElementById('search-overlay');
+  if (!input || !overlay) return;
+
+  var searchIndex = [];
+  document.querySelectorAll('[data-search-item]').forEach(function(el) {
+    searchIndex.push({ text: el.textContent.toLowerCase(), href: el.dataset.href || '#', label: el.dataset.label || el.textContent.trim().slice(0,60), type: el.dataset.type || '' });
+  });
+
+  input.addEventListener('input', function() {
+    var q = this.value.trim().toLowerCase();
+    overlay.innerHTML = '';
+    if (!q || q.length < 2) { overlay.classList.remove('open'); return; }
+    var results = searchIndex.filter(function(r){ return r.text.includes(q); }).slice(0,8);
+    if (!results.length) { overlay.classList.remove('open'); return; }
+    results.forEach(function(r) {
+      var a = document.createElement('a');
+      a.className = 'search-result-item';
+      a.href = r.href;
+      a.innerHTML = '<span class="search-result-type">' + r.type + '</span>' + r.label;
+      overlay.appendChild(a);
+    });
+    overlay.classList.add('open');
+  });
+
+  document.addEventListener('click', function(e) {
+    if (!input.contains(e.target) && !overlay.contains(e.target)) {
+      overlay.classList.remove('open');
+      input.value = '';
+    }
+  });
+
+  input.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') { overlay.classList.remove('open'); input.value = ''; }
+  });
+}
+
+/* #22 — filter leaders by dimension value (e.g. risk) */
+function filterLeadersByDim(dim, btn) {
+  var rows = document.querySelectorAll('.leader-row[data-dims]');
+  rows.forEach(function(row) {
+    var dims = {};
+    try { dims = JSON.parse(row.dataset.dims || '{}'); } catch(e){}
+    var show = !dim || Object.keys(dims).some(function(k){ return dims[k] && dims[k].toLowerCase().includes(dim.toLowerCase()); });
+    row.style.display = show ? '' : 'none';
+  });
+  if (btn) {
+    document.querySelectorAll('.dim-filter-btn').forEach(function(b){ b.classList.remove('active'); });
+    btn.classList.add('active');
+  }
+}
+
+/* #10 — smooth scroll for jump bar */
+function jumpTo(id) {
+  var el = document.getElementById(id);
+  if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+/* page-search on leaders page */
+function initPageSearch() {
+  var input = document.getElementById('site-search');
+  if (!input) return;
+  var targets = document.querySelectorAll('[data-searchable]');
+  input.addEventListener('input', function() {
+    var q = this.value.trim().toLowerCase();
+    if (!q) { targets.forEach(function(el){ el.style.display = ''; }); return; }
+    targets.forEach(function(el) {
+      el.style.display = el.textContent.toLowerCase().includes(q) ? '' : 'none';
+    });
+  });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  restoreOpenLeaders();
+  restoreFilter();
+  initGlobalSearch();
+  initPageSearch();
+});
+</script>
+
 
 <footer class="site-footer">
   <span>PRECEDENT · Cambodia Political Intelligence · v0.2</span>

@@ -5,6 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Cambodia Political Intelligence — Precedent</title>
 <meta name="description" content="Precedent maps how Cambodia&#8217;s 11 key decision-makers reason — extracting doctrine from primary sources and matching decisions against historical cases. Cambodia faces critical inflection points by 2029.">
+<meta property="og:title" content="Cambodia Political Intelligence — Precedent">
+<meta property="og:description" content="Precedent maps how Cambodia&#8217;s 11 key decision-makers reason — extracting doctrine from primary sources and matching decisions against historical cases. Cambodia faces critical inflection points by 2029.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231c1a17'/%3E%3Ctext x='4' y='24' font-family='serif' font-size='22' fill='%238c5e14'%3EP%3C/text%3E%3C/svg%3E" type="image/svg+xml">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,26 +18,47 @@
       <a href="index.html" class="masthead-wordmark">PRECEDENT</a>
       <span class="masthead-version">v0.2</span>
     </div>
-    <nav class="masthead-nav"><a href="index.html" class="active">Index</a><a href="leaders.html" class="">Leaders</a><a href="cases.html" class="">Cases</a><a href="twins.html" class="">Twins</a><a href="conflicts.html" class="">Conflicts</a><a href="solutions.html" class="">Solutions</a><a href="methodology.html" class="">Methodology</a></nav>
+    <nav class="masthead-nav" aria-label="Main navigation"><a href="index.html" class="active">Index</a><a href="leaders.html" class="">Leaders</a><a href="cases.html" class="">Cases</a><a href="twins.html" class="">Twins</a><a href="conflicts.html" class="">Conflicts</a><a href="solutions.html" class="">Solutions</a><a href="methodology.html" class="">Methodology</a></nav>
     <div class="masthead-meta">Political Intelligence · Cambodia's Decision-Makers</div>
+    <div class="masthead-search">
+      <input id="global-search" class="masthead-search-input" type="search"
+        placeholder="Search…" aria-label="Search site" autocomplete="off">
+      <div id="search-overlay" class="search-results-overlay"></div>
+    </div>
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()"
+      aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
   </div>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation"><a href="index.html" class="active">Index</a><a href="leaders.html" class="">Leaders</a><a href="cases.html" class="">Cases</a><a href="twins.html" class="">Twins</a><a href="conflicts.html" class="">Conflicts</a><a href="solutions.html" class="">Solutions</a><a href="methodology.html" class="">Methodology</a></nav>
 </header>
 <div class="date-strip">
   <span>2026-04-27 · Intelligence Update</span>
   <span>Coverage: Cambodia's senior leadership</span>
 </div>
+
 <div class="container">
   <div class="section-label"><span class="section-marker">◈</span>Intelligence overview</div>
   <h1>Cambodia's Operating Doctrine</h1>
-  <div style="margin-bottom:2.5rem;padding:1.5rem 0;border-bottom:1px solid var(--b-dim)">
-  <p style="font-size:1.05rem;line-height:1.75;max-width:68ch;color:var(--text)">
+  <p class="about-text prose" style="margin-bottom:2rem">
     Precedent maps how Cambodia&#8217;s 11 key decision-makers actually reason &#8212;
     extracting doctrine from primary sources and matching their choices against
     historical cases where similar logic was tried and failed.
     By 2029, Cambodia faces EBA preference loss, Chinese FDI concentration risk,
-    and a garment sector labour squeeze. This site gives you the decision-maker
-    profiles, the historical precedents, and the predicted breaking points.
+    and a garment sector labour squeeze.
   </p>
+  <div class="exec-summary">
+  <div class="exec-summary-label">◈ Executive Summary</div>
+  <ol><li>Cambodia faces three converging crises by 2029: EBA preference loss, Chinese FDI over-concentration, and garment sector labour-standards pressure — each independently capable of triggering macro-fiscal stress.</li><li>Historical twin analysis places Cambodia at 91% structural match with Bangladesh (BGD_GARMENT_2012) — HIGH RISK, the closest documented precedent to export-dependent democratic-backsliding economies that lost preferential trade access.</li><li>14 doctrine contradictions detected across the senior leadership cohort — simultaneous implementation of current stated positions would produce incoherent trade and fiscal policy by 2027.</li></ol>
+</div>
+  <div style="margin-bottom:.5rem;font-family:var(--mono);font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)">◈ Suggested reading order</div>
+<div class="reading-path">
+  <a class="reading-step" href="leaders.html"><span class="reading-step-num">01</span><span class="reading-step-label">Leader profiles</span></a>
+  <a class="reading-step" href="conflicts.html"><span class="reading-step-num">02</span><span class="reading-step-label">Doctrine conflicts</span></a>
+  <a class="reading-step" href="twins.html"><span class="reading-step-num">03</span><span class="reading-step-label">Historical twins</span></a>
+  <a class="reading-step" href="cases.html"><span class="reading-step-num">04</span><span class="reading-step-label">Case library</span></a>
+  <a class="reading-step" href="solutions.html"><span class="reading-step-num">05</span><span class="reading-step-label">Risk solutions</span></a>
+  <a class="reading-step" href="methodology.html"><span class="reading-step-num">06</span><span class="reading-step-label">Methodology</span></a>
 </div>
   <div class="stat-row">
   <div class="stat-cell"><div class="stat-value">11</div><div class="stat-label">Leaders profiled</div></div>
@@ -42,177 +67,384 @@
   <div class="stat-cell"><div class="stat-value">10</div><div class="stat-label">Twin analyses</div></div>
   <div class="stat-cell"><div class="stat-value">14</div><div class="stat-label">Conflicts detected</div></div>
 </div>
-  <div style="margin:2.5rem 0;padding:1.5rem;border:1px solid var(--b-dim);background:var(--surface)">
-  <div class="section-label" style="margin-bottom:1rem"><span class="section-marker">◈</span>Key Findings</div>
-  <div style="margin-bottom:.75rem"><span class="pill pill-high" style="margin-right:.5rem">TWIN</span>91% structural match with Bangladesh (BGD_GARMENT_2012) — HIGH RISK</div>
-  <div style="margin-bottom:.75rem"><span class="pill pill-medium" style="margin-right:.5rem">CONFLICTS</span>14 doctrine contradictions detected across 6 leader pairs</div>
-  <div style="margin-bottom:.75rem"><span class="pill pill-muted" style="margin-right:.5rem">TRAJECTORY</span></div>
-  <p style="font-size:.8125rem;line-height:1.7;color:var(--muted)">Cambodia faces a structural squeeze by 2029: EBA preference erosion threatens the garment sector, Chinese FDI dependency creates debt-trap exposure, and the Funan Techo Canal signals infrastructure-led growth over trade diversification. Historical twins suggest HIGH risk of export concentration collapse without accelerated diversification. The current leadership cohort shows coherent short-term FDI doctrine but LOW long-term institution-building commitment.</p>
-  <div style="font-family:var(--mono);font-size:.58rem;color:var(--muted);margin-top:.75rem">Last updated: 2026-04-25 · Data: 11 leaders, 9 cases, 10 twin analyses</div>
-</div>
-  <div class="section-label" style="margin-bottom:1rem"><span class="section-marker">◈</span>Leaders</div>
-  <div class="leader-row" style="margin-bottom:0.5rem">
-  <div class="leader-row-header" style="cursor:default">
-    <div class="leader-row-meta">
-      <span class="leader-name">Aun Pornmoniroth</span>
-      <span class="leader-title-tag">Deputy Prime Minister; Minister of Economy and Finance</span>
-    </div>
-    <div class="leader-row-right">
-      <div class="completeness-display">
-        <div class="completeness-frac">7/7</div>
-        <div class="completeness-sub">dimensions</div>
+  <div class="section-label" style="margin-top:2rem;margin-bottom:1rem"><span class="section-marker">◈</span>Leaders</div>
+  <a href="leaders.html#aun_pornmoniroth" style="display:block;text-decoration:none">
+  <div class="leader-row" style="margin-bottom:0">
+    <div class="leader-row-header" style="cursor:pointer">
+      <div class="leader-row-meta">
+        <span class="leader-name">Aun Pornmoniroth</span>
+        <span class="leader-title-tag">Deputy Prime Minister; Minister of Economy and Finance</span>
+      </div>
+      <div class="leader-row-right">
+        <div class="completeness-display">
+          <div class="completeness-frac">7/7</div>
+          <div class="completeness-sub">dims</div>
+        </div>
       </div>
     </div>
   </div>
-</div><div class="leader-row" style="margin-bottom:0.5rem">
-  <div class="leader-row-header" style="cursor:default">
-    <div class="leader-row-meta">
-      <span class="leader-name">Cham Nimul</span>
-      <span class="leader-title-tag">Minister of Commerce</span>
-    </div>
-    <div class="leader-row-right">
-      <div class="completeness-display">
-        <div class="completeness-frac">7/7</div>
-        <div class="completeness-sub">dimensions</div>
+</a><a href="leaders.html#cham_nimul" style="display:block;text-decoration:none">
+  <div class="leader-row" style="margin-bottom:0">
+    <div class="leader-row-header" style="cursor:pointer">
+      <div class="leader-row-meta">
+        <span class="leader-name">Cham Nimul</span>
+        <span class="leader-title-tag">Minister of Commerce</span>
+      </div>
+      <div class="leader-row-right">
+        <div class="completeness-display">
+          <div class="completeness-frac">7/7</div>
+          <div class="completeness-sub">dims</div>
+        </div>
       </div>
     </div>
   </div>
-</div><div class="leader-row" style="margin-bottom:0.5rem">
-  <div class="leader-row-header" style="cursor:default">
-    <div class="leader-row-meta">
-      <span class="leader-name">Chea Serey</span>
-      <span class="leader-title-tag">Governor, National Bank of Cambodia  |  First female central bank governor in Cambodia&#x27;s history  |  Permanent Vice-Chair, National Coordination Committee on AML/CFT</span>
-    </div>
-    <div class="leader-row-right">
-      <div class="completeness-display">
-        <div class="completeness-frac">7/7</div>
-        <div class="completeness-sub">dimensions</div>
+</a><a href="leaders.html#chea_serey" style="display:block;text-decoration:none">
+  <div class="leader-row" style="margin-bottom:0">
+    <div class="leader-row-header" style="cursor:pointer">
+      <div class="leader-row-meta">
+        <span class="leader-name">Chea Serey</span>
+        <span class="leader-title-tag">Governor, National Bank of Cambodia  |  First female central bank governor in Cambodia&#x27;s history  |  Permanent Vice-Chair, National Coordination Committee on AML/CFT</span>
+      </div>
+      <div class="leader-row-right">
+        <div class="completeness-display">
+          <div class="completeness-frac">7/7</div>
+          <div class="completeness-sub">dims</div>
+        </div>
       </div>
     </div>
   </div>
-</div><div class="leader-row" style="margin-bottom:0.5rem">
-  <div class="leader-row-header" style="cursor:default">
-    <div class="leader-row-meta">
-      <span class="leader-name">Chea Vandeth</span>
-      <span class="leader-title-tag">Minister of Post and Telecommunications  |  Chair, Digital Government Committee  |  Digital Economy and Society Policy 2021–2035 Architect</span>
-    </div>
-    <div class="leader-row-right">
-      <div class="completeness-display">
-        <div class="completeness-frac">7/7</div>
-        <div class="completeness-sub">dimensions</div>
+</a><a href="leaders.html#chea_vandeth" style="display:block;text-decoration:none">
+  <div class="leader-row" style="margin-bottom:0">
+    <div class="leader-row-header" style="cursor:pointer">
+      <div class="leader-row-meta">
+        <span class="leader-name">Chea Vandeth</span>
+        <span class="leader-title-tag">Minister of Post and Telecommunications  |  Chair, Digital Government Committee  |  Digital Economy and Society Policy 2021–2035 Architect</span>
+      </div>
+      <div class="leader-row-right">
+        <div class="completeness-display">
+          <div class="completeness-frac">7/7</div>
+          <div class="completeness-sub">dims</div>
+        </div>
       </div>
     </div>
   </div>
-</div><div class="leader-row" style="margin-bottom:0.5rem">
-  <div class="leader-row-header" style="cursor:default">
-    <div class="leader-row-meta">
-      <span class="leader-name">Hang Chuon Naron</span>
-      <span class="leader-title-tag">Deputy Prime Minister &amp; Minister of Education, Youth and Sport  |  Vice-Chairman, Supreme National Economic Council</span>
-    </div>
-    <div class="leader-row-right">
-      <div class="completeness-display">
-        <div class="completeness-frac">7/7</div>
-        <div class="completeness-sub">dimensions</div>
+</a><a href="leaders.html#hang_chuon_naron" style="display:block;text-decoration:none">
+  <div class="leader-row" style="margin-bottom:0">
+    <div class="leader-row-header" style="cursor:pointer">
+      <div class="leader-row-meta">
+        <span class="leader-name">Hang Chuon Naron</span>
+        <span class="leader-title-tag">Deputy Prime Minister &amp; Minister of Education, Youth and Sport  |  Vice-Chairman, Supreme National Economic Council</span>
+      </div>
+      <div class="leader-row-right">
+        <div class="completeness-display">
+          <div class="completeness-frac">7/7</div>
+          <div class="completeness-sub">dims</div>
+        </div>
       </div>
     </div>
   </div>
-</div><div class="leader-row" style="margin-bottom:0.5rem">
-  <div class="leader-row-header" style="cursor:default">
-    <div class="leader-row-meta">
-      <span class="leader-name">Hem Vanndy</span>
-      <span class="leader-title-tag">Minister of Industry, Science, Technology and Innovation (MISTI)  |  Chairman, Khmer Enterprise Board of Trustees</span>
-    </div>
-    <div class="leader-row-right">
-      <div class="completeness-display">
-        <div class="completeness-frac">7/7</div>
-        <div class="completeness-sub">dimensions</div>
+</a><a href="leaders.html#hem_vanndy" style="display:block;text-decoration:none">
+  <div class="leader-row" style="margin-bottom:0">
+    <div class="leader-row-header" style="cursor:pointer">
+      <div class="leader-row-meta">
+        <span class="leader-name">Hem Vanndy</span>
+        <span class="leader-title-tag">Minister of Industry, Science, Technology and Innovation (MISTI)  |  Chairman, Khmer Enterprise Board of Trustees</span>
+      </div>
+      <div class="leader-row-right">
+        <div class="completeness-display">
+          <div class="completeness-frac">7/7</div>
+          <div class="completeness-sub">dims</div>
+        </div>
       </div>
     </div>
   </div>
-</div><div class="leader-row" style="margin-bottom:0.5rem">
-  <div class="leader-row-header" style="cursor:default">
-    <div class="leader-row-meta">
-      <span class="leader-name">Hun Manet</span>
-      <span class="leader-title-tag">Prime Minister of Cambodia</span>
-    </div>
-    <div class="leader-row-right">
-      <div class="completeness-display">
-        <div class="completeness-frac">7/7</div>
-        <div class="completeness-sub">dimensions</div>
+</a><a href="leaders.html#hun_manet" style="display:block;text-decoration:none">
+  <div class="leader-row" style="margin-bottom:0">
+    <div class="leader-row-header" style="cursor:pointer">
+      <div class="leader-row-meta">
+        <span class="leader-name">Hun Manet</span>
+        <span class="leader-title-tag">Prime Minister of Cambodia</span>
+      </div>
+      <div class="leader-row-right">
+        <div class="completeness-display">
+          <div class="completeness-frac">7/7</div>
+          <div class="completeness-sub">dims</div>
+        </div>
       </div>
     </div>
   </div>
-</div><div class="leader-row" style="margin-bottom:0.5rem">
-  <div class="leader-row-header" style="cursor:default">
-    <div class="leader-row-meta">
-      <span class="leader-name">Hun Sen</span>
-      <span class="leader-title-tag">President of the Senate; Former Prime Minister of Cambodia (1985–2023)</span>
-    </div>
-    <div class="leader-row-right">
-      <div class="completeness-display">
-        <div class="completeness-frac">7/7</div>
-        <div class="completeness-sub">dimensions</div>
+</a><a href="leaders.html#hun_sen" style="display:block;text-decoration:none">
+  <div class="leader-row" style="margin-bottom:0">
+    <div class="leader-row-header" style="cursor:pointer">
+      <div class="leader-row-meta">
+        <span class="leader-name">Hun Sen</span>
+        <span class="leader-title-tag">President of the Senate; Former Prime Minister of Cambodia (1985–2023)</span>
+      </div>
+      <div class="leader-row-right">
+        <div class="completeness-display">
+          <div class="completeness-frac">7/7</div>
+          <div class="completeness-sub">dims</div>
+        </div>
       </div>
     </div>
   </div>
-</div><div class="leader-row" style="margin-bottom:0.5rem">
-  <div class="leader-row-header" style="cursor:default">
-    <div class="leader-row-meta">
-      <span class="leader-name">Say Sam Al</span>
-      <span class="leader-title-tag">Minister of Environment  |  Son-in-law of Supreme Court Justice Dith Munty  |  Brother of Say Samath (National Bank Deputy Governor)</span>
-    </div>
-    <div class="leader-row-right">
-      <div class="completeness-display">
-        <div class="completeness-frac">7/7</div>
-        <div class="completeness-sub">dimensions</div>
+</a><a href="leaders.html#say_sam_al" style="display:block;text-decoration:none">
+  <div class="leader-row" style="margin-bottom:0">
+    <div class="leader-row-header" style="cursor:pointer">
+      <div class="leader-row-meta">
+        <span class="leader-name">Say Sam Al</span>
+        <span class="leader-title-tag">Minister of Environment  |  Son-in-law of Supreme Court Justice Dith Munty  |  Brother of Say Samath (National Bank Deputy Governor)</span>
+      </div>
+      <div class="leader-row-right">
+        <div class="completeness-display">
+          <div class="completeness-frac">7/7</div>
+          <div class="completeness-sub">dims</div>
+        </div>
       </div>
     </div>
   </div>
-</div><div class="leader-row" style="margin-bottom:0.5rem">
-  <div class="leader-row-header" style="cursor:default">
-    <div class="leader-row-meta">
-      <span class="leader-name">Sok Siphana</span>
-      <span class="leader-title-tag">Senior Minister in charge of Special Missions (Multilateral Trade and Economic Affairs)  |  1st Vice-Chair, Council of Legal Reform  |  Chair, Trade Policy Advisory Board</span>
-    </div>
-    <div class="leader-row-right">
-      <div class="completeness-display">
-        <div class="completeness-frac">7/7</div>
-        <div class="completeness-sub">dimensions</div>
+</a><a href="leaders.html#sok_siphana" style="display:block;text-decoration:none">
+  <div class="leader-row" style="margin-bottom:0">
+    <div class="leader-row-header" style="cursor:pointer">
+      <div class="leader-row-meta">
+        <span class="leader-name">Sok Siphana</span>
+        <span class="leader-title-tag">Senior Minister in charge of Special Missions (Multilateral Trade and Economic Affairs)  |  1st Vice-Chair, Council of Legal Reform  |  Chair, Trade Policy Advisory Board</span>
+      </div>
+      <div class="leader-row-right">
+        <div class="completeness-display">
+          <div class="completeness-frac">7/7</div>
+          <div class="completeness-sub">dims</div>
+        </div>
       </div>
     </div>
   </div>
-</div><div class="leader-row" style="margin-bottom:0.5rem">
-  <div class="leader-row-header" style="cursor:default">
-    <div class="leader-row-meta">
-      <span class="leader-name">Sun Chanthol</span>
-      <span class="leader-title-tag">Deputy Prime Minister  |  First Vice-Chairman, Council for the Development of Cambodia  |  Co-Chair, China-Cambodia Intergovernmental Coordination Committee</span>
-    </div>
-    <div class="leader-row-right">
-      <div class="completeness-display">
-        <div class="completeness-frac">7/7</div>
-        <div class="completeness-sub">dimensions</div>
+</a><a href="leaders.html#sun_chanthol" style="display:block;text-decoration:none">
+  <div class="leader-row" style="margin-bottom:0">
+    <div class="leader-row-header" style="cursor:pointer">
+      <div class="leader-row-meta">
+        <span class="leader-name">Sun Chanthol</span>
+        <span class="leader-title-tag">Deputy Prime Minister  |  First Vice-Chairman, Council for the Development of Cambodia  |  Co-Chair, China-Cambodia Intergovernmental Coordination Committee</span>
+      </div>
+      <div class="leader-row-right">
+        <div class="completeness-display">
+          <div class="completeness-frac">7/7</div>
+          <div class="completeness-sub">dims</div>
+        </div>
       </div>
     </div>
   </div>
-</div>
+</a>
   <div class="index-grid">
-  <a href="leaders.html" class="index-tile" style="display:block">
+  <a href="leaders.html" class="index-tile" style="display:flex">
     <div class="index-tile-label">◈ Leaders</div>
     <div class="index-tile-body">11 decision-maker profiles across 77 documented dimensions.</div>
     <span class="tile-link">View profiles →</span>
   </a>
-  <a href="cases.html" class="index-tile" style="display:block">
+  <a href="cases.html" class="index-tile" style="display:flex">
     <div class="index-tile-label">◈ Historical Cases</div>
     <div class="index-tile-body">9 structural analogues with causal mechanisms and Cambodia-specific lessons.</div>
     <span class="tile-link">View cases →</span>
   </a>
-  <a href="twins.html" class="index-tile" style="display:block">
+  <a href="twins.html" class="index-tile" style="display:flex">
     <div class="index-tile-label">◈ Twin Matches</div>
-    <div class="index-tile-body">10 policy signal matches. Run <code style="font-size:.65rem">twin_matcher.py</code> to populate.</div>
+    <div class="index-tile-body">10 policy signal matches mapping Cambodia signals to historical cases.</div>
     <span class="tile-link">View twins →</span>
+  </a>
+  <a href="conflicts.html" class="index-tile" style="display:flex">
+    <div class="index-tile-label">◈ Conflicts</div>
+    <div class="index-tile-body">14 doctrine contradictions between senior officials detected.</div>
+    <span class="tile-link">View conflicts →</span>
+  </a>
+  <a href="solutions.html" class="index-tile" style="display:flex">
+    <div class="index-tile-label">◈ Solutions</div>
+    <div class="index-tile-body">Risk scenarios matched to historical policy response playbooks.</div>
+    <span class="tile-link">View solutions →</span>
+  </a>
+  <a href="methodology.html" class="index-tile" style="display:flex">
+    <div class="index-tile-label">◈ Methodology</div>
+    <div class="index-tile-body">7-dimension framework, confidence rubric, twin-scoring formula, and source standards.</div>
+    <span class="tile-link">Read methodology →</span>
   </a>
 </div>
 </div>
+
+<script>
+/* #14 — keyboard-accessible accordion */
+function toggleLeader(id, event) {
+  if (event && event.type === 'keydown' && event.key !== 'Enter' && event.key !== ' ') return;
+  if (event && event.type === 'keydown') event.preventDefault();
+  var el = document.getElementById('dim-' + id);
+  var arrow = document.getElementById('arrow-' + id);
+  if (!el) return;
+  var open = el.style.display === 'block';
+  el.style.display = open ? 'none' : 'block';
+  arrow.textContent = open ? '▸' : '▾';
+  /* #50 — persist open state */
+  try {
+    var openSet = JSON.parse(sessionStorage.getItem('openLeaders') || '[]');
+    if (open) { openSet = openSet.filter(function(x){ return x !== id; }); }
+    else if (!openSet.includes(id)) { openSet.push(id); }
+    sessionStorage.setItem('openLeaders', JSON.stringify(openSet));
+  } catch(e) {}
+}
+
+/* #43 — expand-all / collapse-all */
+function expandAll() {
+  document.querySelectorAll('.leader-detail').forEach(function(el) {
+    el.style.display = 'block';
+    var arrow = document.getElementById(el.id.replace('dim-','arrow-'));
+    if (arrow) arrow.textContent = '▾';
+  });
+  try { sessionStorage.setItem('openLeaders', JSON.stringify(
+    Array.from(document.querySelectorAll('.leader-detail')).map(function(el){ return el.id.replace('dim-',''); })
+  )); } catch(e){}
+}
+function collapseAll() {
+  document.querySelectorAll('.leader-detail').forEach(function(el) {
+    el.style.display = 'none';
+    var arrow = document.getElementById(el.id.replace('dim-','arrow-'));
+    if (arrow) arrow.textContent = '▸';
+  });
+  try { sessionStorage.setItem('openLeaders', '[]'); } catch(e){}
+}
+
+/* #50 — restore open state */
+function restoreOpenLeaders() {
+  try {
+    var openSet = JSON.parse(sessionStorage.getItem('openLeaders') || '[]');
+    openSet.forEach(function(id) {
+      var el = document.getElementById('dim-' + id);
+      var arrow = document.getElementById('arrow-' + id);
+      if (el) { el.style.display = 'block'; }
+      if (arrow) { arrow.textContent = '▾'; }
+    });
+  } catch(e) {}
+}
+
+/* #42 — persist case filter in URL hash */
+function filterCases(cat, btn) {
+  document.querySelectorAll('.case-block').forEach(function(el) {
+    el.style.display = (cat === 'ALL' || el.dataset.category === cat) ? '' : 'none';
+  });
+  document.querySelectorAll('.filter-btn').forEach(function(b) {
+    b.classList.toggle('active', b === btn);
+  });
+  try { history.replaceState(null,'', cat === 'ALL' ? location.pathname : '#cat=' + cat); } catch(e){}
+}
+
+/* #37 — filter conflicts by dimension or risk */
+function filterConflicts(val, btn) {
+  document.querySelectorAll('.conflict-block').forEach(function(el) {
+    var match = val === 'ALL' || el.dataset.dim === val || el.dataset.risk === val;
+    el.style.display = match ? '' : 'none';
+  });
+  document.querySelectorAll('.filter-btn').forEach(function(b) {
+    b.classList.toggle('active', b === btn);
+  });
+}
+
+/* #42 — restore filter from URL hash */
+function restoreFilter() {
+  var hash = location.hash;
+  if (hash && hash.startsWith('#cat=')) {
+    var cat = hash.slice(5);
+    var btn = Array.from(document.querySelectorAll('.filter-btn'))
+      .find(function(b){ return b.textContent.trim() === cat; });
+    if (btn) filterCases(cat, btn);
+  }
+}
+
+/* #09 — hamburger menu */
+function toggleMenu() {
+  var btn = document.getElementById('hamburger');
+  var nav = document.getElementById('mobile-nav');
+  if (!btn || !nav) return;
+  btn.classList.toggle('open');
+  nav.classList.toggle('open');
+}
+
+/* #15 — global search */
+function initGlobalSearch() {
+  var input = document.getElementById('global-search');
+  var overlay = document.getElementById('search-overlay');
+  if (!input || !overlay) return;
+
+  var searchIndex = [];
+  document.querySelectorAll('[data-search-item]').forEach(function(el) {
+    searchIndex.push({ text: el.textContent.toLowerCase(), href: el.dataset.href || '#', label: el.dataset.label || el.textContent.trim().slice(0,60), type: el.dataset.type || '' });
+  });
+
+  input.addEventListener('input', function() {
+    var q = this.value.trim().toLowerCase();
+    overlay.innerHTML = '';
+    if (!q || q.length < 2) { overlay.classList.remove('open'); return; }
+    var results = searchIndex.filter(function(r){ return r.text.includes(q); }).slice(0,8);
+    if (!results.length) { overlay.classList.remove('open'); return; }
+    results.forEach(function(r) {
+      var a = document.createElement('a');
+      a.className = 'search-result-item';
+      a.href = r.href;
+      a.innerHTML = '<span class="search-result-type">' + r.type + '</span>' + r.label;
+      overlay.appendChild(a);
+    });
+    overlay.classList.add('open');
+  });
+
+  document.addEventListener('click', function(e) {
+    if (!input.contains(e.target) && !overlay.contains(e.target)) {
+      overlay.classList.remove('open');
+      input.value = '';
+    }
+  });
+
+  input.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') { overlay.classList.remove('open'); input.value = ''; }
+  });
+}
+
+/* #22 — filter leaders by dimension value (e.g. risk) */
+function filterLeadersByDim(dim, btn) {
+  var rows = document.querySelectorAll('.leader-row[data-dims]');
+  rows.forEach(function(row) {
+    var dims = {};
+    try { dims = JSON.parse(row.dataset.dims || '{}'); } catch(e){}
+    var show = !dim || Object.keys(dims).some(function(k){ return dims[k] && dims[k].toLowerCase().includes(dim.toLowerCase()); });
+    row.style.display = show ? '' : 'none';
+  });
+  if (btn) {
+    document.querySelectorAll('.dim-filter-btn').forEach(function(b){ b.classList.remove('active'); });
+    btn.classList.add('active');
+  }
+}
+
+/* #10 — smooth scroll for jump bar */
+function jumpTo(id) {
+  var el = document.getElementById(id);
+  if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+/* page-search on leaders page */
+function initPageSearch() {
+  var input = document.getElementById('site-search');
+  if (!input) return;
+  var targets = document.querySelectorAll('[data-searchable]');
+  input.addEventListener('input', function() {
+    var q = this.value.trim().toLowerCase();
+    if (!q) { targets.forEach(function(el){ el.style.display = ''; }); return; }
+    targets.forEach(function(el) {
+      el.style.display = el.textContent.toLowerCase().includes(q) ? '' : 'none';
+    });
+  });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  restoreOpenLeaders();
+  restoreFilter();
+  initGlobalSearch();
+  initPageSearch();
+});
+</script>
+
 
 <footer class="site-footer">
   <span>PRECEDENT · Cambodia Political Intelligence · v0.2</span>

@@ -5,6 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Solutions — Cambodia Precedent</title>
 <meta name="description" content="Risk mitigation options for Cambodia&#8217;s three major 2029 risk scenarios, matched to historical response playbooks.">
+<meta property="og:title" content="Solutions — Cambodia Precedent">
+<meta property="og:description" content="Risk mitigation options for Cambodia&#8217;s three major 2029 risk scenarios, matched to historical response playbooks.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231c1a17'/%3E%3Ctext x='4' y='24' font-family='serif' font-size='22' fill='%238c5e14'%3EP%3C/text%3E%3C/svg%3E" type="image/svg+xml">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,14 +18,25 @@
       <a href="index.html" class="masthead-wordmark">PRECEDENT</a>
       <span class="masthead-version">v0.2</span>
     </div>
-    <nav class="masthead-nav"><a href="index.html" class="">Index</a><a href="leaders.html" class="">Leaders</a><a href="cases.html" class="">Cases</a><a href="twins.html" class="">Twins</a><a href="conflicts.html" class="">Conflicts</a><a href="solutions.html" class="active">Solutions</a><a href="methodology.html" class="">Methodology</a></nav>
+    <nav class="masthead-nav" aria-label="Main navigation"><a href="index.html" class="">Index</a><a href="leaders.html" class="">Leaders</a><a href="cases.html" class="">Cases</a><a href="twins.html" class="">Twins</a><a href="conflicts.html" class="">Conflicts</a><a href="solutions.html" class="active">Solutions</a><a href="methodology.html" class="">Methodology</a></nav>
     <div class="masthead-meta">Political Intelligence · Cambodia's Decision-Makers</div>
+    <div class="masthead-search">
+      <input id="global-search" class="masthead-search-input" type="search"
+        placeholder="Search…" aria-label="Search site" autocomplete="off">
+      <div id="search-overlay" class="search-results-overlay"></div>
+    </div>
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()"
+      aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
   </div>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation"><a href="index.html" class="">Index</a><a href="leaders.html" class="">Leaders</a><a href="cases.html" class="">Cases</a><a href="twins.html" class="">Twins</a><a href="conflicts.html" class="">Conflicts</a><a href="solutions.html" class="active">Solutions</a><a href="methodology.html" class="">Methodology</a></nav>
 </header>
 <div class="date-strip">
   <span>2026-04-27 · Intelligence Update</span>
   <span>Coverage: Cambodia's senior leadership</span>
 </div>
+<nav class="breadcrumbs" aria-label="breadcrumb"><a href="index.html">Home</a> / Solutions</nav>
 <div class="container">
   <div class="section-label"><span class="section-marker">◈</span>Risk mitigation options</div>
   <h1>Solutions</h1>
@@ -65,7 +80,7 @@
       <th style="font-family:var(--mono);font-size:.58rem;text-transform:uppercase;color:var(--muted);text-align:left;padding:.35rem 0">Cambodia relevance</th>
     </tr>
   </thead>
-  <tbody><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--accent);padding:.5rem .75rem .5rem 0;white-space:nowrap;vertical-align:top">LKA_FISCAL_COLLAPSE_2010_2022</td><td style="font-size:.78rem;padding:.5rem .75rem .5rem 0;vertical-align:top">Sri Lanka 2010-2022</td><td style="font-size:.78rem;padding:.5rem .75rem .5rem 0;vertical-align:top">The Hambantota model — Chinese-financed infrastructure in exchange for political alignment — is structurally fragile when the host country has a narrow revenue base and high import dependency. The lesson for Cambodia is direct: Funan Techo Canal and similar infrastructure is funded on the assumption of continued growth. If the trade preference base (EBA/GSP) erodes while debt service rises, the fiscal arithmetic can deteriorate faster than the political system can respond.</td><td style="font-size:.78rem;padding:.5rem 0;vertical-align:top;color:var(--muted)">Sri Lanka&#x27;s infrastructure debt trap: Chinese-funded Hambantota port → sovereign default</td></tr><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--accent);padding:.5rem .75rem .5rem 0;white-space:nowrap;vertical-align:top">IDN_AFC_RECOVERY_1998</td><td style="font-size:.78rem;padding:.5rem .75rem .5rem 0;vertical-align:top">Indonesia 1997–2003</td><td style="font-size:.78rem;padding:.5rem .75rem .5rem 0;vertical-align:top">Banking sector restructuring post-crisis: decade of NPL reduction and capital adequacy improvement made Indonesia resilient to 2008 global crisis; democratic transition dismantled patronage networks that made financial system fragile</td><td style="font-size:.78rem;padding:.5rem 0;vertical-align:top;color:var(--muted)">Indonesia negotiated IMF bailout with structural reforms after FDI flight crisis</td></tr><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--accent);padding:.5rem .75rem .5rem 0;white-space:nowrap;vertical-align:top">ARG_FISCAL_COLLAPSE_2001</td><td style="font-size:.78rem;padding:.5rem .75rem .5rem 0;vertical-align:top">Argentina 1999–2005</td><td style="font-size:.78rem;padding:.5rem .75rem .5rem 0;vertical-align:top">Abandoning an unsustainable peg decisively rather than defending it with austerity; building primary fiscal surplus post-default; using competitive exchange rate to drive export recovery; negotiating a deep debt haircut that restored debt sustainability</td><td style="font-size:.78rem;padding:.5rem 0;vertical-align:top;color:var(--muted)">Argentina&#x27;s convertibility collapse: austerity-led recession → default → heterodox recovery</td></tr></tbody>
+  <tbody><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--accent);padding:.5rem .75rem .5rem 0;white-space:nowrap;vertical-align:top">LKA_FISCAL_COLLAPSE_2010_2022</td><td style="font-size:.78rem;padding:.5rem .75rem .5rem 0;vertical-align:top">Sri Lanka 2010-2022</td><td style="font-size:.78rem;padding:.5rem .75rem .5rem 0;vertical-align:top">The Hambantota model — Chinese-financed infrastructure in exchange for political alignment — is structurally fragile when the host country has a narrow revenue base and high import dependency. The lesson for Cambodia is direct: Funan Techo Canal and similar infrastructure is funded on the assumption of continued growth. If the trade preference base (EBA/GSP) erodes while debt service rises, the fiscal arithmetic can deteriorate faster than the political system can respond.</td><td style="font-size:.78rem;padding:.5rem 0;vertical-align:top;color:var(--muted)">Sri Lanka&#x27;s infrastructure debt trap: Chinese-funded Hambantota port → sovereign default</td></tr><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--accent);padding:.5rem .75rem .5rem 0;white-space:nowrap;vertical-align:top">IDN_AFC_RECOVERY_1998</td><td style="font-size:.78rem;padding:.5rem .75rem .5rem 0;vertical-align:top">Indonesia 1997–2003</td><td style="font-size:.78rem;padding:.5rem .75rem .5rem 0;vertical-align:top">Banking sector restructuring post-crisis: decade of NPL reduction and capital adequacy improvement made Indonesia resilient to 2008 global crisis; democratic transition dismantled patronage networks that made financial system fragile</td><td style="font-size:.78rem;padding:.5rem 0;vertical-align:top;color:var(--muted)">Cambodia’s banking system shows early warning signs of Indonesia-1997 structural vulnerabilities: CPP-connected networks dominate credit allocation; household debt has grown rapidly (flagged by analysts in 2024); Chinese USD-denominated project financing creates balance sheet exposure. If a Cambodia-specific shock (EBA loss + Chinese FDI pullback) triggers a credit deterioration, the patronage-banking nexus is the amplification mechanism. The IMF lesson is explicit: conditionality that requires dismantling political patronage networks cannot be externally imposed — it requires internal political change.</td></tr><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--accent);padding:.5rem .75rem .5rem 0;white-space:nowrap;vertical-align:top">ARG_FISCAL_COLLAPSE_2001</td><td style="font-size:.78rem;padding:.5rem .75rem .5rem 0;vertical-align:top">Argentina 1999–2005</td><td style="font-size:.78rem;padding:.5rem .75rem .5rem 0;vertical-align:top">Abandoning an unsustainable peg decisively rather than defending it with austerity; building primary fiscal surplus post-default; using competitive exchange rate to drive export recovery; negotiating a deep debt haircut that restored debt sustainability</td><td style="font-size:.78rem;padding:.5rem 0;vertical-align:top;color:var(--muted)">Cambodia is highly dollarised (USD is de facto currency), carries significant Chinese USD-denominated debt, and is pursuing de-dollarisation (Riel/Bakong) while simultaneously planning EBA-transition fiscal adjustments. If EBA loss triggers a revenue shortfall and Cambodia tightens fiscal policy into a slowdown — the Argentine procyclicality trap is the exact risk. The NBC’s de-dollarisation timeline (Riel to 30% of transactions by 2028) and MEF’s USD-denominated budget assumptions may not be simultaneously achievable — this is Cambodia’s version of the convertibility trap.</td></tr></tbody>
 </table>
 </div><div style="margin-bottom:2.5rem;padding:1.5rem;border:1px solid var(--b-dim);background:var(--surface)">
   <div style="display:flex;align-items:flex-start;gap:1rem;margin-bottom:.75rem">
@@ -84,10 +99,188 @@
       <th style="font-family:var(--mono);font-size:.58rem;text-transform:uppercase;color:var(--muted);text-align:left;padding:.35rem 0">Cambodia relevance</th>
     </tr>
   </thead>
-  <tbody><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--accent);padding:.5rem .75rem .5rem 0;white-space:nowrap;vertical-align:top">BGD_RANA_PLAZA_2013</td><td style="font-size:.78rem;padding:.5rem .75rem .5rem 0;vertical-align:top">Bangladesh 2013‘2018</td><td style="font-size:.78rem;padding:.5rem .75rem .5rem 0;vertical-align:top">Legally binding buyer agreements with independent verification and worker complaint mechanisms; minimum wage increase as floor-setting mechanism; public international pressure creating private enforcement that outperformed government regulation</td><td style="font-size:.78rem;padding:.5rem 0;vertical-align:top;color:var(--muted)">Bangladesh post-Rana Plaza: forced reforms improved standards but cost short-term competitiveness</td></tr><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--accent);padding:.5rem .75rem .5rem 0;white-space:nowrap;vertical-align:top">MEX_NAFTA_LABOR_1994</td><td style="font-size:.78rem;padding:.5rem .75rem .5rem 0;vertical-align:top">Mexico 1994–2004</td><td style="font-size:.78rem;padding:.5rem .75rem .5rem 0;vertical-align:top">Trade agreement as FDI magnet: NAFTA’s investment protections and tariff elimination did attract substantial FDI into manufacturing; auto sector in particular developed genuine capabilities over time</td><td style="font-size:.78rem;padding:.5rem 0;vertical-align:top;color:var(--muted)">Mexico used NAFTA side agreements to begin labour reform under trade framework pressure</td></tr><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--accent);padding:.5rem .75rem .5rem 0;white-space:nowrap;vertical-align:top">BGD_GARMENT_2012</td><td style="font-size:.78rem;padding:.5rem .75rem .5rem 0;vertical-align:top">Bangladesh 2005-2020</td><td style="font-size:.78rem;padding:.5rem .75rem .5rem 0;vertical-align:top">Bangladesh demonstrates that sustained growth on a single export pillar is achievable for decades — but the longer it runs, the harder structural transformation becomes. The sector&#x27;s political power grows with its economic share. For Cambodia, the RMG parallel is direct: EBA partial withdrawal in 2020 was the first stress test of a structure Bangladesh faces amplified.</td><td style="font-size:.78rem;padding:.5rem 0;vertical-align:top;color:var(--muted)">Bangladesh pre-Rana Plaza: export concentration trap — 80% garments, no diversification</td></tr></tbody>
+  <tbody><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--accent);padding:.5rem .75rem .5rem 0;white-space:nowrap;vertical-align:top">BGD_RANA_PLAZA_2013</td><td style="font-size:.78rem;padding:.5rem .75rem .5rem 0;vertical-align:top">Bangladesh 2013‘2018</td><td style="font-size:.78rem;padding:.5rem .75rem .5rem 0;vertical-align:top">Legally binding buyer agreements with independent verification and worker complaint mechanisms; minimum wage increase as floor-setting mechanism; public international pressure creating private enforcement that outperformed government regulation</td><td style="font-size:.78rem;padding:.5rem 0;vertical-align:top;color:var(--muted)">Cambodia’s garment sector faces a comparable inflection: EBA graduation removes the EU’s preferential access, but EU buyers often require ILO compliance standards as a condition of continued sourcing. If EBA loss is accompanied by buyer reputational pressure on labour standards — the Rana Plaza pattern applies. Cambodia’s risk is the opposite of Bangladesh’s success scenario: if labour conditions do not improve alongside market access loss, buyers may shift to Bangladesh or Vietnam rather than stay. The GMAC (Garment Manufacturers Association in Cambodia) model of government-industry co-regulation needs a legal bindingness upgrade that it currently lacks.</td></tr><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--accent);padding:.5rem .75rem .5rem 0;white-space:nowrap;vertical-align:top">MEX_NAFTA_LABOR_1994</td><td style="font-size:.78rem;padding:.5rem .75rem .5rem 0;vertical-align:top">Mexico 1994–2004</td><td style="font-size:.78rem;padding:.5rem .75rem .5rem 0;vertical-align:top">Trade agreement as FDI magnet: NAFTA’s investment protections and tariff elimination did attract substantial FDI into manufacturing; auto sector in particular developed genuine capabilities over time</td><td style="font-size:.78rem;padding:.5rem 0;vertical-align:top;color:var(--muted)">Cambodia’s garment sector is structurally analogous to Mexico’s maquiladora model: export-oriented, foreign-owned, low domestic value capture, imported inputs (Chinese fabrics), labour-cost competitive. The Mexico lesson is that this model has an expiry date — it lasts only as long as Cambodia is the cheapest option. When Vietnam or Myanmar undercuts Cambodia’s labour costs, Cambodia faces the same China-shock that Mexico faced in 2001. The 2029 transition window is Cambodia’s equivalent of Mexico’s need to move up the value chain before cost competition eliminated the maquiladora advantage — and Cambodia, like Mexico, has no domestic supply chain policy that would enable the transition.</td></tr><tr><td style="font-family:var(--mono);font-size:.6rem;color:var(--accent);padding:.5rem .75rem .5rem 0;white-space:nowrap;vertical-align:top">BGD_GARMENT_2012</td><td style="font-size:.78rem;padding:.5rem .75rem .5rem 0;vertical-align:top">Bangladesh 2005-2020</td><td style="font-size:.78rem;padding:.5rem .75rem .5rem 0;vertical-align:top">Bangladesh demonstrates that sustained growth on a single export pillar is achievable for decades — but the longer it runs, the harder structural transformation becomes. The sector&#x27;s political power grows with its economic share. For Cambodia, the RMG parallel is direct: EBA partial withdrawal in 2020 was the first stress test of a structure Bangladesh faces amplified.</td><td style="font-size:.78rem;padding:.5rem 0;vertical-align:top;color:var(--muted)">Bangladesh pre-Rana Plaza: export concentration trap — 80% garments, no diversification</td></tr></tbody>
 </table>
 </div>
 </div>
+
+<script>
+/* #14 — keyboard-accessible accordion */
+function toggleLeader(id, event) {
+  if (event && event.type === 'keydown' && event.key !== 'Enter' && event.key !== ' ') return;
+  if (event && event.type === 'keydown') event.preventDefault();
+  var el = document.getElementById('dim-' + id);
+  var arrow = document.getElementById('arrow-' + id);
+  if (!el) return;
+  var open = el.style.display === 'block';
+  el.style.display = open ? 'none' : 'block';
+  arrow.textContent = open ? '▸' : '▾';
+  /* #50 — persist open state */
+  try {
+    var openSet = JSON.parse(sessionStorage.getItem('openLeaders') || '[]');
+    if (open) { openSet = openSet.filter(function(x){ return x !== id; }); }
+    else if (!openSet.includes(id)) { openSet.push(id); }
+    sessionStorage.setItem('openLeaders', JSON.stringify(openSet));
+  } catch(e) {}
+}
+
+/* #43 — expand-all / collapse-all */
+function expandAll() {
+  document.querySelectorAll('.leader-detail').forEach(function(el) {
+    el.style.display = 'block';
+    var arrow = document.getElementById(el.id.replace('dim-','arrow-'));
+    if (arrow) arrow.textContent = '▾';
+  });
+  try { sessionStorage.setItem('openLeaders', JSON.stringify(
+    Array.from(document.querySelectorAll('.leader-detail')).map(function(el){ return el.id.replace('dim-',''); })
+  )); } catch(e){}
+}
+function collapseAll() {
+  document.querySelectorAll('.leader-detail').forEach(function(el) {
+    el.style.display = 'none';
+    var arrow = document.getElementById(el.id.replace('dim-','arrow-'));
+    if (arrow) arrow.textContent = '▸';
+  });
+  try { sessionStorage.setItem('openLeaders', '[]'); } catch(e){}
+}
+
+/* #50 — restore open state */
+function restoreOpenLeaders() {
+  try {
+    var openSet = JSON.parse(sessionStorage.getItem('openLeaders') || '[]');
+    openSet.forEach(function(id) {
+      var el = document.getElementById('dim-' + id);
+      var arrow = document.getElementById('arrow-' + id);
+      if (el) { el.style.display = 'block'; }
+      if (arrow) { arrow.textContent = '▾'; }
+    });
+  } catch(e) {}
+}
+
+/* #42 — persist case filter in URL hash */
+function filterCases(cat, btn) {
+  document.querySelectorAll('.case-block').forEach(function(el) {
+    el.style.display = (cat === 'ALL' || el.dataset.category === cat) ? '' : 'none';
+  });
+  document.querySelectorAll('.filter-btn').forEach(function(b) {
+    b.classList.toggle('active', b === btn);
+  });
+  try { history.replaceState(null,'', cat === 'ALL' ? location.pathname : '#cat=' + cat); } catch(e){}
+}
+
+/* #37 — filter conflicts by dimension or risk */
+function filterConflicts(val, btn) {
+  document.querySelectorAll('.conflict-block').forEach(function(el) {
+    var match = val === 'ALL' || el.dataset.dim === val || el.dataset.risk === val;
+    el.style.display = match ? '' : 'none';
+  });
+  document.querySelectorAll('.filter-btn').forEach(function(b) {
+    b.classList.toggle('active', b === btn);
+  });
+}
+
+/* #42 — restore filter from URL hash */
+function restoreFilter() {
+  var hash = location.hash;
+  if (hash && hash.startsWith('#cat=')) {
+    var cat = hash.slice(5);
+    var btn = Array.from(document.querySelectorAll('.filter-btn'))
+      .find(function(b){ return b.textContent.trim() === cat; });
+    if (btn) filterCases(cat, btn);
+  }
+}
+
+/* #09 — hamburger menu */
+function toggleMenu() {
+  var btn = document.getElementById('hamburger');
+  var nav = document.getElementById('mobile-nav');
+  if (!btn || !nav) return;
+  btn.classList.toggle('open');
+  nav.classList.toggle('open');
+}
+
+/* #15 — global search */
+function initGlobalSearch() {
+  var input = document.getElementById('global-search');
+  var overlay = document.getElementById('search-overlay');
+  if (!input || !overlay) return;
+
+  var searchIndex = [];
+  document.querySelectorAll('[data-search-item]').forEach(function(el) {
+    searchIndex.push({ text: el.textContent.toLowerCase(), href: el.dataset.href || '#', label: el.dataset.label || el.textContent.trim().slice(0,60), type: el.dataset.type || '' });
+  });
+
+  input.addEventListener('input', function() {
+    var q = this.value.trim().toLowerCase();
+    overlay.innerHTML = '';
+    if (!q || q.length < 2) { overlay.classList.remove('open'); return; }
+    var results = searchIndex.filter(function(r){ return r.text.includes(q); }).slice(0,8);
+    if (!results.length) { overlay.classList.remove('open'); return; }
+    results.forEach(function(r) {
+      var a = document.createElement('a');
+      a.className = 'search-result-item';
+      a.href = r.href;
+      a.innerHTML = '<span class="search-result-type">' + r.type + '</span>' + r.label;
+      overlay.appendChild(a);
+    });
+    overlay.classList.add('open');
+  });
+
+  document.addEventListener('click', function(e) {
+    if (!input.contains(e.target) && !overlay.contains(e.target)) {
+      overlay.classList.remove('open');
+      input.value = '';
+    }
+  });
+
+  input.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') { overlay.classList.remove('open'); input.value = ''; }
+  });
+}
+
+/* #22 — filter leaders by dimension value (e.g. risk) */
+function filterLeadersByDim(dim, btn) {
+  var rows = document.querySelectorAll('.leader-row[data-dims]');
+  rows.forEach(function(row) {
+    var dims = {};
+    try { dims = JSON.parse(row.dataset.dims || '{}'); } catch(e){}
+    var show = !dim || Object.keys(dims).some(function(k){ return dims[k] && dims[k].toLowerCase().includes(dim.toLowerCase()); });
+    row.style.display = show ? '' : 'none';
+  });
+  if (btn) {
+    document.querySelectorAll('.dim-filter-btn').forEach(function(b){ b.classList.remove('active'); });
+    btn.classList.add('active');
+  }
+}
+
+/* #10 — smooth scroll for jump bar */
+function jumpTo(id) {
+  var el = document.getElementById(id);
+  if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+/* page-search on leaders page */
+function initPageSearch() {
+  var input = document.getElementById('site-search');
+  if (!input) return;
+  var targets = document.querySelectorAll('[data-searchable]');
+  input.addEventListener('input', function() {
+    var q = this.value.trim().toLowerCase();
+    if (!q) { targets.forEach(function(el){ el.style.display = ''; }); return; }
+    targets.forEach(function(el) {
+      el.style.display = el.textContent.toLowerCase().includes(q) ? '' : 'none';
+    });
+  });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  restoreOpenLeaders();
+  restoreFilter();
+  initGlobalSearch();
+  initPageSearch();
+});
+</script>
+
 
 <footer class="site-footer">
   <span>PRECEDENT · Cambodia Political Intelligence · v0.2</span>
