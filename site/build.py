@@ -22,6 +22,7 @@ from __future__ import annotations
 import argparse
 import html as html_lib
 import json
+import math
 import shutil
 from pathlib import Path
 
@@ -171,17 +172,16 @@ def _dim_completeness(profile: dict) -> tuple[int, int]:
 
 JS_CORE = """
 <script>
-/* #14 — keyboard-accessible accordion */
+/* accordion — max-height transition (animatable, unlike display:none) */
 function toggleLeader(id, event) {
   if (event && event.type === 'keydown' && event.key !== 'Enter' && event.key !== ' ') return;
   if (event && event.type === 'keydown') event.preventDefault();
   var el = document.getElementById('dim-' + id);
   var arrow = document.getElementById('arrow-' + id);
   if (!el) return;
-  var open = el.style.display === 'block';
-  el.style.display = open ? 'none' : 'block';
-  arrow.textContent = open ? '▸' : '▾';
-  /* #50 — persist open state */
+  var open = el.classList.contains('open');
+  el.classList.toggle('open', !open);
+  if (arrow) arrow.textContent = open ? '▸' : '▾';
   try {
     var openSet = JSON.parse(sessionStorage.getItem('openLeaders') || '[]');
     if (open) { openSet = openSet.filter(function(x){ return x !== id; }); }
@@ -190,10 +190,9 @@ function toggleLeader(id, event) {
   } catch(e) {}
 }
 
-/* #43 — expand-all / collapse-all */
 function expandAll() {
   document.querySelectorAll('.leader-detail').forEach(function(el) {
-    el.style.display = 'block';
+    el.classList.add('open');
     var arrow = document.getElementById(el.id.replace('dim-','arrow-'));
     if (arrow) arrow.textContent = '▾';
   });
@@ -203,22 +202,21 @@ function expandAll() {
 }
 function collapseAll() {
   document.querySelectorAll('.leader-detail').forEach(function(el) {
-    el.style.display = 'none';
+    el.classList.remove('open');
     var arrow = document.getElementById(el.id.replace('dim-','arrow-'));
     if (arrow) arrow.textContent = '▸';
   });
   try { sessionStorage.setItem('openLeaders', '[]'); } catch(e){}
 }
 
-/* #50 — restore open state */
 function restoreOpenLeaders() {
   try {
     var openSet = JSON.parse(sessionStorage.getItem('openLeaders') || '[]');
     openSet.forEach(function(id) {
       var el = document.getElementById('dim-' + id);
       var arrow = document.getElementById('arrow-' + id);
-      if (el) { el.style.display = 'block'; }
-      if (arrow) { arrow.textContent = '▾'; }
+      if (el) el.classList.add('open');
+      if (arrow) arrow.textContent = '▾';
     });
   } catch(e) {}
 }
@@ -388,16 +386,16 @@ def _page(title: str, active: str, body: str, extra_js: str = "",
     )
     meta_desc = _META_DESCRIPTIONS.get(active, f"{title} — {SITE_TITLE}")
     full_title = (
-        "Cambodia Political Intelligence — Precedent" if active == "index"
-        else f"{title} — Cambodia Precedent"
+        "Precedent — Cambodia Political Intelligence" if active == "index"
+        else f"{title} — Precedent"
     )
     # #13 — breadcrumbs
     bc_html = ""
     if breadcrumb:
         bc_html = f'<nav class="breadcrumbs" aria-label="breadcrumb">{breadcrumb}</nav>'
-    # #47 — OG meta tags
     og_title = html_lib.escape(full_title)
     og_desc  = meta_desc
+    og_image = "https://thanen-dev.github.io/Precedent/og-image.png"
     # #49 — favicon inline SVG data URI
     favicon_svg = (
         "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E"
@@ -416,6 +414,7 @@ def _page(title: str, active: str, body: str, extra_js: str = "",
 <meta property="og:title" content="{og_title}">
 <meta property="og:description" content="{og_desc}">
 <meta property="og:type" content="website">
+<meta property="og:image" content="{og_image}">
 <link rel="icon" href="{favicon_svg}" type="image/svg+xml">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -424,10 +423,9 @@ def _page(title: str, active: str, body: str, extra_js: str = "",
   <div class="masthead-inner">
     <div class="masthead-brand">
       <a href="index.html" class="masthead-wordmark">{SITE_TITLE}</a>
-      <span class="masthead-version">v0.2</span>
     </div>
     <nav class="masthead-nav" aria-label="Main navigation">{nav}</nav>
-    <div class="masthead-meta">Political Intelligence · Cambodia's Decision-Makers</div>
+    <div class="masthead-meta">Updated {_BUILD_DATE}</div>
     <div class="masthead-search">
       <input id="global-search" class="masthead-search-input" type="search"
         placeholder="Search…" aria-label="Search site" autocomplete="off">
@@ -441,16 +439,38 @@ def _page(title: str, active: str, body: str, extra_js: str = "",
   <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">{mobile_nav}</nav>
 </header>
 <div class="date-strip">
-  <span>{_BUILD_DATE} · Intelligence Update</span>
-  <span>Coverage: Cambodia's senior leadership</span>
+  <span>Cambodia Intelligence Brief · {_BUILD_DATE}</span>
+  <span>11 leaders · 9 cases · 14 conflicts</span>
 </div>
 {bc_html}
 {body}
 {JS_CORE}
 {extra_js}
 <footer class="site-footer">
-  <span>{SITE_TITLE} · Cambodia Political Intelligence · v0.2</span>
-  <span>Data updated: {_BUILD_DATE}</span>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="footer-wordmark">PRECEDENT</span>
+      <p class="footer-about">Political intelligence mapping the doctrine of Cambodia's senior leadership — extracting decision logic from primary sources and matching it against historical structural analogues.</p>
+    </div>
+    <nav class="footer-nav" aria-label="Site navigation">
+      <div class="footer-nav-col">
+        <div class="footer-nav-head">Intelligence</div>
+        <a href="leaders.html">Leaders</a>
+        <a href="conflicts.html">Conflicts</a>
+        <a href="twins.html">Twin Matches</a>
+        <a href="cases.html">Case Library</a>
+      </div>
+      <div class="footer-nav-col">
+        <div class="footer-nav-head">Context</div>
+        <a href="solutions.html">Solutions</a>
+        <a href="methodology.html">Methodology</a>
+        <a href="index.html">Overview</a>
+      </div>
+    </nav>
+  </div>
+  <div class="footer-base">
+    <span>Data updated {_BUILD_DATE} · Sources: official speeches, NBC publications, government policy documents</span>
+  </div>
 </footer>
 </body>
 </html>"""
@@ -476,20 +496,7 @@ def build_index(leaders, cases, twins, conflicts) -> str:
     total_twins = sum(len(t.get("matches", [])) for t in twins)
     total_dims = sum(_dim_completeness(p)[0] for p in leaders)
 
-    def stat_cell(val, label):
-        if val == 0:
-            return ""
-        return f'<div class="stat-cell"><div class="stat-value">{val}</div><div class="stat-label">{label}</div></div>'
-
-    stats = f"""<div class="stat-row">
-  {stat_cell(len(leaders), "Leaders profiled")}
-  {stat_cell(total_dims, "Dimensions populated")}
-  {stat_cell(len(cases), "Historical cases")}
-  {stat_cell(total_twins, "Twin analyses")}
-  {stat_cell(total_conflicts, "Conflicts detected")}
-</div>"""
-
-    # #35 — 3-bullet executive summary
+    # 3-bullet executive summary
     best_twin_text = ""
     if twins:
         for t in twins:
@@ -580,22 +587,54 @@ def build_index(leaders, cases, twins, conflicts) -> str:
   </a>
 </div>"""
 
-    body = f"""<div class="container">
-  <div class="section-label"><span class="section-marker">◈</span>Intelligence overview</div>
-  <h1>Cambodia's Operating Doctrine</h1>
-  <p class="about-text prose" style="margin-bottom:2rem">
-    Precedent maps how Cambodia&#8217;s {len(leaders)} key decision-makers actually reason &#8212;
-    extracting doctrine from primary sources and matching their choices against
-    historical cases where similar logic was tried and failed.
-    By 2029, Cambodia faces EBA preference loss, Chinese FDI concentration risk,
-    and a garment sector labour squeeze.
-  </p>
+    body = f"""<div class="index-hero">
+  <div class="index-hero-inner">
+    <div class="index-hero-eyebrow">Cambodia Political Intelligence</div>
+    <h1 class="index-hero-headline">Who holds power.<br>How they think.<br>What comes next.</h1>
+    <p class="index-hero-sub">
+      Precedent extracts the decision logic of Cambodia&#8217;s {len(leaders)} senior officials
+      from primary sources — speeches, policy documents, and official statements —
+      and matches their positions against {len(cases)} historical structural analogues.
+      By 2029, Cambodia faces three converging risk scenarios that no single leader&#8217;s
+      stated doctrine resolves.
+    </p>
+    <div class="index-hero-cta">
+      <a href="leaders.html" class="btn-primary">Read the profiles</a>
+      <a href="methodology.html" class="btn-ghost">How this works</a>
+    </div>
+    <div class="index-hero-stats">
+      <div class="hero-stat"><span class="hero-stat-val">{len(leaders)}</span><span class="hero-stat-label">Leaders profiled</span></div>
+      <div class="hero-stat"><span class="hero-stat-val">{len(cases)}</span><span class="hero-stat-label">Historical cases</span></div>
+      <div class="hero-stat"><span class="hero-stat-val">{total_twins}</span><span class="hero-stat-label">Twin analyses</span></div>
+      <div class="hero-stat"><span class="hero-stat-val">{total_conflicts}</span><span class="hero-stat-label">Conflicts detected</span></div>
+    </div>
+  </div>
+</div>
+<div class="container">
   {exec_html}
   {reading_html}
-  {stats}
   <div class="section-label" style="margin-top:2rem;margin-bottom:1rem"><span class="section-marker">◈</span>Leaders</div>
   {leader_rows}
   {tiles}
+  <div class="about-block">
+    <div class="about-block-label">◈ About this project</div>
+    <div class="about-block-body">
+      <p>Precedent is an open-source political intelligence system built to map how Cambodia&#8217;s
+      senior leadership actually reasons — not what officials say in press releases, but the
+      underlying doctrine revealed through patterns of policy choice, institutional preference,
+      and response to structural pressure.</p>
+      <p>Each leader profile extracts seven analytical dimensions: growth model, time horizon,
+      institutional vs. relationship logic, dependency assumptions, global positioning,
+      risk tolerance, and consistency. Every field requires a primary source URL, an exact
+      quote, a date, and a confidence score. Unsourced positions are left blank.</p>
+      <p>Twin matching compares Cambodia&#8217;s current policy signals against historical cases
+      using five structural dimensions. Conflict detection compares leader positions
+      pairwise to identify doctrines that cannot coexist in a single coherent government policy.</p>
+      <p class="about-sources">Sources: official speeches and press releases, National Bank of Cambodia publications,
+      Royal Government policy documents, ASEAN summit statements, and World Bank / IMF
+      Article IV materials. Data extracted via Claude (Anthropic) with human review.</p>
+    </div>
+  </div>
 </div>"""
     return _page("Overview", "index", body)
 
@@ -605,7 +644,7 @@ def build_index(leaders, cases, twins, conflicts) -> str:
 def _conf_ring(pct: int) -> str:
     """#19 — SVG arc ring for confidence score."""
     r, cx, cy, size = 10, 12, 12, 24
-    circumference = 2 * 3.14159 * r
+    circumference = 2 * math.pi * r
     dash = circumference * pct / 100
     return (
         f'<svg class="conf-ring" width="{size}" height="{size}" viewBox="0 0 24 24" aria-hidden="true">'
@@ -775,7 +814,6 @@ def _radar_chart(dims: dict, dim_keys: tuple) -> str:
         scores.append(c if c is not None else 0.0)
 
     cx, cy, R, r_min = 90, 90, 70, 10
-    import math
     def pt(i, val):
         angle = math.pi / 2 - 2 * math.pi * i / n
         rv = r_min + val * (R - r_min)
@@ -995,6 +1033,19 @@ _CATEGORY_MAP = {
     "regulatory_shock":             "REGULATORY",
 }
 
+# Human-readable display names for case IDs (#7, #35)
+_CASE_DISPLAY = {
+    "VNM_WTO_2007":               "Vietnam WTO Accession 2007",
+    "MUS_EPZ_1970_1995":          "Mauritius EPZ 1970–1995",
+    "BGD_GARMENT_2012":           "Bangladesh Garment 2005–2020",
+    "LKA_FISCAL_COLLAPSE_2010_2022": "Sri Lanka Debt Collapse 2010–2022",
+    "HND_CAFTA_POST_2005":        "Honduras CAFTA 2005–2018",
+    "ARG_FISCAL_COLLAPSE_2001":   "Argentina Convertibility 1999–2005",
+    "IDN_AFC_RECOVERY_1998":      "Indonesia AFC Recovery 1997–2003",
+    "BGD_RANA_PLAZA_2013":        "Bangladesh Rana Plaza 2013–2018",
+    "MEX_NAFTA_LABOR_1994":       "Mexico NAFTA Labour 1994–2004",
+}
+
 
 def build_cases(cases: list[dict]) -> str:
     if not cases:
@@ -1046,7 +1097,7 @@ def build_cases(cases: list[dict]) -> str:
         outcome_rows = "".join(
             f"<tr>"
             f'<td style="font-family:var(--mono);font-size:.58rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;padding:.3rem .75rem .3rem 0;white-space:nowrap">{e(k.replace("_"," "))}</td>'
-            f'<td style="font-size:.78rem;padding:.3rem 0">{e(v)}</td>'
+            f'<td style="font-size:.78rem;padding:.3rem 0">{e(v) if isinstance(v, str) else e(json.dumps(v) if isinstance(v, (dict,list)) else str(v))}</td>'
             f"</tr>"
             for k, v in outcomes.items()
         )
@@ -1056,7 +1107,17 @@ def build_cases(cases: list[dict]) -> str:
             if outcome_rows else ""
         )
 
-        mechanisms = case.get("causal_mechanisms", [])
+        mechanisms_raw = case.get("causal_mechanisms", [])
+        if isinstance(mechanisms_raw, dict):
+            # flatten confirmed + contested lists into one
+            mechanisms = []
+            for v in mechanisms_raw.values():
+                if isinstance(v, list):
+                    mechanisms.extend(str(x) for x in v if x)
+                elif isinstance(v, str) and v:
+                    mechanisms.append(v)
+        else:
+            mechanisms = [m for m in mechanisms_raw if m]
         mech_items = "".join(f"<li>{e(m)}</li>" for m in mechanisms)
         mech_html = (
             f'<div class="case-mechanisms">'
@@ -1079,10 +1140,11 @@ def build_cases(cases: list[dict]) -> str:
         ) if sp else ""
         sp_html = f'<div style="padding:.75rem 1.5rem;border-top:1px solid var(--b-dim)">{sp_pills}</div>' if sp_pills else ""
 
+        display_name = _CASE_DISPLAY.get(cid, cid.replace("_", " ").title())
         cards += f"""<div class="case-block" id="{html_lib.escape(cid)}" data-category="{html_lib.escape(cat_display)}">
   <div class="case-head">
     <div>
-      <div class="case-id-label">{html_lib.escape(cid)}</div>
+      <div class="case-id-label" title="{html_lib.escape(cid)}">{html_lib.escape(display_name)}</div>
       <div class="case-country">{country}</div>
       <div class="case-period-tag">{period}</div>
     </div>
@@ -1307,7 +1369,7 @@ def build_conflicts(conflicts: list[dict]) -> str:
     all_risks: list[str] = []
     for comp in conflicts:
         for cf in comp.get("conflicts", []):
-            d = cf.get("dimension", "").upper().replace("_", " ")
+            d = cf.get("dimension", "").replace("_", " ").title()
             r = cf.get("implementation_risk", "MEDIUM").upper()
             if d and d not in all_dims:
                 all_dims.append(d)
@@ -1315,7 +1377,7 @@ def build_conflicts(conflicts: list[dict]) -> str:
                 all_risks.append(r)
 
     dim_btns = "".join(
-        f'<button class="filter-btn" onclick="filterConflicts(\'{d}\',this)">{d}</button>'
+        f'<button class="filter-btn" data-dim-val="{html_lib.escape(d)}" onclick="filterConflicts(\'{html_lib.escape(d)}\',this)">{html_lib.escape(d)}</button>'
         for d in sorted(all_dims)
     )
     risk_btns = "".join(
@@ -1336,7 +1398,7 @@ def build_conflicts(conflicts: list[dict]) -> str:
         date = e(comp.get("analysis_date", ""))
         for cf in comp.get("conflicts", []):
             dim_raw = cf.get("dimension", "")
-            dim     = e(dim_raw).upper().replace("_", " ")
+            dim     = dim_raw.replace("_", " ").title()
             risk    = cf.get("implementation_risk", "MEDIUM").upper()
             la      = e(cf.get("leader_a", ""))
             la_pos  = e(cf.get("leader_a_position", ""))

@@ -3,11 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Twins — Cambodia Precedent</title>
+<title>Twins — Precedent</title>
 <meta name="description" content="Historical twin matches for Cambodia policy signals — structural similarity scoring across 5 dimensions.">
-<meta property="og:title" content="Twins — Cambodia Precedent">
+<meta property="og:title" content="Twins — Precedent">
 <meta property="og:description" content="Historical twin matches for Cambodia policy signals — structural similarity scoring across 5 dimensions.">
 <meta property="og:type" content="website">
+<meta property="og:image" content="https://thanen-dev.github.io/Precedent/og-image.png">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231c1a17'/%3E%3Ctext x='4' y='24' font-family='serif' font-size='22' fill='%238c5e14'%3EP%3C/text%3E%3C/svg%3E" type="image/svg+xml">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -16,10 +17,9 @@
   <div class="masthead-inner">
     <div class="masthead-brand">
       <a href="index.html" class="masthead-wordmark">PRECEDENT</a>
-      <span class="masthead-version">v0.2</span>
     </div>
     <nav class="masthead-nav" aria-label="Main navigation"><a href="index.html" class="">Index</a><a href="leaders.html" class="">Leaders</a><a href="cases.html" class="">Cases</a><a href="twins.html" class="active">Twins</a><a href="conflicts.html" class="">Conflicts</a><a href="solutions.html" class="">Solutions</a><a href="methodology.html" class="">Methodology</a></nav>
-    <div class="masthead-meta">Political Intelligence · Cambodia's Decision-Makers</div>
+    <div class="masthead-meta">Updated 2026-04-27</div>
     <div class="masthead-search">
       <input id="global-search" class="masthead-search-input" type="search"
         placeholder="Search…" aria-label="Search site" autocomplete="off">
@@ -33,8 +33,8 @@
   <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation"><a href="index.html" class="">Index</a><a href="leaders.html" class="">Leaders</a><a href="cases.html" class="">Cases</a><a href="twins.html" class="active">Twins</a><a href="conflicts.html" class="">Conflicts</a><a href="solutions.html" class="">Solutions</a><a href="methodology.html" class="">Methodology</a></nav>
 </header>
 <div class="date-strip">
-  <span>2026-04-27 · Intelligence Update</span>
-  <span>Coverage: Cambodia's senior leadership</span>
+  <span>Cambodia Intelligence Brief · 2026-04-27</span>
+  <span>11 leaders · 9 cases · 14 conflicts</span>
 </div>
 <nav class="breadcrumbs" aria-label="breadcrumb"><a href="index.html">Home</a> / Twin Matches</nav>
 <div class="container">
@@ -164,17 +164,16 @@
 </div>
 
 <script>
-/* #14 — keyboard-accessible accordion */
+/* accordion — max-height transition (animatable, unlike display:none) */
 function toggleLeader(id, event) {
   if (event && event.type === 'keydown' && event.key !== 'Enter' && event.key !== ' ') return;
   if (event && event.type === 'keydown') event.preventDefault();
   var el = document.getElementById('dim-' + id);
   var arrow = document.getElementById('arrow-' + id);
   if (!el) return;
-  var open = el.style.display === 'block';
-  el.style.display = open ? 'none' : 'block';
-  arrow.textContent = open ? '▸' : '▾';
-  /* #50 — persist open state */
+  var open = el.classList.contains('open');
+  el.classList.toggle('open', !open);
+  if (arrow) arrow.textContent = open ? '▸' : '▾';
   try {
     var openSet = JSON.parse(sessionStorage.getItem('openLeaders') || '[]');
     if (open) { openSet = openSet.filter(function(x){ return x !== id; }); }
@@ -183,10 +182,9 @@ function toggleLeader(id, event) {
   } catch(e) {}
 }
 
-/* #43 — expand-all / collapse-all */
 function expandAll() {
   document.querySelectorAll('.leader-detail').forEach(function(el) {
-    el.style.display = 'block';
+    el.classList.add('open');
     var arrow = document.getElementById(el.id.replace('dim-','arrow-'));
     if (arrow) arrow.textContent = '▾';
   });
@@ -196,22 +194,21 @@ function expandAll() {
 }
 function collapseAll() {
   document.querySelectorAll('.leader-detail').forEach(function(el) {
-    el.style.display = 'none';
+    el.classList.remove('open');
     var arrow = document.getElementById(el.id.replace('dim-','arrow-'));
     if (arrow) arrow.textContent = '▸';
   });
   try { sessionStorage.setItem('openLeaders', '[]'); } catch(e){}
 }
 
-/* #50 — restore open state */
 function restoreOpenLeaders() {
   try {
     var openSet = JSON.parse(sessionStorage.getItem('openLeaders') || '[]');
     openSet.forEach(function(id) {
       var el = document.getElementById('dim-' + id);
       var arrow = document.getElementById('arrow-' + id);
-      if (el) { el.style.display = 'block'; }
-      if (arrow) { arrow.textContent = '▾'; }
+      if (el) el.classList.add('open');
+      if (arrow) arrow.textContent = '▾';
     });
   } catch(e) {}
 }
@@ -342,8 +339,30 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 <footer class="site-footer">
-  <span>PRECEDENT · Cambodia Political Intelligence · v0.2</span>
-  <span>Data updated: 2026-04-27</span>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="footer-wordmark">PRECEDENT</span>
+      <p class="footer-about">Political intelligence mapping the doctrine of Cambodia's senior leadership — extracting decision logic from primary sources and matching it against historical structural analogues.</p>
+    </div>
+    <nav class="footer-nav" aria-label="Site navigation">
+      <div class="footer-nav-col">
+        <div class="footer-nav-head">Intelligence</div>
+        <a href="leaders.html">Leaders</a>
+        <a href="conflicts.html">Conflicts</a>
+        <a href="twins.html">Twin Matches</a>
+        <a href="cases.html">Case Library</a>
+      </div>
+      <div class="footer-nav-col">
+        <div class="footer-nav-head">Context</div>
+        <a href="solutions.html">Solutions</a>
+        <a href="methodology.html">Methodology</a>
+        <a href="index.html">Overview</a>
+      </div>
+    </nav>
+  </div>
+  <div class="footer-base">
+    <span>Data updated 2026-04-27 · Sources: official speeches, NBC publications, government policy documents</span>
+  </div>
 </footer>
 </body>
 </html>
