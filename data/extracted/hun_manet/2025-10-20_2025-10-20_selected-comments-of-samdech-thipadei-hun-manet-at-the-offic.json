@@ -1,0 +1,81 @@
+{
+  "_meta": {
+    "leader_id": "hun_manet",
+    "source_file": "2025-10-20_selected-comments-of-samdech-thipadei-hun-manet-at-the-offic.json",
+    "source_url": "https://pressocm.gov.kh/en/archives/117348",
+    "source_date": "2025-10-20",
+    "extracted_on": "2026-05-03",
+    "fields_found": [
+      "growth_theory",
+      "risk_tolerance",
+      "time_horizon",
+      "dependency_assumptions",
+      "institution_vs_relationship",
+      "global_positioning_logic",
+      "consistency_score"
+    ]
+  },
+  "growth_theory": {
+    "value": "State-led infrastructure development through public-private partnerships with retained Cambodian control; diversification into logistics hubs and industrial zones to drive employment and competitiveness.",
+    "source": {
+      "url": "https://pressocm.gov.kh/en/archives/117348",
+      "date": "2025-10-20",
+      "quote": "this investment project is 100 percent Cambodian […] built by 90 percent Cambodian architects, engineers and builders […] The construction is not yet complete. There are 2,000 hectares of land area left […] to develop it into an industrial area, a residential area, and other job/occupation creation areas",
+      "confidence": 0.85
+    }
+  },
+  "risk_tolerance": {
+    "value": "Measured risk acceptance with emphasis on incremental pilots and learning-by-doing; preference for testing logistics reforms before full rollout; willingness to engage border conflict with de-escalation rather than aggressive escalation.",
+    "source": {
+      "url": "https://pressocm.gov.kh/en/archives/117348",
+      "date": "2025-10-20",
+      "quote": "We are trying a pilot the project here. Customs procedures in other places already exist, but we cannot change them all at once. We are reforming […] Whenever a situation is about to explode, we have contacted the IOT, with the ASEAN Chairman […] to immediately mediate",
+      "confidence": 0.75
+    }
+  },
+  "time_horizon": {
+    "value": "Dual temporal framing: 15–20 year development vision for TIA and surrounding zones; simultaneous short-term crisis management on border (ceasefire maintenance); long-term regional peace architecture under Trump presidency.",
+    "source": {
+      "url": "https://pressocm.gov.kh/en/archives/117348",
+      "date": "2025-10-20",
+      "quote": "In the next 15 to 20 years, this place will change even more […] this 3-pronged approach was not achieved by chance, but through active work until we reached a ceasefire, until the JBC and RBC can talk, until we had a plan for peace talks under the presidency of His Excellency Donald Trump",
+      "confidence": 0.8
+    }
+  },
+  "dependency_assumptions": {
+    "value": "Heavy reliance on international mediation (ASEAN, Trump, ICRC, France, UN) for border conflict resolution; dependence on multinational expertise (Canada, UK, Singapore, South Korea, China, Netherlands, Vietnam) for airport design and management; assumed stability of ceasefire mechanisms.",
+    "source": {
+      "url": "https://pressocm.gov.kh/en/archives/117348",
+      "date": "2025-10-20",
+      "quote": "Wherever possible. This place has a favorable location and a wide area […] multinational participation, including Canada, England, Singapore, South Korea, China, the Netherlands, and Vietnam, from the design stage to construction and to management […] when the fighting broke out, they immediately convened a meeting",
+      "confidence": 0.82
+    }
+  },
+  "institution_vs_relationship": {
+    "value": "Hybrid governance: formal institutional mechanisms (JBC, RBC, border committees, international law) paired with relationship-based diplomacy (personal mediation by regional leaders); emphasis on rules-based ASEAN frameworks but executed through high-level bilateral/multilateral political relationships.",
+    "source": {
+      "url": "https://pressocm.gov.kh/en/archives/117348",
+      "date": "2025-10-20",
+      "quote": "It is to resolve it according to the principles that other ASEAN countries (have) done together, which is through a border committee, international law, treaties, conventions […] His Excellency Anwar Ibrahim, Prime Minister of Malaysia, who has been actively working to initiate a ceasefire since the July 24th",
+      "confidence": 0.78
+    }
+  },
+  "global_positioning_logic": {
+    "value": "ASEAN-centric regional order with active leverage of great-power mediation (US, China, France); positioning Cambodia as rules-respecting member state seeking peaceful dispute resolution within established frameworks; implicit alignment with internationalist bloc against unilateralist conflict escalation.",
+    "source": {
+      "url": "https://pressocm.gov.kh/en/archives/117348",
+      "date": "2025-10-20",
+      "quote": "Very few among the 10 ASEAN countries that do not have border problems with neighboring countries […] the choice to resolve them is through peaceful means i.e., talking (with each other) […] Thank you to the major leaders, including His Excellency the French President Emmanuel Macron and many other leaders, His Excellency UN Secretary-General António Guterres",
+      "confidence": 0.8
+    }
+  },
+  "consistency_score": {
+    "value": "High consistency between stated commitment to peaceful resolution and revealed behavior (ceasefire acceptance, international mediation engagement, silence on land disputes); gap between domestic rhetoric emphasizing government support for soldiers and public information restraint on military details.",
+    "source": {
+      "url": "https://pressocm.gov.kh/en/archives/117348",
+      "date": "2025-10-20",
+      "quote": "The Royal Government wants to end the conflict so that the situation can return to normal […] We have been quiet but not idle, not abandoning the people, not abandoning the nation, and we will continue to work to protect the national interests […] I have been quiet for the last two months. This is for another two more months",
+      "confidence": 0.72
+    }
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "_meta": {
+    "leader_id": "hun_manet",
+    "source_file": "2026-03-04_opening-remarks-by-samdech-moha-borvor-thipadei-hun-manet-at.json",
+    "source_url": "https://pressocm.gov.kh/en/archives/120949",
+    "source_date": "2026-03-04",
+    "extracted_on": "2026-05-03",
+    "fields_found": [
+      "growth_theory",
+      "risk_tolerance",
+      "time_horizon",
+      "dependency_assumptions",
+      "institution_vs_relationship",
+      "global_positioning_logic",
+      "consistency_score"
+    ]
+  },
+  "growth_theory": {
+    "value": "High-value manufacturing and diversified sectoral growth driven by regional integration, digital infrastructure, and foreign direct investment; transition from low-cost garments to green manufacturing, semiconductors, automotive, and agro-industry.",
+    "source": {
+      "url": "https://pressocm.gov.kh/en/archives/120949",
+      "date": "2026-03-04",
+      "quote": "Cambodia is evolving beyond low-cost production to become ASEAN's Green Manufacturing Hub... The capital is shifting rapidly from garments toward high-end manufacturing, agro-industry, and infrastructure.",
+      "confidence": 0.95
+    }
+  },
+  "risk_tolerance": {
+    "value": "Moderate risk appetite; emphasizes stability and predictability as competitive advantages while aggressively pursuing market diversification and sectoral pivot away from garments.",
+    "source": {
+      "url": "https://pressocm.gov.kh/en/archives/120949",
+      "date": "2026-03-04",
+      "quote": "We have worked deliberately to create a secure and predictable operating environment that minimizes jurisdictional risk... Cambodia offers a compelling strategic advantage for global investors, grounded in political stability, macroeconomic resilience.",
+      "confidence": 0.85
+    }
+  },
+  "time_horizon": {
+    "value": "Dual horizon: 25-year Pentagonal Strategy framing with ASEAN Community Vision 2045 as long-term anchor; medium-term operationalization through AEC Strategic Plan 2026–2030 and sectoral programs through 2028.",
+    "source": {
+      "url": "https://pressocm.gov.kh/en/archives/120949",
+      "date": "2026-03-04",
+      "quote": "a comprehensive 25-year roadmap to achieve the 2025 Vision... The AEC Strategic Plan 2026–2030 represents our collective operational response... the Royal Government launched the 'Special Program to Promote Investment in the Four Northeastern Provinces (2025–2028)'",
+      "confidence": 0.9
+    }
+  },
+  "dependency_assumptions": {
+    "value": "Implicit dependence on sustained FDI inflows, global supply chain diversification demand, and preferential market access via FTAs and CPTPP; vulnerable to global fragmentation and geopolitical disruption despite stated resilience.",
+    "source": {
+      "url": "https://pressocm.gov.kh/en/archives/120949",
+      "date": "2026-03-04",
+      "quote": "For global firms looking to diversify their supply chains, ASEAN is no longer just an 'alternative' destination; it is the strategic center of gravity for sustainable, long-term growth... the world today faces mounting global challenges, including economic uncertainty, climate change, supply chain disruptions, and rising geopolitical tensions.",
+      "confidence": 0.8
+    }
+  },
+  "institution_vs_relationship": {
+    "value": "Rules-based institutional framework with formalized mechanisms (Government-Private Sector Forum, inter-ministerial working groups, digitized regulatory environment, WTO integration); relationship-based elements through strategic partnerships and personalized sector dialogues.",
+    "source": {
+      "url": "https://pressocm.gov.kh/en/archives/120949",
+      "date": "2026-03-04",
+      "quote": "The Government-Private Sector Forum (G-PSF), which celebrated its 25th anniversary in 2025 as one of the region's most effective public-private consultation mechanisms... fully digitized the regulatory and approval environment... an inter-ministerial working group with over 100 members from 30 relevant ministries.",
+      "confidence": 0.85
+    }
+  },
+  "global_positioning_logic": {
+    "value": "Strategic hedging via multilateral integration (ASEAN, WTO, CPTPP candidacy, Mekong-Lancang Cooperation) while maintaining open economy status and balanced engagement with both United States and China.",
+    "source": {
+      "url": "https://pressocm.gov.kh/en/archives/120949",
+      "date": "2026-03-04",
+      "quote": "As an open economy and active member of the World Trade Organization, Cambodia is deeply integrated into the global trading system. The country is actively and proactively promoting trade with key partners such as the United States and the China. In addition, Cambodia is advancing negotiations to join the Comprehensive and Progressive Agreement for Trans-Pacific Partnership (CPTPP).",
+      "confidence": 0.9
+    }
+  },
+  "consistency_score": {
+    "value": "High consistency between stated pro-business liberalization (100% foreign ownership, 15-year tax holidays, digitized approvals) and revealed priority investment in infrastructure and selective sector targeting; tension between resilience rhetoric and continued FDI-dependent growth model.",
+    "source": {
+      "url": "https://pressocm.gov.kh/en/archives/120949",
+      "date": "2026-03-04",
+      "quote": "the Royal Government of Cambodia offers 100% foreign ownership and has fully digitized the regulatory and approval environment... competitive fiscal incentives, including tax holidays of up to 15 years for designated priority sectors... While global FDI flows saw an 11% contraction, inflows to ASEAN rose by 8.5%.",
+      "confidence": 0.8
+    }
+  }
+}

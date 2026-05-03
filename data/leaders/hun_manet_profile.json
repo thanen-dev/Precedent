@@ -2,7 +2,7 @@
     "id": "hun_manet",
     "full_name": "Hun Manet",
     "title": "Prime Minister of Cambodia",
-    "updated": "2026-04-10",
+    "updated": "2026-05-03",
     "leader": {
         "name": "Hun Manet",
         "position": "Prime Minister of Cambodia",
@@ -42,7 +42,65 @@
                     "Structural reform relative to current consumption spending"
                 ]
             },
-            "structural_vulnerability": "Cambodia remains primarily a cut-make-trim economy with 70% of households depending on agriculture. Garment sector relies on imported Chinese raw materials, limiting value capture. Tourism revenue lags visitor numbers, with most arrivals being low-spending regional tourists. The largest stress point is the gap between diversification rhetoric and structural dependence on garment exports and Chinese FDI."
+            "structural_vulnerability": "Cambodia remains primarily a cut-make-trim economy with 70% of households depending on agriculture. Garment sector relies on imported Chinese raw materials, limiting value capture. Tourism revenue lags visitor numbers, with most arrivals being low-spending regional tourists. The largest stress point is the gap between diversification rhetoric and structural dependence on garment exports and Chinese FDI.",
+            "_evidence": [
+                {
+                    "url": "https://pressocm.gov.kh/wp-content/uploads/2023/08/PM_COM_Pentagonal-Strategy-Phase1_EN-24-Aug-2023.pdf",
+                    "date": "2023-08-24",
+                    "quote": "the RGC adopts the 'Pentagonal Strategy' to boost growth, create jobs, ensure equity, increase efficiency, and maintain sustainability... by increasing values added in existing key sectors and developing new sources of growth",
+                    "value": "Growth model based on economic diversification, human capital development, infrastructure connectivity, and shift from agriculture to high value-added industries with targeted 7% annual growth and upper middle-income status by 2030.",
+                    "confidence": 0.92,
+                    "source_file": "2023-08-24_pentagonal-strategy-phase-i-royal-government-programme-state.json"
+                },
+                {
+                    "url": "https://www.khmertimeskh.com/501365930/prime-minister-hun-manet-says-cambodia-targets-high-income-country-status-by-2050/",
+                    "date": "2023-09-25",
+                    "quote": "my government is committed to taking transformative actions through our recently launched Pentagonal Strategy for Cambodia's socio-economic development over the next 25 years…the five key priorities are people, roads, water, electricity and technology, especially digital technology.",
+                    "value": "Pentagonal Strategy centered on five pillars (growth, employment, equity, efficiency, sustainability) with infrastructure and digital technology as enabling priorities for structural transformation to high-income status.",
+                    "confidence": 0.95,
+                    "source_file": "2023-09-25_hun-manet-says-cambodia-targets-high-income-country-status-b.json"
+                },
+                {
+                    "url": "https://pressocm.gov.kh/en/archives/101499",
+                    "date": "2024-08-05",
+                    "quote": "to promote agriculture, trade, industry, logistics, we today are launching the construction of the Funan Techo Canal [...] that establishes connection to the Funan empire where Angkor Borei – which was once the capital – focused strongly on agriculture and trade",
+                    "value": "Economic development through mega-infrastructure projects that integrate domestic production (agriculture, agroindustry, industry) with international trade via waterway connectivity and port access.",
+                    "confidence": 0.9,
+                    "source_file": "2024-08-05_selected-comments-of-samdech-thipadei-hun-manet-at-the-groun.json"
+                },
+                {
+                    "url": "https://www.lowyinstitute.org/the-interpreter/murky-waters-cambodia-s-funan-techo-canal",
+                    "date": "2024-09-01",
+                    "quote": "It will enable Cambodia to export directly to world markets, reducing reliance on Vietnamese ports which currently transport one-third of Cambodia's exports.",
+                    "value": "Direct export access via new infrastructure to reduce dependency on intermediaries and capture greater trade value; implicit bet on port-based economic growth.",
+                    "confidence": 0.8,
+                    "source_file": "2024-09-01_the-murky-waters-of-cambodias-funan-techo-canal.json"
+                },
+                {
+                    "url": "https://pressocm.gov.kh/en/archives/112761",
+                    "date": "2025-07-01",
+                    "quote": "The Royal Government has taken into consideration not only cultivation as agriculture but also fishing, animal husbandry, planting strategic crops such as rubber, various processed foods, and mixed crops to ensure internal food security.",
+                    "value": "Agricultural self-sufficiency and internal capacity-building through infrastructure investment, diversified agro-industrial development, and reduced import dependence, coupled with strategic export corridors to multiple markets.",
+                    "confidence": 0.85,
+                    "source_file": "2025-07-01_selected-comments-of-samdech-thipadei-hun-manet-at-the-natio.json"
+                },
+                {
+                    "url": "https://pressocm.gov.kh/en/archives/117348",
+                    "date": "2025-10-20",
+                    "quote": "this investment project is 100 percent Cambodian […] built by 90 percent Cambodian architects, engineers and builders […] The construction is not yet complete. There are 2,000 hectares of land area left […] to develop it into an industrial area, a residential area, and other job/occupation creation areas",
+                    "value": "State-led infrastructure development through public-private partnerships with retained Cambodian control; diversification into logistics hubs and industrial zones to drive employment and competitiveness.",
+                    "confidence": 0.85,
+                    "source_file": "2025-10-20_selected-comments-of-samdech-thipadei-hun-manet-at-the-offic.json"
+                },
+                {
+                    "url": "https://pressocm.gov.kh/en/archives/120949",
+                    "date": "2026-03-04",
+                    "quote": "Cambodia is evolving beyond low-cost production to become ASEAN's Green Manufacturing Hub... The capital is shifting rapidly from garments toward high-end manufacturing, agro-industry, and infrastructure.",
+                    "value": "High-value manufacturing and diversified sectoral growth driven by regional integration, digital infrastructure, and foreign direct investment; transition from low-cost garments to green manufacturing, semiconductors, automotive, and agro-industry.",
+                    "confidence": 0.95,
+                    "source_file": "2026-03-04_opening-remarks-by-samdech-moha-borvor-thipadei-hun-manet-at.json"
+                }
+            ]
         },
         "risk_tolerance": {
             "overall_assessment": "MODERATE-LOW",
@@ -92,7 +150,65 @@
                     "senior_posts_2024_plus": 1400,
                     "interpretation": "Patronage stabilisation strategy to reduce elite defection risk by spreading spoils; increases fiscal drag. Low-risk politically with high long-term institutional cost; typical of an heir profile."
                 }
-            }
+            },
+            "_evidence": [
+                {
+                    "url": "https://pressocm.gov.kh/wp-content/uploads/2023/08/PM_COM_Pentagonal-Strategy-Phase1_EN-24-Aug-2023.pdf",
+                    "date": "2023-08-24",
+                    "quote": "Ensuring crisis-resilient economic growth of around 7% per year on average... the country now enjoys full financial autonomy and ownership in determining its fate and future",
+                    "value": "Moderate risk appetite with emphasis on crisis-resilience, stability maintenance, and gradual institutional reform rather than radical restructuring; builds on 25-year continuity.",
+                    "confidence": 0.75,
+                    "source_file": "2023-08-24_pentagonal-strategy-phase-i-royal-government-programme-state.json"
+                },
+                {
+                    "url": "https://www.khmertimeskh.com/501365930/prime-minister-hun-manet-says-cambodia-targets-high-income-country-status-by-2050/",
+                    "date": "2023-09-25",
+                    "quote": "my government is committed to taking transformative actions…The RCEP, along with other bilateral FTAs, has not only given a boost to the kingdom's sustainable trade growth but also become a magnet to attract more foreign direct investments.",
+                    "value": "Moderate risk appetite signaled through commitment to transformative structural actions and reliance on regional trade integration (RCEP, bilateral FTAs) as growth catalysts.",
+                    "confidence": 0.7,
+                    "source_file": "2023-09-25_hun-manet-says-cambodia-targets-high-income-country-status-b.json"
+                },
+                {
+                    "url": "https://pressocm.gov.kh/en/archives/101499",
+                    "date": "2024-08-05",
+                    "quote": "We must make this canal possible at any cost. Why? If we fail to get it done, we will lose the advantage of strengthening our economic potential [...] If we listen to those who are a little worried, we will not accomplish the project.",
+                    "value": "High risk tolerance for major infrastructure projects; willing to proceed despite public concerns and skepticism; rejects delay in pursuit of strategic goals.",
+                    "confidence": 0.9,
+                    "source_file": "2024-08-05_selected-comments-of-samdech-thipadei-hun-manet-at-the-groun.json"
+                },
+                {
+                    "url": "https://www.lowyinstitute.org/the-interpreter/murky-waters-cambodia-s-funan-techo-canal",
+                    "date": "2024-09-01",
+                    "quote": "completion is scheduled (quite ambitiously, given normal infrastructure project slippages) for 2028",
+                    "value": "High risk tolerance for megaproject execution despite acknowledged cost underestimation concerns, environmental review shortcuts, and unresolved financing structures.",
+                    "confidence": 0.75,
+                    "source_file": "2024-09-01_the-murky-waters-of-cambodias-funan-techo-canal.json"
+                },
+                {
+                    "url": "https://pressocm.gov.kh/en/archives/112761",
+                    "date": "2025-07-01",
+                    "quote": "on the condition that even if the border is closed and nothing is brought in, we can still feed ourselves",
+                    "value": "Cautious and defensive; willing to absorb short-term economic pain (border closure) to protect sovereignty and strategic autonomy rather than accept external coercion.",
+                    "confidence": 0.8,
+                    "source_file": "2025-07-01_selected-comments-of-samdech-thipadei-hun-manet-at-the-natio.json"
+                },
+                {
+                    "url": "https://pressocm.gov.kh/en/archives/117348",
+                    "date": "2025-10-20",
+                    "quote": "We are trying a pilot the project here. Customs procedures in other places already exist, but we cannot change them all at once. We are reforming […] Whenever a situation is about to explode, we have contacted the IOT, with the ASEAN Chairman […] to immediately mediate",
+                    "value": "Measured risk acceptance with emphasis on incremental pilots and learning-by-doing; preference for testing logistics reforms before full rollout; willingness to engage border conflict with de-escalation rather than aggressive escalation.",
+                    "confidence": 0.75,
+                    "source_file": "2025-10-20_selected-comments-of-samdech-thipadei-hun-manet-at-the-offic.json"
+                },
+                {
+                    "url": "https://pressocm.gov.kh/en/archives/120949",
+                    "date": "2026-03-04",
+                    "quote": "We have worked deliberately to create a secure and predictable operating environment that minimizes jurisdictional risk... Cambodia offers a compelling strategic advantage for global investors, grounded in political stability, macroeconomic resilience.",
+                    "value": "Moderate risk appetite; emphasizes stability and predictability as competitive advantages while aggressively pursuing market diversification and sectoral pivot away from garments.",
+                    "confidence": 0.85,
+                    "source_file": "2026-03-04_opening-remarks-by-samdech-moha-borvor-thipadei-hun-manet-at.json"
+                }
+            ]
         },
         "time_horizon": {
             "stated_horizon": {
@@ -117,7 +233,65 @@
                     "garments"
                 ],
                 "policy_gap": "Recognised in Pentagonal Strategy but not matched by budget reallocation toward industrial upgrading or export diversification. Indicates shorter revealed time horizon than stated."
-            }
+            },
+            "_evidence": [
+                {
+                    "url": "https://pressocm.gov.kh/wp-content/uploads/2023/08/PM_COM_Pentagonal-Strategy-Phase1_EN-24-Aug-2023.pdf",
+                    "date": "2023-08-24",
+                    "quote": "a forward-looking strategy for the next 25 years, which has been planned to be set out and implemented in 5 successive phases... Each phase will be adjusted based on the actual context",
+                    "value": "Dual time horizon: immediate 5-year implementation (Seventh Legislature) within a 25-year strategic arc toward Cambodia Vision 2050, with phased adjustment mechanisms.",
+                    "confidence": 0.95,
+                    "source_file": "2023-08-24_pentagonal-strategy-phase-i-royal-government-programme-state.json"
+                },
+                {
+                    "url": "https://www.khmertimeskh.com/501365930/prime-minister-hun-manet-says-cambodia-targets-high-income-country-status-by-2050/",
+                    "date": "2023-09-25",
+                    "quote": "Cambodia has set a strategy to transform it into a high-income country by 2050…upper-middle-income country by 2030 and a resilient, vibrant and prosperous high-income country by 2050…Pentagonal Strategy for Cambodia's socio-economic development over the next 25 years.",
+                    "value": "Dual long-term horizon (2050 high-income target, 25-year strategy) with intermediate milestones (2027 developing-country graduation, 2030 upper-middle-income status).",
+                    "confidence": 0.95,
+                    "source_file": "2023-09-25_hun-manet-says-cambodia-targets-high-income-country-status-b.json"
+                },
+                {
+                    "url": "https://pressocm.gov.kh/en/archives/101499",
+                    "date": "2024-08-05",
+                    "quote": "In the next five years, the place will become an economic potential [...] to build a common achievement for the nation that will last for hundreds of years to come",
+                    "value": "Medium-term operational focus (5-year completion window) embedded in civilizational long-term framing (2,000-year historical continuity and multi-generational legacy).",
+                    "confidence": 0.9,
+                    "source_file": "2024-08-05_selected-comments-of-samdech-thipadei-hun-manet-at-the-groun.json"
+                },
+                {
+                    "url": "https://www.lowyinstitute.org/the-interpreter/murky-waters-cambodia-s-funan-techo-canal",
+                    "date": "2024-09-01",
+                    "quote": "Completion is scheduled (quite ambitiously, given normal infrastructure project slippages) for 2028... CRBC build and operate the canal for 50 years",
+                    "value": "Mixed: 2028 completion deadline signals short-term political urgency; 50-year BOT transfer timeline reflects long-term extraction logic.",
+                    "confidence": 0.8,
+                    "source_file": "2024-09-01_the-murky-waters-of-cambodias-funan-techo-canal.json"
+                },
+                {
+                    "url": "https://pressocm.gov.kh/en/archives/112761",
+                    "date": "2025-07-01",
+                    "quote": "The Royal Government has put forward and implemented policies to strengthen the education sector, the health sector, and invest in physical infrastructure, water, roads, electricity, technology, and the Internet for decades",
+                    "value": "Dual horizon: immediate food security and border defense measures, but stated long-term strategy emphasizing infrastructure, agro-industrial capacity, and institutional resilience over decades.",
+                    "confidence": 0.82,
+                    "source_file": "2025-07-01_selected-comments-of-samdech-thipadei-hun-manet-at-the-natio.json"
+                },
+                {
+                    "url": "https://pressocm.gov.kh/en/archives/117348",
+                    "date": "2025-10-20",
+                    "quote": "In the next 15 to 20 years, this place will change even more […] this 3-pronged approach was not achieved by chance, but through active work until we reached a ceasefire, until the JBC and RBC can talk, until we had a plan for peace talks under the presidency of His Excellency Donald Trump",
+                    "value": "Dual temporal framing: 15–20 year development vision for TIA and surrounding zones; simultaneous short-term crisis management on border (ceasefire maintenance); long-term regional peace architecture under Trump presidency.",
+                    "confidence": 0.8,
+                    "source_file": "2025-10-20_selected-comments-of-samdech-thipadei-hun-manet-at-the-offic.json"
+                },
+                {
+                    "url": "https://pressocm.gov.kh/en/archives/120949",
+                    "date": "2026-03-04",
+                    "quote": "a comprehensive 25-year roadmap to achieve the 2025 Vision... The AEC Strategic Plan 2026–2030 represents our collective operational response... the Royal Government launched the 'Special Program to Promote Investment in the Four Northeastern Provinces (2025–2028)'",
+                    "value": "Dual horizon: 25-year Pentagonal Strategy framing with ASEAN Community Vision 2045 as long-term anchor; medium-term operationalization through AEC Strategic Plan 2026–2030 and sectoral programs through 2028.",
+                    "confidence": 0.9,
+                    "source_file": "2026-03-04_opening-remarks-by-samdech-moha-borvor-thipadei-hun-manet-at.json"
+                }
+            ]
         },
         "dependency_assumptions": {
             "explicit_assumptions": [
@@ -147,6 +321,64 @@
                 "Thai-Cambodia conflict escalation into sustained tourism damage.",
                 "Domestic household debt crisis (flagged by analysts in late 2024).",
                 "Operational de-escalation playbook for border conflicts (exposed by 2025 Thai border conflict)."
+            ],
+            "_evidence": [
+                {
+                    "url": "https://pressocm.gov.kh/wp-content/uploads/2023/08/PM_COM_Pentagonal-Strategy-Phase1_EN-24-Aug-2023.pdf",
+                    "date": "2023-08-24",
+                    "quote": "Continued building of inclusive and effective partnerships for development cooperation, which is another important task for creating an environment conducive to inclusive, resilient, and sustainable socio-economic development; and Continued promotion of deeper regional and global integration",
+                    "value": "External dependency on continued development partnerships, regional integration, foreign direct investment, and stable global trade; assumes macroeconomic and financial stability as precondition.",
+                    "confidence": 0.8,
+                    "source_file": "2023-08-24_pentagonal-strategy-phase-i-royal-government-programme-state.json"
+                },
+                {
+                    "url": "https://www.khmertimeskh.com/501365930/prime-minister-hun-manet-says-cambodia-targets-high-income-country-status-by-2050/",
+                    "date": "2023-09-25",
+                    "quote": "The RCEP agreement, the Cambodia-China Free Trade Agreement, and the Cambodia-Republic of Korea Free Trade Agreement will help Cambodia graduate from its least developed country status…The RCEP, along with other bilateral FTAs, has not only given a boost to the kingdom's sustainable trade growth but also become a magnet to attract more foreign direct investments.",
+                    "value": "Heavy reliance on regional trade agreements (RCEP, China FTA, Korea FTA) and foreign direct investment as primary growth engines; vulnerability to regional economic cycles implicit.",
+                    "confidence": 0.85,
+                    "source_file": "2023-09-25_hun-manet-says-cambodia-targets-high-income-country-status-b.json"
+                },
+                {
+                    "url": "https://pressocm.gov.kh/en/archives/101499",
+                    "date": "2024-08-05",
+                    "quote": "the private company that borrows money to invest [...] BOT does not mean loss of sovereignty. They build roads, they have the right to operate it and charge, but all are under the Cambodian laws",
+                    "value": "Depends on foreign private capital and BOT (Build-Operate-Transfer) investment model; assumes foreign operators will comply with Cambodian law and return infrastructure control post-concession.",
+                    "confidence": 0.8,
+                    "source_file": "2024-08-05_selected-comments-of-samdech-thipadei-hun-manet-at-the-groun.json"
+                },
+                {
+                    "url": "https://www.lowyinstitute.org/the-interpreter/murky-waters-cambodia-s-funan-techo-canal",
+                    "date": "2024-09-01",
+                    "quote": "It wouldn't be unheard of for Chinese loans to be diverted through the Cambodian entities... the remaining 49% will be delivered under a BOT scheme by CRBC whereby CRBC build and operate the canal for 50 years",
+                    "value": "Implicit acceptance of Chinese financing dependency and CRBC operational control during 50-year BOT period; attempts to obscure via Cambodian entity majority claim while financing source remains opaque.",
+                    "confidence": 0.85,
+                    "source_file": "2024-09-01_the-murky-waters-of-cambodias-funan-techo-canal.json"
+                },
+                {
+                    "url": "https://pressocm.gov.kh/en/archives/112761",
+                    "date": "2025-07-01",
+                    "quote": "If there is a problem somewhere, we don't suffocate, as we don't rely on only one partner to breath. We must find ways to breathe more than one way ourselves, plus guarantee more partners.",
+                    "value": "Explicit rejection of single-partner dependency; named vulnerabilities include market closure, fuel cutoff, electricity shutdown, and internet disruption; mitigation through diversification of trade partners and internal capacity.",
+                    "confidence": 0.88,
+                    "source_file": "2025-07-01_selected-comments-of-samdech-thipadei-hun-manet-at-the-natio.json"
+                },
+                {
+                    "url": "https://pressocm.gov.kh/en/archives/117348",
+                    "date": "2025-10-20",
+                    "quote": "Wherever possible. This place has a favorable location and a wide area […] multinational participation, including Canada, England, Singapore, South Korea, China, the Netherlands, and Vietnam, from the design stage to construction and to management […] when the fighting broke out, they immediately convened a meeting",
+                    "value": "Heavy reliance on international mediation (ASEAN, Trump, ICRC, France, UN) for border conflict resolution; dependence on multinational expertise (Canada, UK, Singapore, South Korea, China, Netherlands, Vietnam) for airport design and management; assumed stability of ceasefire mechanisms.",
+                    "confidence": 0.82,
+                    "source_file": "2025-10-20_selected-comments-of-samdech-thipadei-hun-manet-at-the-offic.json"
+                },
+                {
+                    "url": "https://pressocm.gov.kh/en/archives/120949",
+                    "date": "2026-03-04",
+                    "quote": "For global firms looking to diversify their supply chains, ASEAN is no longer just an 'alternative' destination; it is the strategic center of gravity for sustainable, long-term growth... the world today faces mounting global challenges, including economic uncertainty, climate change, supply chain disruptions, and rising geopolitical tensions.",
+                    "value": "Implicit dependence on sustained FDI inflows, global supply chain diversification demand, and preferential market access via FTAs and CPTPP; vulnerable to global fragmentation and geopolitical disruption despite stated resilience.",
+                    "confidence": 0.8,
+                    "source_file": "2026-03-04_opening-remarks-by-samdech-moha-borvor-thipadei-hun-manet-at.json"
+                }
             ]
         },
         "institution_vs_relationship": {
@@ -178,7 +410,65 @@
                     "Constitutional Council chaired by CPP loyalist Hy Sophea (2025), functioning as legitimation rather than constraint."
                 ]
             },
-            "reproducibility_implication": "Policy decisions are heavily person- and network-dependent. Without Hun Sen’s approval architecture, many outcomes would differ. System is non-reproducible and exposed to succession risk; no clear evidence that Hun Manet is building an independent governance logic."
+            "reproducibility_implication": "Policy decisions are heavily person- and network-dependent. Without Hun Sen’s approval architecture, many outcomes would differ. System is non-reproducible and exposed to succession risk; no clear evidence that Hun Manet is building an independent governance logic.",
+            "_evidence": [
+                {
+                    "url": "https://pressocm.gov.kh/wp-content/uploads/2023/08/PM_COM_Pentagonal-Strategy-Phase1_EN-24-Aug-2023.pdf",
+                    "date": "2023-08-24",
+                    "quote": "The RGC continues to focus on five priorities as follows: (1). Institutional reform and strengthening... building a highly competent, strong, smart, and clean public administration... (2). Improvements of human resources and work efficiency... The Pentagonal Strategy-Phase I shall be implemented, in accordance with the approach of Dynamics of Stakeholder System",
+                    "value": "Rules-based institutional governance model emphasizing modernized state institutions, merit-based recruitment, performance-based systems, and rule of law; underpinned by relationship-based 'Dynamics of Stakeholder System' coordination.",
+                    "confidence": 0.85,
+                    "source_file": "2023-08-24_pentagonal-strategy-phase-i-royal-government-programme-state.json"
+                },
+                {
+                    "url": "https://www.khmertimeskh.com/501365930/prime-minister-hun-manet-says-cambodia-targets-high-income-country-status-by-2050/",
+                    "date": "2023-09-25",
+                    "quote": "The Regional Comprehensive Economic Partnership (RCEP) agreement, the Cambodia-China Free Trade Agreement, and the Cambodia-Republic of Korea Free Trade Agreement will help Cambodia graduate from its least developed country status.",
+                    "value": "Mixed mode: reliance on formal multilateral institutions (UNGA, World Bank classifications, RCEP framework) alongside bilateral relationship-dependent FTAs (China, Korea), suggesting both rules-based and relationship-based strategies.",
+                    "confidence": 0.65,
+                    "source_file": "2023-09-25_hun-manet-says-cambodia-targets-high-income-country-status-b.json"
+                },
+                {
+                    "url": "https://pressocm.gov.kh/en/archives/101499",
+                    "date": "2024-08-05",
+                    "quote": "I am not going anywhere. Now I say this publicly and nothing is hidden. You can save it. Five more years, if we lose sovereignty, you can come to me anytime [...] my family is not going anywhere",
+                    "value": "Relationship and personality-based governance; legitimacy anchored in leader's personal credibility, historical vision, and nationalist narrative rather than institutional rules or transparency mechanisms.",
+                    "confidence": 0.85,
+                    "source_file": "2024-08-05_selected-comments-of-samdech-thipadei-hun-manet-at-the-groun.json"
+                },
+                {
+                    "url": "https://www.lowyinstitute.org/the-interpreter/murky-waters-cambodia-s-funan-techo-canal",
+                    "date": "2024-09-01",
+                    "quote": "there is a clear sense that this project is a personal legacy for Hun Sen – it even shares his honorific title... state media coverage was frenzied with every capital, provincial and private television station 'requested' to broadcast the ceremony",
+                    "value": "Relationship-based: project framed as personal legacy of Hun Sen (sharing his honorific title), groundbreaking timed to his birthday, state media 'requested' to cover it; governance opacity via unnamed co-investor and shadowy financing.",
+                    "confidence": 0.9,
+                    "source_file": "2024-09-01_the-murky-waters-of-cambodias-funan-techo-canal.json"
+                },
+                {
+                    "url": "https://pressocm.gov.kh/en/archives/112761",
+                    "date": "2025-07-01",
+                    "quote": "Cambodia does it this way. The Cambodians are straightforward, do not abandon the rules. Whatever we do, we do it by the book/rules",
+                    "value": "Rules-based governance explicitly stated; emphasis on transparency, lottery systems, written protocols, ICJ recourse, and compliance with historical treaties (2000 MOU, 1904 French-Siamese Convention, 1907 maps); opposition to informal patron relationships.",
+                    "confidence": 0.87,
+                    "source_file": "2025-07-01_selected-comments-of-samdech-thipadei-hun-manet-at-the-natio.json"
+                },
+                {
+                    "url": "https://pressocm.gov.kh/en/archives/117348",
+                    "date": "2025-10-20",
+                    "quote": "It is to resolve it according to the principles that other ASEAN countries (have) done together, which is through a border committee, international law, treaties, conventions […] His Excellency Anwar Ibrahim, Prime Minister of Malaysia, who has been actively working to initiate a ceasefire since the July 24th",
+                    "value": "Hybrid governance: formal institutional mechanisms (JBC, RBC, border committees, international law) paired with relationship-based diplomacy (personal mediation by regional leaders); emphasis on rules-based ASEAN frameworks but executed through high-level bilateral/multilateral political relationships.",
+                    "confidence": 0.78,
+                    "source_file": "2025-10-20_selected-comments-of-samdech-thipadei-hun-manet-at-the-offic.json"
+                },
+                {
+                    "url": "https://pressocm.gov.kh/en/archives/120949",
+                    "date": "2026-03-04",
+                    "quote": "The Government-Private Sector Forum (G-PSF), which celebrated its 25th anniversary in 2025 as one of the region's most effective public-private consultation mechanisms... fully digitized the regulatory and approval environment... an inter-ministerial working group with over 100 members from 30 relevant ministries.",
+                    "value": "Rules-based institutional framework with formalized mechanisms (Government-Private Sector Forum, inter-ministerial working groups, digitized regulatory environment, WTO integration); relationship-based elements through strategic partnerships and personalized sector dialogues.",
+                    "confidence": 0.85,
+                    "source_file": "2026-03-04_opening-remarks-by-samdech-moha-borvor-thipadei-hun-manet-at.json"
+                }
+            ]
         },
         "global_positioning_logic": {
             "theory": "Hedge-and-extract from multiple power centres.",
@@ -234,7 +524,65 @@
             "asean_role": {
                 "description": "ASEAN and RCEP participation framed as core to foreign policy and as a structural hedge.",
                 "function": "Provides legitimising framework for hedging strategy, enabling Cambodia to extract value from China and the West while attributing positioning to regional alignment rather than opportunism."
-            }
+            },
+            "_evidence": [
+                {
+                    "url": "https://pressocm.gov.kh/wp-content/uploads/2023/08/PM_COM_Pentagonal-Strategy-Phase1_EN-24-Aug-2023.pdf",
+                    "date": "2023-08-24",
+                    "quote": "Adherence to an independent, rule-based, and smart foreign policy with the strategic objectives, focusing on continuing to strengthen the implementation of independent, rule-based foreign policy in national defense and in promoting the core national interests; and building good friendships and cooperation with all countries in the world",
+                    "value": "Independent, rule-based foreign policy maximizing national interests through deep regional and global integration; positioning Cambodia as regional stability actor while attracting FDI and participating in supply chains.",
+                    "confidence": 0.88,
+                    "source_file": "2023-08-24_pentagonal-strategy-phase-i-royal-government-programme-state.json"
+                },
+                {
+                    "url": "https://www.khmertimeskh.com/501365930/prime-minister-hun-manet-says-cambodia-targets-high-income-country-status-by-2050/",
+                    "date": "2023-09-25",
+                    "quote": "The RCEP agreement comprises 15 Asia-Pacific countries, including 10 ASEAN member states…and their five trading partners: China, Japan, South Korea, Australia and New Zealand.",
+                    "value": "Regional integration through RCEP and Asia-Pacific trade architecture; alignment with China and South Korea as bilateral partners; support for UN-based multilateral order (UNGA participation).",
+                    "confidence": 0.8,
+                    "source_file": "2023-09-25_hun-manet-says-cambodia-targets-high-income-country-status-b.json"
+                },
+                {
+                    "url": "https://pressocm.gov.kh/en/archives/101499",
+                    "date": "2024-08-05",
+                    "quote": "we connect transport and trade route from Phnom Penh, provinces along the Tonle Sap and the Mekong River to the sea [...] to promote the prestige, independence, sovereignty and prosperity of Cambodia",
+                    "value": "Integration into regional trade networks and global commerce while defending national sovereignty and territorial integrity against implied external threats; leverages historical trade precedent to legitimize foreign engagement.",
+                    "confidence": 0.8,
+                    "source_file": "2024-08-05_selected-comments-of-samdech-thipadei-hun-manet-at-the-groun.json"
+                },
+                {
+                    "url": "https://www.lowyinstitute.org/the-interpreter/murky-waters-cambodia-s-funan-techo-canal",
+                    "date": "2024-09-01",
+                    "quote": "reducing reliance on Vietnamese ports which currently transport one-third of Cambodia's exports... Cambodia chose not to undertake a Prior Consultation, claiming that the canal does not constitute a diversion of the river system, to the chagrin of its neighbours",
+                    "value": "Strategic autonomy play against Vietnamese intermediation; implicit alignment with Chinese infrastructure finance model; deliberate avoidance of Mekong River Commission consultation to sidestep regional governance constraints.",
+                    "confidence": 0.85,
+                    "source_file": "2024-09-01_the-murky-waters-of-cambodias-funan-techo-canal.json"
+                },
+                {
+                    "url": "https://pressocm.gov.kh/en/archives/112761",
+                    "date": "2025-07-01",
+                    "quote": "We do not close trade with neighboring countries, but we must strengthen our internal capacity to guarantee (own food supplies and consumer goods)",
+                    "value": "Non-aligned balancing strategy: maintains relations with all neighbors and trade partners, rejects being leveraged by any single power, escalates bilateral disputes to ICJ, and emphasizes national dignity and restraint despite provocation.",
+                    "confidence": 0.85,
+                    "source_file": "2025-07-01_selected-comments-of-samdech-thipadei-hun-manet-at-the-natio.json"
+                },
+                {
+                    "url": "https://pressocm.gov.kh/en/archives/117348",
+                    "date": "2025-10-20",
+                    "quote": "Very few among the 10 ASEAN countries that do not have border problems with neighboring countries […] the choice to resolve them is through peaceful means i.e., talking (with each other) […] Thank you to the major leaders, including His Excellency the French President Emmanuel Macron and many other leaders, His Excellency UN Secretary-General António Guterres",
+                    "value": "ASEAN-centric regional order with active leverage of great-power mediation (US, China, France); positioning Cambodia as rules-respecting member state seeking peaceful dispute resolution within established frameworks; implicit alignment with internationalist bloc against unilateralist conflict escalation.",
+                    "confidence": 0.8,
+                    "source_file": "2025-10-20_selected-comments-of-samdech-thipadei-hun-manet-at-the-offic.json"
+                },
+                {
+                    "url": "https://pressocm.gov.kh/en/archives/120949",
+                    "date": "2026-03-04",
+                    "quote": "As an open economy and active member of the World Trade Organization, Cambodia is deeply integrated into the global trading system. The country is actively and proactively promoting trade with key partners such as the United States and the China. In addition, Cambodia is advancing negotiations to join the Comprehensive and Progressive Agreement for Trans-Pacific Partnership (CPTPP).",
+                    "value": "Strategic hedging via multilateral integration (ASEAN, WTO, CPTPP candidacy, Mekong-Lancang Cooperation) while maintaining open economy status and balanced engagement with both United States and China.",
+                    "confidence": 0.9,
+                    "source_file": "2026-03-04_opening-remarks-by-samdech-moha-borvor-thipadei-hun-manet-at.json"
+                }
+            ]
         },
         "consistency_score": {
             "method": "Compare stated reasoning with actual budget and decree outcomes.",
@@ -272,7 +620,65 @@
             "overall_consistency": {
                 "score": "MEDIUM-LOW",
                 "summary": "Stated reasoning is most predictive in foreign policy; least predictive in governance reform and anti-corruption. Economic diversification and human capital sit in the middle: problems are correctly diagnosed and partially funded, but effort is insufficient relative to risk."
-            }
+            },
+            "_evidence": [
+                {
+                    "url": "https://pressocm.gov.kh/wp-content/uploads/2023/08/PM_COM_Pentagonal-Strategy-Phase1_EN-24-Aug-2023.pdf",
+                    "date": "2023-08-24",
+                    "quote": "Over the last 25 years, since achieving full peace, national unity, and territorial integrity... the RGC successfully implemented the Triangular Strategy and the Rectangular Strategy... These efforts and participation have also laid a solid foundation for Cambodia to firmly maintain peace and political stability",
+                    "value": "High consistency between stated doctrine (peace, stability, rule of law, institutional modernization) and revealed behavior signals (25-year continuity claim, centralized coordination mechanisms, PM personal leadership of key committees), though institutional capacity gaps and governance quality remain execution risks.",
+                    "confidence": 0.72,
+                    "source_file": "2023-08-24_pentagonal-strategy-phase-i-royal-government-programme-state.json"
+                },
+                {
+                    "url": "https://www.khmertimeskh.com/501365930/prime-minister-hun-manet-says-cambodia-targets-high-income-country-status-by-2050/",
+                    "date": "2023-09-25",
+                    "quote": "the five key priorities are people, roads, water, electricity and technology, especially digital technology…expected to grow 5.6 percent in 2023.",
+                    "value": "High consistency between stated long-term goals and revealed funding priorities (infrastructure, digital technology, regional integration); no major contradictions detected in available messaging.",
+                    "confidence": 0.75,
+                    "source_file": "2023-09-25_hun-manet-says-cambodia-targets-high-income-country-status-b.json"
+                },
+                {
+                    "url": "https://pressocm.gov.kh/en/archives/101499",
+                    "date": "2024-08-05",
+                    "quote": "Although some of you have the right to express concern, we must give justice to all – both those who see economic gain from the project, and the answers to those who (are) worried about losing their land and sovereignty [...] which we must complete",
+                    "value": "Moderate-to-high consistency gap: leader states commitment to protecting sovereignty while simultaneously proceeding with foreign-financed BOT project amid public doubts; addresses concerns rhetorically but dismisses them operationally.",
+                    "confidence": 0.75,
+                    "source_file": "2024-08-05_selected-comments-of-samdech-thipadei-hun-manet-at-the-groun.json"
+                },
+                {
+                    "url": "https://www.lowyinstitute.org/the-interpreter/murky-waters-cambodia-s-funan-techo-canal",
+                    "date": "2024-09-01",
+                    "quote": "the government staunchly denies taking on any loan to pay for the project... It wouldn't be unheard of for Chinese loans to be diverted through the Cambodian entities... Economic modelling for the canal has not been made public",
+                    "value": "Low consistency: stated Cambodian majority ownership (51%) contradicted by unclear funding sources and suspected Chinese loan diversion; denied loans contradicted by historical Chinese financing pattern and BOT profitability requirements; regional cooperation rhetoric undermined by unilateral Mekong Commission notification decision.",
+                    "confidence": 0.9,
+                    "source_file": "2024-09-01_the-murky-waters-of-cambodias-funan-techo-canal.json"
+                },
+                {
+                    "url": "https://pressocm.gov.kh/en/archives/112761",
+                    "date": "2025-07-01",
+                    "quote": "What the (Royal) government (of Cambodia) has been doing is investing in its own capabilities so that no one can look down on Cambodia.",
+                    "value": "High consistency between stated priorities (food security, infrastructure, diversification, institutional rules, non-alignment) and revealed budget/military actions (land distribution, border defense mobilization, agro-industrial zones); minor gap on claimed restraint versus military readiness rhetoric.",
+                    "confidence": 0.78,
+                    "source_file": "2025-07-01_selected-comments-of-samdech-thipadei-hun-manet-at-the-natio.json"
+                },
+                {
+                    "url": "https://pressocm.gov.kh/en/archives/117348",
+                    "date": "2025-10-20",
+                    "quote": "The Royal Government wants to end the conflict so that the situation can return to normal […] We have been quiet but not idle, not abandoning the people, not abandoning the nation, and we will continue to work to protect the national interests […] I have been quiet for the last two months. This is for another two more months",
+                    "value": "High consistency between stated commitment to peaceful resolution and revealed behavior (ceasefire acceptance, international mediation engagement, silence on land disputes); gap between domestic rhetoric emphasizing government support for soldiers and public information restraint on military details.",
+                    "confidence": 0.72,
+                    "source_file": "2025-10-20_selected-comments-of-samdech-thipadei-hun-manet-at-the-offic.json"
+                },
+                {
+                    "url": "https://pressocm.gov.kh/en/archives/120949",
+                    "date": "2026-03-04",
+                    "quote": "the Royal Government of Cambodia offers 100% foreign ownership and has fully digitized the regulatory and approval environment... competitive fiscal incentives, including tax holidays of up to 15 years for designated priority sectors... While global FDI flows saw an 11% contraction, inflows to ASEAN rose by 8.5%.",
+                    "value": "High consistency between stated pro-business liberalization (100% foreign ownership, 15-year tax holidays, digitized approvals) and revealed priority investment in infrastructure and selective sector targeting; tension between resilience rhetoric and continued FDI-dependent growth model.",
+                    "confidence": 0.8,
+                    "source_file": "2026-03-04_opening-remarks-by-samdech-moha-borvor-thipadei-hun-manet-at.json"
+                }
+            ]
         }
     },
     "synthesis": {

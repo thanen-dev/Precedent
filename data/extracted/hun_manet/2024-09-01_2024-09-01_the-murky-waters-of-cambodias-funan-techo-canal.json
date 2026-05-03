@@ -1,0 +1,81 @@
+{
+  "_meta": {
+    "leader_id": "hun_manet",
+    "source_file": "2024-09-01_the-murky-waters-of-cambodias-funan-techo-canal.json",
+    "source_url": "https://www.lowyinstitute.org/the-interpreter/murky-waters-cambodia-s-funan-techo-canal",
+    "source_date": "2024-09-01",
+    "extracted_on": "2026-05-03",
+    "fields_found": [
+      "growth_theory",
+      "risk_tolerance",
+      "time_horizon",
+      "dependency_assumptions",
+      "institution_vs_relationship",
+      "global_positioning_logic",
+      "consistency_score"
+    ]
+  },
+  "growth_theory": {
+    "value": "Direct export access via new infrastructure to reduce dependency on intermediaries and capture greater trade value; implicit bet on port-based economic growth.",
+    "source": {
+      "url": "https://www.lowyinstitute.org/the-interpreter/murky-waters-cambodia-s-funan-techo-canal",
+      "date": "2024-09-01",
+      "quote": "It will enable Cambodia to export directly to world markets, reducing reliance on Vietnamese ports which currently transport one-third of Cambodia's exports.",
+      "confidence": 0.8
+    }
+  },
+  "risk_tolerance": {
+    "value": "High risk tolerance for megaproject execution despite acknowledged cost underestimation concerns, environmental review shortcuts, and unresolved financing structures.",
+    "source": {
+      "url": "https://www.lowyinstitute.org/the-interpreter/murky-waters-cambodia-s-funan-techo-canal",
+      "date": "2024-09-01",
+      "quote": "completion is scheduled (quite ambitiously, given normal infrastructure project slippages) for 2028",
+      "confidence": 0.75
+    }
+  },
+  "time_horizon": {
+    "value": "Mixed: 2028 completion deadline signals short-term political urgency; 50-year BOT transfer timeline reflects long-term extraction logic.",
+    "source": {
+      "url": "https://www.lowyinstitute.org/the-interpreter/murky-waters-cambodia-s-funan-techo-canal",
+      "date": "2024-09-01",
+      "quote": "Completion is scheduled (quite ambitiously, given normal infrastructure project slippages) for 2028... CRBC build and operate the canal for 50 years",
+      "confidence": 0.8
+    }
+  },
+  "dependency_assumptions": {
+    "value": "Implicit acceptance of Chinese financing dependency and CRBC operational control during 50-year BOT period; attempts to obscure via Cambodian entity majority claim while financing source remains opaque.",
+    "source": {
+      "url": "https://www.lowyinstitute.org/the-interpreter/murky-waters-cambodia-s-funan-techo-canal",
+      "date": "2024-09-01",
+      "quote": "It wouldn't be unheard of for Chinese loans to be diverted through the Cambodian entities... the remaining 49% will be delivered under a BOT scheme by CRBC whereby CRBC build and operate the canal for 50 years",
+      "confidence": 0.85
+    }
+  },
+  "institution_vs_relationship": {
+    "value": "Relationship-based: project framed as personal legacy of Hun Sen (sharing his honorific title), groundbreaking timed to his birthday, state media 'requested' to cover it; governance opacity via unnamed co-investor and shadowy financing.",
+    "source": {
+      "url": "https://www.lowyinstitute.org/the-interpreter/murky-waters-cambodia-s-funan-techo-canal",
+      "date": "2024-09-01",
+      "quote": "there is a clear sense that this project is a personal legacy for Hun Sen – it even shares his honorific title... state media coverage was frenzied with every capital, provincial and private television station 'requested' to broadcast the ceremony",
+      "confidence": 0.9
+    }
+  },
+  "global_positioning_logic": {
+    "value": "Strategic autonomy play against Vietnamese intermediation; implicit alignment with Chinese infrastructure finance model; deliberate avoidance of Mekong River Commission consultation to sidestep regional governance constraints.",
+    "source": {
+      "url": "https://www.lowyinstitute.org/the-interpreter/murky-waters-cambodia-s-funan-techo-canal",
+      "date": "2024-09-01",
+      "quote": "reducing reliance on Vietnamese ports which currently transport one-third of Cambodia's exports... Cambodia chose not to undertake a Prior Consultation, claiming that the canal does not constitute a diversion of the river system, to the chagrin of its neighbours",
+      "confidence": 0.85
+    }
+  },
+  "consistency_score": {
+    "value": "Low consistency: stated Cambodian majority ownership (51%) contradicted by unclear funding sources and suspected Chinese loan diversion; denied loans contradicted by historical Chinese financing pattern and BOT profitability requirements; regional cooperation rhetoric undermined by unilateral Mekong Commission notification decision.",
+    "source": {
+      "url": "https://www.lowyinstitute.org/the-interpreter/murky-waters-cambodia-s-funan-techo-canal",
+      "date": "2024-09-01",
+      "quote": "the government staunchly denies taking on any loan to pay for the project... It wouldn't be unheard of for Chinese loans to be diverted through the Cambodian entities... Economic modelling for the canal has not been made public",
+      "confidence": 0.9
+    }
+  }
+}

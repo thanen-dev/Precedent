@@ -1,0 +1,81 @@
+{
+  "_meta": {
+    "leader_id": "hun_manet",
+    "source_file": "2023-09-25_hun-manet-says-cambodia-targets-high-income-country-status-b.json",
+    "source_url": "https://www.khmertimeskh.com/501365930/prime-minister-hun-manet-says-cambodia-targets-high-income-country-status-by-2050/",
+    "source_date": "2023-09-25",
+    "extracted_on": "2026-05-03",
+    "fields_found": [
+      "growth_theory",
+      "risk_tolerance",
+      "time_horizon",
+      "dependency_assumptions",
+      "institution_vs_relationship",
+      "global_positioning_logic",
+      "consistency_score"
+    ]
+  },
+  "growth_theory": {
+    "value": "Pentagonal Strategy centered on five pillars (growth, employment, equity, efficiency, sustainability) with infrastructure and digital technology as enabling priorities for structural transformation to high-income status.",
+    "source": {
+      "url": "https://www.khmertimeskh.com/501365930/prime-minister-hun-manet-says-cambodia-targets-high-income-country-status-by-2050/",
+      "date": "2023-09-25",
+      "quote": "my government is committed to taking transformative actions through our recently launched Pentagonal Strategy for Cambodia's socio-economic development over the next 25 years…the five key priorities are people, roads, water, electricity and technology, especially digital technology.",
+      "confidence": 0.95
+    }
+  },
+  "risk_tolerance": {
+    "value": "Moderate risk appetite signaled through commitment to transformative structural actions and reliance on regional trade integration (RCEP, bilateral FTAs) as growth catalysts.",
+    "source": {
+      "url": "https://www.khmertimeskh.com/501365930/prime-minister-hun-manet-says-cambodia-targets-high-income-country-status-by-2050/",
+      "date": "2023-09-25",
+      "quote": "my government is committed to taking transformative actions…The RCEP, along with other bilateral FTAs, has not only given a boost to the kingdom's sustainable trade growth but also become a magnet to attract more foreign direct investments.",
+      "confidence": 0.7
+    }
+  },
+  "time_horizon": {
+    "value": "Dual long-term horizon (2050 high-income target, 25-year strategy) with intermediate milestones (2027 developing-country graduation, 2030 upper-middle-income status).",
+    "source": {
+      "url": "https://www.khmertimeskh.com/501365930/prime-minister-hun-manet-says-cambodia-targets-high-income-country-status-by-2050/",
+      "date": "2023-09-25",
+      "quote": "Cambodia has set a strategy to transform it into a high-income country by 2050…upper-middle-income country by 2030 and a resilient, vibrant and prosperous high-income country by 2050…Pentagonal Strategy for Cambodia's socio-economic development over the next 25 years.",
+      "confidence": 0.95
+    }
+  },
+  "dependency_assumptions": {
+    "value": "Heavy reliance on regional trade agreements (RCEP, China FTA, Korea FTA) and foreign direct investment as primary growth engines; vulnerability to regional economic cycles implicit.",
+    "source": {
+      "url": "https://www.khmertimeskh.com/501365930/prime-minister-hun-manet-says-cambodia-targets-high-income-country-status-by-2050/",
+      "date": "2023-09-25",
+      "quote": "The RCEP agreement, the Cambodia-China Free Trade Agreement, and the Cambodia-Republic of Korea Free Trade Agreement will help Cambodia graduate from its least developed country status…The RCEP, along with other bilateral FTAs, has not only given a boost to the kingdom's sustainable trade growth but also become a magnet to attract more foreign direct investments.",
+      "confidence": 0.85
+    }
+  },
+  "institution_vs_relationship": {
+    "value": "Mixed mode: reliance on formal multilateral institutions (UNGA, World Bank classifications, RCEP framework) alongside bilateral relationship-dependent FTAs (China, Korea), suggesting both rules-based and relationship-based strategies.",
+    "source": {
+      "url": "https://www.khmertimeskh.com/501365930/prime-minister-hun-manet-says-cambodia-targets-high-income-country-status-by-2050/",
+      "date": "2023-09-25",
+      "quote": "The Regional Comprehensive Economic Partnership (RCEP) agreement, the Cambodia-China Free Trade Agreement, and the Cambodia-Republic of Korea Free Trade Agreement will help Cambodia graduate from its least developed country status.",
+      "confidence": 0.65
+    }
+  },
+  "global_positioning_logic": {
+    "value": "Regional integration through RCEP and Asia-Pacific trade architecture; alignment with China and South Korea as bilateral partners; support for UN-based multilateral order (UNGA participation).",
+    "source": {
+      "url": "https://www.khmertimeskh.com/501365930/prime-minister-hun-manet-says-cambodia-targets-high-income-country-status-by-2050/",
+      "date": "2023-09-25",
+      "quote": "The RCEP agreement comprises 15 Asia-Pacific countries, including 10 ASEAN member states…and their five trading partners: China, Japan, South Korea, Australia and New Zealand.",
+      "confidence": 0.8
+    }
+  },
+  "consistency_score": {
+    "value": "High consistency between stated long-term goals and revealed funding priorities (infrastructure, digital technology, regional integration); no major contradictions detected in available messaging.",
+    "source": {
+      "url": "https://www.khmertimeskh.com/501365930/prime-minister-hun-manet-says-cambodia-targets-high-income-country-status-by-2050/",
+      "date": "2023-09-25",
+      "quote": "the five key priorities are people, roads, water, electricity and technology, especially digital technology…expected to grow 5.6 percent in 2023.",
+      "confidence": 0.75
+    }
+  }
+}

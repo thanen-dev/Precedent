@@ -1,0 +1,81 @@
+{
+  "_meta": {
+    "leader_id": "hun_manet",
+    "source_file": "2025-07-01_selected-comments-of-samdech-thipadei-hun-manet-at-the-natio.json",
+    "source_url": "https://pressocm.gov.kh/en/archives/112761",
+    "source_date": "2025-07-01",
+    "extracted_on": "2026-05-03",
+    "fields_found": [
+      "growth_theory",
+      "risk_tolerance",
+      "time_horizon",
+      "dependency_assumptions",
+      "institution_vs_relationship",
+      "global_positioning_logic",
+      "consistency_score"
+    ]
+  },
+  "growth_theory": {
+    "value": "Agricultural self-sufficiency and internal capacity-building through infrastructure investment, diversified agro-industrial development, and reduced import dependence, coupled with strategic export corridors to multiple markets.",
+    "source": {
+      "url": "https://pressocm.gov.kh/en/archives/112761",
+      "date": "2025-07-01",
+      "quote": "The Royal Government has taken into consideration not only cultivation as agriculture but also fishing, animal husbandry, planting strategic crops such as rubber, various processed foods, and mixed crops to ensure internal food security.",
+      "confidence": 0.85
+    }
+  },
+  "risk_tolerance": {
+    "value": "Cautious and defensive; willing to absorb short-term economic pain (border closure) to protect sovereignty and strategic autonomy rather than accept external coercion.",
+    "source": {
+      "url": "https://pressocm.gov.kh/en/archives/112761",
+      "date": "2025-07-01",
+      "quote": "on the condition that even if the border is closed and nothing is brought in, we can still feed ourselves",
+      "confidence": 0.8
+    }
+  },
+  "time_horizon": {
+    "value": "Dual horizon: immediate food security and border defense measures, but stated long-term strategy emphasizing infrastructure, agro-industrial capacity, and institutional resilience over decades.",
+    "source": {
+      "url": "https://pressocm.gov.kh/en/archives/112761",
+      "date": "2025-07-01",
+      "quote": "The Royal Government has put forward and implemented policies to strengthen the education sector, the health sector, and invest in physical infrastructure, water, roads, electricity, technology, and the Internet for decades",
+      "confidence": 0.82
+    }
+  },
+  "dependency_assumptions": {
+    "value": "Explicit rejection of single-partner dependency; named vulnerabilities include market closure, fuel cutoff, electricity shutdown, and internet disruption; mitigation through diversification of trade partners and internal capacity.",
+    "source": {
+      "url": "https://pressocm.gov.kh/en/archives/112761",
+      "date": "2025-07-01",
+      "quote": "If there is a problem somewhere, we don't suffocate, as we don't rely on only one partner to breath. We must find ways to breathe more than one way ourselves, plus guarantee more partners.",
+      "confidence": 0.88
+    }
+  },
+  "institution_vs_relationship": {
+    "value": "Rules-based governance explicitly stated; emphasis on transparency, lottery systems, written protocols, ICJ recourse, and compliance with historical treaties (2000 MOU, 1904 French-Siamese Convention, 1907 maps); opposition to informal patron relationships.",
+    "source": {
+      "url": "https://pressocm.gov.kh/en/archives/112761",
+      "date": "2025-07-01",
+      "quote": "Cambodia does it this way. The Cambodians are straightforward, do not abandon the rules. Whatever we do, we do it by the book/rules",
+      "confidence": 0.87
+    }
+  },
+  "global_positioning_logic": {
+    "value": "Non-aligned balancing strategy: maintains relations with all neighbors and trade partners, rejects being leveraged by any single power, escalates bilateral disputes to ICJ, and emphasizes national dignity and restraint despite provocation.",
+    "source": {
+      "url": "https://pressocm.gov.kh/en/archives/112761",
+      "date": "2025-07-01",
+      "quote": "We do not close trade with neighboring countries, but we must strengthen our internal capacity to guarantee (own food supplies and consumer goods)",
+      "confidence": 0.85
+    }
+  },
+  "consistency_score": {
+    "value": "High consistency between stated priorities (food security, infrastructure, diversification, institutional rules, non-alignment) and revealed budget/military actions (land distribution, border defense mobilization, agro-industrial zones); minor gap on claimed restraint versus military readiness rhetoric.",
+    "source": {
+      "url": "https://pressocm.gov.kh/en/archives/112761",
+      "date": "2025-07-01",
+      "quote": "What the (Royal) government (of Cambodia) has been doing is investing in its own capabilities so that no one can look down on Cambodia.",
+      "confidence": 0.78
+    }
+  }
+}

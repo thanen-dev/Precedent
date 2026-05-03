@@ -1,0 +1,81 @@
+{
+  "_meta": {
+    "leader_id": "hun_manet",
+    "source_file": "2023-08-24_pentagonal-strategy-phase-i-royal-government-programme-state.json",
+    "source_url": "https://pressocm.gov.kh/wp-content/uploads/2023/08/PM_COM_Pentagonal-Strategy-Phase1_EN-24-Aug-2023.pdf",
+    "source_date": "2023-08-24",
+    "extracted_on": "2026-05-03",
+    "fields_found": [
+      "growth_theory",
+      "risk_tolerance",
+      "time_horizon",
+      "dependency_assumptions",
+      "institution_vs_relationship",
+      "global_positioning_logic",
+      "consistency_score"
+    ]
+  },
+  "growth_theory": {
+    "value": "Growth model based on economic diversification, human capital development, infrastructure connectivity, and shift from agriculture to high value-added industries with targeted 7% annual growth and upper middle-income status by 2030.",
+    "source": {
+      "url": "https://pressocm.gov.kh/wp-content/uploads/2023/08/PM_COM_Pentagonal-Strategy-Phase1_EN-24-Aug-2023.pdf",
+      "date": "2023-08-24",
+      "quote": "the RGC adopts the 'Pentagonal Strategy' to boost growth, create jobs, ensure equity, increase efficiency, and maintain sustainability... by increasing values added in existing key sectors and developing new sources of growth",
+      "confidence": 0.92
+    }
+  },
+  "risk_tolerance": {
+    "value": "Moderate risk appetite with emphasis on crisis-resilience, stability maintenance, and gradual institutional reform rather than radical restructuring; builds on 25-year continuity.",
+    "source": {
+      "url": "https://pressocm.gov.kh/wp-content/uploads/2023/08/PM_COM_Pentagonal-Strategy-Phase1_EN-24-Aug-2023.pdf",
+      "date": "2023-08-24",
+      "quote": "Ensuring crisis-resilient economic growth of around 7% per year on average... the country now enjoys full financial autonomy and ownership in determining its fate and future",
+      "confidence": 0.75
+    }
+  },
+  "time_horizon": {
+    "value": "Dual time horizon: immediate 5-year implementation (Seventh Legislature) within a 25-year strategic arc toward Cambodia Vision 2050, with phased adjustment mechanisms.",
+    "source": {
+      "url": "https://pressocm.gov.kh/wp-content/uploads/2023/08/PM_COM_Pentagonal-Strategy-Phase1_EN-24-Aug-2023.pdf",
+      "date": "2023-08-24",
+      "quote": "a forward-looking strategy for the next 25 years, which has been planned to be set out and implemented in 5 successive phases... Each phase will be adjusted based on the actual context",
+      "confidence": 0.95
+    }
+  },
+  "dependency_assumptions": {
+    "value": "External dependency on continued development partnerships, regional integration, foreign direct investment, and stable global trade; assumes macroeconomic and financial stability as precondition.",
+    "source": {
+      "url": "https://pressocm.gov.kh/wp-content/uploads/2023/08/PM_COM_Pentagonal-Strategy-Phase1_EN-24-Aug-2023.pdf",
+      "date": "2023-08-24",
+      "quote": "Continued building of inclusive and effective partnerships for development cooperation, which is another important task for creating an environment conducive to inclusive, resilient, and sustainable socio-economic development; and Continued promotion of deeper regional and global integration",
+      "confidence": 0.8
+    }
+  },
+  "institution_vs_relationship": {
+    "value": "Rules-based institutional governance model emphasizing modernized state institutions, merit-based recruitment, performance-based systems, and rule of law; underpinned by relationship-based 'Dynamics of Stakeholder System' coordination.",
+    "source": {
+      "url": "https://pressocm.gov.kh/wp-content/uploads/2023/08/PM_COM_Pentagonal-Strategy-Phase1_EN-24-Aug-2023.pdf",
+      "date": "2023-08-24",
+      "quote": "The RGC continues to focus on five priorities as follows: (1). Institutional reform and strengthening... building a highly competent, strong, smart, and clean public administration... (2). Improvements of human resources and work efficiency... The Pentagonal Strategy-Phase I shall be implemented, in accordance with the approach of Dynamics of Stakeholder System",
+      "confidence": 0.85
+    }
+  },
+  "global_positioning_logic": {
+    "value": "Independent, rule-based foreign policy maximizing national interests through deep regional and global integration; positioning Cambodia as regional stability actor while attracting FDI and participating in supply chains.",
+    "source": {
+      "url": "https://pressocm.gov.kh/wp-content/uploads/2023/08/PM_COM_Pentagonal-Strategy-Phase1_EN-24-Aug-2023.pdf",
+      "date": "2023-08-24",
+      "quote": "Adherence to an independent, rule-based, and smart foreign policy with the strategic objectives, focusing on continuing to strengthen the implementation of independent, rule-based foreign policy in national defense and in promoting the core national interests; and building good friendships and cooperation with all countries in the world",
+      "confidence": 0.88
+    }
+  },
+  "consistency_score": {
+    "value": "High consistency between stated doctrine (peace, stability, rule of law, institutional modernization) and revealed behavior signals (25-year continuity claim, centralized coordination mechanisms, PM personal leadership of key committees), though institutional capacity gaps and governance quality remain execution risks.",
+    "source": {
+      "url": "https://pressocm.gov.kh/wp-content/uploads/2023/08/PM_COM_Pentagonal-Strategy-Phase1_EN-24-Aug-2023.pdf",
+      "date": "2023-08-24",
+      "quote": "Over the last 25 years, since achieving full peace, national unity, and territorial integrity... the RGC successfully implemented the Triangular Strategy and the Rectangular Strategy... These efforts and participation have also laid a solid foundation for Cambodia to firmly maintain peace and political stability",
+      "confidence": 0.72
+    }
+  }
+}

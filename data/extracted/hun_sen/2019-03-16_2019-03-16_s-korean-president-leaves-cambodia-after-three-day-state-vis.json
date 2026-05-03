@@ -1,0 +1,81 @@
+{
+  "_meta": {
+    "leader_id": "hun_sen",
+    "source_file": "2019-03-16_s-korean-president-leaves-cambodia-after-three-day-state-vis.json",
+    "source_url": "https://pressocm.gov.kh/en/archives/50163",
+    "source_date": "2019-03-16",
+    "extracted_on": "2026-05-03",
+    "fields_found": [
+      "growth_theory",
+      "risk_tolerance",
+      "time_horizon",
+      "dependency_assumptions",
+      "institution_vs_relationship",
+      "global_positioning_logic",
+      "consistency_score"
+    ]
+  },
+  "growth_theory": {
+    "value": "Infrastructure-led development financed through concessional foreign loans targeting health, energy, rural connectivity, and human capital.",
+    "source": {
+      "url": "https://pressocm.gov.kh/en/archives/50163",
+      "date": "2019-03-16",
+      "quote": "Cambodia thanks the South Korean Government for granting US$700 million as soft loan for the development of Cambodia for 2019-2023.",
+      "confidence": 0.8
+    }
+  },
+  "risk_tolerance": {
+    "value": null,
+    "source": {
+      "url": "https://pressocm.gov.kh/en/archives/50163",
+      "date": "2019-03-16",
+      "quote": null,
+      "confidence": null
+    }
+  },
+  "time_horizon": {
+    "value": "Medium-term planning horizon aligned with multi-year development frameworks (2019-2023 soft loan coordination).",
+    "source": {
+      "url": "https://pressocm.gov.kh/en/archives/50163",
+      "date": "2019-03-16",
+      "quote": "coordination framework on soft loan of Economic Development Cooperation Fund for 2019-2023",
+      "confidence": 0.7
+    }
+  },
+  "dependency_assumptions": {
+    "value": "Reliance on foreign concessional financing (soft loans) and technical partnerships for core infrastructure and institutional development; heavy dependence on bilateral state visits for securing investment commitments.",
+    "source": {
+      "url": "https://pressocm.gov.kh/en/archives/50163",
+      "date": "2019-03-16",
+      "quote": "Cambodia thanks the South Korean Government for granting US$700 million as soft loan for the development of Cambodia for 2019-2023.",
+      "confidence": 0.8
+    }
+  },
+  "institution_vs_relationship": {
+    "value": "Relationship-based governance model emphasizing personal bilateral engagement at the highest levels (royal audience, prime ministerial bilateral talks) to formalize cooperation frameworks.",
+    "source": {
+      "url": "https://pressocm.gov.kh/en/archives/50163",
+      "date": "2019-03-16",
+      "quote": "H.E. Moon Jae-in and his spouse were received in a royal audience by His Majesty Norodom Sihamoni, King of Cambodia, and after that, the South Korean leader held a bilateral talk with Samdech Techo Hun Sen.",
+      "confidence": 0.85
+    }
+  },
+  "global_positioning_logic": {
+    "value": "Strategic openness to multiple bilateral partnerships with developed economies (South Korea) for capital inflows and technological cooperation while maintaining multi-vector engagement.",
+    "source": {
+      "url": "https://pressocm.gov.kh/en/archives/50163",
+      "date": "2019-03-16",
+      "quote": "comprehensive cooperation between the two countries",
+      "confidence": 0.6
+    }
+  },
+  "consistency_score": {
+    "value": "High consistency between stated commitment to comprehensive bilateral cooperation and revealed behavior of formalizing seven cooperation documents including investment facilitation and infrastructure development.",
+    "source": {
+      "url": "https://pressocm.gov.kh/en/archives/50163",
+      "date": "2019-03-16",
+      "quote": "Seven cooperation documents were reached during the state visit",
+      "confidence": 0.8
+    }
+  }
+}

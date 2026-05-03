@@ -1,0 +1,81 @@
+{
+  "_meta": {
+    "leader_id": "aun_pornmoniroth",
+    "source_file": "2024-03-14_imf-cambodia-2023-article-iv-consultation-staff-report.json",
+    "source_url": "https://www.imf.org/en/Publications/CR/Issues/2024/03/14/Cambodia-2023-Article-IV-Consultation-Press-Release-and-Staff-Report-545855",
+    "source_date": "2024-03-14",
+    "extracted_on": "2026-05-03",
+    "fields_found": [
+      "growth_theory",
+      "risk_tolerance",
+      "time_horizon",
+      "dependency_assumptions",
+      "institution_vs_relationship",
+      "global_positioning_logic",
+      "consistency_score"
+    ]
+  },
+  "growth_theory": {
+    "value": null,
+    "source": {
+      "url": "https://www.imf.org/en/Publications/CR/Issues/2024/03/14/Cambodia-2023-Article-IV-Consultation-Press-Release-and-Staff-Report-545855",
+      "date": "2024-03-14",
+      "quote": null,
+      "confidence": null
+    }
+  },
+  "risk_tolerance": {
+    "value": null,
+    "source": {
+      "url": "https://www.imf.org/en/Publications/CR/Issues/2024/03/14/Cambodia-2023-Article-IV-Consultation-Press-Release-and-Staff-Report-545855",
+      "date": "2024-03-14",
+      "quote": null,
+      "confidence": null
+    }
+  },
+  "time_horizon": {
+    "value": null,
+    "source": {
+      "url": "https://www.imf.org/en/Publications/CR/Issues/2024/03/14/Cambodia-2023-Article-IV-Consultation-Press-Release-and-Staff-Report-545855",
+      "date": "2024-03-14",
+      "quote": null,
+      "confidence": null
+    }
+  },
+  "dependency_assumptions": {
+    "value": null,
+    "source": {
+      "url": "https://www.imf.org/en/Publications/CR/Issues/2024/03/14/Cambodia-2023-Article-IV-Consultation-Press-Release-and-Staff-Report-545855",
+      "date": "2024-03-14",
+      "quote": null,
+      "confidence": null
+    }
+  },
+  "institution_vs_relationship": {
+    "value": null,
+    "source": {
+      "url": "https://www.imf.org/en/Publications/CR/Issues/2024/03/14/Cambodia-2023-Article-IV-Consultation-Press-Release-and-Staff-Report-545855",
+      "date": "2024-03-14",
+      "quote": null,
+      "confidence": null
+    }
+  },
+  "global_positioning_logic": {
+    "value": null,
+    "source": {
+      "url": "https://www.imf.org/en/Publications/CR/Issues/2024/03/14/Cambodia-2023-Article-IV-Consultation-Press-Release-and-Staff-Report-545855",
+      "date": "2024-03-14",
+      "quote": null,
+      "confidence": null
+    }
+  },
+  "consistency_score": {
+    "value": null,
+    "source": {
+      "url": "https://www.imf.org/en/Publications/CR/Issues/2024/03/14/Cambodia-2023-Article-IV-Consultation-Press-Release-and-Staff-Report-545855",
+      "date": "2024-03-14",
+      "quote": null,
+      "confidence": null
+    }
+  }
+}

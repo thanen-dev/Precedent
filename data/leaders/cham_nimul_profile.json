@@ -1,121 +1,183 @@
 {
-  "id": "cham_nimul",
-  "full_name": "Cham Nimul",
-  "title": "Minister of Commerce",
-  "updated": "2026-04-19",
-  "leader": {
-    "name": "Cham Nimul",
-    "position": "Minister of Commerce",
-    "in_office_since": "2023-08-22",
-    "compiled": "2026-04-19",
-    "based_on": [],
-    "purpose": "Stub profile — to be populated by extractor pipeline"
-  },
-  "dimensions": {
-    "growth_theory": {
-      "assessed_position": "Nimul's growth theory is explicitly trade-through-rules: WTO membership as the institutional anchor for market access; export diversification beyond garments as the mechanism for economic resilience; and multilateral engagement as the legitimacy multiplier. Her WTO speech framework is development-evidence-based — she cites declining poverty rates (60% to 16%), the GDP trajectory ($5.3B in 2004 to ",
-      "primary_quote": "Cambodia must turn these challenges into opportunities to strengthen and further enhance competitiveness in regional supply chains and global value chains through market diversification and improving competitiveness.",
-      "primary_source": "Cham Nimul, WTO 20th Anniversary, October 2024",
-      "subfields": [
-        "Core Thesis: Trade diversification as development strategy",
-        "Direct Quote",
-        "2029 gap between framing and action"
-      ],
-      "_evidence": [
-        {
-          "url": "",
-          "date": "2026-04-01",
-          "quote": "Cambodia must turn these challenges into opportunities to strengthen and further enhance competitiveness in regional supply chains and global value chains through market diversification and improving competitiveness.",
-          "value": "Nimul's growth theory is explicitly trade-through-rules: WTO membership as the institutional anchor for market access; export diversification beyond garments as the mechanism for economic resilience; ",
-          "confidence": 0.7,
-          "source_file": "docx_profile_cham_nimul"
+    "id": "cham_nimul",
+    "full_name": "Cham Nimul",
+    "title": "Minister of Commerce",
+    "updated": "2026-05-03",
+    "leader": {
+        "name": "Cham Nimul",
+        "position": "Minister of Commerce",
+        "in_office_since": "2023-08-22",
+        "compiled": "2026-04-19",
+        "based_on": [],
+        "purpose": "Stub profile — to be populated by extractor pipeline"
+    },
+    "dimensions": {
+        "growth_theory": {
+            "assessed_position": "Nimul's growth theory is explicitly trade-through-rules: WTO membership as the institutional anchor for market access; export diversification beyond garments as the mechanism for economic resilience; and multilateral engagement as the legitimacy multiplier. Her WTO speech framework is development-evidence-based — she cites declining poverty rates (60% to 16%), the GDP trajectory ($5.3B in 2004 to ",
+            "primary_quote": "Cambodia must turn these challenges into opportunities to strengthen and further enhance competitiveness in regional supply chains and global value chains through market diversification and improving competitiveness.",
+            "primary_source": "Cham Nimul, WTO 20th Anniversary, October 2024",
+            "subfields": [
+                "Core Thesis: Trade diversification as development strategy",
+                "Direct Quote",
+                "2029 gap between framing and action"
+            ],
+            "_evidence": [
+                {
+                    "url": "",
+                    "date": "2026-04-01",
+                    "quote": "Cambodia must turn these challenges into opportunities to strengthen and further enhance competitiveness in regional supply chains and global value chains through market diversification and improving competitiveness.",
+                    "value": "Nimul's growth theory is explicitly trade-through-rules: WTO membership as the institutional anchor for market access; export diversification beyond garments as the mechanism for economic resilience; ",
+                    "confidence": 0.7,
+                    "source_file": "docx_profile_cham_nimul"
+                },
+                {
+                    "url": "https://docs.wto.org/dol2fe/Pages/SS/directdoc.aspx?filename=q:/WT/TPR/G476.pdf&Open=True",
+                    "date": "2021-11-03",
+                    "quote": "The UK Government's Trade Strategy is designed to achieve long-term sustainable, inclusive, and resilient economic growth through trade, underpinned by rigorous economic and geopolitical analysis.",
+                    "value": "Long-term sustainable, inclusive, and resilient growth through trade underpinned by strategic sectoral investment in eight frontier industries and modern industrial strategy leveraging comparative strengths.",
+                    "confidence": 0.95,
+                    "source_file": "2021-11-03_wto-trade-policy-review-cambodia-2021-government-statement.json"
+                }
+            ]
+        },
+        "risk_tolerance": {
+            "assessed_position": "Nimul works through multilateral processes and consultation workshops rather than unilateral declarations. Her engagement with UNDP, UNCTAD, ADB, and the EU on the LDC graduation roadmap is genuinely multi-stakeholder and evidence-based. This is methodologically sound but structurally slow relative to the 2029 timeline. She accepts the risk of the graduation process itself but defaults to consulta",
+            "primary_quote": null,
+            "primary_source": null,
+            "subfields": [
+                "Assessment: LOW-MEDIUM — Process-oriented, multilateral-anchored"
+            ],
+            "_evidence": [
+                {
+                    "url": "https://docs.wto.org/dol2fe/Pages/SS/directdoc.aspx?filename=q:/WT/TPR/G476.pdf&Open=True",
+                    "date": "2021-11-03",
+                    "quote": "The Trade Strategy combines promoting open markets where possible while protecting critical interests where necessary, adopting a pragmatic approach of 'promote what we can, protect what we must'.",
+                    "value": "Moderate-to-high risk tolerance: pragmatic approach balancing free trade promotion with targeted protection of critical interests; willingness to innovate in agreement design and deploy flexible tools alongside traditional FTAs.",
+                    "confidence": 0.9,
+                    "source_file": "2021-11-03_wto-trade-policy-review-cambodia-2021-government-statement.json"
+                }
+            ]
+        },
+        "time_horizon": {
+            "assessed_position": "Nimul is the cabinet member whose stated and revealed horizon most closely align. Her 2029 deadline is real and binding — EU EBA termination is not a policy choice, it is a legal event. The Cambodia Trade Policy Framework toward 2030 that she is developing is a genuine medium-term planning exercise, not window dressing. However, the urgency of the implementation against the timeline is still insuf",
+            "primary_quote": null,
+            "primary_source": null,
+            "subfields": [
+                "Revealed: 2029–2030  |  Genuinely the longest horizon in the cabinet on trade"
+            ],
+            "_evidence": [
+                {
+                    "url": "https://docs.wto.org/dol2fe/Pages/SS/directdoc.aspx?filename=q:/WT/TPR/G476.pdf&Open=True",
+                    "date": "2021-11-03",
+                    "quote": "The strategy provides practical tools to support businesses in trading and driving growth, aiming to set us up for success now and 10 years into the future.",
+                    "value": "Dual horizon: 10-year industrial and trade strategies establish long-term bets; concurrent pursuit of short-to-medium term gains through digital agreements, sector-specific arrangements, and bilateral deals to capture immediate growth.",
+                    "confidence": 0.85,
+                    "source_file": "2021-11-03_wto-trade-policy-review-cambodia-2021-government-statement.json"
+                }
+            ]
+        },
+        "dependency_assumptions": {
+            "assessed_position": "1. EU EBA partial withdrawal does not escalate further before 2029: Cambodia's 2020 partial EBA withdrawal has not been restored. If further sanctions are applied (e.g., over labour rights or governance), the transition window shrinks. 2. Rules of origin compliance is achievable for garments: EU double transformation rules require fabric to be woven in Cambodia or an eligible country — most Cambod",
+            "primary_quote": null,
+            "primary_source": null,
+            "subfields": [
+                "Assumptions embedded in the trade transition model"
+            ],
+            "_evidence": [
+                {
+                    "url": "https://docs.wto.org/dol2fe/Pages/SS/directdoc.aspx?filename=q:/WT/TPR/G476.pdf&Open=True",
+                    "date": "2021-11-03",
+                    "quote": "The rise in protectionism and supply chain vulnerabilities necessitates a strategic reset in the UK's approach to international commerce. The US had invested GBP 708 billion in the UK in 2023, accounting for 34.1% of UK inward FDI.",
+                    "value": "Heavy dependency on US partnership (34.1% of inward FDI, largest single investment source) and EU trade linkages (66% of UK value-added in exports); supply chain vulnerabilities explicitly named; mitigation through diversification and resilience building.",
+                    "confidence": 0.9,
+                    "source_file": "2021-11-03_wto-trade-policy-review-cambodia-2021-government-statement.json"
+                }
+            ]
+        },
+        "institution_vs_relationship": {
+            "assessed_position": "Nimul operates through WTO procedures, ministerial consultation processes, and formal policy frameworks. Her engagement with international bodies (WTO DG, EU, UNCTAD, ADB) is process-correct and reputation-building. She is Cambodia's most internationally-engaged minister on trade governance. Within the domestic political system, she is embedded in CPP relationship networks but her technical role —",
+            "primary_quote": null,
+            "primary_source": null,
+            "subfields": [
+                "Verdict: Strongly institutional on trade policy; embedded in CPP relationship system"
+            ],
+            "_evidence": [
+                {
+                    "url": "https://docs.wto.org/dol2fe/Pages/SS/directdoc.aspx?filename=q:/WT/TPR/G476.pdf&Open=True",
+                    "date": "2021-11-03",
+                    "quote": "The UK is steadfast in its support for the rules-based international trading system, advocating for the central role of the WTO yet recognizing the need for reform at increased pace. The Trade Strategy also reflects the government's ambition to improve the UK's trade and investment relationship with international partners.",
+                    "value": "Rules-based institutional preference with embedded relationship management: strong support for WTO multilateralism and reform; pursuit of bilateral/plurilateral arrangements reflects pragmatic relationship-building where institutions are deemed insufficient or slow.",
+                    "confidence": 0.9,
+                    "source_file": "2021-11-03_wto-trade-policy-review-cambodia-2021-government-statement.json"
+                }
+            ]
+        },
+        "global_positioning_logic": {
+            "assessed_position": "Nimul's global positioning is explicitly multilateral-rules-based: 'As a small economy, it is crucial that the multilateral trading system remains open and based on rules.' She understands that Cambodia's competitive advantage as a small economy lies in predictable, rules-based access rather than bilateral power negotiation. Her stated support for WTO reform, investment facilitation agreement, and",
+            "primary_quote": null,
+            "primary_source": null,
+            "subfields": [
+                "Theory: Cambodia as rule-abiding multilateral actor; extract development flexibilities while LDC status lasts"
+            ],
+            "_evidence": [
+                {
+                    "url": "https://docs.wto.org/dol2fe/Pages/SS/directdoc.aspx?filename=q:/WT/TPR/G476.pdf&Open=True",
+                    "date": "2021-11-03",
+                    "quote": "Rejecting the false choice between trading partners and strengthening relationships with the EU, US, China and our other key strategic partners with whom we share mutual objectives and interests, ranging in structure, size and region.",
+                    "value": "Open, globally integrated middle power seeking to maintain economic centrality through services leadership, digital trade dominance, and strategic diversification away from single-partner dependency; positioning as values-aligned (labour, environment, gender, anti-corruption) actor in plurilateral coalitions.",
+                    "confidence": 0.88,
+                    "source_file": "2021-11-03_wto-trade-policy-review-cambodia-2021-government-statement.json"
+                }
+            ]
+        },
+        "consistency_score": {
+            "assessed_position": null,
+            "primary_quote": null,
+            "primary_source": null,
+            "subfields": [
+                "Ratings",
+                "Overall: MEDIUM-HIGH on process and diagnosis; LOW on funded implementation pace relative to the 2029 timeline."
+            ],
+            "_evidence": [
+                {
+                    "url": "https://docs.wto.org/dol2fe/Pages/SS/directdoc.aspx?filename=q:/WT/TPR/G476.pdf&Open=True",
+                    "date": "2021-11-03",
+                    "quote": "The UK believes in the principles of free and fair trade, whilst also recognizing the importance of protecting British businesses from unfair trade practices through the use of our trade defence tools. The Trade Strategy sets out how the UK is preparing to withstand an increasingly challenging international context and respond to future geoeconomic shocks.",
+                    "value": "High consistency (0.80–0.85): stated free-trade rhetoric aligns with extensive FTA portfolio and multilateral engagement; however, nascent protective measures (CBAM, trade remedies expansion, economic security tools) signal emerging state-strategic logic not yet fully integrated into doctrine.",
+                    "confidence": 0.8,
+                    "source_file": "2021-11-03_wto-trade-policy-review-cambodia-2021-government-statement.json"
+                }
+            ],
+            "ratings": [
+                {
+                    "dimension": "Trade rules engagement",
+                    "verdict": "HIGH",
+                    "evidence": "WTO TPR preparation, fisheries subsidies agreement, trade facilitation — real outputs"
+                },
+                {
+                    "dimension": "LDC graduation planning",
+                    "verdict": "MEDIUM",
+                    "evidence": "Diagnosis correct; funded implementation plan absent"
+                },
+                {
+                    "dimension": "Export diversification",
+                    "verdict": "LOW-MEDIUM",
+                    "evidence": "Rice and electronics growing but garment/footwear still ~85% of exports"
+                },
+                {
+                    "dimension": "EU green trade compliance",
+                    "verdict": "LOW",
+                    "evidence": "CBAM, double transformation, CSDD — Cambodia has not begun substantial preparation"
+                }
+            ]
         }
-      ]
     },
-    "risk_tolerance": {
-      "assessed_position": "Nimul works through multilateral processes and consultation workshops rather than unilateral declarations. Her engagement with UNDP, UNCTAD, ADB, and the EU on the LDC graduation roadmap is genuinely multi-stakeholder and evidence-based. This is methodologically sound but structurally slow relative to the 2029 timeline. She accepts the risk of the graduation process itself but defaults to consulta",
-      "primary_quote": null,
-      "primary_source": null,
-      "subfields": [
-        "Assessment: LOW-MEDIUM — Process-oriented, multilateral-anchored"
-      ],
-      "_evidence": []
-    },
-    "time_horizon": {
-      "assessed_position": "Nimul is the cabinet member whose stated and revealed horizon most closely align. Her 2029 deadline is real and binding — EU EBA termination is not a policy choice, it is a legal event. The Cambodia Trade Policy Framework toward 2030 that she is developing is a genuine medium-term planning exercise, not window dressing. However, the urgency of the implementation against the timeline is still insuf",
-      "primary_quote": null,
-      "primary_source": null,
-      "subfields": [
-        "Revealed: 2029–2030  |  Genuinely the longest horizon in the cabinet on trade"
-      ],
-      "_evidence": []
-    },
-    "dependency_assumptions": {
-      "assessed_position": "1. EU EBA partial withdrawal does not escalate further before 2029: Cambodia's 2020 partial EBA withdrawal has not been restored. If further sanctions are applied (e.g., over labour rights or governance), the transition window shrinks. 2. Rules of origin compliance is achievable for garments: EU double transformation rules require fabric to be woven in Cambodia or an eligible country — most Cambod",
-      "primary_quote": null,
-      "primary_source": null,
-      "subfields": [
-        "Assumptions embedded in the trade transition model"
-      ],
-      "_evidence": []
-    },
-    "institution_vs_relationship": {
-      "assessed_position": "Nimul operates through WTO procedures, ministerial consultation processes, and formal policy frameworks. Her engagement with international bodies (WTO DG, EU, UNCTAD, ADB) is process-correct and reputation-building. She is Cambodia's most internationally-engaged minister on trade governance. Within the domestic political system, she is embedded in CPP relationship networks but her technical role —",
-      "primary_quote": null,
-      "primary_source": null,
-      "subfields": [
-        "Verdict: Strongly institutional on trade policy; embedded in CPP relationship system"
-      ],
-      "_evidence": []
-    },
-    "global_positioning_logic": {
-      "assessed_position": "Nimul's global positioning is explicitly multilateral-rules-based: 'As a small economy, it is crucial that the multilateral trading system remains open and based on rules.' She understands that Cambodia's competitive advantage as a small economy lies in predictable, rules-based access rather than bilateral power negotiation. Her stated support for WTO reform, investment facilitation agreement, and",
-      "primary_quote": null,
-      "primary_source": null,
-      "subfields": [
-        "Theory: Cambodia as rule-abiding multilateral actor; extract development flexibilities while LDC status lasts"
-      ],
-      "_evidence": []
-    },
-    "consistency_score": {
-      "assessed_position": null,
-      "primary_quote": null,
-      "primary_source": null,
-      "subfields": [
-        "Ratings",
-        "Overall: MEDIUM-HIGH on process and diagnosis; LOW on funded implementation pace relative to the 2029 timeline."
-      ],
-      "_evidence": [],
-      "ratings": [
-        {
-          "dimension": "Trade rules engagement",
-          "verdict": "HIGH",
-          "evidence": "WTO TPR preparation, fisheries subsidies agreement, trade facilitation — real outputs"
+    "synthesis": {
+        "guiding_principles": [],
+        "key_external_analysis_quote": {
+            "quote": "",
+            "source": ""
         },
-        {
-          "dimension": "LDC graduation planning",
-          "verdict": "MEDIUM",
-          "evidence": "Diagnosis correct; funded implementation plan absent"
-        },
-        {
-          "dimension": "Export diversification",
-          "verdict": "LOW-MEDIUM",
-          "evidence": "Rice and electronics growing but garment/footwear still ~85% of exports"
-        },
-        {
-          "dimension": "EU green trade compliance",
-          "verdict": "LOW",
-          "evidence": "CBAM, double transformation, CSDD — Cambodia has not begun substantial preparation"
-        }
-      ]
+        "sources": []
     }
-  },
-  "synthesis": {
-    "guiding_principles": [],
-    "key_external_analysis_quote": {
-      "quote": "",
-      "source": ""
-    },
-    "sources": []
-  }
 }

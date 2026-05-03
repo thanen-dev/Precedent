@@ -1,0 +1,81 @@
+{
+  "_meta": {
+    "leader_id": "cham_nimul",
+    "source_file": "2021-11-03_wto-trade-policy-review-cambodia-2021-government-statement.json",
+    "source_url": "https://docs.wto.org/dol2fe/Pages/SS/directdoc.aspx?filename=q:/WT/TPR/G476.pdf&Open=True",
+    "source_date": "2021-11-03",
+    "extracted_on": "2026-05-03",
+    "fields_found": [
+      "growth_theory",
+      "risk_tolerance",
+      "time_horizon",
+      "dependency_assumptions",
+      "institution_vs_relationship",
+      "global_positioning_logic",
+      "consistency_score"
+    ]
+  },
+  "growth_theory": {
+    "value": "Long-term sustainable, inclusive, and resilient growth through trade underpinned by strategic sectoral investment in eight frontier industries and modern industrial strategy leveraging comparative strengths.",
+    "source": {
+      "url": "https://docs.wto.org/dol2fe/Pages/SS/directdoc.aspx?filename=q:/WT/TPR/G476.pdf&Open=True",
+      "date": "2021-11-03",
+      "quote": "The UK Government's Trade Strategy is designed to achieve long-term sustainable, inclusive, and resilient economic growth through trade, underpinned by rigorous economic and geopolitical analysis.",
+      "confidence": 0.95
+    }
+  },
+  "risk_tolerance": {
+    "value": "Moderate-to-high risk tolerance: pragmatic approach balancing free trade promotion with targeted protection of critical interests; willingness to innovate in agreement design and deploy flexible tools alongside traditional FTAs.",
+    "source": {
+      "url": "https://docs.wto.org/dol2fe/Pages/SS/directdoc.aspx?filename=q:/WT/TPR/G476.pdf&Open=True",
+      "date": "2021-11-03",
+      "quote": "The Trade Strategy combines promoting open markets where possible while protecting critical interests where necessary, adopting a pragmatic approach of 'promote what we can, protect what we must'.",
+      "confidence": 0.9
+    }
+  },
+  "time_horizon": {
+    "value": "Dual horizon: 10-year industrial and trade strategies establish long-term bets; concurrent pursuit of short-to-medium term gains through digital agreements, sector-specific arrangements, and bilateral deals to capture immediate growth.",
+    "source": {
+      "url": "https://docs.wto.org/dol2fe/Pages/SS/directdoc.aspx?filename=q:/WT/TPR/G476.pdf&Open=True",
+      "date": "2021-11-03",
+      "quote": "The strategy provides practical tools to support businesses in trading and driving growth, aiming to set us up for success now and 10 years into the future.",
+      "confidence": 0.85
+    }
+  },
+  "dependency_assumptions": {
+    "value": "Heavy dependency on US partnership (34.1% of inward FDI, largest single investment source) and EU trade linkages (66% of UK value-added in exports); supply chain vulnerabilities explicitly named; mitigation through diversification and resilience building.",
+    "source": {
+      "url": "https://docs.wto.org/dol2fe/Pages/SS/directdoc.aspx?filename=q:/WT/TPR/G476.pdf&Open=True",
+      "date": "2021-11-03",
+      "quote": "The rise in protectionism and supply chain vulnerabilities necessitates a strategic reset in the UK's approach to international commerce. The US had invested GBP 708 billion in the UK in 2023, accounting for 34.1% of UK inward FDI.",
+      "confidence": 0.9
+    }
+  },
+  "institution_vs_relationship": {
+    "value": "Rules-based institutional preference with embedded relationship management: strong support for WTO multilateralism and reform; pursuit of bilateral/plurilateral arrangements reflects pragmatic relationship-building where institutions are deemed insufficient or slow.",
+    "source": {
+      "url": "https://docs.wto.org/dol2fe/Pages/SS/directdoc.aspx?filename=q:/WT/TPR/G476.pdf&Open=True",
+      "date": "2021-11-03",
+      "quote": "The UK is steadfast in its support for the rules-based international trading system, advocating for the central role of the WTO yet recognizing the need for reform at increased pace. The Trade Strategy also reflects the government's ambition to improve the UK's trade and investment relationship with international partners.",
+      "confidence": 0.9
+    }
+  },
+  "global_positioning_logic": {
+    "value": "Open, globally integrated middle power seeking to maintain economic centrality through services leadership, digital trade dominance, and strategic diversification away from single-partner dependency; positioning as values-aligned (labour, environment, gender, anti-corruption) actor in plurilateral coalitions.",
+    "source": {
+      "url": "https://docs.wto.org/dol2fe/Pages/SS/directdoc.aspx?filename=q:/WT/TPR/G476.pdf&Open=True",
+      "date": "2021-11-03",
+      "quote": "Rejecting the false choice between trading partners and strengthening relationships with the EU, US, China and our other key strategic partners with whom we share mutual objectives and interests, ranging in structure, size and region.",
+      "confidence": 0.88
+    }
+  },
+  "consistency_score": {
+    "value": "High consistency (0.80–0.85): stated free-trade rhetoric aligns with extensive FTA portfolio and multilateral engagement; however, nascent protective measures (CBAM, trade remedies expansion, economic security tools) signal emerging state-strategic logic not yet fully integrated into doctrine.",
+    "source": {
+      "url": "https://docs.wto.org/dol2fe/Pages/SS/directdoc.aspx?filename=q:/WT/TPR/G476.pdf&Open=True",
+      "date": "2021-11-03",
+      "quote": "The UK believes in the principles of free and fair trade, whilst also recognizing the importance of protecting British businesses from unfair trade practices through the use of our trade defence tools. The Trade Strategy sets out how the UK is preparing to withstand an increasingly challenging international context and respond to future geoeconomic shocks.",
+      "confidence": 0.8
+    }
+  }
+}

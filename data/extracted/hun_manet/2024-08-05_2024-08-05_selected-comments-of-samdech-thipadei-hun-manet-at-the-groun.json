@@ -1,0 +1,81 @@
+{
+  "_meta": {
+    "leader_id": "hun_manet",
+    "source_file": "2024-08-05_selected-comments-of-samdech-thipadei-hun-manet-at-the-groun.json",
+    "source_url": "https://pressocm.gov.kh/en/archives/101499",
+    "source_date": "2024-08-05",
+    "extracted_on": "2026-05-03",
+    "fields_found": [
+      "growth_theory",
+      "risk_tolerance",
+      "time_horizon",
+      "dependency_assumptions",
+      "institution_vs_relationship",
+      "global_positioning_logic",
+      "consistency_score"
+    ]
+  },
+  "growth_theory": {
+    "value": "Economic development through mega-infrastructure projects that integrate domestic production (agriculture, agroindustry, industry) with international trade via waterway connectivity and port access.",
+    "source": {
+      "url": "https://pressocm.gov.kh/en/archives/101499",
+      "date": "2024-08-05",
+      "quote": "to promote agriculture, trade, industry, logistics, we today are launching the construction of the Funan Techo Canal [...] that establishes connection to the Funan empire where Angkor Borei – which was once the capital – focused strongly on agriculture and trade",
+      "confidence": 0.9
+    }
+  },
+  "risk_tolerance": {
+    "value": "High risk tolerance for major infrastructure projects; willing to proceed despite public concerns and skepticism; rejects delay in pursuit of strategic goals.",
+    "source": {
+      "url": "https://pressocm.gov.kh/en/archives/101499",
+      "date": "2024-08-05",
+      "quote": "We must make this canal possible at any cost. Why? If we fail to get it done, we will lose the advantage of strengthening our economic potential [...] If we listen to those who are a little worried, we will not accomplish the project.",
+      "confidence": 0.9
+    }
+  },
+  "time_horizon": {
+    "value": "Medium-term operational focus (5-year completion window) embedded in civilizational long-term framing (2,000-year historical continuity and multi-generational legacy).",
+    "source": {
+      "url": "https://pressocm.gov.kh/en/archives/101499",
+      "date": "2024-08-05",
+      "quote": "In the next five years, the place will become an economic potential [...] to build a common achievement for the nation that will last for hundreds of years to come",
+      "confidence": 0.9
+    }
+  },
+  "dependency_assumptions": {
+    "value": "Depends on foreign private capital and BOT (Build-Operate-Transfer) investment model; assumes foreign operators will comply with Cambodian law and return infrastructure control post-concession.",
+    "source": {
+      "url": "https://pressocm.gov.kh/en/archives/101499",
+      "date": "2024-08-05",
+      "quote": "the private company that borrows money to invest [...] BOT does not mean loss of sovereignty. They build roads, they have the right to operate it and charge, but all are under the Cambodian laws",
+      "confidence": 0.8
+    }
+  },
+  "institution_vs_relationship": {
+    "value": "Relationship and personality-based governance; legitimacy anchored in leader's personal credibility, historical vision, and nationalist narrative rather than institutional rules or transparency mechanisms.",
+    "source": {
+      "url": "https://pressocm.gov.kh/en/archives/101499",
+      "date": "2024-08-05",
+      "quote": "I am not going anywhere. Now I say this publicly and nothing is hidden. You can save it. Five more years, if we lose sovereignty, you can come to me anytime [...] my family is not going anywhere",
+      "confidence": 0.85
+    }
+  },
+  "global_positioning_logic": {
+    "value": "Integration into regional trade networks and global commerce while defending national sovereignty and territorial integrity against implied external threats; leverages historical trade precedent to legitimize foreign engagement.",
+    "source": {
+      "url": "https://pressocm.gov.kh/en/archives/101499",
+      "date": "2024-08-05",
+      "quote": "we connect transport and trade route from Phnom Penh, provinces along the Tonle Sap and the Mekong River to the sea [...] to promote the prestige, independence, sovereignty and prosperity of Cambodia",
+      "confidence": 0.8
+    }
+  },
+  "consistency_score": {
+    "value": "Moderate-to-high consistency gap: leader states commitment to protecting sovereignty while simultaneously proceeding with foreign-financed BOT project amid public doubts; addresses concerns rhetorically but dismisses them operationally.",
+    "source": {
+      "url": "https://pressocm.gov.kh/en/archives/101499",
+      "date": "2024-08-05",
+      "quote": "Although some of you have the right to express concern, we must give justice to all – both those who see economic gain from the project, and the answers to those who (are) worried about losing their land and sovereignty [...] which we must complete",
+      "confidence": 0.75
+    }
+  }
+}

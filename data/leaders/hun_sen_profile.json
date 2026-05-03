@@ -1,129 +1,181 @@
 {
-  "id": "hun_sen",
-  "full_name": "Hun Sen",
-  "title": "President of the Senate; Former Prime Minister of Cambodia (1985–2023)",
-  "updated": "2026-04-19",
-  "leader": {
-    "name": "Hun Sen",
-    "position": "President of the Senate",
-    "in_office_since": "2023-08-22",
-    "compiled": "2026-04-19",
-    "based_on": [],
-    "purpose": "Stub profile — to be populated by extractor pipeline"
-  },
-  "dimensions": {
-    "growth_theory": {
-      "assessed_position": "Hun Sen's growth model was never a coherent economic theory — it was a political economy theory. His operating belief: political stability achieved through personal control generates the confidence investors need. FDI and garment exports were welcomed insofar as they sustained the employment base that legitimised CPP rule. Studwell's framework (How Asia Works) would diagnose Hun Sen as having fail",
-      "primary_quote": "I am committed to transform Cambodia into an upper-middle-income economy by 2030 and a developed country by 2050.",
-      "primary_source": "Hun Sen, Office of the Council of Ministers, 2017",
-      "subfields": [
-        "Core Thesis: Stability first, growth follows, institutions are instruments",
-        "Direct Quote"
-      ],
-      "_evidence": [
-        {
-          "url": "",
-          "date": "2026-04-01",
-          "quote": "I am committed to transform Cambodia into an upper-middle-income economy by 2030 and a developed country by 2050.",
-          "value": "Hun Sen's growth model was never a coherent economic theory — it was a political economy theory. His operating belief: political stability achieved through personal control generates the confidence in",
-          "confidence": 0.7,
-          "source_file": "docx_profile_hun_sen"
-        }
-      ]
+    "id": "hun_sen",
+    "full_name": "Hun Sen",
+    "title": "President of the Senate; Former Prime Minister of Cambodia (1985–2023)",
+    "updated": "2026-05-03",
+    "leader": {
+        "name": "Hun Sen",
+        "position": "President of the Senate",
+        "in_office_since": "2023-08-22",
+        "compiled": "2026-04-19",
+        "based_on": [],
+        "purpose": "Stub profile — to be populated by extractor pipeline"
     },
-    "risk_tolerance": {
-      "assessed_position": "In the political domain, Hun Sen was one of the highest-risk political operators in modern Southeast Asian history — orchestrating a coup (1997), dissolving the main opposition party (2017), engineering dynastic succession (2023). In the economic domain, he was deeply risk-averse: no structural land reform, no industrial policy, no SOE restructuring. He preserved the patronage system because the r",
-      "primary_quote": null,
-      "primary_source": null,
-      "subfields": [
-        "Assessment: HIGH for political consolidation; LOW for economic experimentation"
-      ],
-      "_evidence": []
-    },
-    "time_horizon": {
-      "assessed_position": "Hun Sen's terminal horizon was not Cambodia's development — it was the security of his dynastic succession. Every economic decision from 2019 onward can be reread as succession preparation: the 122% expansion of senior civil service posts (to absorb both generations of loyalists), the military placements of his sons, the CPP constitutional lock. The 25-year Vision 2050 is a successor government's ",
-      "primary_quote": null,
-      "primary_source": null,
-      "subfields": [
-        "Actual horizon: Succession security  |  Stated: 2050"
-      ],
-      "_evidence": []
-    },
-    "dependency_assumptions": {
-      "assessed_position": "1. Chinese investment and diplomatic cover would continue indefinitely: Cambodia received USD 17.7B+ in Chinese aid by 2024; Ream Naval Base access was granted; 'all-weather' partnership declared. 2. Western economic engagement would tolerate authoritarian governance if framed as stability: this assumption held until the 2020 EU partial EBA withdrawal. 3. The CPP's rural patronage networks would o",
-      "primary_quote": null,
-      "primary_source": null,
-      "subfields": [
-        "His model's hidden load-bearing assumptions"
-      ],
-      "_evidence": []
-    },
-    "institution_vs_relationship": {
-      "assessed_position": "Hun Sen built no independent institution in 38 years. Every formal body — the judiciary, the electoral commission, the Senate, the Constitutional Council — was designed to convert relationship outcomes into legal form. The Bertelsmann Transformation Index 2024 gives Cambodia 0/4 on judicial independence. No officials convicted of corruption in 38 years is not an accident — it is a design specifica",
-      "primary_quote": null,
-      "primary_source": null,
-      "subfields": [
-        "Verdict: Pure relationship. Institutions as legitimation tools."
-      ],
-      "_evidence": []
-    },
-    "global_positioning_logic": {
-      "assessed_position": "Hun Sen's positioning logic was: take China's economic and diplomatic insurance (infrastructure, diplomatic veto cover) while maintaining enough Western economic engagement (EU EBA, US market) to sustain export jobs. When the West conditioned engagement on governance reforms (2020 EBA partial withdrawal), he accepted the economic cost rather than make concessions. ASEAN membership legitimised the ",
-      "primary_quote": "Cambodia's relationship with China is the most reliable friendship in our history.",
-      "primary_source": "Hun Sen, multiple occasions 2017–2022",
-      "subfields": [
-        "Theory: China as insurer, West as income source, ASEAN as cover"
-      ],
-      "_evidence": [
-        {
-          "url": "",
-          "date": "2026-04-01",
-          "quote": "Cambodia's relationship with China is the most reliable friendship in our history.",
-          "value": "Hun Sen's positioning logic was: take China's economic and diplomatic insurance (infrastructure, diplomatic veto cover) while maintaining enough Western economic engagement (EU EBA, US market) to sust",
-          "confidence": 0.7,
-          "source_file": "docx_profile_hun_sen"
-        }
-      ]
-    },
-    "consistency_score": {
-      "assessed_position": null,
-      "primary_quote": null,
-      "primary_source": null,
-      "subfields": [
-        "Ratings",
-        "Overall: VERY HIGH on political survival logic; VERY LOW on development delivery. The most predictable leader on political behavior; least reliable on economic promises."
-      ],
-      "_evidence": [],
-      "ratings": [
-        {
-          "dimension": "Political consolidation",
-          "verdict": "HIGH",
-          "evidence": "Behavior matched stated reasoning — stability through control — consistently for 38 years"
+    "dimensions": {
+        "growth_theory": {
+            "assessed_position": "Hun Sen's growth model was never a coherent economic theory — it was a political economy theory. His operating belief: political stability achieved through personal control generates the confidence investors need. FDI and garment exports were welcomed insofar as they sustained the employment base that legitimised CPP rule. Studwell's framework (How Asia Works) would diagnose Hun Sen as having fail",
+            "primary_quote": "I am committed to transform Cambodia into an upper-middle-income economy by 2030 and a developed country by 2050.",
+            "primary_source": "Hun Sen, Office of the Council of Ministers, 2017",
+            "subfields": [
+                "Core Thesis: Stability first, growth follows, institutions are instruments",
+                "Direct Quote"
+            ],
+            "_evidence": [
+                {
+                    "url": "",
+                    "date": "2026-04-01",
+                    "quote": "I am committed to transform Cambodia into an upper-middle-income economy by 2030 and a developed country by 2050.",
+                    "value": "Hun Sen's growth model was never a coherent economic theory — it was a political economy theory. His operating belief: political stability achieved through personal control generates the confidence in",
+                    "confidence": 0.7,
+                    "source_file": "docx_profile_hun_sen"
+                },
+                {
+                    "url": "https://pressocm.gov.kh/en/archives/50163",
+                    "date": "2019-03-16",
+                    "quote": "Cambodia thanks the South Korean Government for granting US$700 million as soft loan for the development of Cambodia for 2019-2023.",
+                    "value": "Infrastructure-led development financed through concessional foreign loans targeting health, energy, rural connectivity, and human capital.",
+                    "confidence": 0.8,
+                    "source_file": "2019-03-16_s-korean-president-leaves-cambodia-after-three-day-state-vis.json"
+                }
+            ]
         },
-        {
-          "dimension": "Economic development rhetoric",
-          "verdict": "LOW",
-          "evidence": "Stated 2030/2050 targets; built patronage economy with no industrial base"
+        "risk_tolerance": {
+            "assessed_position": "In the political domain, Hun Sen was one of the highest-risk political operators in modern Southeast Asian history — orchestrating a coup (1997), dissolving the main opposition party (2017), engineering dynastic succession (2023). In the economic domain, he was deeply risk-averse: no structural land reform, no industrial policy, no SOE restructuring. He preserved the patronage system because the r",
+            "primary_quote": null,
+            "primary_source": null,
+            "subfields": [
+                "Assessment: HIGH for political consolidation; LOW for economic experimentation"
+            ],
+            "_evidence": []
         },
-        {
-          "dimension": "Anti-corruption",
-          "verdict": "LOW",
-          "evidence": "Zero convictions of officials in 38 years; judicial weaponised against opponents"
+        "time_horizon": {
+            "assessed_position": "Hun Sen's terminal horizon was not Cambodia's development — it was the security of his dynastic succession. Every economic decision from 2019 onward can be reread as succession preparation: the 122% expansion of senior civil service posts (to absorb both generations of loyalists), the military placements of his sons, the CPP constitutional lock. The 25-year Vision 2050 is a successor government's ",
+            "primary_quote": null,
+            "primary_source": null,
+            "subfields": [
+                "Actual horizon: Succession security  |  Stated: 2050"
+            ],
+            "_evidence": [
+                {
+                    "url": "https://pressocm.gov.kh/en/archives/50163",
+                    "date": "2019-03-16",
+                    "quote": "coordination framework on soft loan of Economic Development Cooperation Fund for 2019-2023",
+                    "value": "Medium-term planning horizon aligned with multi-year development frameworks (2019-2023 soft loan coordination).",
+                    "confidence": 0.7,
+                    "source_file": "2019-03-16_s-korean-president-leaves-cambodia-after-three-day-state-vis.json"
+                }
+            ]
         },
-        {
-          "dimension": "Succession preparation",
-          "verdict": "HIGH",
-          "evidence": "The system was meticulously designed for this outcome; executed without disruption"
+        "dependency_assumptions": {
+            "assessed_position": "1. Chinese investment and diplomatic cover would continue indefinitely: Cambodia received USD 17.7B+ in Chinese aid by 2024; Ream Naval Base access was granted; 'all-weather' partnership declared. 2. Western economic engagement would tolerate authoritarian governance if framed as stability: this assumption held until the 2020 EU partial EBA withdrawal. 3. The CPP's rural patronage networks would o",
+            "primary_quote": null,
+            "primary_source": null,
+            "subfields": [
+                "His model's hidden load-bearing assumptions"
+            ],
+            "_evidence": [
+                {
+                    "url": "https://pressocm.gov.kh/en/archives/50163",
+                    "date": "2019-03-16",
+                    "quote": "Cambodia thanks the South Korean Government for granting US$700 million as soft loan for the development of Cambodia for 2019-2023.",
+                    "value": "Reliance on foreign concessional financing (soft loans) and technical partnerships for core infrastructure and institutional development; heavy dependence on bilateral state visits for securing investment commitments.",
+                    "confidence": 0.8,
+                    "source_file": "2019-03-16_s-korean-president-leaves-cambodia-after-three-day-state-vis.json"
+                }
+            ]
+        },
+        "institution_vs_relationship": {
+            "assessed_position": "Hun Sen built no independent institution in 38 years. Every formal body — the judiciary, the electoral commission, the Senate, the Constitutional Council — was designed to convert relationship outcomes into legal form. The Bertelsmann Transformation Index 2024 gives Cambodia 0/4 on judicial independence. No officials convicted of corruption in 38 years is not an accident — it is a design specifica",
+            "primary_quote": null,
+            "primary_source": null,
+            "subfields": [
+                "Verdict: Pure relationship. Institutions as legitimation tools."
+            ],
+            "_evidence": [
+                {
+                    "url": "https://pressocm.gov.kh/en/archives/50163",
+                    "date": "2019-03-16",
+                    "quote": "H.E. Moon Jae-in and his spouse were received in a royal audience by His Majesty Norodom Sihamoni, King of Cambodia, and after that, the South Korean leader held a bilateral talk with Samdech Techo Hun Sen.",
+                    "value": "Relationship-based governance model emphasizing personal bilateral engagement at the highest levels (royal audience, prime ministerial bilateral talks) to formalize cooperation frameworks.",
+                    "confidence": 0.85,
+                    "source_file": "2019-03-16_s-korean-president-leaves-cambodia-after-three-day-state-vis.json"
+                }
+            ]
+        },
+        "global_positioning_logic": {
+            "assessed_position": "Hun Sen's positioning logic was: take China's economic and diplomatic insurance (infrastructure, diplomatic veto cover) while maintaining enough Western economic engagement (EU EBA, US market) to sustain export jobs. When the West conditioned engagement on governance reforms (2020 EBA partial withdrawal), he accepted the economic cost rather than make concessions. ASEAN membership legitimised the ",
+            "primary_quote": "Cambodia's relationship with China is the most reliable friendship in our history.",
+            "primary_source": "Hun Sen, multiple occasions 2017–2022",
+            "subfields": [
+                "Theory: China as insurer, West as income source, ASEAN as cover"
+            ],
+            "_evidence": [
+                {
+                    "url": "",
+                    "date": "2026-04-01",
+                    "quote": "Cambodia's relationship with China is the most reliable friendship in our history.",
+                    "value": "Hun Sen's positioning logic was: take China's economic and diplomatic insurance (infrastructure, diplomatic veto cover) while maintaining enough Western economic engagement (EU EBA, US market) to sust",
+                    "confidence": 0.7,
+                    "source_file": "docx_profile_hun_sen"
+                },
+                {
+                    "url": "https://pressocm.gov.kh/en/archives/50163",
+                    "date": "2019-03-16",
+                    "quote": "comprehensive cooperation between the two countries",
+                    "value": "Strategic openness to multiple bilateral partnerships with developed economies (South Korea) for capital inflows and technological cooperation while maintaining multi-vector engagement.",
+                    "confidence": 0.6,
+                    "source_file": "2019-03-16_s-korean-president-leaves-cambodia-after-three-day-state-vis.json"
+                }
+            ]
+        },
+        "consistency_score": {
+            "assessed_position": null,
+            "primary_quote": null,
+            "primary_source": null,
+            "subfields": [
+                "Ratings",
+                "Overall: VERY HIGH on political survival logic; VERY LOW on development delivery. The most predictable leader on political behavior; least reliable on economic promises."
+            ],
+            "_evidence": [
+                {
+                    "url": "https://pressocm.gov.kh/en/archives/50163",
+                    "date": "2019-03-16",
+                    "quote": "Seven cooperation documents were reached during the state visit",
+                    "value": "High consistency between stated commitment to comprehensive bilateral cooperation and revealed behavior of formalizing seven cooperation documents including investment facilitation and infrastructure development.",
+                    "confidence": 0.8,
+                    "source_file": "2019-03-16_s-korean-president-leaves-cambodia-after-three-day-state-vis.json"
+                }
+            ],
+            "ratings": [
+                {
+                    "dimension": "Political consolidation",
+                    "verdict": "HIGH",
+                    "evidence": "Behavior matched stated reasoning — stability through control — consistently for 38 years"
+                },
+                {
+                    "dimension": "Economic development rhetoric",
+                    "verdict": "LOW",
+                    "evidence": "Stated 2030/2050 targets; built patronage economy with no industrial base"
+                },
+                {
+                    "dimension": "Anti-corruption",
+                    "verdict": "LOW",
+                    "evidence": "Zero convictions of officials in 38 years; judicial weaponised against opponents"
+                },
+                {
+                    "dimension": "Succession preparation",
+                    "verdict": "HIGH",
+                    "evidence": "The system was meticulously designed for this outcome; executed without disruption"
+                }
+            ]
         }
-      ]
+    },
+    "synthesis": {
+        "guiding_principles": [],
+        "key_external_analysis_quote": {
+            "quote": "",
+            "source": ""
+        },
+        "sources": []
     }
-  },
-  "synthesis": {
-    "guiding_principles": [],
-    "key_external_analysis_quote": {
-      "quote": "",
-      "source": ""
-    },
-    "sources": []
-  }
 }
