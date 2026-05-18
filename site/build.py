@@ -368,13 +368,12 @@ _META_DESCRIPTIONS = {
 def _page(title: str, active: str, body: str, extra_js: str = "",
           breadcrumb: str = "") -> str:
     nav_links = [
-        ("index.html",       "Index",       "index"),
         ("leaders.html",     "Leaders",     "leaders"),
-        ("cases.html",       "Cases",       "cases"),
-        ("twins.html",       "Twins",       "twins"),
         ("conflicts.html",   "Conflicts",   "conflicts"),
-        ("solutions.html",   "Solutions",   "solutions"),
-        ("methodology.html", "Methodology", "methodology"),
+        ("twins.html",       "Twins",       "twins"),
+        ("cases.html",       "Cases",       "cases"),
+        ("analyze.html",     "Analyze",     "analyze"),
+        ("brief/latest.html","Brief",       "brief"),
     ]
     nav = "".join(
         f'<a href="{href}" class="{"active" if k == active else ""}">{label}</a>'
@@ -399,7 +398,7 @@ def _page(title: str, active: str, body: str, extra_js: str = "",
     # #49 — favicon inline SVG data URI
     favicon_svg = (
         "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E"
-        "%3Crect width='32' height='32' fill='%231c1a17'/%3E"
+        "%3Crect width='32' height='32' fill='%230f1f3d'/%3E"
         "%3Ctext x='4' y='24' font-family='serif' font-size='22' fill='%238c5e14'%3EP%3C/text%3E"
         "%3C/svg%3E"
     )
@@ -461,10 +460,11 @@ def _page(title: str, active: str, body: str, extra_js: str = "",
         <a href="cases.html">Case Library</a>
       </div>
       <div class="footer-nav-col">
-        <div class="footer-nav-head">Context</div>
+        <div class="footer-nav-head">Tools</div>
+        <a href="analyze.html">Signal Analyzer</a>
+        <a href="brief/latest.html">Weekly Brief</a>
         <a href="solutions.html">Solutions</a>
         <a href="methodology.html">Methodology</a>
-        <a href="index.html">Overview</a>
       </div>
     </nav>
   </div>
@@ -495,6 +495,43 @@ def build_index(leaders, cases, twins, conflicts) -> str:
     total_conflicts = sum(len(c.get("conflicts", [])) for c in conflicts)
     total_twins = sum(len(t.get("matches", [])) for t in twins)
     total_dims = sum(_dim_completeness(p)[0] for p in leaders)
+
+    # collect top 3 HIGH-risk conflicts for above-the-fold display
+    high_conflicts: list[dict] = []
+    for bundle in conflicts:
+        for c in bundle.get("conflicts", []):
+            if c.get("implementation_risk", "").upper() == "HIGH":
+                high_conflicts.append(c)
+    top3 = high_conflicts[:3]
+
+    def _conflict_card(c: dict) -> str:
+        dim  = e(c.get("dimension", "").replace("_", " ").upper())
+        expl = e(c.get("conflict_explanation", c.get("explanation", "")))
+        brk  = e(c.get("prediction", c.get("breaking_point", "")))
+        risk = e(c.get("implementation_risk", "HIGH"))
+        return (
+            f'<div class="conflict-card">'
+            f'  <div class="conflict-card-head">'
+            f'    <span class="conflict-card-dim">{dim}</span>'
+            f'    {pill(risk, risk)}'
+            f'  </div>'
+            f'  <div class="conflict-card-body">'
+            f'    <div class="conflict-card-explanation">{expl}</div>'
+            f'    <div class="conflict-card-breaking">Breaking point: {brk}</div>'
+            f'  </div>'
+            f'</div>'
+        )
+
+    conflicts_html = ""
+    if top3:
+        cards = "".join(_conflict_card(c) for c in top3)
+        conflicts_html = f"""<div class="top-conflicts">
+  <div class="top-conflicts-header">
+    <span class="top-conflicts-title">◈ Active HIGH-Risk Conflicts</span>
+    <a href="conflicts.html" class="top-conflicts-link">All {total_conflicts} conflicts →</a>
+  </div>
+  {cards}
+</div>"""
 
     # 3-bullet executive summary
     best_twin_text = ""
@@ -599,7 +636,8 @@ def build_index(leaders, cases, twins, conflicts) -> str:
       stated doctrine resolves.
     </p>
     <div class="index-hero-cta">
-      <a href="leaders.html" class="btn-primary">Read the profiles</a>
+      <a href="analyze.html" class="btn-primary">Analyze a signal</a>
+      <a href="leaders.html" class="btn-ghost">Read the profiles</a>
       <a href="methodology.html" class="btn-ghost">How this works</a>
     </div>
     <div class="index-hero-stats">
@@ -611,6 +649,7 @@ def build_index(leaders, cases, twins, conflicts) -> str:
   </div>
 </div>
 <div class="container">
+  {conflicts_html}
   {exec_html}
   {reading_html}
   <div class="section-label" style="margin-top:2rem;margin-bottom:1rem"><span class="section-marker">◈</span>Leaders</div>
@@ -1571,6 +1610,19 @@ def build(clean: bool = False) -> list[Path]:
         written.append(path)
 
     written.insert(0, css_dest)
+
+    # generate conflicts-data.json for the embed widget
+    flat_conflicts: list[dict] = []
+    for bundle in conflicts:
+        for c in bundle.get("conflicts", []):
+            flat_conflicts.append(c)
+    conflicts_json = DOCS_DIR / "conflicts-data.json"
+    conflicts_json.write_text(
+        json.dumps({"conflicts": flat_conflicts}, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+    written.append(conflicts_json)
+
     return written
 
 
