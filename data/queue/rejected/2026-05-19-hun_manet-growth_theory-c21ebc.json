@@ -1,0 +1,16 @@
+{
+  "id": "2026-05-19-hun_manet-growth_theory-c21ebc",
+  "type": "claim_extraction",
+  "leader_id": "hun_manet",
+  "dimension": "growth_theory",
+  "source_url": "https://test.example.com",
+  "source_date": "2026-05-19",
+  "extracted_claim": "Test claim for smoke test.",
+  "exact_quote": "",
+  "confidence": 0.8,
+  "extracted_by": "claude-sonnet-4-6",
+  "extracted_at": "2026-05-19T03:24:21+00:00",
+  "status": "rejected",
+  "reviewer_notes": "smoke test cleanup",
+  "reviewed_at": "2026-05-19T03:24:21+00:00"
+}

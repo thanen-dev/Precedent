@@ -472,9 +472,18 @@ def _render_archive_index(briefs: list[str]) -> str:
 # ── main ──────────────────────────────────────────────────────────────────────
 
 def main() -> None:
-    brief_date = os.environ.get("BRIEF_DATE", date.today().isoformat())
+    import argparse
+    parser = argparse.ArgumentParser(description="Generate weekly intelligence brief.")
+    parser.add_argument("--draft-only", action="store_true",
+                        help="Save to brief/drafts/ instead of publishing as latest.html")
+    parser.add_argument("--date", default=None,
+                        help="Override date (YYYY-MM-DD, default: today)")
+    args = parser.parse_args()
 
-    print(f"Generating brief for {brief_date}...")
+    brief_date = args.date or os.environ.get("BRIEF_DATE", date.today().isoformat())
+    draft_only = args.draft_only
+
+    print(f"Generating brief for {brief_date}{' (draft)' if draft_only else ''}...")
 
     leaders  = _load_leaders()
     cases    = _load_historical()
@@ -482,38 +491,41 @@ def main() -> None:
 
     print(f"  Loaded {len(leaders)} leaders, {len(cases)} cases, {len(twins)} twins")
 
+    if not API_KEY:
+        print("  ANTHROPIC_API_KEY not set — skipping.")
+        return
+
     context  = _build_context(leaders, cases, twins)
     raw_text = _call_claude(context, brief_date)
-
     sections = _parse_brief(raw_text)
     print(f"  Parsed {len(sections)} sections")
 
-    # collect existing briefs for nav
-    existing = sorted(
-        [p.name for p in BRIEF_DIR.glob("[0-9]*.html")],
-        reverse=True,
-    )
-
-    # build nav links (prev/next style — link to archive + latest)
+    existing = sorted([p.name for p in BRIEF_DIR.glob("[0-9]*.html")], reverse=True)
     nav_links = '<a href="index.html">← Archive</a>'
     if existing:
         nav_links += f' <a href="{html_lib.escape(existing[0])}">Latest →</a>'
 
     html_out = _render_brief_html(brief_date, sections, nav_links)
 
-    dated_path  = BRIEF_DIR / f"{brief_date}.html"
-    latest_path = BRIEF_DIR / "latest.html"
+    if draft_only:
+        draft_dir = BRIEF_DIR / "drafts"
+        draft_dir.mkdir(parents=True, exist_ok=True)
+        draft_path = draft_dir / f"{brief_date}.html"
+        draft_path.write_text(html_out)
+        print(f"  Draft saved: {draft_path}")
+        print("  Review with: python tools/review.py --type brief_draft")
+    else:
+        dated_path  = BRIEF_DIR / f"{brief_date}.html"
+        latest_path = BRIEF_DIR / "latest.html"
+        dated_path.write_text(html_out)
+        latest_path.write_text(html_out)
+        print(f"  Written: {dated_path}")
+        print(f"  Written: {latest_path}")
 
-    dated_path.write_text(html_out)
-    latest_path.write_text(html_out)
-    print(f"  Written: {dated_path}")
-    print(f"  Written: {latest_path}")
-
-    # update archive index
-    all_briefs = sorted([p.name for p in BRIEF_DIR.glob("[0-9]*.html")], reverse=True)
-    archive_html = _render_archive_index(all_briefs)
-    (BRIEF_DIR / "index.html").write_text(archive_html)
-    print(f"  Updated: {BRIEF_DIR / 'index.html'}")
+        all_briefs = sorted([p.name for p in BRIEF_DIR.glob("[0-9]*.html")], reverse=True)
+        archive_html = _render_archive_index(all_briefs)
+        (BRIEF_DIR / "index.html").write_text(archive_html)
+        print(f"  Updated: {BRIEF_DIR / 'index.html'}")
 
     print("Done.")
 
